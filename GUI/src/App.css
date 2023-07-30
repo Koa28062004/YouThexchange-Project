@@ -37,7 +37,7 @@ body{
 }
 .nav .dropdown{
   width: 20%;
-  color:orange;
+  color:rgb(0, 255, 153);
   margin:10px 40px;
   font-size:25px;
   text-align: center;
