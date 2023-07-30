@@ -22,7 +22,7 @@ function Dropdown({ title }) {
 function Navigation() {
   return (
     <div className="nav">
-      <img className="logo" alt="hi" src="logo.png" />
+      <img className="logo" alt="hi" src={require("../../Images/logo.png")} />
       <div className="ull">
         <Dropdown title="Event" />
         <Dropdown title="Competition" />
