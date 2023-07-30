@@ -1,0 +1,3 @@
+
+cd GUI;
+npm start;

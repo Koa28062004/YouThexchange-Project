@@ -91,27 +91,27 @@ function Homepage() {
 
             <div className="gallery">
                 <div className="slide">
-                    <img src="logo youth exchange.png" alt=""/>
+                <img src={require('./imgs/logo_youth_exchange.png')} alt=""/>
                 </div>
 
                 <div className="slide">
-                    <img src="hinh1.jpg" alt=""/>
+                    <img src={require('./imgs/hinh1.jpg')} alt=""/>
                 </div>
 
                 <div className="slide">
-                    <img src="hinh2.jpg" alt=""/>
+                    <img src={require('./imgs/hinh2.jpg')} alt=""/>
                 </div>
 
                 <div className="slide">
-                    <img src="hinh3.jpg" alt=""/>
+                    <img src= {require('./imgs/hinh3.jpg')} alt=""/>
                 </div>
 
                 <div className="slide">
-                    <img src="logo youth exchange.png" alt=""/>
+                    <img src={require('./imgs/logo_youth_exchange.png')} alt=""/>
                 </div>
 
                 <div className="slide">
-                    <img src="hinh1.jpg" alt=""/>
+                    <img src={require('./imgs/hinh1.jpg')} alt=""/>
                 </div>
             </div>
         </div>
