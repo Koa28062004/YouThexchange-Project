@@ -1,0 +1,274 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family:'Times New Roman';
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(233, 179, 132);
+  width: 100%;
+}
+
+.tool{
+  width:100%;
+  height:100px;
+  display:flex;
+  margin:auto;
+  align-items: center;
+  padding:0px 0px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  background-color: grey;
+}
+.nav{
+  position: relative;
+  width: 70%;
+  height:70px;
+  margin-left: 100px;
+  display:flex;
+  
+}
+.nav .ull{
+  width: 70%;
+  display:flex;
+  justify-content: space-between;
+  margin-left: 200px;
+}
+.nav .dropdown{
+  width: 20%;
+  color:rgb(161, 204, 209);
+  margin:10px 40px;
+  font-size:25px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content{
+  position: absolute;
+  display: none;
+  background-color: rgb(216, 216, 216);
+  color:wheat;
+  width: 200px;
+  height:300px;
+  box-shadow: 7px 3px rgba(0, 0, 0, 0.071) inset;
+  z-index: 5;
+  text-align: left;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown-content a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.content{
+  width: 100%;
+  height:auto;
+}
+.content:hover{
+  background-color: bisque;
+}
+
+.logo{
+  height: 90px;
+  width: 180px;
+  margin-top: -10px;
+  margin-left: 0px;
+}
+
+.search{
+  width: 30%;
+  position: relative;
+  display:flex;
+  margin-top:5px;
+  margin-left: 50px;
+}
+.input{
+  width: 200px;
+  height:40px;
+  border:2px solid pink;
+  border-right-style: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+h1{
+  text-align: center;
+}
+.ser{
+  margin:0;
+  background-color: pink;
+  font-size:15px;
+  width:70px;
+  height:40px;
+  border-top-right-radius:20px ;
+  border-bottom-right-radius: 20px;
+}
+hr{
+  background-color: orange;
+  color:orange;
+  border:1px solid orange;
+}
+
+.dropdown:hover{
+  background-color: rgba(0, 0, 0, 0.486);
+  height:60px;
+  padding:5px;
+  text-align: center;
+}
+.b{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
+  margin-top: 50px;
+}
+.b button{
+  font-size: 25px;
+}
+
+h1{
+  text-align: center;
+}
+
+
+#myImage {
+  width:500px; 
+  height:auto; 
+  margin-left:40%;
+  
+}
+.main{
+  position:relative;
+  display: flex;
+  border:3px solid rgb(225, 13, 49);
+  width: 600px;
+  height:400px;
+  margin:auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
+
+.gallery{
+  height:400px;
+  display:flex;
+  z-index: 1;
+  position:absolute;
+  transition: transform 0.5s ease-in-out;
+}
+.gallery img{
+  width: 600px;
+  height: 100%;
+  object-fit:fill;
+  object-position: center;
+}
+.slide{
+  width: 600px;
+  height: 100%;
+  z-index: 1;
+  transition: opacity 1s;
+}
+.exchange{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.pre{
+  width: 10%;
+  display:flex;
+  align-items: center;
+  z-index: 2;
+}
+.next{
+  width: 10%;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+.next .next_btn{
+  opacity: 0;
+  font-size: 20px;
+  margin: auto;
+  color: #654bf5;
+  background-color: rgba(240, 248, 255, 0.461);
+  width: 25px;
+}
+.next:hover{
+  background-color: rgba(128, 128, 128, 0.283);
+}
+.next:hover .next_btn{
+  opacity: 1;
+}
+.pre .pre_btn{
+  opacity: 0;
+  font-size: 20px;
+  margin: auto;
+  color: #654bf5;
+  background-color: rgba(240, 248, 255, 0.461);
+  width: 25px;
+}
+.pre:hover{
+  background-color: rgba(128, 128, 128, 0.283);
+}
+.pre:hover .pre_btn{
+  opacity: 1;
+}
+
+.more_inf{
+  position:relative;
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-around;
+  margin:auto;
+  margin-top:50px;
+  border-radius: 10px;
+}
+.btn_moreinf{
+  height:40px;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: rgb(124, 157, 150);
+}
+.btn_moreinf:hover{
+  background-image: linear-gradient(to right,pink, rgb(253, 23, 23));
+}
+.footer{
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  width: 100%;
+  background-color: rgb(84, 12, 12);
+  height: auto;
+}
+.logo_f{
+  margin-left: -50px;
+  width: 20%;
+}
+
+img{
+  width: 100%;
+  object-fit:fill;
+  object-position: center;
+}
+
+.footer .infor {
+  height:150px;
+  width: 30%;
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 200px;
+  font-size: 30px;
+}
