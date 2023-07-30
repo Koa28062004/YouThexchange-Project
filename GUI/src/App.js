@@ -2,41 +2,67 @@
 import './App.css';
 function Tool() { // Hàm trả về thanh điều hướng 
     return(
-        <div class="tool">
-            <div class="nav">
-                <img class="logo" alt="hi"src="logo.png"/>
-                <div class="ull">
-                    <div class="dropdown">
+        <div className="tool">
+            <div className="nav">
+                <img className="logo" alt="hi"src="logo.png"/>
+                <div className="ull">
+                    <div className="dropdown">
                         Event
-                        <div class="dropdown-content">
-                            <a href="https://www.youtube.com/">youtube</a>
+                        <div className="dropdown-content">
+                            <div className="content">
+                                <a href="https://www.youtube.com/">youtube</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="dropdown">Competition
-                        <div class="dropdown-content">
-                            <a href="https://www.youtube.com/">youtube</a>
+                    <div className="dropdown">Competition
+                        <div className="dropdown-content"> 
+                            <div className="content">
+                                <a href="https://www.youtube.com/">youtube</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="dropdown">Program
-                        <div class="dropdown-content">
-                            <a href="https://www.youtube.com/">youtube</a>
+                    <div className="dropdown">Program
+                        <div className="dropdown-content">
+                            <div className="content">
+                                <a href="https://www.youtube.com/">youtube</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="dropdown">About Us
-                        <div class="dropdown-content">
-                            <a href="https://www.youtube.com/">youtube</a>
+                    <div className="dropdown">About Us
+                        <div className="dropdown-content">
+                            <div className="content">
+                                <a href="https://www.youtube.com/">youtube</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="dropdown">Project Partners
-                        <div class="dropdown-content">
-                            <a href="https://www.youtube.com/">youtube</a>
+                    <div className="dropdown">Project Partners
+                        <div className="dropdown-content">
+                            <div className="content">
+                                <a href="https://www.youtube.com/">youtube</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="search">
-                <input class="inputt" type="search" name="" placeholder="Search..."/>
-                <button class="ser">Search</button>
+            <div className="search">
+                <input className="inputt" type="search" name="" placeholder="Search..."/>
+                <button className="ser">Search</button>
+            </div>
+        </div>
+    )
+}
+
+function Footer() {
+    return(
+        <div className="footer">
+            <div className="logo_f">
+                <img src="footer_logo.PNG" alt=""></img>
+            </div>
+            <div className="infor">
+                More
+            </div>
+            <div className="infor">
+                More
             </div>
         </div>
     )
@@ -47,47 +73,48 @@ function Homepage() {
     <div className="App">
         <h1 >HOME PAGE</h1>
         <Tool/>
-        <div class="main">
-            <div class="exchange">
-                <div class="pre">
+        <div className="main">
+            <div className="exchange">
+                <div className="pre">
                     <button className='pre_btn' >
                             pre
                     </button>
                 </div>
 
-                <div class="next">
+                <div className="next">
                     <button className='next_btn'>
                         next
                     </button>
                 </div>
             </div>
 
-            <div class="gallery">
-                <div class="slide">
+            <div className="gallery">
+                <div className="slide">
                     <img src="background.PNG" alt=""/>
                 </div>
 
-                <div class="slide">
+                <div className="slide">
                     <img src="hinh1.jpg" alt=""/>
                 </div>
 
-                <div class="slide">
+                <div className="slide">
                     <img src="hinh2.jpg" alt=""/>
                 </div>
 
-                <div class="slide">
+                <div className="slide">
                     <img src="hinh3.jpg" alt=""/>
                 </div>
 
-                <div class="slide">
+                <div className="slide">
                     <img src="background.PNG" alt=""/>
                 </div>
 
-                <div class="slide">
+                <div className="slide">
                     <img src="hinh1.jpg" alt=""/>
                 </div>
             </div>
         </div>
+        <Footer></Footer>
     </div>
   );
 }
