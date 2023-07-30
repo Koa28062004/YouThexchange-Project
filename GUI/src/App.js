@@ -1,5 +1,6 @@
 
 import './App.css';
+
 function Tool() { // Hàm trả về thanh điều hướng 
     return(
         <div className="tool">
@@ -45,7 +46,7 @@ function Tool() { // Hàm trả về thanh điều hướng
                 </div>
             </div>
             <div className="search">
-                <input className="inputt" type="search" name="" placeholder="Search..."/>
+                <input className="input" type="search" name="" placeholder="Search..."/>
                 <button className="ser">Search</button>
             </div>
         </div>
