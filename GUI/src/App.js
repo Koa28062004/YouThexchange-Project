@@ -90,7 +90,7 @@ function Homepage() {
 
             <div className="gallery">
                 <div className="slide">
-                    <img src="background.PNG" alt=""/>
+                    <img src="logo youth exchange.png" alt=""/>
                 </div>
 
                 <div className="slide">
@@ -106,13 +106,18 @@ function Homepage() {
                 </div>
 
                 <div className="slide">
-                    <img src="background.PNG" alt=""/>
+                    <img src="logo youth exchange.png" alt=""/>
                 </div>
 
                 <div className="slide">
                     <img src="hinh1.jpg" alt=""/>
                 </div>
             </div>
+        </div>
+        <div className="more_inf">
+            <button className="btn_moreinf">How to register</button>
+            <button className="btn_moreinf">Projects</button>
+            <button className="btn_moreinf">Contact</button>
         </div>
         <Footer></Footer>
     </div>

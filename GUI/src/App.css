@@ -7,6 +7,7 @@
 
 body{
   background-color: rgb(253, 177, 127);
+  width: 100%;
 }
 
 .tool{
@@ -22,18 +23,20 @@ body{
 }
 .nav{
   position: relative;
-  width: 400px;
+  width: 70%;
   height:70px;
   margin-left: 100px;
   display:flex;
   
 }
 .nav .ull{
+  width: 70%;
   display:flex;
   justify-content: space-between;
   margin-left: 200px;
 }
 .nav .dropdown{
+  width: 20%;
   color:orange;
   margin:10px 40px;
   font-size:25px;
@@ -77,10 +80,11 @@ body{
 }
 
 .search{
+  width: 30%;
   position: relative;
   display:flex;
   margin-top:5px;
-  margin-right:100px;
+  margin-left: 50px;
 }
 .inputt{
   width: 200px;
@@ -218,13 +222,36 @@ h1{
   opacity: 1;
 }
 
+.more_inf{
+  position:relative;
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-around;
+  margin:auto;
+  margin-top:50px;
+  border-radius: 10px;
+}
+.btn_moreinf{
+  height:40px;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: #c3c3c3;
+}
+.btn_moreinf:hover{
+  background-image: linear-gradient(to right,pink, rgb(253, 23, 23));
+}
 .footer{
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
   margin-top: 10%;
   width: 100%;
   background-color: rgb(84, 12, 12);
   height: auto;
 }
 .logo_f{
+  margin-left: -50px;
   width: 20%;
 }
 
@@ -232,4 +259,16 @@ img{
   width: 100%;
   object-fit:fill;
   object-position: center;
+}
+
+.footer .infor {
+  height:150px;
+  width: 30%;
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 200px;
+  font-size: 30px;
 }
