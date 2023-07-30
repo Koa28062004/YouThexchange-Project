@@ -5,7 +5,7 @@ function Tool() { // Hàm trả về thanh điều hướng
     return(
         <div className="tool">
             <div className="nav">
-                <img className="logo" alt="hi"src="logo.png"/>
+                <img className="logo" alt=""src={require('./imgs/logo.png')}/>
                 <div className="ull">
                     <div className="dropdown">
                         Event
@@ -57,7 +57,7 @@ function Footer() {
     return(
         <div className="footer">
             <div className="logo_f">
-                <img src="footer_logo.PNG" alt=""></img>
+                <img src={require('./imgs/footer_logo.PNG')} alt=""></img>
             </div>
             <div className="infor">
                 More
