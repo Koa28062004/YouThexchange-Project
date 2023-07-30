@@ -1,6 +1,6 @@
 
 import './App.css';
-function Tool() {
+function Tool() { // Hàm trả về thanh điều hướng 
     return(
         <div class="tool">
             <div class="nav">
@@ -41,7 +41,8 @@ function Tool() {
         </div>
     )
 }
-function Homepage() {
+
+function Homepage() { 
   return (
     <div className="App">
        <h1 >HOME PAGE</h1>
