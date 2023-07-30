@@ -45,43 +45,50 @@ function Tool() { // Hàm trả về thanh điều hướng
 function Homepage() { 
   return (
     <div className="App">
-       <h1 >HOME PAGE</h1>
+        <h1 >HOME PAGE</h1>
         <Tool/>
         <div class="main">
             <div class="exchange">
                 <div class="pre">
-                <button className='pre_btn' >
-                        pre
-                </button>
+                    <button className='pre_btn' >
+                            pre
+                    </button>
                 </div>
+
                 <div class="next">
                     <button className='next_btn'>
                         next
                     </button>
                 </div>
             </div>
+
             <div class="gallery">
-            <div class="slide">
+                <div class="slide">
                     <img src="background.PNG" alt=""/>
                 </div>
+
                 <div class="slide">
                     <img src="hinh1.jpg" alt=""/>
                 </div>
+
                 <div class="slide">
                     <img src="hinh2.jpg" alt=""/>
                 </div>
+
                 <div class="slide">
                     <img src="hinh3.jpg" alt=""/>
                 </div>
+
                 <div class="slide">
                     <img src="background.PNG" alt=""/>
                 </div>
+
                 <div class="slide">
                     <img src="hinh1.jpg" alt=""/>
                 </div>
             </div>
         </div>
-        </div>
+    </div>
   );
 }
 
