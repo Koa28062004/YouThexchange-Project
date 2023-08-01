@@ -22,41 +22,49 @@ body{
   background-color: grey;
 }
 .nav{
+  margin-left: 6%;
   position: relative;
   width: 70%;
-  height:70px;
-  margin-left: 100px;
+  height:100%;
   display:flex;
+  justify-content: space-between;
   
 }
 .nav .ull{
   width: 70%;
   display:flex;
   justify-content: space-between;
-  margin-left: 200px;
 }
-.nav .dropdown{
+.dropdown{
   width: 20%;
   color:rgb(161, 204, 209);
-  margin:10px 40px;
-  font-size:25px;
+  font-size:130%;
   text-align: center;
+  align-items: center;
+  padding-top: 30px;
   position: relative;
   display: inline-block;
 }
 .dropdown-content{
   position: absolute;
-  display: none;
   background-color: rgb(216, 216, 216);
   color:wheat;
   width: 200px;
   height:300px;
   box-shadow: 7px 3px rgba(0, 0, 0, 0.071) inset;
   z-index: 5;
+  max-height: 0;
   text-align: left;
+  transition: max-height 0.5s ease,
+              opacity 0.5s;
+  opacity: 0;
 }
+
 .dropdown:hover .dropdown-content {
-  display: block;
+  opacity: 1;
+  margin-top: 20%;
+  max-height: 200px; 
+
 }
 
 
@@ -73,22 +81,22 @@ body{
 }
 
 .logo{
-  height: 90px;
-  width: 180px;
-  margin-top: -10px;
-  margin-left: 0px;
+  height: 100%;
+  width: 25%;
+
 }
 
 .search{
-  width: 30%;
+  width: 20%;
+  height:50%;
   position: relative;
   display:flex;
-  margin-top:5px;
-  margin-left: 50px;
+  justify-content: center;
+  margin-right: 3%;
 }
 .input{
-  width: 200px;
-  height:40px;
+  width: 80%;
+  height:100%;
   border:2px solid pink;
   border-right-style: none;
   border-top-left-radius: 20px;
@@ -103,8 +111,8 @@ h1{
   margin:0;
   background-color: pink;
   font-size:15px;
-  width:70px;
-  height:40px;
+  width:20%;
+  height:100%;
   border-top-right-radius:20px ;
   border-bottom-right-radius: 20px;
 }
@@ -116,9 +124,9 @@ hr{
 
 .dropdown:hover{
   background-color: rgba(0, 0, 0, 0.486);
-  height:60px;
-  padding:5px;
-  text-align: center;
+  border-left: 1px solid white;
+  border-right:1px solid white;
+  color:greenyellow
 }
 .b{
   display: flex;
