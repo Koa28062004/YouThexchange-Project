@@ -1,10 +1,60 @@
 import React from "react";
+import SetUpTool from "./Set_up_tool"
+const programData = [
+  { Members: ["Member 1", "Member 2"], },
+  { Pilot_Program: ["Program 1","Program 2"]},
+  { Project: ["Project 1","Project 2"]}
+];
 
-function DropdownContent() {
+function DropdownContent({ title }) {
+  if(title==="Event")
   return (
     <div className="dropdown-content">
       <div className="content">
-        <a href="https://www.youtube.com/">youtube</a>
+        <a href="https://www.youtube.com/" title="">Youtube</a>
+      </div>
+    </div>
+  );
+  if(title==="Competition")
+  return (
+    <div className="dropdown-content">
+      <div className="content">
+        <a href="https://www.youtube.com/" title="">Youtube</a>
+      </div>
+    </div>
+  );
+  if(title==="Program")
+  return (
+    <div className="dropdown-content">
+          {programData.map((program, index) => (
+            <div key={index}>
+              {Object.keys(program).map((key) => (
+                <div key={key} className="i_dropdown">
+                  {key.replace("_"," ")}
+                  <div className="i_dropdown-content">
+                    {program[key].map((item, itemIndex) => (
+                        <div key={itemIndex} className="i_content">{item}</div>
+                      ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ))}
+      </div>
+  );
+  if(title==="About Us")
+  return (
+    <div className="dropdown-content">
+      <div className="content">
+        <a href="https://www.youtube.com/" title="">Youtube</a>
+      </div>
+    </div>
+  );
+  if(title==="Project Partners")
+  return (
+    <div className="dropdown-content">
+      <div className="content">
+        <a href="https://www.youtube.com/" title="">Youtube</a>
       </div>
     </div>
   );
@@ -14,7 +64,7 @@ function Dropdown({ title }) {
   return (
     <div className="dropdown">
       {title}
-      <DropdownContent />
+      <DropdownContent title={title}/>
     </div>
   );
 }
@@ -48,6 +98,7 @@ function Tool() {
     <div className="tool">
       <Navigation />
       <Search />
+      <SetUpTool />
     </div>
   );
 }
