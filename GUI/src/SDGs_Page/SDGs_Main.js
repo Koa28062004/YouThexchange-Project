@@ -1,10 +1,10 @@
-import React from 'react';
-import Header from './SDGs_Header/SDGs_Header';
-import GoalBox from './SDGs_GoalBox/SDGs_GoalBox';
-import Footer from './SDGs_Footer/SDG_Footer';
+import React from "react";
+import Header from "./SDGs_Header/SDGs_Header";
+import GoalBox from "./SDGs_GoalBox/SDGs_GoalBox";
+import Footer from "./SDGs_Footer/SDG_Footer";
 import "./SDGs.css";
 
-const Main = () => {
+const Sdgs = () => {
   return (
     <div>
       <Header />
@@ -20,11 +20,10 @@ const Main = () => {
           publications="48"
           actions="1363"
         />
-        {/* Repeat GoalBox for other goals */}
       </div>
       <Footer />
     </div>
   );
 };
 
-export default Main;
+export default Sdgs;

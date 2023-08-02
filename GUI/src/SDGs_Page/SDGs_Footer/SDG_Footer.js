@@ -19,7 +19,6 @@ const Footer = () => {
               <li>
                 <a href="#">Copyright</a>
               </li>
-              {/* Add other footer links here */}
             </ul>
           </div>
 
@@ -29,7 +28,6 @@ const Footer = () => {
               <a href="https://www.facebook.com/profile.php?id=100094353529762&mibextid=LQQJ4d">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              {/* Add other social links here */}
             </div>
           </div>
         </div>

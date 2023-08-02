@@ -16,7 +16,6 @@ const Header = () => {
             <span className="larger">169</span> <br />
             <span className="smaller">Targets</span>
           </h2>
-          {/* Add other header details here */}
         </div>
       </div>
     </div>

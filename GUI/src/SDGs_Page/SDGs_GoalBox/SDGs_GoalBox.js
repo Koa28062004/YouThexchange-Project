@@ -37,7 +37,6 @@ const GoalBox = (props) => {
             <br />
             <span className="small-text">Events</span>
           </h3>
-          {/* Add other details here */}
         </div>
         <a href="#" className="btn">
           <button>More info</button>

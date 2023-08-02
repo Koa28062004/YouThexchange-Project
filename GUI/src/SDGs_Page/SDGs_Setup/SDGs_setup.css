@@ -1,7 +1,8 @@
 .SDGS_logo {
-  background-image: url("../../Images/logoSDGs.jpg");
+  background-image: url("../../Images/logoSDGs.png");
   background-size: contain;
   border-radius: 50%;
+  max-width: 100%;
   width: 80px;
   height: 80px;
   display: flex;
