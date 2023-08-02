@@ -1,7 +1,8 @@
 import "../App.css";
-import Tool from "./Tool/Tool";
-import Footer from "./Footer/Footer";
-import Slide from "./Slide/Slide";
+import Tool from "./Home_Tool/Tool";
+import Footer from "./Home_Footer/Footer";
+import Slide from "./Home_Slide/Slide";
+
 function Homepage() {
   return (
     <div className="App">
