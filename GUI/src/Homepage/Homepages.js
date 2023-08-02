@@ -2,7 +2,7 @@ import "../App.css";
 import Tool from "./Home_Tool/Tool";
 import Footer from "./Home_Footer/Footer";
 import Slide from "./Home_Slide/Slide";
-
+import Run from "./Set_up_Home";
 function Homepage() {
   return (
     <div className="App">
@@ -25,6 +25,7 @@ function Homepage() {
         <button className="btn_moreinf">Contact</button>
       </div>
       <Footer />
+      <Run />
     </div>
   );
 }
