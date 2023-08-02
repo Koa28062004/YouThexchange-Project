@@ -2,6 +2,7 @@ import "../App.css";
 import Tool from "./Tool/Tool";
 import Footer from "./Footer/Footer";
 import Slide from "./Slide/Slide";
+import "./Homepage.css";
 
 function Homepage() {
   return (
