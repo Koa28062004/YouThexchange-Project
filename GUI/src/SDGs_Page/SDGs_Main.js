@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './Header';
-import GoalBox from './GoalBox';
-import Footer from './SDGs_Footer';
+import Header from './SDGs_Header/SDGs_Header';
+import GoalBox from './SDGs_GoalBox/SDGs_GoalBox';
+import Footer from './SDGs_Footer/SDG_Footer';
 import "./SDGs.css";
 
 const Main = () => {
