@@ -1,61 +1,65 @@
 import React from "react";
 import SetUpTool from "./Set_up_tool"
+
+
 const programData = [
-  { Members: ["Member 1", "Member 2"], },
-  { Pilot_Program: ["Program 1","Program 2"]},
-  { Project: ["Project 1","Project 2"]}
+  {
+    name: "Members",
+    details: ["Member 1", "Member 2"],
+  },
+  {
+    name: "Pilot Program",
+    details: ["Program 1", "Program 2"],
+  },
+  {
+    name: "Project",
+    details: ["Project 1", "Project 2"],
+  },
 ];
+
 
 function DropdownContent({ title }) {
   if(title==="Event")
   return (
     <div className="dropdown-content">
-      <div className="content">
         <a href="https://www.youtube.com/" title="">Youtube</a>
-      </div>
     </div>
   );
   if(title==="Competition")
   return (
     <div className="dropdown-content">
-      <div className="content">
         <a href="https://www.youtube.com/" title="">Youtube</a>
-      </div>
     </div>
   );
   if(title==="Program")
   return (
     <div className="dropdown-content">
-          {programData.map((program, index) => (
-            <div key={index}>
-              {Object.keys(program).map((key) => (
-                <div key={key} className="i_dropdown">
-                  {key.replace("_"," ")}
-                  <div className="i_dropdown-content">
-                    {program[key].map((item, itemIndex) => (
-                        <div key={itemIndex} className="i_content">{item}</div>
-                      ))}
-                  </div>
-                </div>
+      {programData.map((program, index) => (
+        <div key={index}>
+          <div className="i_dropdown">
+            {program.name}
+            <div className="i_dropdown-content">
+              {program.details.map((item, itemIndex) => (
+              <div key={itemIndex} className="i_content">
+                {item}
+              </div>
               ))}
             </div>
-          ))}
-      </div>
+          </div>
+        </div>
+      ))}
+    </div>
   );
   if(title==="About Us")
   return (
     <div className="dropdown-content">
-      <div className="content">
         <a href="https://www.youtube.com/" title="">Youtube</a>
-      </div>
     </div>
   );
   if(title==="Project Partners")
   return (
     <div className="dropdown-content">
-      <div className="content">
         <a href="https://www.youtube.com/" title="">Youtube</a>
-      </div>
     </div>
   );
 }
