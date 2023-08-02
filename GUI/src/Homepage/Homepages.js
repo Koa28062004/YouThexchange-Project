@@ -3,11 +3,13 @@ import Tool from "./Home_Tool/Tool";
 import Footer from "./Home_Footer/Footer";
 import Slide from "./Home_Slide/Slide";
 import Run from "./Set_up_Home";
+import SDGs_logo from "../SDGs_Set_up/SDGs_logo";
 function Homepage() {
   return (
     <div className="App">
       <h1>HOME PAGE</h1>
       <Tool />
+      <SDGs_logo></SDGs_logo>
       <div className="main">
         <div className="exchange">
           <div className="pre">
