@@ -1,0 +1,31 @@
+.footer {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(84, 12, 12);
+    height: auto;
+  }
+  .logo_f {
+    margin-top: 10px;
+    margin-left: -50px;
+    width: 20%;
+  }
+  
+  img {
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+  }
+  
+  .footer .infor {
+    height: 150px;
+    width: 30%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 200px;
+    font-size: 30px;
+  }

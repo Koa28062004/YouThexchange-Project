@@ -1,5 +1,6 @@
 import React from "react";
 import SetUpTool from "./Set_up_tool";
+import "./Tool.css"
 
 const programData = [
   {
