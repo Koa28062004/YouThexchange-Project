@@ -6,7 +6,7 @@
   }
   
   body {
-    background-image: url(../Images/BackgroundHomepage.png);
+    background-image: url(./Images/BackgroundHomepage.png);
     max-width: 100%;
     max-height: 80%;
     /* width: 100%; */
