@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="footer-main">
         <div className="row">
           <div className="imglogo">
-            <img src="../Pictures/SUGAR_Vietnamlogo.png" alt="" />
-            <img src="../Pictures/Youth_exchangelogo.png" alt="" />
+            <img src={require("../Pictures/SUGAR_Vietnamlogo.png")} alt="" />
+            <img src={require("../Pictures/Youth_exchangelogo.png")} alt="" />
           </div>
           <div className="footer-col">
             <h4>GET HELP</h4>
