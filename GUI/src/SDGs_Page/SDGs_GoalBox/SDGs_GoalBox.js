@@ -4,9 +4,9 @@ const GoalBox = ({ goalNumber, goalDescription, targets, events, publications, a
   return (
     <div className="box">
       <div className="imgBox">
-        <img src={`../Covers/cover-${goalNumber}.jpg`} alt="" className="cover-image" />
+        <img src={require (`../Covers/cover-${goalNumber}.jpg`)} alt="" className="cover-image" />
         <div className="sdg-icon-container">
-          <img src={`../Pictures/E_SDG_Icons-${goalNumber}.jpg`} alt="" className="sdg-icon" />
+          <img src={require (`../Pictures/E_SDG_Icons-${goalNumber}.jpg`)} alt="" className="sdg-icon" />
         </div>
       </div>
       <div className={`content c${goalNumber}`}>
