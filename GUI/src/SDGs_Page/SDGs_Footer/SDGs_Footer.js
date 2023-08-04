@@ -1,5 +1,5 @@
 import React from 'react';
-import "../SDGs.css";
+import "../SDGs.css"
 
 const Footer = () => {
   return (
@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="footer-main">
         <div className="row">
           <div className="imglogo">
-            <img src="Pictures/SUGAR_Vietnamlogo.png" alt="" />
-            <img src="Pictures/Youth_exchangelogo.png" alt="" />
+            <img src="../Pictures/SUGAR_Vietnamlogo.png" alt="" />
+            <img src="../Pictures/Youth_exchangelogo.png" alt="" />
           </div>
           <div className="footer-col">
             <h4>GET HELP</h4>
@@ -19,6 +19,12 @@ const Footer = () => {
               <li>
                 <a href="#">Copyright</a>
               </li>
+              <li>
+                <a href="#">Fraud Alert</a>
+              </li>
+              <li>
+                <a href="#">Privacy Notice</a>
+              </li>
             </ul>
           </div>
 
@@ -27,6 +33,9 @@ const Footer = () => {
             <div className="social-links">
               <a href="https://www.facebook.com/profile.php?id=100094353529762&mibextid=LQQJ4d">
                 <i className="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/youthexchange.project/">
+                <i className="fab fa-instagram"></i>
               </a>
             </div>
           </div>

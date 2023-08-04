@@ -1,4 +1,4 @@
-import "../App.css";
+import "./Homepages.css";
 import Tool from "./Home_Tool/Tool";
 import Footer from "./Home_Footer/Footer";
 import Slide from "./Home_Slide/Slide";

@@ -1,6 +1,5 @@
 import React from "react";
-import SetUpTool from "./Set_up_tool"
-
+import SetUpTool from "./Set_up_tool";
 
 const programData = [
   {
@@ -17,58 +16,65 @@ const programData = [
   },
 ];
 
-
 function DropdownContent({ title }) {
-  if(title==="Event")
-  return (
-    <div className="dropdown-content">
-        <a href="https://www.youtube.com/" title="">Youtube</a>
-    </div>
-  );
-  if(title==="Competition")
-  return (
-    <div className="dropdown-content">
-        <a href="https://www.youtube.com/" title="">Youtube</a>
-    </div>
-  );
-  if(title==="Program")
-  return (
-    <div className="dropdown-content">
-      {programData.map((program, index) => (
-        <div key={index}>
-          <div className="i_dropdown">
-            {program.name}
-            <div className="i_dropdown-content">
-              {program.details.map((item, itemIndex) => (
-              <div key={itemIndex} className="i_content">
-                {item}
+  if (title === "Event")
+    return (
+      <div className="dropdown-content">
+        <a href="https://www.youtube.com/" title="">
+          Youtube
+        </a>
+      </div>
+    );
+  if (title === "Competition")
+    return (
+      <div className="dropdown-content">
+        <a href="https://www.youtube.com/" title="">
+          Youtube
+        </a>
+      </div>
+    );
+  if (title === "Program")
+    return (
+      <div className="dropdown-content">
+        {programData.map((program, index) => (
+          <div key={index}>
+            <div className="i_dropdown">
+              {program.name}
+              <div className="i_dropdown-content">
+                {program.details.map((item, itemIndex) => (
+                  <div key={itemIndex} className="i_content">
+                    {item}
+                  </div>
+                ))}
               </div>
-              ))}
             </div>
           </div>
-        </div>
-      ))}
-    </div>
-  );
-  if(title==="About Us")
-  return (
-    <div className="dropdown-content">
-        <a href="https://www.youtube.com/" title="">Youtube</a>
-    </div>
-  );
-  if(title==="Project Partners")
-  return (
-    <div className="dropdown-content">
-        <a href="https://www.youtube.com/" title="">Youtube</a>
-    </div>
-  );
+        ))}
+      </div>
+    );
+  if (title === "About Us")
+    return (
+      <div className="dropdown-content">
+        <a href="https://www.youtube.com/" title="">
+          Youtube
+        </a>
+      </div>
+    );
+  if (title === "Project Partners")
+    return (
+      <div className="dropdown-content">
+        <a href="https://www.youtube.com/" title="">
+          Youtube
+        </a>
+      </div>
+    );
 }
 
 function Dropdown({ title }) {
   return (
     <div className="dropdown">
       {title}
-      <DropdownContent title={title}/>
+      <DropdownContent title={title} />
     </div>
   );
 }
@@ -76,7 +82,7 @@ function Dropdown({ title }) {
 function Navigation() {
   return (
     <div className="nav">
-      <img className="logo" alt="hi" src={require("../../Images/logo.png")} />
+      <img className="logo" alt="hi" src={require("../Images/logo.png")} />
       <div className="ull">
         <Dropdown title="Event" />
         <Dropdown title="Competition" />
