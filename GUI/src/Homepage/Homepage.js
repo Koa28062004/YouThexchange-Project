@@ -11,21 +11,23 @@ function Homepage() {
       <h1>HOME PAGE</h1>
       <Tool />
       <SDGs_logo></SDGs_logo>
-      <div className="main">
-        <div className="exchange">
-          <div className="pre">
-            <button className="pre_btn">pre</button>
+      <div className="main_homepage">
+        <div className="main">
+          <div className="exchange">
+            <div className="pre">
+              <button className="pre_btn">pre</button>
+            </div>
+            <div className="next">
+              <button className="next_btn">next</button>
+            </div>
           </div>
-          <div className="next">
-            <button className="next_btn">next</button>
-          </div>
+          <Slide />
         </div>
-        <Slide />
-      </div>
-      <div className="more_inf">
-        <button className="btn_moreinf">How to register</button>
-        <button className="btn_moreinf">Projects</button>
-        <button className="btn_moreinf">Contact</button>
+        <div className="more_inf">
+          <button className="btn_moreinf">How to register</button>
+          <button className="btn_moreinf">Projects</button>
+          <button className="btn_moreinf">Contact</button>
+        </div>
       </div>
       <Footer />
       <Run />
