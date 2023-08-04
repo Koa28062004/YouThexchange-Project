@@ -1,29 +1,16 @@
 import React from "react";
-import "../SDGs.css";
 
-const GoalBox = (props) => {
-  const {
-    goalNumber,
-    goalImage,
-    iconImage,
-    goalTitle,
-    goalDescription,
-    targets,
-    events,
-    publications,
-    actions,
-  } = props;
-
+const GoalBox = ({ goalNumber, goalDescription, targets, events, publications, actions }) => {
   return (
     <div className="box">
       <div className="imgBox">
-        <img src={goalImage} alt="" className="cover-image" />
+        <img src={`../Covers/cover-${goalNumber}.jpg`} alt="" className="cover-image" />
         <div className="sdg-icon-container">
-          <img src={iconImage} alt="" className="sdg-icon" />
+          <img src={`../Pictures/E_SDG_Icons-${goalNumber}.jpg`} alt="" className="sdg-icon" />
         </div>
       </div>
       <div className={`content c${goalNumber}`}>
-        <h2 className="goal">{goalTitle}</h2>
+        <h2 className="goal">Goal {goalNumber}</h2>
         <p>{goalDescription}</p>
         <div className="horizontal-line"></div>
         <div className="details">
@@ -36,6 +23,16 @@ const GoalBox = (props) => {
             <span>{events}</span>
             <br />
             <span className="small-text">Events</span>
+          </h3>
+          <h3>
+            <span>{publications}</span>
+            <br />
+            <span className="small-text">Publications</span>
+          </h3>
+          <h3>
+            <span>{actions}</span>
+            <br />
+            <span className="small-text">Actions</span>
           </h3>
         </div>
         <a href="#" className="btn">

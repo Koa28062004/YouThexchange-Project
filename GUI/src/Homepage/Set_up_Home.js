@@ -7,7 +7,7 @@ function Run() {
     let next = document.querySelector(".next_btn");
     let pre = document.querySelector(".pre_btn");
     let timer;
-    let slides = document.querySelectorAll(".slide");
+    let slides = document.querySelectorAll(".slide"); // value is never read ???
 
     function slideImage(direction) {
       currentIndex += direction;
