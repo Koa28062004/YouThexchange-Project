@@ -1,0 +1,40 @@
+.more_inf {
+    position: relative;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+  .btn_moreinf {
+    height: 40px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: rgb(124, 157, 150);
+  }
+  .btn_moreinf:hover {
+    background-image: linear-gradient(pink, rgb(161, 204, 209));
+  }
+
+.btn_moreinf .contact{
+    background-color: rgb(28, 28, 32);
+    display: none;
+    position: absolute;
+    text-align: left;
+    width: 200px;
+    height: 400px;
+}
+.contact a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(183, 183, 183, 0.2);
+    line-height: 40px;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+}
+.btn_moreinf:hover .contact{
+    display: block;
+}

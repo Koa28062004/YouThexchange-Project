@@ -125,22 +125,4 @@
     opacity: 1;
   }
   
-  .more_inf {
-    position: relative;
-    display: flex;
-    width: 60%;
-    align-items: center;
-    justify-content: space-around;
-    margin: auto;
-    margin-top: 50px;
-    border-radius: 10px;
-  }
-  .btn_moreinf {
-    height: 40px;
-    font-size: 30px;
-    border-radius: 10px;
-    background-color: rgb(124, 157, 150);
-  }
-  .btn_moreinf:hover {
-    background-image: linear-gradient(pink, rgb(161, 204, 209));
-  }
+ 
