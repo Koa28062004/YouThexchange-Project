@@ -1,5 +1,5 @@
 import "./Homepage.css";
-import Tool from "./Home_Tool/Tool";
+import Tool from "../Tool/Tool";
 import Footer from "../Footer/Footer";
 import Slide from "./Home_Slide/Slide";
 import Run from "./Set_up_Home";

@@ -5,15 +5,15 @@ import "./Tool.css"
 const programData = [
   {
     name: "Members",
-    details: ["Member 1", "Member 2"],
+    details: ["Member 1", "Member 2","More..."],
   },
   {
     name: "Pilot Program",
-    details: ["Program 1", "Program 2"],
+    details: ["Program 1", "Program 2","More..."],
   },
   {
     name: "Project",
-    details: ["Project 1", "Project 2"],
+    details: ["Project 1", "Project 2","More..."],
   },
 ];
 
@@ -40,7 +40,7 @@ function DropdownContent({ title }) {
         {programData.map((program, index) => (
           <div key={index}>
             <div className="i_dropdown">
-              {program.name}
+              <div className="i_dropdownname">{program.name}</div>
               <div className="i_dropdown-content">
                 {program.details.map((item, itemIndex) => (
                   <div key={itemIndex} className="i_content">
@@ -83,7 +83,7 @@ function Dropdown({ title }) {
 function Navigation() {
   return (
     <div className="nav">
-      <img className="logo" alt="hi" src={require("../Images/logo.png")} />
+      <img className="logo" alt="" src={require("../Homepage/Images/logo.png")} />
       <div className="ull">
         <Dropdown title="Event" />
         <Dropdown title="Competition" />
