@@ -19,22 +19,52 @@
   }
 
 .btn_moreinf .contact{
-    background-color: rgb(28, 28, 32);
+    background-color: #24262b;
     display: none;
     position: absolute;
-    text-align: left;
-    width: 200px;
-    height: 400px;
+    align-items: center;
+    flex-direction: column;
+    width:200px;
+    height: auto;
 }
-.contact a{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(183, 183, 183, 0.2);
-    line-height: 40px;
-    border-radius: 50px;
-    transition: all 0.5s ease;
+@keyframes hover-effect {
+  0% {
+    opacity: 1;
+    left:0;
+  }
+  100% {
+    opacity: 1;
+   left:50px 
+  }
+}
+.contact a {
+  margin-top: 10px;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(183, 183, 183, 0.2);
+  line-height: 40px;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  position: relative; 
+}
+
+.contact a .mess {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  color: whitesmoke;
+  transition: all 0.5s ;
+}
+
+.contact a:hover .mess {
+  left: 40px;
+  animation: hover-effect 0.3s forwards; 
+}
+.contact a:hover{
+  background-color: #f62682;
+  transform: translateX(-60px);
 }
 .btn_moreinf:hover .contact{
-    display: block;
+    display: flex;
 }
