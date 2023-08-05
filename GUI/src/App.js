@@ -7,8 +7,8 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-        <Route path="/meow" element={<Homepage />} />
-        <Route path="SDGs" element={<Main />} />
+        <Route path="/" element={<Homepage />} />
+        <Route path="/SDGs" element={<Main />} />
     </Routes>
   </BrowserRouter>
   );
