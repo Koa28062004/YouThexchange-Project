@@ -1,5 +1,5 @@
 import React from "react";
-import Tool from "../Homepage/Home_Tool/Tool";
+import Tool from "../Tool/Tool";
 
 
 function About_us(){
@@ -8,7 +8,7 @@ function About_us(){
             <h1>About Us</h1>
             <Tool></Tool>
             <div>
-                <img src={require("../Images/logo_youth_exchange.png")} alt=""></img>
+                <img src={require("../Homepage/Images/logo_youth_exchange.png")} alt=""></img>
                 <span>Project-Based Cultural Exchange Program</span>
             </div>
                 
