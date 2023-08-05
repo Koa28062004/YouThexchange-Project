@@ -1,14 +1,16 @@
 import React from "react";
+import { BrowserRouter , Routes, Route, Link, NavLink } from "react-router-dom";
 import "./App.css";
 import Homepage from "./Homepage/Homepage";
-//import Main from "./SDGs_Page/SDGs_Main"
-
+import Main from "./SDGs_Page/SDGs_Main"
 function App() {
   return (
-    <div>
-      <Homepage />
-     {/* <Main /> */}
-    </div>
+    <BrowserRouter>
+    <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/SDGs" element={<Main />} />
+    </Routes>
+  </BrowserRouter>
   );
 }
 export default App;
