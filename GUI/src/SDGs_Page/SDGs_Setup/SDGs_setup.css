@@ -11,4 +11,5 @@
   position: fixed;
   margin-left: 90%;
   z-index: 100;
+  cursor: pointer;
 }

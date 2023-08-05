@@ -1,6 +1,6 @@
 import "./Homepage.css";
 import Tool from "./Home_Tool/Tool";
-import Footer from "./Home_Footer/Footer";
+import Footer from "../Footer/Footer";
 import Slide from "./Home_Slide/Slide";
 import Run from "./Set_up_Home";
 import SDGs_logo from "../SDGs_Page/SDGs_Setup/SDGs_logo";

@@ -1,5 +1,5 @@
 import React from 'react';
-import "../SDGs.css"
+import "./Footer.css"
 
 const Footer = () => {
   return (
@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="footer-main">
         <div className="row">
           <div className="imglogo">
-            <img src={require("../Pictures/SUGAR_Vietnamlogo.png")} alt="" />
-            <img src={require("../Pictures/Youth_exchangelogo.png")} alt="" />
+            <img src={require("../SDGs_Page/Pictures/SUGAR_Vietnamlogo.png")} alt="" />
+            <img src={require("../SDGs_Page/Pictures/Youth_exchangelogo.png")} alt="" />
           </div>
           <div className="footer-col">
             <h4>GET HELP</h4>

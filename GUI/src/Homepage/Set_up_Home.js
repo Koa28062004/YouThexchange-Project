@@ -3,12 +3,12 @@ function Run() {
   useEffect(() => {
     const gallery = document.querySelector(".gallery");
     let currentIndex = 0;
-    let maxIndex = 5; // Số lượng ảnh trong dãy (từ 0 đến 5)
+     // Số lượng ảnh trong dãy (từ 0 đến 5)
     let next = document.querySelector(".next_btn");
     let pre = document.querySelector(".pre_btn");
     let timer;
     let slides = document.querySelectorAll(".slide"); // value is never read ???
-
+    let maxIndex = slides.length-1;
     function slideImage(direction) {
       currentIndex += direction;
       var translateValue = -currentIndex * (100 / (maxIndex + 1));

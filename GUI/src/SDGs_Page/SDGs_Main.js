@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./SDGs_Header/SDGs_Header";
 import GoalBox from "./SDGs_GoalBox/SDGs_GoalBox";
-import Footer from "./SDGs_Footer/SDGs_Footer";
+import Footer from "../Footer/Footer";
 import SpecialBox from "./SDGs_SpecialBox/SDGs_SpecialBox";
 import "./SDGs.css";
 
