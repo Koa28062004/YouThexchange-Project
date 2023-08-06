@@ -24,15 +24,15 @@ const programData = [
     name: "Pilot Program",
     details: [
       {
-        name: "Program 1",
+        name: "Subtopic 1",
         link:"#"
       }, 
       {
-        name:"Program 2",
+        name:"Subtopic 2",
         link:"#"
       },
       {
-        name:"More...",
+        name:"Subtopic 3",
         link:"#"
       }
     ],
@@ -92,6 +92,12 @@ function DropdownContent({ title }) {
         ))}
       </div>
     );
+  if (title === "About Us")
+    return(
+      <div className="dropdown-content">
+        <Link to="/About_us" >About Us</Link>
+      </div>
+    );
   if (title === "Project Partners")
     return (
       <div className="dropdown-content">
@@ -119,7 +125,7 @@ function Navigation() {
         <Dropdown title="Event" />
         <Dropdown title="Competition" />
         <Dropdown title="Program" />
-        <Link to="/About_us" className="dropdown">About Us</Link>
+        <Dropdown title="About Us" />
         <Dropdown title="Project Partners" />
       </div>
     </div>
