@@ -1,6 +1,13 @@
 import React from "react";
 import "./More_in4.css";
-
+const Project = [
+  { 
+    mess: "Videos",
+    class: "videos",
+    link: "#",
+    idclass:"fa-regular fa-circle-play"
+  }
+]
 const Contact = [
   {
     mess: "Facebook",
@@ -23,7 +30,12 @@ function More() {
         <button className="btn_moreinf">
             Projects
             <div className="Project">
-            <i class="fa-regular fa-circle-play"></i> Videos
+            {Project.map((item) => (
+                <a href={item.link} className={item.class}>
+                    <i className={item.idclass} ></i>
+                <span className="mess">{item.mess}</span>
+                </a>
+            ))}
             </div>
         </button>
         <button className="btn_moreinf">
