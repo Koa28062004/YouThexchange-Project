@@ -1,7 +1,7 @@
 import React from "react";
 import SetUpTool from "./Set_up_tool";
 import "./Tool.css"
-
+import { Link } from "react-router-dom";
 const programData = [
   {
     name: "Members",
@@ -53,14 +53,6 @@ function DropdownContent({ title }) {
         ))}
       </div>
     );
-  if (title === "About Us")
-    return (
-      <div className="dropdown-content">
-        <a href="https://www.youtube.com/" title="">
-          Youtube
-        </a>
-      </div>
-    );
   if (title === "Project Partners")
     return (
       <div className="dropdown-content">
@@ -88,7 +80,7 @@ function Navigation() {
         <Dropdown title="Event" />
         <Dropdown title="Competition" />
         <Dropdown title="Program" />
-        <Dropdown title="About Us" />
+        <Link to="/About_us" className="dropdown">About Us</Link>
         <Dropdown title="Project Partners" />
       </div>
     </div>

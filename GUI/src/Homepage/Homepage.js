@@ -16,10 +16,10 @@ function Homepage() {
         <div className="main">
           <div className="exchange">
             <div className="pre">
-              <button className="pre_btn">pre</button>
+              <button className="pre_btn"><i class="fa-solid fa-chevron-left"></i></button>
             </div>
             <div className="next">
-              <button className="next_btn">next</button>
+              <button className="next_btn"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
           </div>
           <Slide />
