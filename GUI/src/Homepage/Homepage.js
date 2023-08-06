@@ -8,7 +8,7 @@ import More from "./Home_Information/More_in4"
 import {  Link } from "react-router-dom";
 function Homepage() {
   return (
-    <div className="App">
+    <div className="body_homepage">
       <h1>HOME PAGE</h1>
       <Tool />
       <Link to="/SDGs"><SDGs_logo></SDGs_logo></Link>

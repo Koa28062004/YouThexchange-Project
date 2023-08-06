@@ -75,7 +75,7 @@ function Dropdown({ title }) {
 function Navigation() {
   return (
     <div className="nav">
-      <img className="logo" alt="" src={require("../Homepage/Images/logo.png")} />
+      <Link to="/" className="logo"><img  alt="" src={require("../Homepage/Images/logo.png")} /></Link>
       <div className="ull">
         <Dropdown title="Event" />
         <Dropdown title="Competition" />

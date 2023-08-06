@@ -5,26 +5,30 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: white;
+.body_About{
+    background-color: rgb(250, 240, 215);
     width: 100%;
+}
+.body_About h1{
+    text-align: center;
 }
 .About_us{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
 }
 .About_us_main{
     width: 80%;
-    border-left: 5px solid orangered;
-    border-right: 5px solid orangered;
+    border: 5px solid orangered;
     display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
     flex-direction: column;
     align-items: center;
 }
 .head_about_us{
+    margin-top: 10px;
     width: 100%;
     display:flex;
     flex-direction: column;
@@ -43,15 +47,37 @@ body{
 }
 .content_about_us{
     position: relative;
-    width: 70%;
-    border: 1px solid black;
+    width: 80%;
     margin-top: 50px;
-    font-size: 20px;
+    font-size: 120%;
+    margin-bottom: 100px;
 }
 .content_about_us h4{
-    color:rgb(107, 74, 12);
+    color:rgb(5, 117, 125);
     padding-left: 5%;
+    margin-top: 30px;
+}
+#hr_about{
+    width: 100%;
+    border: 2px solid black; /* Đặt đường viền cho phần tử <hr> */
+    border-color: rgb(158, 159, 165); /* Đổi màu cho phần tử <hr> thành màu đỏ */
+    margin-top: 20px; /* Để tạo khoảng cách giữa phần tử <hr> và các phần tử trước nó */
+    margin-bottom: 20px;
 }
 .content_about_us li::before {
-    
+    content: "●"; /* Dấu chấm hoặc ký tự bạn muốn sử dụng, ở đây tôi sử dụng ký tự hình tròn */
+    font-size: 120%; /* Kích thước của dấu chấm */
+    font-weight: bold; /* Đặt font-weight để làm cho dấu chấm đậm */
+    color: black; /* Màu đen */
+    position:absolute;
+    transform: translateX(-400%);
   }
+
+  .content_about_us li {
+    margin-left: 10%;
+    margin-top: 10px;
+  }
+.About_us .social{
+    text-decoration: none;
+    color:rgb(255, 47, 10)
+}
