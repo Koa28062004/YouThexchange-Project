@@ -5,15 +5,54 @@ import { Link } from "react-router-dom";
 const programData = [
   {
     name: "Members",
-    details: ["Member 1", "Member 2","More..."],
+    details: [
+      {
+        name: "Member 1",
+        link:"https://www.youtube.com/watch?v=JJrQaev8YRc&list=PLdM751AKK4aPGF32PlA7DlTAT6uP-a-4b&index=29&ab_channel=MuseVi%E1%BB%87tNam"
+      }, 
+      {
+        name:"Member 2",
+        link:"#"
+      },
+      {
+        name:"More...",
+        link:"#"
+      }
+    ],
   },
   {
-    name: "Pilot Program",
-    details: ["Program 1", "Program 2","More..."],
+    name: "Members",
+    details: [
+      {
+        name: "Member 1",
+        link:"#"
+      }, 
+      {
+        name:"Member 2",
+        link:"#"
+      },
+      {
+        name:"More...",
+        link:"#"
+      }
+    ],
   },
   {
-    name: "Project",
-    details: ["Project 1", "Project 2","More..."],
+    name: "Members",
+    details: [
+      {
+        name: "Member 1",
+        link:"#"
+      }, 
+      {
+        name:"Member 2",
+        link:"#"
+      },
+      {
+        name:"More...",
+        link:"#"
+      }
+    ]
   },
 ];
 
@@ -43,9 +82,9 @@ function DropdownContent({ title }) {
               <div className="i_dropdownname">{program.name}</div>
               <div className="i_dropdown-content">
                 {program.details.map((item, itemIndex) => (
-                  <div key={itemIndex} className="i_content">
-                    {item}
-                  </div>
+                  <a href={item.link} key={itemIndex} className="i_content">
+                    {item.name}
+                  </a>
                 ))}
               </div>
             </div>
