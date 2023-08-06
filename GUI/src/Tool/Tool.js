@@ -8,23 +8,6 @@ const programData = [
     details: [
       {
         name: "Member 1",
-        link:"https://www.youtube.com/watch?v=JJrQaev8YRc&list=PLdM751AKK4aPGF32PlA7DlTAT6uP-a-4b&index=29&ab_channel=MuseVi%E1%BB%87tNam"
-      }, 
-      {
-        name:"Member 2",
-        link:"#"
-      },
-      {
-        name:"More...",
-        link:"#"
-      }
-    ],
-  },
-  {
-    name: "Members",
-    details: [
-      {
-        name: "Member 1",
         link:"#"
       }, 
       {
@@ -38,14 +21,31 @@ const programData = [
     ],
   },
   {
-    name: "Members",
+    name: "Pilot Program",
     details: [
       {
-        name: "Member 1",
+        name: "Program 1",
         link:"#"
       }, 
       {
-        name:"Member 2",
+        name:"Program 2",
+        link:"#"
+      },
+      {
+        name:"More...",
+        link:"#"
+      }
+    ],
+  },
+  {
+    name: "Project",
+    details: [
+      {
+        name: "Project 1",
+        link:"#"
+      }, 
+      {
+        name:"Project 2",
         link:"#"
       },
       {
