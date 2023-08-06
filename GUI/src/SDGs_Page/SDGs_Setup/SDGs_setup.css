@@ -16,5 +16,5 @@
   transition: all 0.5s;
 }
 .SDGS_logo:hover{
-  scale: 1.2;
+  transform: scale(1.2);
 }

@@ -7,4 +7,51 @@
 
 body{
     background-color: white;
+    width: 100%;
 }
+.About_us{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+.About_us_main{
+    width: 80%;
+    border-left: 5px solid orangered;
+    border-right: 5px solid orangered;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head_about_us{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head_about_us img{
+    height:200px;
+    width:50%;
+}
+.Tag{
+    width: 50%;
+    font-size: 22px;
+    background-color: rgb(234, 189, 112);
+    margin-top: 10px;
+    text-align: center;
+}
+.content_about_us{
+    position: relative;
+    width: 70%;
+    border: 1px solid black;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.content_about_us h4{
+    color:rgb(107, 74, 12);
+    padding-left: 5%;
+}
+.content_about_us li::before {
+    
+  }

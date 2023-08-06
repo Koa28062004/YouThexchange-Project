@@ -31,6 +31,7 @@
     padding-top: 30px;
     position: relative;
     display: inline-block;
+    text-decoration: none;
   }
   .dropdown:hover {
     background-color: rgba(0, 0, 0, 0.486);
