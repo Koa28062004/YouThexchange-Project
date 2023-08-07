@@ -6,12 +6,13 @@ import Run from "./Set_up_Home";
 import SDGs_logo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
 import More from "./Home_Information/More_in4"
 import {  Link } from "react-router-dom";
-let x=0;function Homepage() {
+
+function Homepage() {
   return (
     <div className="body_homepage">
       <h1>HOME PAGE</h1>
       <Tool />
-      <Link to="/SDGs"><SDGs_logo></SDGs_logo></Link>
+      <SDGs_logo></SDGs_logo>
       <div className="main_homepage">
         <div className="main">
           <div className="exchange">

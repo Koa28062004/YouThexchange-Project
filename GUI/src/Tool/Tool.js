@@ -25,7 +25,7 @@ const programData = [
     details: [
       {
         name: "Subtopic 1",
-        link:"#"
+        link:"/Pilot_Program/Subtopic_1"
       }, 
       {
         name:"Subtopic 2",
@@ -82,9 +82,9 @@ function DropdownContent({ title }) {
               <div className="i_dropdownname">{program.name}</div>
               <div className="i_dropdown-content">
                 {program.details.map((item, itemIndex) => (
-                  <a href={item.link} key={itemIndex} className="i_content">
+                  <Link to={item.link} key={itemIndex} className="i_content">
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

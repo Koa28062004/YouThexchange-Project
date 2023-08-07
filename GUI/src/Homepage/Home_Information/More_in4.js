@@ -3,7 +3,7 @@ import "./More_in4.css";
 const Project = [
   { 
     mess: "Videos",
-    class: "videos",
+    classname: "videos",
     link: "#",
     idclass:"fa-regular fa-circle-play"
   }
@@ -11,13 +11,13 @@ const Project = [
 const Contact = [
   {
     mess: "Facebook",
-    class:"F",
+    classname:"F",
     link: "https://www.facebook.com/profile.php?id=100094353529762&mibextid=LQQJ4d",
     idclass: "fa-brands fa-facebook"
   },
   {
     mess: "Instagram",
-    class:"I",
+    classname:"I",
     link: "https://www.instagram.com/youthexchange.project/",
     idclass: "fa-brands fa-instagram"
   }
@@ -31,7 +31,7 @@ function More() {
             Projects
             <div className="Project">
             {Project.map((item) => (
-                <a href={item.link} className={item.class}>
+                <a key={item.mess} href={item.link} className={item.classname}>
                     <i className={item.idclass} ></i>
                 <span className="mess">{item.mess}</span>
                 </a>
@@ -42,7 +42,7 @@ function More() {
             Contact
             <div className="contact">
             {Contact.map((brand) => (
-                <a href={brand.link} className={brand.class}>
+                <a key={brand.mess} href={brand.link} className={brand.classname}>
                     <i className={brand.idclass} ></i>
                 <span className="mess">{brand.mess}</span>
                 </a>
