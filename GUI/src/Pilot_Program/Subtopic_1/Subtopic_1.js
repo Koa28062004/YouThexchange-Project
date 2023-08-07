@@ -10,6 +10,10 @@ const Subtopic_1=()=>{
                     <img src={ require ("../../Homepage/Images/logo.png")} alt=""></img>
                     <h3>Pilot Program: An Overview</h3>
                 </div>
+                <div className="main_subtopic_1">
+                    <p><strong>Purpose of the Program</strong></p>
+                    <img src={ require ("../Images/picture_1.png")}></img>
+                </div>
             </div>
         </div>
     )
