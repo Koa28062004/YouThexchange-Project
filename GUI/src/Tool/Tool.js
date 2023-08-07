@@ -5,15 +5,54 @@ import { Link } from "react-router-dom";
 const programData = [
   {
     name: "Members",
-    details: ["Member 1", "Member 2","More..."],
+    details: [
+      {
+        name: "Member 1",
+        link:"#"
+      }, 
+      {
+        name:"Member 2",
+        link:"#"
+      },
+      {
+        name:"More...",
+        link:"#"
+      }
+    ],
   },
   {
     name: "Pilot Program",
-    details: ["Program 1", "Program 2","More..."],
+    details: [
+      {
+        name: "Subtopic 1",
+        link:"#"
+      }, 
+      {
+        name:"Subtopic 2",
+        link:"#"
+      },
+      {
+        name:"Subtopic 3",
+        link:"#"
+      }
+    ],
   },
   {
     name: "Project",
-    details: ["Project 1", "Project 2","More..."],
+    details: [
+      {
+        name: "Project 1",
+        link:"#"
+      }, 
+      {
+        name:"Project 2",
+        link:"#"
+      },
+      {
+        name:"More...",
+        link:"#"
+      }
+    ]
   },
 ];
 
@@ -43,14 +82,20 @@ function DropdownContent({ title }) {
               <div className="i_dropdownname">{program.name}</div>
               <div className="i_dropdown-content">
                 {program.details.map((item, itemIndex) => (
-                  <div key={itemIndex} className="i_content">
-                    {item}
-                  </div>
+                  <a href={item.link} key={itemIndex} className="i_content">
+                    {item.name}
+                  </a>
                 ))}
               </div>
             </div>
           </div>
         ))}
+      </div>
+    );
+  if (title === "About Us")
+    return(
+      <div className="dropdown-content">
+        <Link to="/About_us" >About Us</Link>
       </div>
     );
   if (title === "Project Partners")
@@ -80,7 +125,7 @@ function Navigation() {
         <Dropdown title="Event" />
         <Dropdown title="Competition" />
         <Dropdown title="Program" />
-        <Link to="/About_us" className="dropdown">About Us</Link>
+        <Dropdown title="About Us" />
         <Dropdown title="Project Partners" />
       </div>
     </div>

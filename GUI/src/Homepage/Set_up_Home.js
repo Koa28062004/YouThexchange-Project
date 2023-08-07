@@ -3,11 +3,10 @@ function Run() {
   useEffect(() => {
     const gallery = document.querySelector(".gallery");
     let currentIndex = 0;
-     // Số lượng ảnh trong dãy (từ 0 đến 5)
     let next = document.querySelector(".next_btn");
     let pre = document.querySelector(".pre_btn");
     let timer;
-    let slides = document.querySelectorAll(".slide"); // value is never read ???
+    let slides = document.querySelectorAll(".slide"); 
     let maxIndex = slides.length-1;
     function slideImage(direction) {
       currentIndex += direction;
@@ -24,13 +23,20 @@ function Run() {
         var translateValue = -currentIndex * (100 / (maxIndex + 1));
         gallery.style.transform = `translateX(${translateValue}%)`;
       }
+      if (currentIndex <= 0) {
+        slides = document.querySelectorAll(".slide");
+        currentIndex = maxIndex-1;
+        gallery.style.transition = "none";
+        translateValue = -currentIndex * (100 / (maxIndex + 1));
+        gallery.style.transform = `translateX(${translateValue}%)`;
+      }
     });
 
     function startTimer() {
       timer = setTimeout(function () {
-        slideImage(1); // Chuyển đến ảnh tiếp theo
-        startTimer(); // Bắt đầu lại đếm thời gian
-      }, 5000); // Đếm thời gian 5 giây
+        slideImage(1); 
+        startTimer(); 
+      }, 5000);
     }
 
     function resetTimer() {
@@ -38,10 +44,8 @@ function Run() {
       startTimer();
     }
 
-    // Bắt đầu đếm thời gian khi trang web được tải
     startTimer();
 
-    // Thiết lập sự kiện cho tương tác người dùng (ví dụ: click, hover, ...)
     next.addEventListener("click", () => slideImage(1));
     next.addEventListener("click", () => resetTimer());
     pre.addEventListener("click", () => slideImage(-1));

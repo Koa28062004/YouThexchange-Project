@@ -59,16 +59,16 @@
 }
 #hr_about{
     width: 100%;
-    border: 2px solid black; /* Đặt đường viền cho phần tử <hr> */
-    border-color: rgb(158, 159, 165); /* Đổi màu cho phần tử <hr> thành màu đỏ */
-    margin-top: 20px; /* Để tạo khoảng cách giữa phần tử <hr> và các phần tử trước nó */
+    border: 2px solid black; 
+    border-color: rgb(158, 159, 165);
+    margin-top: 20px; 
     margin-bottom: 20px;
 }
 .content_about_us li::before {
-    content: "●"; /* Dấu chấm hoặc ký tự bạn muốn sử dụng, ở đây tôi sử dụng ký tự hình tròn */
-    font-size: 120%; /* Kích thước của dấu chấm */
-    font-weight: bold; /* Đặt font-weight để làm cho dấu chấm đậm */
-    color: black; /* Màu đen */
+    content: "●";
+    font-size: 120%; 
+    font-weight: bold; 
+    color: black; 
     position:absolute;
     transform: translateX(-400%);
   }
