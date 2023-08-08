@@ -9,7 +9,7 @@ function About_us(){
         <div className="body_About">
             <h1>About Us</h1>
             <Tool></Tool>
-            <Link to="/SDGs"><SDGs_logo></SDGs_logo></Link>
+            <SDGs_logo></SDGs_logo>
             <div className="About_us">
                 <div className="About_us_main">
                     <div className="head_about_us">

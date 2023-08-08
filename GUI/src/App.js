@@ -12,6 +12,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/SDGs" element={<Main />} />
         <Route path="/About_us" element={<About_us />} />
+        <Route path="/Pilot_Program/Subtopic_1" element={<Subtopic_1 />} />
     </Routes>
   </BrowserRouter>
   );
