@@ -12,6 +12,10 @@ const header_content=[
     {
         name:"2. Process of the Program",
         id:"#2"
+    },
+    {
+        name:"3. Content of the Program",
+        id:"#3"
     }
 ]
 const Subtopic_1=()=>{
@@ -24,7 +28,7 @@ const Subtopic_1=()=>{
                 <div className="bar"><i class="fa-solid fa-bars"></i></div>
                 <div className="contain">
                 {header_content.map((header) => (
-                        <a key={header.name} href={header.id}>{header.name}</a>
+                        <a key={header.name} href={header.id}><i className="fa-solid fa-circle"></i>{header.name}</a>
                     ))}
                 </div>
             </div>
@@ -53,6 +57,78 @@ const Subtopic_1=()=>{
                     <p><em>*Note: Each party is referred to as a project partner. </em></p>
                     <br></br>
                     <h4 id="2"><strong>Process of the Program</strong></h4>
+                    <br />
+                    <ul>
+                        <li><i className="fa-solid fa-circle"></i>Seminar based:
+                            <ul>
+                                <li><i class="fa-regular fa-circle"></i>40 minutes group discussion.</li>
+                                <li><i class="fa-regular fa-circle"></i>20 minutes breakout room to work with your partner.</li>
+                            </ul>
+                        </li>
+                        <li><i className="fa-solid fa-circle"></i>Schedule:
+                            <ul>
+                                <li><i class="fa-regular fa-circle"></i>The seminars will happen every other day for 2 weeks.</li>
+                                <li><i class="fa-regular fa-circle"></i>Day A: seminar day (1hr) </li>
+                                <li><i class="fa-regular fa-circle"></i>Day B: partner workday
+                                    <ul>
+                                        <li><i class="fa-solid fa-square"></i>It is mandatory that the project partners meet in 
+                                        the interim of the seminars to work on the project for at least 1hr. The supervisors 
+                                        will keep track of this.</li>    
+                                    </ul>    
+                                </li>
+                            </ul>
+                        </li>
+                        <li><i className="fa-solid fa-circle"></i>Inquiry and Disagreement
+                            <ul>
+                                <li><i class="fa-regular fa-circle"></i>We are currently building a team of expert advisors on the 
+                                side-line to assist with any roadblocks.</li>
+                                <li><i class="fa-regular fa-circle"></i>In the case of a conflict, please contact our supervisor. 
+                                    <ul>
+                                    <li><i class="fa-solid fa-square"></i>Human resource/ technicalities /advisory-related matters:
+                                        <ul>
+                                            <li><i class="fa-solid fa-circle"></i>Anh Thu: <a href="mailto:thunguyen091104@gmail.com">thunguyen091104@gmail.com</a></li>
+                                        </ul>
+                                    </li>  
+                                    <li><i class="fa-solid fa-square"></i>Content/academic-related problems:
+                                        <ul>
+                                            <li><i class="fa-solid fa-circle"></i>Van Anh: <a href="mailto:lilynguyenvananh@gmail.com">thunguyen091104@gmail.com</a></li>
+                                        </ul>
+                                    </li>  
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <br></br>
+                    <h4 id="3"><strong>Content of the Program</strong></h4>
+                    <ul className="content_3">
+                        <li><strong>Seminar 1:</strong> In this seminar, we will acquaint ourselves with each other, the pilot program, 
+                        and the organization itself. Expectations and goals of this pilot program will be set by everyone. Finally, 
+                        you will be introduced to your project partner and jump into sharing and cultivating your multiple ideas.</li>
+                        <li><strong>Seminar 2:</strong> In the second seminar, we will discuss a fascinating mindset that helps us 
+                        adopt a “human-oriented” approach to solving social issues - Design Thinking. Together, we will build our 
+                        own understanding of the mindset and apply it to our project in order to uncover assumptions and biases.</li>
+                        <li><strong>Seminar 3:</strong> In this third seminar, we will learn about the nature of our problem - crisis 
+                        or vision oriented. By being able to differentiate the nature of our problems and sub-problems, we understand 
+                        how to approach stakeholders in a persuasive manner. In addition, we will start a case study that teaches us 
+                        how to identify the different levels of stakeholders.</li>
+                        <li><strong>Seminar 4:</strong> This seminar is all about empathy. How do we empathize with the stakeholders 
+                        of our problem? To do that, we must collect precise and deliberate data in order to gain insights and empathy 
+                        with our stakeholders. At the tail-end of the seminar, we will return to our previous case study and conduct 
+                        a deeper evaluation of the stakeholder pains and gains, given different data collection methods (this is called 
+                        method triangulation).</li>
+                        <li><strong>Seminar 5:</strong> Now, we discuss the relevance of our problem. How do we differentiate between 
+                        a symptom and a root cause? We will be introduced to models that push us to find the crux of our problem 
+                        (what truly vexes our stakeholders?) and evaluate the ability of our solution to gain traction.</li>
+                        <li><strong>Seminar 6:</strong> This seminar is about communicating the urgency of our problem and the 
+                        attractiveness of our proposed solution. We will understand how to energize our listeners to action not paralyze 
+                        or overwhelm them with loose ends. We do this by returning back to the SDG goals such that we “begin with the end 
+                        in mind.”</li>
+                        <li><strong>Seminar 7:</strong> Presentations!</li>
+                        <li><strong>Seminar 8:</strong> Project partners will meet with the executive team to feedback and reflect on 
+                        the program. We will guide you on where you want to project to go next, competition? More development? Most importantly, 
+                        how we will continue the partnership far beyond the program.</li>
+                    </ul>
                 </div>
             </div>
             <Footer />
