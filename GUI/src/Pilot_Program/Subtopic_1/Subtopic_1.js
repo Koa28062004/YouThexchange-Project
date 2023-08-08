@@ -3,6 +3,17 @@ import Tool from "../../Tool/Tool";
 import Footer from "../../Footer/Footer";
 import SDGs_logo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import "./Subtopic_1.css"
+import SetUpSubtopic1 from "./Set_up_subtopic1";
+const header_content=[
+    {
+        name:"1. Purpose of the Program",
+        id:"#1"
+    },
+    {
+        name:"2. Process of the Program",
+        id:"#2"
+    }
+]
 const Subtopic_1=()=>{
     return(
         <div className="body_subtopic1">
@@ -10,9 +21,11 @@ const Subtopic_1=()=>{
             <Tool />
             <SDGs_logo />
             <div className="Roll">
-                <i class="fa-solid fa-bars"></i>
+                <div className="bar"><i class="fa-solid fa-bars"></i></div>
                 <div className="contain">
-                    <a href="#1">Purpose of the Program</a>
+                {header_content.map((header) => (
+                        <a key={header.name} href={header.id}>{header.name}</a>
+                    ))}
                 </div>
             </div>
             <div className="subtopic_1">
@@ -32,9 +45,18 @@ const Subtopic_1=()=>{
                         approaches to identifying and solving problems, and ways of thinking. Diversity in thinking is key to 
                         finding an undiscovered gap in society or innovating a new way to address an old problem.
                     </p>
+                    <br></br>
+                    <p>The purpose of this cultural exchange is to find innovative ideas in the space between your expertise. Thus, 
+                        that should be the attitude adopted by everyone throughout this pilot program.
+                    </p>
+                    <br></br>
+                    <p><em>*Note: Each party is referred to as a project partner. </em></p>
+                    <br></br>
+                    <h4 id="2"><strong>Process of the Program</strong></h4>
                 </div>
             </div>
             <Footer />
+            <SetUpSubtopic1 />
         </div>
     )
 }
