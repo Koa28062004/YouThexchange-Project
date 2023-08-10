@@ -14,7 +14,7 @@
   }
   
   
-  hr {
+  .body_homepage hr {
     background-color: orange;
     color: orange;
     border: 1px solid orange;

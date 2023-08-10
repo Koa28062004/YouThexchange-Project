@@ -16,6 +16,10 @@ const header_content=[
     {
         name:"3. Content of the Program",
         id:"#3"
+    },
+    {
+        name:"4. Product of the Program",
+        id:"#4"
     }
 ]
 const Subtopic_1=()=>{
@@ -39,7 +43,7 @@ const Subtopic_1=()=>{
                 </div>
                 <div className="main_subtopic_1">
                     <h4 id="1"><strong>Purpose of the Program</strong></h4>
-                    <img src={ require ("../Images/picture_1.png")}></img>
+                    <img src={ require ("../Images/picture_1.png")} alt=""></img>
 
                     <p>Our Pilot Program focuses on the <strong>“Facilitate cross-culture projects”</strong> aspect of the operation. 
                         In these 2 weeks, you will be paired up with a partner who shares the same subject interest as you. 
@@ -55,6 +59,8 @@ const Subtopic_1=()=>{
                     </p>
                     <br></br>
                     <p><em>*Note: Each party is referred to as a project partner. </em></p>
+                    <br></br>
+                    <hr ></hr>
                     <br></br>
                     <h4 id="2"><strong>Process of the Program</strong></h4>
                     <br />
@@ -100,6 +106,8 @@ const Subtopic_1=()=>{
                         </li>
                     </ul>
                     <br></br>
+                    <hr ></hr>
+                    <br></br>
                     <h4 id="3"><strong>Content of the Program</strong></h4>
                     <ul className="content_3">
                         <li><strong>Seminar 1:</strong> In this seminar, we will acquaint ourselves with each other, the pilot program, 
@@ -129,6 +137,30 @@ const Subtopic_1=()=>{
                         the program. We will guide you on where you want to project to go next, competition? More development? Most importantly, 
                         how we will continue the partnership far beyond the program.</li>
                     </ul>
+                    <br></br>
+                    <hr></hr>
+                    <br></br>
+                    <h4 id="4"><strong>Product of the Program</strong></h4>
+                    <br></br>
+                    <ul>
+                        <li><i className="fa-solid fa-circle"></i><strong>Presentation:</strong> The amalgamation of these seminars will 
+                        result in a presentation that shows the breadth and depth of your project's root issue and stakeholder analysis.
+                        </li>
+                        <li><i className="fa-solid fa-circle"></i><strong>Tool:</strong>  You will be equipped with tools, models, 
+                        and mindsets that allow you to view the issue from multiple lenses. 
+                        </li>
+                        <li><i className="fa-solid fa-circle"></i><strong>Partnership:</strong>  
+                        Your partnership will be far-reaching beyond this pilot program whether it be working on the same project together 
+                        or cultivating a relationship that helps each party gain a more cosmopolitan perspective of the world. 
+                        </li>
+                        <li><i className="fa-solid fa-circle"></i><strong>Continuous support:</strong>  Our programs will support you beyond 
+                        the 2 weeks, providing you with resources, advisors, and opportunities to grow your project. 
+                        </li>
+                        <li><i className="fa-solid fa-circle"></i><strong>Recruitment:</strong>  If you want to work for the organization in 
+                        the cultural exchange branch or advisory branch, you will be easily considered, given your extensive and enthusiastic 
+                        contribution to the pilot. 
+                        </li>
+                    </ul>    
                 </div>
             </div>
             <Footer />
