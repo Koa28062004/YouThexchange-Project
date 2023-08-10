@@ -136,7 +136,7 @@ function Search() {
   return (
     <div className="search">
       <input className="input" type="search" name="" placeholder="Search..." />
-      <button className="ser">Search</button>
+      <button className="ser"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
   );
 }

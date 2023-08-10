@@ -159,3 +159,7 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
   }
+  .ser:active{
+    background-color: rgb(109, 58, 99);
+    color: aliceblue;
+  }
