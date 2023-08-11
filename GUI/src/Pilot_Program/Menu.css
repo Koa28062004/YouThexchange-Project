@@ -1,0 +1,62 @@
+.Menu_PilotProgram{
+    height: 30%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 100%;
+    margin-top: 200px;
+    transition: all 0.5s ease;
+}
+.Menu_PilotProgram a{
+    text-decoration: none;
+    color:black
+}
+.Menu_PilotProgram .fa-circle{
+    font-size: 8px;
+    margin-right: 4%;
+}
+.Menu_PilotProgram li{
+    margin-left: -5%;
+    font-size: 18px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.Menu_PilotProgram p{
+    margin-left: 10%;
+    width: 150%;
+}
+.Menu_PilotProgram .header .fa-arrow-left{
+    margin-right:10% ;
+    height: 100%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Menu_PilotProgram .header{
+    background-color:rgb(159, 145, 204);
+    width: 125%;
+    height: 15%;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-right: 17%;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.Menu_PilotProgram .header .fa-arrow-right{
+    margin-left: 10%;
+    transition: all 0.5s;
+    height: 100%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.Menu_PilotProgram .header .fa-arrow-right:hover{
+    transform: translateX(10px);
+}
