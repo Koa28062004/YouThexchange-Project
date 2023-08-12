@@ -19,6 +19,10 @@ const MenuPilotProgram= () =>{
                 <br></br> <p>Product outcomes</p>
                 </Link>
                 </li>
+                <li><Link to="/Pilot_Program/Subtopic_1"><i className="fa-solid fa-circle"></i>Subtopic 3:
+                <br></br> <p>Meeting Recording</p>
+                </Link>
+                </li>
             </ul>
             <SetUpMenu />
         </div>
