@@ -29,7 +29,7 @@ const programData = [
       }, 
       {
         name:"Subtopic 2",
-        link:"#"
+        link:"/Pilot_Program/Subtopic_2"
       },
       {
         name:"Subtopic 3",

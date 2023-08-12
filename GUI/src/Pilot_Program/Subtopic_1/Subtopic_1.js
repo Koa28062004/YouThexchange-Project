@@ -4,6 +4,7 @@ import Footer from "../../Footer/Footer";
 import SDGs_logo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import "./Subtopic_1.css"
 import SetUpSubtopic1 from "./Set_up_subtopic1";
+import MenuPilotProgram from "../Menu";
 const header_content=[
     {
         name:"1. Purpose of the Program",
@@ -28,6 +29,7 @@ const Subtopic_1=()=>{
             <h1>Pilot Program</h1>
             <Tool />
             <SDGs_logo />
+            <MenuPilotProgram />
             <div className="Roll">
                 <div className="bar"><i class="fa-solid fa-bars"></i></div>
                 <div className="contain">
