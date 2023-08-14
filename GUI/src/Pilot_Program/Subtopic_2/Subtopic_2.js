@@ -25,6 +25,15 @@ const Subtopic_2=()=>{
                             </div>
                         </div>
                     </div>
+                    <div className="subtopicProject">
+                        <h4> Psychology</h4>
+                        <div className="container">
+                            <div className="box_subtopic">
+                                <img src={require ("./Images/picture2.png")}></img>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             </div>
