@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container_search{
+    width: 80%;
+    position: absolute;
+    top:3.3em;
+    left: -0%;
+    background-color: white;
+}
