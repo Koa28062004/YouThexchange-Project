@@ -10,6 +10,7 @@ const Pilot_ProgramData = [
         name: "Business",
         details: [
             {
+                name:"SUSTAINABILITY",
                 img: "./Images/picture1.png"
             }
         ]
@@ -17,7 +18,8 @@ const Pilot_ProgramData = [
     {
         name: "Psychology",
         details: [
-            {
+            {   
+                name:"Gender inequality",
                 img: "./Images/picture2.png"
             }
         ]
@@ -26,6 +28,7 @@ const Pilot_ProgramData = [
         name: "Biology",
         details: [
             {
+                name:"Genetic Engineering",
                 img: "./Images/picture3.png"
             }
         ]
@@ -41,7 +44,7 @@ const Subtopic_2 = () => {
             <MenuPilotProgram />
             <div className="Main_subtopic2">
                 <div className="Subtopic2">
-                    <span className="h2">Product outcomes</span>
+                    <h2>Product outcomes</h2>
                     <br />
                     <h3>Subtopic of subtopic</h3>
                     <div className="Menu_subtopicProject">
@@ -52,6 +55,7 @@ const Subtopic_2 = () => {
                                     <div key={boxIndex} className="container">
                                         <div className="box_subtopic">
                                             <img src={require(`${box.img}`)} alt={`Project ${index} Image`} />
+                                            <span>Name: {box.name}</span>
                                             <button className="btn">Details</button>
                                         </div>
                                     </div>

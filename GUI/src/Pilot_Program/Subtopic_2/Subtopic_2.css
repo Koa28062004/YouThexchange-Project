@@ -19,16 +19,7 @@
     align-items: center;
     justify-content: center;
 }
-.Main_subtopic2 .h2{
-    margin-top: 50px;
-}
-.Main_subtopic2 .h2::after{
-    content: "";
-    width: 100px;
-    height: 5px;
-    position: absolute;
-    background-color: rgb(34, 163, 199);
-}
+
 .Main_subtopic2 .Subtopic2{
     height: auto;
     width: 80%;
@@ -68,11 +59,28 @@
 }
 .body_subtopic2 .box_subtopic:hover img{
     transform: scale(1.2);
+    margin-top: 0%;
 } 
 .subtopicProject .btn{
     position: relative;
     width: 30%;
-    margin-top: 10%;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13%;
     color:black;
     border-radius: 30px;
+    display: none;
+    transition: all 0.5s;
+}
+.subtopicProject .btn:hover{
+    letter-spacing: 1px;
+    background: linear-gradient(rgb(255, 150, 150), rgb(240, 184, 110));
+}
+.subtopicProject span{
+    margin-top: 10%;
+    background-color: pink;
+}
+.body_subtopic2 .box_subtopic:hover .btn{
+    display: flex;
 }
