@@ -1,17 +1,27 @@
-const express = require('express')
-const cors = require('cors')
+const express = require('express');
+const cors = require('cors');
+const fs = require('fs');
  
-const PORT = 8000;
+const port = 8000;
  
 const app = express()
  
 app.use(cors())
+
+app.get('/api/:search', function(req, res) {
+    var search = req.params.search;
+
+    fs.readFile('data.txt', 'utf8', (err, data) => {
+        if (err) {
+          console.error('Error reading file:', err);
+          return;
+        }
+        
+        const lines = data.trim().split('\n');
+        const result = lines.map(line => line.trim()).filter(line => line.toLowerCase().startsWith(search.toLowerCase()));
+      
+        res.json(result)
+    });
+});
  
-app.get('/api/search', function(req, res){
- 
-    const search = ["Phat dep trai", "Khoa xau trai", "Thang be de", "Khang cu to"];
- 
-    res.json(search)
-})
- 
-app.listen(PORT, () => console.log(`Server is starting at PORT ${PORT}`));
+app.listen(port, () => console.log(`Server is starting at PORT ${port}`));

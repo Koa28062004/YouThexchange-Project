@@ -7,7 +7,7 @@ function Products() {
     useEffect(() => {
         async function fetchListProducts(){
             try {
-                const urlRequest = "http://localhost:3000/api/search"
+                const urlRequest = "http://localhost:8000/api/search"
                 const respond = await fetch(urlRequest)
                 const respondData= await respond.json()
  
