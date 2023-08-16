@@ -1,8 +1,8 @@
-import React,{useState} from "react";
+import React from "react";
 import SetUpTool from "./Set_up_tool";
 import "./Tool.css"
-import Products from "../Run_API/run_api";
 import { Link } from "react-router-dom";
+import Search from "./Search";
 const programData = [
   {
     name: "Members",
@@ -133,33 +133,7 @@ function Navigation() {
   );
 }
 
-function Search() {
-  const [showProducts, setShowProducts] = useState(false);
 
-  const handleSearchInputBlur = () => {
-    setShowProducts(false);
-  };
-  const handleSearchInputCLick = () => {
-    setShowProducts(true);
-  };
-
-  return (
-    <div className="search">
-      <input
-        className="input"
-        type="search"
-        name=""
-        placeholder="Search..."
-        onClick={handleSearchInputCLick}
-        onBlur={handleSearchInputBlur}
-      />
-      <button className="ser">
-        <i className="fa-solid fa-magnifying-glass"></i>
-      </button>
-      {showProducts && <Products />}
-    </div>
-  );
-}
 
 function Tool() {
   return (
