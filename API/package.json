@@ -4,7 +4,9 @@
   "description": "get API from me",
   "main": "index.js",
   "scripts": {
-    "server" : "nodemon index.js"
+    "server" : "nodemon index.js",
+    "client" : "cd ../GUI && npm start",
+    "dev" : "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "vtphatt2",
   "license": "ISC",
