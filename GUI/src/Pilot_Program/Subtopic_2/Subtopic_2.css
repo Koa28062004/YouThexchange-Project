@@ -7,7 +7,7 @@
 
 .body_subtopic2{
     width: 100%;
-    background: linear-gradient(rgb(255, 150, 150), rgb(240, 184, 110));
+    background-color:rgb(255, 230, 191);
 }
 .body_subtopic2 h1{
     text-align: center;
@@ -22,16 +22,36 @@
 
 .Main_subtopic2 .Subtopic2{
     height: auto;
-    width: 80%;
+    width: 70%;
+}
+.Subtopic2 .h2 h2{
+    position: relative;
+    margin-top: 100px;
+}
+.Subtopic2 h3{
+    margin-left: 2%;
+}
+.h2 h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #00ffbf;
+    height: 5px;
+    box-sizing: border-box;
+    width: 200px;
 }
 .subtopicProject{
     margin-top: 40px;
     margin-bottom: 40px;
+    background:linear-gradient(rgb(255, 150, 150), rgb(240, 184, 110)) ;
+    border-radius: 10px;
+    padding: 2%;
 }
 .subtopicProject .container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(3, auto);
     gap: 10px;
 }
 .subtopicProject .container .box_subtopic{
@@ -39,9 +59,10 @@
     width: 300px;
     height: 370px;
     display: flex;
+    border-radius: 10px;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(57, 57, 57);
     border:1px solid black;
     overflow: hidden;
     transition: all 0.5s ease;
@@ -61,21 +82,39 @@
     transform: scale(1.2);
     margin-top: 0%;
 } 
-.subtopicProject .btn{
-    position: relative;
+.subtopicProject a{
     width: 30%;
     height: 15%;
+    margin-top: 13%;
+    text-decoration: none;
+}
+.subtopicProject .btn{
+    position: relative;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 13%;
-    color:black;
     border-radius: 30px;
     display: none;
     transition: all 0.5s;
+    color: black;
+    background: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    border-radius: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: 0.5s;
+    border: 1px solid #fff;
 }
 .subtopicProject .btn:hover{
     letter-spacing: 1px;
     background: linear-gradient(rgb(255, 150, 150), rgb(240, 184, 110));
+    color:black;
 }
 .subtopicProject span{
     margin-top: 10%;
