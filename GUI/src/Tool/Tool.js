@@ -80,7 +80,7 @@ function DropdownContent({ title }) {
         {programData.map((program, index) => (
           <div key={index}>
             <div className="i_dropdown">
-              <div className="i_dropdownname">{program.name}</div>
+              <div className="i_dropdownname">{program.name} <i class="fa-solid fa-chevron-down"></i></div>
               <div className="i_dropdown-content">
                 {program.details.map((item, itemIndex) => (
                   <Link to={item.link} key={itemIndex} className="i_content">
@@ -96,7 +96,7 @@ function DropdownContent({ title }) {
   if (title === "About Us")
     return(
       <div className="dropdown-content">
-        <Link to="/About_us" >About Us</Link>
+        
       </div>
     );
   if (title === "Project Partners")
@@ -126,7 +126,7 @@ function Navigation() {
         <Dropdown title="Event" />
         <Dropdown title="Competition" />
         <Dropdown title="Program" />
-        <Dropdown title="About Us" />
+        <Link to="/About_us" className="dropdown">About Us</Link>
         <Dropdown title="Project Partners" />
       </div>
     </div>

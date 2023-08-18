@@ -52,20 +52,21 @@ const Subtopic_2 = () => {
                     <br />
                     <h3>Subtopic of subtopic</h3>
                     <div className="Menu_subtopicProject">
+                    <div  className="subtopicProject">
                         {Pilot_ProgramData.map((project, index) => (
-                            <div key={index} className="subtopicProject">
+                            <div key={index} className="container">
                                 <h4>{project.name}</h4>
                                 {project.details.map((box, boxIndex) => (
-                                    <div key={boxIndex} className="container">
-                                        <div className="box_subtopic">
-                                            <img src={require(`${box.img}`)} alt={`Project ${index} Image`} />
-                                            <span>Name: {box.name}</span>
-                                            <a href={box.link}><button className="btn">Details</button></a>
-                                        </div>
+                                    <div className="box_subtopic" key={boxIndex}>
+                                        <img src={require(`${box.img}`)} alt={`Project ${index} Image`} />
+                                        <span>Name: {box.name}</span>
+                                        <a href={box.link}><button className="btn">Details</button></a>
                                     </div>
+                                   
                                 ))}
                             </div>
                         ))}
+                    </div>
                     </div>
                 </div>
             </div>
