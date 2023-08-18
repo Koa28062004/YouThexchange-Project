@@ -3,12 +3,11 @@ import "./run_api.css"
 
 function Products(props) {
     const [search, setProducts] = useState([]);
-    const { searchInput } = props; // Trích xuất searchInput từ props
 
     useEffect(() => {
         async function fetchListProducts() {
             try {
-                const urlRequest = `http://localhost:8000/api/${searchInput}`
+                const urlRequest = `http://localhost:8000/api/${props.searchInput}`
                 const respond = await fetch(urlRequest)
                 const respondData = await respond.json()
 
@@ -19,7 +18,7 @@ function Products(props) {
         }
 
         fetchListProducts()
-    }, [searchInput]); // Đặt dependency là searchInput để useEffect re-run khi searchInput thay đổi
+    }, [props.searchInput]); 
 
     return (
         <div className="container_search">
