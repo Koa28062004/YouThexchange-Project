@@ -1,7 +1,7 @@
 import React from "react";
 import Tool from "../../Tool/Tool";
 import Footer from "../../Footer/Footer";
-import SDGs_logo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
+import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import "./Subtopic_1.css"
 import SetUpSubtopic1 from "./Set_up_subtopic1";
 import MenuPilotProgram from "../Menu";
@@ -26,9 +26,8 @@ const header_content=[
 const Subtopic_1=()=>{
     return(
         <div className="body_subtopic1">
-            <h1>Pilot Program</h1>
             <Tool />
-            <SDGs_logo />
+            <SDGslogo />
             <MenuPilotProgram />
             <div className="Roll">
                 <div className="bar"><i class="fa-solid fa-bars"></i></div>
