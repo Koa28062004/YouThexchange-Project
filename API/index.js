@@ -11,17 +11,22 @@ app.use(cors())
 app.get('/api/:search', function(req, res) {
     var search = req.params.search;
 
-    fs.readFile('data.txt', 'utf8', (err, data) => {
+    if (search == "") {
+      res.json([]);
+    }
+    else {
+      fs.readFile('data.txt', 'utf8', (err, data) => {
         if (err) {
-          console.error('Error reading file:', err);
-          return;
+            console.error('Error reading file:', err);
+            return res.status(500).json({ error: 'Error reading file' });
         }
-        
+
         const lines = data.trim().split('\n');
-        const result = lines.map(line => line.trim()).filter(line => line.toLowerCase().startsWith(search.toLowerCase()));
-      
-        res.json(result)
-    });
+        const result = lines.filter(line => line.toLowerCase().includes(search.toLowerCase()));
+
+        res.json(result);
+      });
+    }
 });
  
 app.listen(port, () => console.log(`Server is starting at PORT ${port}`));
