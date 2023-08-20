@@ -1,15 +1,14 @@
 import React from "react";
 import Tool from "../Tool/Tool";
 import "./About_us.css"
-import SDGs_logo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
-import {  Link } from "react-router-dom";
+import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
 import Footer from "../Footer/Footer";
 function About_us(){
     return(
         <div className="body_About">
             <h1>About Us</h1>
             <Tool></Tool>
-            <SDGs_logo></SDGs_logo>
+            <SDGslogo></SDGslogo>
             <div className="About_us">
                 <div className="About_us_main">
                     <div className="head_about_us">

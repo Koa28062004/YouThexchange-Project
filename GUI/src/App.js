@@ -6,6 +6,7 @@ import Main from "./SDGs_Page/SDGs_Main"
 import About_us from "./About_us_Page/About_us";
 import Subtopic_1 from "./Pilot_Program/Subtopic_1/Subtopic_1";
 import Subtopic_2 from "./Pilot_Program/Subtopic_2/Subtopic_2";
+import Business from "./Pilot_Program/Subtopic_2/Subtopic/Business";
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/About_us" element={<About_us />} />
         <Route path="/Pilot_Program/Subtopic_1" element={<Subtopic_1 />} />
         <Route path="/Pilot_Program/Subtopic_2" element={<Subtopic_2 />} />
+        <Route path="/Pilot_Program/Subtopic_2/Business" element={<Business />} />
     </Routes>
   </BrowserRouter>
   );

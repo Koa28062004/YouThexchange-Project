@@ -3,16 +3,15 @@ import Tool from "../Tool/Tool";
 import Footer from "../Footer/Footer";
 import Slide from "./Home_Slide/Slide";
 import Run from "./Set_up_Home";
-import SDGs_logo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
+import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
 import More from "./Home_Information/More_in4"
-import {  Link } from "react-router-dom";
 
 function Homepage() {
   return (
     <div className="body_homepage">
       <h1>HOME PAGE</h1>
       <Tool />
-      <SDGs_logo></SDGs_logo>
+      <SDGslogo></SDGslogo>
       <div className="main_homepage">
         <div className="main">
           <div className="exchange">
