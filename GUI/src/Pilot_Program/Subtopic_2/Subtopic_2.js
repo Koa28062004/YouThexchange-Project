@@ -3,6 +3,7 @@ import Tool from "../../Tool/Tool";
 import Footer from "../../Footer/Footer";
 import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import MenuPilotProgram from "../Menu";
+import { Link } from "react-router-dom";
 import "./Subtopic_2.css"
 
 const Pilot_ProgramData = [
@@ -12,7 +13,7 @@ const Pilot_ProgramData = [
             {
                 name:"SUSTAINABILITY",
                 img: "./Images/picture1.png",
-                link:"https://drive.google.com/file/d/1Cz-8X2Q96YzSyqmH5mw8RtbU1n9dr0qD/view"
+                link:"/Pilot_Program/Subtopic_2/Business"
             }
         ]
     },
@@ -60,7 +61,7 @@ const Subtopic_2 = () => {
                                     <div className="box_subtopic" key={boxIndex}>
                                         <img src={require(`${box.img}`)} alt="" />
                                         <span>Name: {box.name}</span>
-                                        <a href={box.link}><button className="btn">Details</button></a>
+                                        <Link to={box.link}><button className="btn">Details</button></Link>
                                     </div>
                                    
                                 ))}
