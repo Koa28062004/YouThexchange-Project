@@ -1,7 +1,7 @@
 import React from "react";
 import Tool from "../../Tool/Tool";
 import Footer from "../../Footer/Footer";
-import SDGs_logo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
+import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import MenuPilotProgram from "../Menu";
 import "./Subtopic_2.css"
 
@@ -42,7 +42,7 @@ const Subtopic_2 = () => {
     return (
         <div className="body_subtopic2">
             <Tool />
-            <SDGs_logo />
+            <SDGslogo />
             <MenuPilotProgram />
             <div className="Main_subtopic2">
                 <div className="Subtopic2">
@@ -58,7 +58,7 @@ const Subtopic_2 = () => {
                                 <h4>{project.name}</h4>
                                 {project.details.map((box, boxIndex) => (
                                     <div className="box_subtopic" key={boxIndex}>
-                                        <img src={require(`${box.img}`)} alt={`Project ${index} Image`} />
+                                        <img src={require(`${box.img}`)} alt="" />
                                         <span>Name: {box.name}</span>
                                         <a href={box.link}><button className="btn">Details</button></a>
                                     </div>

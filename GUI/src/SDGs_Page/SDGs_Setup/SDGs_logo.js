@@ -2,8 +2,8 @@ import "./SDGs_setup.css";
 import React from "react";
 import { Link } from "react-router-dom";
 
-function SDGs_logo() {
+function SDGslogo() {
   return <Link to ="/SDGs" className="SDGS_logo"></Link>;
 }
 
-export default SDGs_logo;
+export default SDGslogo;
