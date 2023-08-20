@@ -11,7 +11,7 @@
   position:absolute;
   margin-top: 50px;
   margin-left: 90%;
-  z-index: 100;
+  z-index: 2;
   cursor: pointer;
   transition: all 0.5s;
 }

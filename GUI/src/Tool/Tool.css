@@ -61,7 +61,7 @@
     cursor: pointer;
     width: 200px;
     height: auto;
-    z-index: 5;
+    z-index: 2;
     text-align: left;
     transition:none;
     display: none;
@@ -116,7 +116,7 @@
     cursor: pointer;
     width: 200px;
     height: auto;
-    z-index: 5;
+    z-index: 2;
     text-align: left;
     transition: all 0.5s;
     display: none;
