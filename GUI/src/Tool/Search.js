@@ -6,6 +6,9 @@ function Search() {
     const [searchInput, setSearchInput] = useState("");
     const handleSearchInputChange = (event) => {
       setSearchInput(event.target.value);
+      if(event.target.value==="") 
+        setShowProducts(false);
+      else setShowProducts(true);
     };
     const handleSearchInputBlur = () => {
       setShowProducts(false);

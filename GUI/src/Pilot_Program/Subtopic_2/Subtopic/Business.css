@@ -1,0 +1,54 @@
+.Business_program {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.854);
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    z-index: 5;
+    color: white;
+    top:0;
+  }
+.Business_program  .close_btn {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 90%;
+    margin-top: 10vh;
+}
+.Business_program  .close_btn:hover{
+    color: rgb(53, 137, 137);
+}
+.Business_program  .close_btn:active{
+    color: rgb(255, 79, 79);
+}
+
+.Business_program .gallery_subtopic2{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Business_program .gallery_subtopic2 .fa-chevron-left,
+.Business_program .gallery_subtopic2 .fa-chevron-right {
+   font-size: 40px;
+   cursor: pointer;
+}
+.Business_program .gallery_subtopic2 .fa-chevron-left:hover,
+.Business_program .gallery_subtopic2 .fa-chevron-right:hover {
+   color:rgb(53, 137, 137);
+}
+.Business_program .gallery_subtopic2 .slides_subtopic2{
+    width: 70%;
+    height: 100%;
+}
+
+.Business_program .gallery_subtopic2 img{
+    height: 100%;
+    width: 100%;   
+}
+

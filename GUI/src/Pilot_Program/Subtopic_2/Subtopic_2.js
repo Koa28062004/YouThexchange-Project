@@ -1,10 +1,12 @@
-import React from "react";
+import React ,{useState} from "react";
 import Tool from "../../Tool/Tool";
 import Footer from "../../Footer/Footer";
 import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
+import PilotProgram  from "./Subtopic/Business";
 import MenuPilotProgram from "../Menu";
-import { Link } from "react-router-dom";
+import SetupSubtopic2 from "./SetupSubtopic2";
 import "./Subtopic_2.css"
+
 
 const Pilot_ProgramData = [
     {
@@ -40,8 +42,10 @@ const Pilot_ProgramData = [
 ];
 
 const Subtopic_2 = () => {
+    const [currentImageType, setCurrentImageType] = useState("Business");
     return (
         <div className="body_subtopic2">
+            
             <Tool />
             <SDGslogo />
             <MenuPilotProgram />
@@ -61,7 +65,7 @@ const Subtopic_2 = () => {
                                     <div className="box_subtopic" key={boxIndex}>
                                         <img src={require(`${box.img}`)} alt="" />
                                         <span>Name: {box.name}</span>
-                                        <Link to={box.link}><button className="btn">Details</button></Link>
+                                        <button key={boxIndex} className="btn" onClick={() => setCurrentImageType(project.name)}>Details</button>
                                     </div>
                                    
                                 ))}
@@ -71,7 +75,9 @@ const Subtopic_2 = () => {
                     </div>
                 </div>
             </div>
+            <PilotProgram currentImageType={currentImageType} /> 
             <Footer />
+            <SetupSubtopic2 />
         </div>
     );
 };

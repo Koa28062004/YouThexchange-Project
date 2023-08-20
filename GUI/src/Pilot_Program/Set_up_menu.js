@@ -4,7 +4,7 @@ function SetUpMenu() {
   useEffect(() => {
     const Menu = document.querySelector(".Menu_PilotProgram");
     const Header = document.querySelector(".Menu_PilotProgram .header")
-    const Right = document.querySelector(".Menu_PilotProgram .header .fa-arrow-right"); // Fixed typo here: "documen" to "document"
+    const Right = document.querySelector(".Menu_PilotProgram .header .fa-arrow-right");
     const Left= document.querySelector(".Menu_PilotProgram .header .fa-arrow-left");
     Left.addEventListener("click",()=> {
         Menu.style.marginLeft="85%";
@@ -16,7 +16,7 @@ function SetUpMenu() {
         Left.style.display="flex";
         Header.style.marginRight="17%";
     });
-  }, []); // Empty dependency array means the effect runs only once, like componentDidMount
+  }, []); 
 }
 
 export default SetUpMenu;
