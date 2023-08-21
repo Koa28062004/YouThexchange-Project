@@ -2,7 +2,7 @@ import React ,{useState} from "react";
 import Tool from "../../Tool/Tool";
 import Footer from "../../Footer/Footer";
 import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
-import PilotProgram  from "./Subtopic/Business";
+import PilotProgram  from "./Subtopic/PilotProgram";
 import MenuPilotProgram from "../Menu";
 import SetupSubtopic2 from "./SetupSubtopic2";
 import "./Subtopic_2.css"

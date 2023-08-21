@@ -6,7 +6,7 @@
     align-items: center;
     padding: 0px 0px;
     justify-content: space-between;
-    background-color: grey;
+    background-color: rgb(69, 69, 69);
   }
   .nav {
     margin-left: 6%;
@@ -23,7 +23,7 @@
   }
   .dropdown {
     width: 20%;
-    color: rgb(161, 204, 209);
+    color: rgb(137, 200, 207);
     font-size: 125%;
     text-align: center;
     align-items: center;
@@ -157,7 +157,6 @@
   .input {
     width: 80%;
     height: 100%;
-    border: 2px solid pink;
     border-right-style: none;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -167,7 +166,7 @@
  
   .ser {
     margin: 0;
-    background-color: pink;
+    background-color: rgb(255, 119, 142);
     font-size: 15px;
     width: 20%;
     height: 100%;

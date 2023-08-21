@@ -1,28 +1,23 @@
-import React, { useEffect, useState } from "react";
-import PilotProgram from "./Subtopic/Business";
+import  { useEffect} from "react";
+
 
 const SetupSubtopic2 = () => {
     useEffect(() => {
         const PilotPr = document.querySelector(".Business_program ");
         const Btnsub2 = document.querySelectorAll(".subtopicProject .btn");
-        
+        const Img_subtopic= document.querySelector(".Business_program .gallery_subtopic2 img")
         Btnsub2.forEach((btn, index) => {
-            if (index === 0) {
-                btn.addEventListener("click", () => {
-                    PilotPr.style.display = "flex";
-                });
+            if (index === 0||index === 1 || index === 2) {
+              btn.addEventListener("click", () => {
+                setTimeout(() => {
+                  PilotPr.style.display = "flex";
+                }, 100);
+                setTimeout(() => {
+                  Img_subtopic.style.transform = "scale(1)";
+                }, 150);
+              });
             }
-            if (index === 1) {
-                btn.addEventListener("click", () => {
-                    PilotPr.style.display = "flex";
-                });
-            }
-            if (index === 2) {
-                btn.addEventListener("click", () => {
-                    PilotPr.style.display = "flex";
-                });
-            }
-        });
+          });
     }, []);
 
 

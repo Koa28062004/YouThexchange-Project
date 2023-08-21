@@ -1,10 +1,9 @@
-Homepage - https://www.facebook.com1
-Event - https://www.facebook.com2
-Competition - https://www.facebook.com3
-Program - https://www.facebook.com4
-About us - https://www.facebook.com5
-Project partners - https://www.facebook.com6
+Homepage - /
 
-Project 1 - https://www.facebook.com7
-Project 2 - https://www.facebook.com8
-Project 3 - https://www.facebook.com9
+About us - /About_us
+
+SDGs - /SDGs
+
+Subtopic 1 (An Overview) - /Pilot_Program/Subtopic_1
+Subtopic 2 (Product outcomes) - /Pilot_Program/Subtopic_2
+

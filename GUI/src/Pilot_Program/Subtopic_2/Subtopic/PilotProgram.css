@@ -32,6 +32,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+   
 }
 .Business_program .gallery_subtopic2 .fa-chevron-left,
 .Business_program .gallery_subtopic2 .fa-chevron-right {
@@ -50,5 +51,7 @@
 .Business_program .gallery_subtopic2 img{
     height: 100%;
     width: 100%;   
+    transform: scale(0.2);
+    transition: all 0.4s;
 }
 
