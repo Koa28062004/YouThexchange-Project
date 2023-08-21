@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import "./run_api.css"
 
 function Products(props) {
@@ -22,15 +23,13 @@ function Products(props) {
 
     return (
         <div className="container_search">
-            <table className="products">
-                <tbody className="product__row">
+            <div className="products">
                     {search.map(product =>
-                        <p key={product}>
-                            {product}
-                        </p>
+                        <Link className="p" to={product.link} key={product.search}>
+                           <p> {product.search}</p>
+                        </Link>
                     )}
-                </tbody>
-            </table>
+            </div>
         </div>
     );
 }

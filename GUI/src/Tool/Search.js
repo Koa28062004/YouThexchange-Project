@@ -11,7 +11,7 @@ function Search() {
       else setShowProducts(true);
     };
     const handleSearchInputBlur = () => {
-      setShowProducts(false);
+      setTimeout(()=>{setShowProducts(false);},100)
     };
     const handleSearchInputCLick = () => {
       setShowProducts(true);
