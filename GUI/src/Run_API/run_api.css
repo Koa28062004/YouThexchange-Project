@@ -10,3 +10,7 @@
     left: -0%;
     background-color: white;
 }
+.container_search .products p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

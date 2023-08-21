@@ -1,5 +1,5 @@
 import React,{useState,useEffect}from "react";
-import "./Business.css"
+import "./PilotProgram.css"
 
  const BusinessImg=[
     "./img/Business/picture1.png",
@@ -47,7 +47,11 @@ const PilotProgram = ({ currentImageType }) => {
   
     const handleCloseClick = () => {
         const PilotPr = document.querySelector(".Business_program ");
-        PilotPr.style.display = "none";
+        const Img_subtopic= document.querySelector(".Business_program .gallery_subtopic2 img")
+        Img_subtopic.style.transform = "scale(0.2)";
+        setTimeout(() => {
+            PilotPr.style.display = "none";
+          }, 300);
         setCurrentImageIndex(0);
     };
 

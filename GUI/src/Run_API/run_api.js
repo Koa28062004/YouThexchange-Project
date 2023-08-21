@@ -25,9 +25,9 @@ function Products(props) {
             <table className="products">
                 <tbody className="product__row">
                     {search.map(product =>
-                        <tr key={product}>
+                        <p key={product}>
                             {product}
-                        </tr>
+                        </p>
                     )}
                 </tbody>
             </table>
