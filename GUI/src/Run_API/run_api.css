@@ -19,13 +19,23 @@
     width: 100%;
     color:black;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .container_search .products p{
     padding: 10px;
+    padding-left: 20px;
 }
 
 .container_search .products .p:hover p{
     color:rgb(37, 43, 72);
     background-color: rgb(91, 154, 139);
+}
+.container_search .products .p:hover .highlight{
+    color: unset;
+    font-weight: unset;
+}
+.highlight {
+    color:red;
+    font-weight: bold;
 }

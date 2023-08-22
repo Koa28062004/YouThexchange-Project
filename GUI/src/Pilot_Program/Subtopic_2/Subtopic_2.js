@@ -41,7 +41,7 @@ const Pilot_ProgramData = [
     },
 ];
 
-const Subtopic_2 = () => {
+const Subtopic2 = () => {
     const [currentImageType, setCurrentImageType] = useState("Business");
     return (
         <div className="body_subtopic2">
@@ -84,4 +84,4 @@ const Subtopic_2 = () => {
 
 
 
-export default Subtopic_2;
+export default Subtopic2;
