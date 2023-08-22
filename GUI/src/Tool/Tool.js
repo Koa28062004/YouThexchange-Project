@@ -51,7 +51,7 @@ const programData = [
       },
       {
         name:"More...",
-        link:"#"
+        link:"/Project"
       }
     ]
   },

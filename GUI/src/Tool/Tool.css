@@ -166,7 +166,7 @@
  
   .ser {
     margin: 0;
-    background-color: rgb(255, 119, 142);
+    background: linear-gradient(45deg,#5BA8A0,#CBE5AE);
     font-size: 15px;
     width: 20%;
     height: 100%;
