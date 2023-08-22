@@ -23,7 +23,7 @@ const header_content=[
         id:"#4"
     }
 ]
-const Subtopic_1=()=>{
+const Subtopic1=()=>{
     return(
         <div className="body_subtopic1">
             <Tool />
@@ -170,4 +170,4 @@ const Subtopic_1=()=>{
     )
 }
 
-export default Subtopic_1; 
+export default Subtopic1; 

@@ -3,7 +3,7 @@ import Tool from "../Tool/Tool";
 import "./About_us.css"
 import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
 import Footer from "../Footer/Footer";
-function About_us(){
+function AboutUs(){
     return(
         <div className="body_About">
             <h1>About Us</h1>
@@ -118,4 +118,4 @@ function About_us(){
     )
 }
 
-export default About_us;
+export default AboutUs;

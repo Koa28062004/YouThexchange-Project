@@ -5,6 +5,26 @@ import "./run_api.css"
 function Products(props) {
     const [search, setProducts] = useState([]);
 
+    const highlightText = (text, keyword) => {
+        const parts = [];
+        let currentIndex = 0;
+    
+        while (currentIndex < text.length) {
+            const startIndex = text.toLowerCase().indexOf(keyword.toLowerCase(), currentIndex);
+            
+            if (startIndex === -1) {
+                parts.push(text.slice(currentIndex));
+                break;
+            }
+            
+            parts.push(text.slice(currentIndex, startIndex));
+            parts.push(<span className="highlight">{text.slice(startIndex, startIndex + keyword.length)}</span>);
+            currentIndex = startIndex + keyword.length;
+        }
+    
+        return parts;
+    }
+    
     useEffect(() => {
         async function fetchListProducts() {
             try {
@@ -17,8 +37,7 @@ function Products(props) {
                 console.log("Failed to fetch..." + error.message)
             }
         }
-
-        fetchListProducts()
+        fetchListProducts();
     }, [props.searchInput]); 
 
     return (
@@ -26,7 +45,7 @@ function Products(props) {
             <div className="products">
                     {search.map(product =>
                         <Link className="p" to={product.link} key={product.search}>
-                           <p> {product.search}</p>
+                          <p>{highlightText(product.search, props.searchInput)}</p>
                         </Link>
                     )}
             </div>
