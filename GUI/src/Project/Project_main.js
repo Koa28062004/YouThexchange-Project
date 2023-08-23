@@ -1,8 +1,7 @@
-import React from "react";
+import React ,{useState}from "react";
 import Tool from "../Tool/Tool";
 import Footer from "../Footer/Footer";
 import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
-import { Link } from "react-router-dom";
 import "./Project_main.css";
 
 
@@ -35,8 +34,22 @@ const ProjectData=[
 ];
 
 const ProjectMain=() =>{
+    const [showPDF, setShowPDF] = useState(false);
+
+    const togglePDF = () => {
+      setShowPDF(!showPDF);
+    };
     return(
         <div className="ProjectMain_body">
+            {showPDF && (
+                <iframe
+                className="pdf_project"
+                src={require("./Project1/Infographic - SHEIN.pdf")}
+                width="100%"
+                height="1000px"
+                title="PDF Viewer"
+                />
+            )}
             <Tool />
             <SDGslogo />
             <h1>Project</h1>
@@ -54,13 +67,19 @@ const ProjectMain=() =>{
                                 <div className="box_author">
                                     <p>Author: <span className="Name_Author">{project.author}</span></p>
                                 </div>
-                                <Link to="/" className="btn_project">Details</Link>
+                                <p to="/" className="btn_project" onClick={togglePDF}>Details</p>
                             </div>
                         </div>
                     );
                 })}
             </div>
             <Footer />
+           
+            
+            {showPDF && <button className="btn_toggle_pdf" title="Close" onClick={togglePDF}>
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            }
         </div>
     )
 }

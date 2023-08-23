@@ -106,3 +106,32 @@
     background: linear-gradient(#5BA8A0,#CBE5AE);
     color:black;
 }
+.ProjectMain_body .pdf_project{
+    position: fixed;
+    top:0;
+    height: 100vh;
+    z-index: 10;
+}
+
+.btn_toggle_pdf {
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37px;
+    font-size: 22px;
+    background-color: unset;
+    color: #f2f2f2;
+    border: none;
+    position: fixed;
+    z-index: 11;
+    top:12px;
+    right:140px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.btn_toggle_pdf:hover{
+    background-color: rgba(128, 128, 128, 0.29);
+}
+
+  
