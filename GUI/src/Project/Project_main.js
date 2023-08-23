@@ -3,7 +3,7 @@ import Tool from "../Tool/Tool";
 import Footer from "../Footer/Footer";
 import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
 import "./Project_main.css";
-
+import { Link } from "react-router-dom";
 
 const ProjectData=[
     {
@@ -67,7 +67,7 @@ const ProjectMain=() =>{
                                 <div className="box_author">
                                     <p>Author: <span className="Name_Author">{project.author}</span></p>
                                 </div>
-                                <p to="/" className="btn_project" onClick={togglePDF}>Details</p>
+                                <Link to="/Project/Project1" className="btn_project" onClick={togglePDF}>Details</Link>
                             </div>
                         </div>
                     );

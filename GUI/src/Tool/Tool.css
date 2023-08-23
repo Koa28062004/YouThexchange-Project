@@ -6,7 +6,7 @@
     align-items: center;
     padding: 0px 0px;
     justify-content: space-between;
-    background-color: rgb(69, 69, 69);
+    background:linear-gradient(  #654ea3, #c897ab);
   }
   .nav {
     margin-left: 6%;
@@ -23,7 +23,8 @@
   }
   .dropdown {
     width: 20%;
-    color: rgb(137, 200, 207);
+    color: white;
+    font-weight:400;
     font-size: 125%;
     text-align: center;
     align-items: center;

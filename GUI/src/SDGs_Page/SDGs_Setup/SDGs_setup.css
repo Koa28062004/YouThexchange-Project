@@ -3,14 +3,14 @@
   background-size: contain;
   border-radius: 50%;
   max-width: 100%;
-  width: 70px;
-  height: 70px;
+  width: 85px;
+  height: 85px;
   display: flex;
   align-items: center;
   justify-content: center;
   position:absolute;
   margin-top: 50px;
-  margin-left: 90%;
+  margin-left: 92%;
   z-index: 2;
   cursor: pointer;
   transition: all 0.5s;

@@ -9,7 +9,7 @@
     
     max-width: 100%;
     max-height: 80%;
-    background-image: url(./Images/BackgroundHomepage.png);
+    background: linear-gradient(rgb(233, 233, 233), rgb(155, 155, 155));
     background-size: cover;
   }
   

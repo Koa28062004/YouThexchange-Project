@@ -6,7 +6,6 @@ import Footer from "../Footer/Footer";
 function AboutUs(){
     return(
         <div className="body_About">
-            <h1>About Us</h1>
             <Tool></Tool>
             <SDGslogo></SDGslogo>
             <div className="About_us">
