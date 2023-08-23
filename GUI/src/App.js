@@ -15,8 +15,8 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/SDGs" element={<Main />} />
         <Route path="/About_us" element={<AboutUs />} />
-        <Route path="/Pilot_Program/Subtopic_1" element={<Subtopic1 />} />
-        <Route path="/Pilot_Program/Subtopic_2" element={<Subtopic2 />} />
+        <Route path="/Pilot_Program/Project_1" element={<Subtopic1 />} />
+        <Route path="/Pilot_Program/Project_2" element={<Subtopic2 />} />
         <Route path="/Project" element={<ProjectMain />} />
         <Route path="/Project/Project1" element={<Project1 />} />
     </Routes>
