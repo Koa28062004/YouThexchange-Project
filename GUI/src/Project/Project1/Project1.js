@@ -1,10 +1,13 @@
-import React from "react";
+import React ,{useState}from "react";
 import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import Footer from "../../Footer/Footer";
 import Tool from "../../Tool/Tool";
 import "./Project1.css"
+import PilotProgram from "./SetupProject1/setupProject1";
+import SetupSubtopic2 from "./SetupProject1/set";
 
 const Project1=()=>{
+    const [currentImageType, setCurrentImageType] = useState("Linh");
     return(
         <div className="Project1_body">
             <Tool />
@@ -21,6 +24,7 @@ const Project1=()=>{
                         </div>
                         <div className="name_teammate">
                             Name:Rashi Mukherjee
+                            <i class="fa-solid fa-circle-info"></i>
                         </div>
                         <div className="profile_main">
                              <p>Age: 17</p>
@@ -34,6 +38,7 @@ const Project1=()=>{
                         </div>
                         <div className="name_teammate">
                             Name:Rashi Mukherjee
+                            <i class="fa-solid fa-circle-info"  onClick={() =>setCurrentImageType("Linh")}></i>
                         </div>
                         <div className="profile_main">
                              <p>Age: 17</p>
@@ -252,16 +257,37 @@ const Project1=()=>{
                                 (2) What are the reactions from people impacted by this problem? 
                             </p></div>
                             <div className="link"><strong>Relevance:</strong> Reducing the on-hold times for customer service callers is 
-                            crucial for Example company. Prolonged waiting times have a detrimental effect on customer satisfaction and 
-                            loyalty, leading to potential customer churn and loss of revenue (3). Additionally, the company's declining 
-                            reputation in terms of customer service can have a lasting impact on its competitive position in the market. 
-                            Addressing this problem is of utmost importance to improve customer experience and maintain a positive brand image.
-</div>
+                                crucial for Example company. Prolonged waiting times have a detrimental effect on customer satisfaction and 
+                                loyalty, leading to potential customer churn and loss of revenue (3). Additionally, the company's declining 
+                                reputation in terms of customer service can have a lasting impact on its competitive position in the market. 
+                                Addressing this problem is of utmost importance to improve customer experience and maintain a positive brand image.
+                                <br></br>
+                                (3) What are the short-term, long-term consequences were this problem to persist?
+                            </div>
+                            <br></br>
+                            <p><strong>Objectives: </strong>The primary objective (4) of this project is to reduce the on-hold times for 
+                            customer service callers at Example company. The specific objectives include:</p>
+                            <br></br>
+                            <p className="small"> <i class="fa-solid fa-circle"></i> Analyzing the current customer service workflow and 
+                            identifying bottlenecks contributing to increased on-hold times.</p>
+                            <br></br>
+                            <p className="small"> <i class="fa-solid fa-circle"></i> Assessing the staffing levels and resource 
+                            allocation to determine the extent of understaffing and its impact on customer service.</p>
+                            <br></br>
+                            <p className="small"> <i className="fa-solid fa-circle"></i>Developing strategies and implementing 
+                            measures to optimize the customer service workflow and reduce on-hold times.</p>
+                            <br></br>
+                            <p className="small"> <i className="fa-solid fa-circle"></i>Monitoring and evaluating the effectiveness of 
+                            the implemented measures through key performance indicators (KPIs) such as average on-hold time, customer 
+                            satisfaction ratings, and customer feedback</p>
+                            <br></br>
                         </div>
                     </div>
                 </div>
             </div>
+            <PilotProgram currentImageType={currentImageType} />
             <Footer />
+            <SetupSubtopic2 />
         </div>
     )
 }

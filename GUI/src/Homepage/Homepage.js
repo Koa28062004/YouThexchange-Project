@@ -9,7 +9,6 @@ import More from "./Home_Information/More_in4"
 function Homepage() {
   return (
     <div className="body_homepage">
-      <h1>HOME PAGE</h1>
       <Tool />
       <SDGslogo></SDGslogo>
       <div className="main_homepage">
