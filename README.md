@@ -26,7 +26,7 @@ To run the project, follow one of these methods:
 
 ### Method 1: Using the Build and Run Scripts
 
-1. Run the build script:
+1. Build the project:
 
 ```bash
 ./build.sh
