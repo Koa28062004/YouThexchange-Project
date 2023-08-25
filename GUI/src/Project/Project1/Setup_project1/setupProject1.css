@@ -1,0 +1,50 @@
+.Author_img {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.854);
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    z-index: 5;
+    color: white;
+    top:0;
+  }
+  /*button to close the large image*/
+.Author_img  .close_btn {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 90%;
+    margin-top: 10vh;
+}
+.Author_img  .close_btn:hover{
+    color: rgb(53, 137, 137);
+}
+.Author_img  .close_btn:active{
+    color: rgb(255, 79, 79);
+}
+
+.Author_img .gallery_project1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Author_img .gallery_project1 .slides_project1{
+    width: 40%;
+    height: 90%;
+    margin-top: -5%;
+}
+
+.Author_img .gallery_project1 img{
+    height: 100%;
+    width: 100%;   
+    transform: scale(0.2);
+    transition: all 0.4s;
+}
+
+

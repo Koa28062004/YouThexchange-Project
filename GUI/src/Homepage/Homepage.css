@@ -5,6 +5,7 @@
     box-sizing: border-box;
   }
   
+  /*Body of homepage*/
   .body_homepage {
     
     max-width: 100%;
@@ -47,7 +48,7 @@
     width: 100%;
     height:700px;
   }
-  .main {
+  .main_homepage .main {
     position: relative;
     display: flex;
     border: 3px solid rgb(225, 13, 49);
@@ -59,43 +60,44 @@
     overflow: hidden;
   }
   
-  .gallery {
+  /*The gallery of the slide*/
+  .gallery_homepage {
     height: 400px;
     display: flex;
     z-index: 1;
     position: absolute;
     transition: transform 0.5s ease-in-out;
   }
-  .gallery img {
+  .gallery_homepage img {
     width: 600px;
     height: 100%;
     object-fit: fill;
     object-position: center;
   }
-  .slide {
+  .gallery_homepage .slide {
     width: 600px;
     height: 100%;
     z-index: 1;
     transition: opacity 1s;
   }
-  .exchange {
+  .main_homepage .main .exchange {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
-  .pre {
+  .main_homepage .main .exchange .pre {
     width: 10%;
     display: flex;
     align-items: center;
     z-index: 2;
   }
-  .next {
+  .main_homepage .main .exchange .next {
     width: 10%;
     display: flex;
     align-items: center;
     z-index: 2;
   }
-  .next .next_btn {
+  .main_homepage .main .exchange .next .next_btn {
     opacity: 0;
     font-size: 20px;
     margin: auto;
@@ -103,13 +105,13 @@
     background-color: rgba(240, 248, 255, 0.461);
     width: 25px;
   }
-  .next:hover {
+  .main_homepage .main .exchange .next:hover {
     background-color: rgba(128, 128, 128, 0.283);
   }
-  .next:hover .next_btn {
+  .main_homepage .main .exchange .next:hover .next_btn {
     opacity: 1;
   }
-  .pre .pre_btn {
+  .main_homepage .main .exchange .pre .pre_btn {
     opacity: 0;
     font-size: 20px;
     margin: auto;
@@ -117,7 +119,7 @@
     background-color: rgba(240, 248, 255, 0.461);
     width: 25px;
   }
-  .pre:hover {
+  .main_homepage .main .exchange .pre:hover {
     background-color: rgba(128, 128, 128, 0.283);
   }
   .pre:hover .pre_btn {

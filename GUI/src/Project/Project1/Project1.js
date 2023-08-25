@@ -1,12 +1,35 @@
-import React from "react";
+import React ,{useState}from "react";
 import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import Footer from "../../Footer/Footer";
 import Tool from "../../Tool/Tool";
 import "./Project1.css"
+import Project ,{SetupSubtopic2} from "./Setup_project1/setupProject1";
+
 
 const Project1=()=>{
+    const [currentImageType, setCurrentImageType] = useState("Linh");
+    const [showPDF, setShowPDF] = useState(false);
+    const [TypeContent,setTypeContent] = useState (`./Infographic - SHEIN.pdf`)
+    const togglePDF = (content) => {
+        if (content === "Infog") {
+            setTypeContent(`./Infographic - SHEIN.pdf`);
+        }
+        if (content === "Presentation") {
+            setTypeContent(`./Presentation - Rashi & Linh.pdf`);
+        }
+      setShowPDF(!showPDF);
+    };
     return(
         <div className="Project1_body">
+            {showPDF && (
+                <iframe
+                className="pdf_project"
+                src={require(`${TypeContent}`)}
+                width="100%"
+                height="1000px"
+                title="PDF Viewer"
+                />
+            )}
             <Tool />
             <SDGslogo />
             <h1>SUSTAINABILITY & BUSINESSES</h1>
@@ -21,6 +44,7 @@ const Project1=()=>{
                         </div>
                         <div className="name_teammate">
                             Name:Rashi Mukherjee
+                            <i class="fa-solid fa-circle-info" onClick={() => setCurrentImageType("Rashi")}></i>
                         </div>
                         <div className="profile_main">
                              <p>Age: 17</p>
@@ -30,15 +54,16 @@ const Project1=()=>{
                     </div>
                     <div className="profile">
                         <div className="profile_img">
-                            <img src={ require ("./img/rashi.JPG")} alt=""></img>
+                            <img src={ require ("./img/Linh.JPG")} alt=""></img>
                         </div>
                         <div className="name_teammate">
-                            Name:Rashi Mukherjee
+                            Name:Trinh Ba Khanh Linh
+                            <i class="fa-solid fa-circle-info"  onClick={() =>setCurrentImageType("Linh")}></i>
                         </div>
                         <div className="profile_main">
                              <p>Age: 17</p>
-                             <p> Nationality: Thailander</p>
-                             <p>Education: Senior (KIS International School, Thailand)</p>
+                             <p> Nationality: Vietnamese</p>
+                             <p>Education: Senior (BVIS - British Vietnamese International School HCMC, Vietnam)</p>
                         </div>
                     </div>
                     </div>
@@ -252,16 +277,254 @@ const Project1=()=>{
                                 (2) What are the reactions from people impacted by this problem? 
                             </p></div>
                             <div className="link"><strong>Relevance:</strong> Reducing the on-hold times for customer service callers is 
-                            crucial for Example company. Prolonged waiting times have a detrimental effect on customer satisfaction and 
-                            loyalty, leading to potential customer churn and loss of revenue (3). Additionally, the company's declining 
-                            reputation in terms of customer service can have a lasting impact on its competitive position in the market. 
-                            Addressing this problem is of utmost importance to improve customer experience and maintain a positive brand image.
-</div>
+                                crucial for Example company. Prolonged waiting times have a detrimental effect on customer satisfaction and 
+                                loyalty, leading to potential customer churn and loss of revenue (3). Additionally, the company's declining 
+                                reputation in terms of customer service can have a lasting impact on its competitive position in the market. 
+                                Addressing this problem is of utmost importance to improve customer experience and maintain a positive brand image.
+                                <br></br>
+                                (3) What are the short-term, long-term consequences were this problem to persist?
+                            </div>
+                            <br></br>
+                            <div className="link + heh"><p><strong>Objectives: </strong>The primary objective (4) of this project is to reduce the on-hold times for 
+                            customer service callers at Example company. The specific objectives include:</p>
+                            <br></br>
+                            <p className="small"> <i class="fa-solid fa-circle"></i> Analyzing the current customer service workflow and 
+                            identifying bottlenecks contributing to increased on-hold times.</p>
+                            <br></br>
+                            <p className="small"> <i class="fa-solid fa-circle"></i> Assessing the staffing levels and resource 
+                            allocation to determine the extent of understaffing and its impact on customer service.</p>
+                            <br></br>
+                            <p className="small"> <i className="fa-solid fa-circle"></i>Developing strategies and implementing 
+                            measures to optimize the customer service workflow and reduce on-hold times.</p>
+                            <br></br>
+                            <p className="small"> <i className="fa-solid fa-circle"></i>Monitoring and evaluating the effectiveness of 
+                            the implemented measures through key performance indicators (KPIs) such as average on-hold time, customer 
+                            satisfaction ratings, and customer feedback</p>
+                            <br></br></div>
+                            <br></br>
+                            <h4>Task 3: Empathy Mapping</h4>
+                            <br></br>
+                            <p className="small">
+                                1. Please identify 2-3 people directly consuming your solution (these are called your customers) 
+                                or are directly impacted by the benefits of your solution (these are called your beneficiaries). 
+                                <br></br>
+                                <p className="small">- Afterwards, you and your partner should fill the empathy map below for each 
+                                of your main stakeholders. We will use this simpler model. 
+                                </p>
+                            </p>
+                            <br></br>
+                            <div className="img">
+                                <img src={require ("./img/picture2.png")} alt="" ></img>
+                            </div>
+                            <p className="small">Paste the Empathy Maps right after the Relevance slide.</p>
+                            <br></br>
+                            <h4>Pre-seminar Preparation: Expectations for the next seminar </h4>
+                            <br></br>
+                            <p className="small">
+                                1. Next week, we will delve into a case study that has successfully utilize Design Thinking 
+                                in their work: Bringing clean toilets to Ghana! Below is a short report of their project, please have a read.
+                                <p className="small">a. The <a href="https://www.wsup.com/content/uploads/2017/08/PN008-ENGLISH-CleanTeam.pdf">Case Study</a></p>
+                            </p>
+                            <br></br>
+                            <p className="small">Be prepared to share your slides with the bigger team in our 3rd seminar! </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div className="box + se3">
+                    <div className="Seminar">
+                        <h2>Seminar 3: Stakeholder Analysis</h2>
+                        <br></br>
+                        <div className="content_seminar">
+                            <h4>Post-seminar collaboration</h4>
+                            <h4>Task 1: Crisis and Vision Orientation </h4>
+                            <br></br>
+                            <p className="small">
+                                Decipher between the parts of your solution that is “crisis-oriented” and “vision-oriented.” 
+                                This distinction requires different approaches to appeal to your audience.
+                                <br></br>
+                                <p className="small">
+                                    -   For example, the lack of infrastructure for sanitation is a crisis in Ghana. It's common knowledge that 
+                                    new bathrooms must be created to serve the citizens - this addresses the crisis. However, creating toilets 
+                                    that stores waste in your house to be picked up may raise skepticisms from your customers, making this facet 
+                                    of your product vision-oriented. 
+                                    <br></br>
+                                    <p className="small">
+                                        + For points made in the crisis-oriented box, write a <strong><u>justification</u></strong> for why your consumers will 
+                                        readily adopt such aspect of your solution. Estimate the extent of effectiveness of said aspect. 
+                                        <br></br>
+                                        + For points made in the vision-oriented box, outline <strong><u>potential skepticism</u></strong> of such aspect of your 
+                                        solution and how you aim to tackle them, or what information must you collect to understand why the skepticism exists.
+                                    </p>
+                                </p>
+                            </p>
+                            <div className="img">
+                                <img src={require ("./img/picture3.png")} alt=""></img>
+                                <sub>**Add this to your presentation</sub>
+                            </div>
+                            <br></br>
+                            <h4>Task 2: Stakeholder Analysis</h4>
+                            <br></br>
+                            <p className="small">For sake of simplification, lets create 3 general personas for the ideal people 
+                            using/impacted by your solution. For each box, list down the specific profile of your audience and 
+                            answer the questions below. </p>
+                            <div className="img">
+                                <img src={require ("./img/picture4.png")} alt=""></img>
+                                <sub>**Add this to your presentation</sub>
+                            </div>
+                            <br></br>
+                            <h4>Task 3: Continue your presentation </h4>
+                            <br></br>
+                            <p classname="small">Work with your partner to complete unfinished portions of your presentation.</p>
+                            <br></br>
+                            <h4>Pre-seminar Preparation: Expectations for the next seminar  </h4>
+                            <br></br>
+                            <p className="small"><strong><u>Be prepared to share your slides with the bigger team in our 4th seminar!</u></strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div className="box + se4">
+                        <div className="Seminar">
+                            <h2>Seminar 4: Case study</h2>
+                            <br></br>
+                            <div className="content_seminar">
+                                <h4>Delta Air Lines</h4>
+                                <br></br>
+                                <p className="small">
+                                    <a href="https://esg.deltaww.com/en/manage_international">Delta Air Lines.</a> The company has implemented 
+                                    a program called Delta's Green IT initiative, which focuses on reducing electronic waste. Delta has 
+                                    partnered with recycling companies to ensure that old electronics are properly disposed of and recycled, 
+                                    rather than being sent to landfills. The airline also has programs in place to reduce fuel consumption, 
+                                    which not only reduces waste but also saves the company money.
+                                </p>
+                                <br></br>
+                                <div className="overview">
+                                Sources: 
+                                <br></br>
+                                <br></br>
+                                    <a href="https://www.delta.com/us/en/about-delta/sustainability">https://www.delta.com/us/en/about-delta/sustainability</a>
+                                    <a href="https://esg.deltaww.com/en/manage_international">https://esg.deltaww.com/en/manage_international</a>
+                                </div>
+                                <br></br>
+                                <h4>Eileen Fisher</h4>
+                                <br></br>
+                                <p className="small">Eileen Fisher has adopted a closed-loop model where the products are designed to minimize 
+                                waste and the materials used are sourced from sustainable sources. The company also offers a take-back program 
+                                where customers can return their clothes for recycling or resale. These clothes are either reused, repurposed, 
+                                or recycled into new products.</p>
+                                <br></br>
+                                <p className="small">
+                                “Reducing clothing waste: EILEEN FISHER was also an early adopter of clothing take-back programs, and its Renew 
+                                line, launched in 2009, helps customers keep clothing out of landfill by bringing it back to EILEEN FISHER for resale. “ - 
+                                from
+                                <br></br>
+                                <br></br>
+                                <p className="small">
+                                    1. <a href="https://www.stern.nyu.edu/sites/default/files/assets/documents/EILEEN%20FISHER%20Case.pdf">NYU The Business Case for Sustainable Apparel at EILEEN FISHER report</a>
+                                    <br></br>
+                                    <br></br>
+                                    2. <a href="https://www.vogue.com/article/eileen-fisher-amy-hall-sustainabiity-horizon-2030"> https://www.vogue.com/article/eileen-fisher-amy-hall-sustainabiity-horizon-2030</a>
+                                    <br></br>
+                                    <br></br>
+                                    3. <a href="https://www.researchgate.net/publication/360609368_Sustainable_fast_fashion_-_case_study_of_HM"> https://www.researchgate.net/publication/360609368_Sustainable_fast_fashion_-_case_study_of_HM</a>
+                                </p>
+                                </p>
+                                <div className="link">
+                                    <h4>Case Study: H&M's Garment Collecting Initiative</h4>
+                                    <br></br>
+                                    <p className="small">HM, a global fashion retailer, has implemented various initiatives to promote 
+                                    recycling and circular economy practices within the fashion industry. One notable case study that 
+                                    exemplifies H&M's commitment to textile recycling and circular economy is their Garment Collecting initiative.</p>
+                                </div>
+                                <div className="link">
+                                    <h4>Background:</h4>
+                                    <p className="small">H&M recognized the environmental impact of textile waste and the importance 
+                                    of diverting garments from landfills. In response, they launched the Garment Collecting initiative 
+                                    in 2013, aimed at collecting used garments and recycling them into new textiles.</p>
+                                    <br></br>
+                                    <br></br>
+                                    <h4>Solution: Garment Collecting Initiative:</h4>
+                                    <p className="small">
+                                    The Garment Collecting initiative encourages customers to bring unwanted clothing, regardless of 
+                                    brand or condition, to H&M stores for recycling. Customers receive a discount voucher for each bag
+                                    of clothing they bring, which can be used towards future purchases. H&M then sorts the collected 
+                                    garments, with wearable items being resold as secondhand clothing, and unwearable items being recycled 
+                                    into new textiles.
+                                    </p>
+                                </div>
+                                <div className="link">
+                                    <h4>Benefits and Impact:</h4>
+                                    <br></br>
+                                    <p className="small">
+                                        1. Reduction of Textile Waste: The Garment Collecting initiative significantly reduces 
+                                        textile waste by diverting unwanted garments from landfills. H&M's collection system allows 
+                                        customers to easily and conveniently recycle their clothing, promoting a circular economy by 
+                                        giving old textiles new life.
+                                        <br></br>
+                                        2. Promotion of Sustainable Consumption: The initiative encourages customers to adopt more 
+                                        sustainable consumption habits by extending the life of their clothing and diverting them 
+                                        from disposal. By providing incentives for recycling, H&M motivates customers to participate 
+                                        in sustainable practices.
+                                        <br></br>
+                                        3. Closed-Loop Recycling: H&M works with recycling partners to process and convert the collected 
+                                        garments into new textiles. This closed-loop recycling process helps reduce the need for virgin 
+                                        materials, conserving resources, energy, and water.
+                                        <br></br>
+                                        4. Awareness and Education: The initiative raises awareness about the environmental impact of textile 
+                                        waste and promotes the concept of circularity in fashion. Through in-store communication and digital 
+                                        channels, H&M educates customers about the benefits of recycling and the importance of choosing sustainable 
+                                        options.
+                                    </p>
+                                </div>
+                                <div className="about">
+                                    <h4>Lessons Learned:</h4>
+                                    <br></br>
+                                    <p className="small">H&M's Garment Collecting initiative demonstrates the potential of engaging customers 
+                                    in the circular economy and promoting textile recycling. The initiative's success lies in its simplicity, 
+                                    offering customers a convenient and rewarding way to recycle their clothing. By providing incentives and 
+                                    raising awareness about textile waste, H&M has successfully created a system that encourages sustainable 
+                                    consumption and reduces the environmental impact of discarded garments.
+                                    <br></br>
+                                    <br></br>
+                                    This case study highlights the importance of a well-designed collection system, clear communication about 
+                                    the initiative's purpose and impact, and collaboration with recycling partners. H&M's Garment Collecting 
+                                    initiative serves as an example for the fashion industry, showcasing how retailers can actively contribute 
+                                    to a circular economy by establishing effective textile recycling programs that engage and incentivize 
+                                    customers to recycle their clothing.</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div className=" box + presentation">
+                    <div className="Seminar">
+                        <div className="content_seminar">
+                            <h2>Final Product</h2>
+                            <div className="final_production">
+                            <div className="Infog">
+                                <h4>Infographic</h4>
+                                <br></br>
+                                <img src={require ("./img/intro.png")} alt="" onClick={()=> togglePDF("Infog")}></img>
+                            </div>
+                            <div className="Present">
+                                <h4>Presentation</h4>
+                                <br></br>
+                                <img src={require ("./img/Presentation.png")} alt="" onClick={()=> togglePDF("Presentation")}></img>
+                            </div>
+                            </div>
+                        
                         </div>
                     </div>
                 </div>
             </div>
+            <Project currentImageType={currentImageType} />
             <Footer />
+            <SetupSubtopic2 />
+            {showPDF && <button className="btn_toggle_pdf" title="Close" onClick={togglePDF}>
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            }
         </div>
     )
 }

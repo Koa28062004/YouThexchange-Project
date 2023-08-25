@@ -21,6 +21,9 @@
     display: flex;
     justify-content: space-between;
   }
+
+
+  /*To handle with multi - level dropdown menu*/
   .dropdown {
     width: 20%;
     color: white;
@@ -88,7 +91,7 @@
     color: rgb(239, 225, 209);
     background-color: rgb(63, 46, 62);
   }
-  
+  /*Smaller level of the dropdown content*/
   .i_dropdown {
     width: 100%;
     font-size: 100%;
@@ -147,6 +150,7 @@
     height: 100%;
   }
   
+  /*Place to search*/
   .search {
     width: 20%;
     height: 50%;
@@ -155,6 +159,7 @@
     justify-content: center;
     margin-right: 3%;
   }
+  /* the input of search*/
   .input {
     width: 80%;
     height: 100%;
