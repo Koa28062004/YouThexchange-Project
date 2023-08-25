@@ -1,6 +1,6 @@
-# ReactJS-ExpressJS Web Project
+# YouThexchange Project
 
-Welcome to the ReactJS-ExpressJS Web project! This repository contains the source code for a web application built using React and ExpressJS.
+Welcome to the YouThexchange Project! This repository contains the source code for a web application built using React and ExpressJS.
 
 ## Table of Contents
 
