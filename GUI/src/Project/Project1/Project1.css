@@ -6,6 +6,9 @@
     margin-top: 100px;
     margin-bottom: 100px;
 }
+
+
+/* Teammate information container*/
 .Teammate_profile{
     width: 70%;
     background: linear-gradient(rgb(169, 169, 169),rgb(21, 55, 71));
@@ -17,20 +20,6 @@
     display: flex;
     flex-direction: column;
     border-radius: 20px ;
-}
-.Project1_main .box{
-    width: 80%;
-    height:auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
-    margin-left: 10%;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px ;
-    padding-top: 20px;
-    padding-bottom: 60px;
-    padding-left: 5px;
 }
 .Teammate_profile .profile .profile_img{
     width: 60%;
@@ -50,7 +39,7 @@
     align-items: center;
     justify-content: space-around;
 }
-.Teammate_profile .profile{
+.Teammate_profile .profile{   /*Profile of teammate*/
     margin-top: 60px;
     position: relative;
     width: 35%;
@@ -73,7 +62,7 @@
     background-color: white;
 }
 .Teammate_profile .profile .profile_main p{
-    padding-left: 5%;
+    padding-left: 10%;
 }
 .Teammate_profile .profile .name_teammate{
     width: 100%;
@@ -100,9 +89,28 @@
 .Teammate_profile .profile .profile_main p{
     margin-bottom: 10px;
 }
+/* The box contain every part of project*/
+.Project1_main .box{
+    width: 80%;
+    height:auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px ;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 5px;
+}
+
+
 .Project1_main .box .Seminar .img{
     width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -112,7 +120,7 @@
     width: 60%;
     object-fit: fill;
 }
-.Project1_main .box .Seminar .content_seminar{
+.Project1_main .box .Seminar .content_seminar{ /*The main content of Senimar*/
     width: 90%;
     margin-left: 5%;
     font-size: 22px;
@@ -126,6 +134,8 @@
     border-radius: 10px;
     text-align: center;
 }
+
+/* Begin of the decoration small boxes*/
 .Project1_main .box .Seminar .content_seminar .overview{
     width: 70%;
     background: rgb(255, 243, 218);
@@ -151,7 +161,6 @@
     padding-bottom: 10px;
     padding-top: 10px;
 }
-.heh{width: 100%;}
 .link a{
     text-decoration: none;
 }
@@ -179,8 +188,8 @@
 }
 .Project1_main .box .Seminar .content_seminar .about{
     width: 70%;
-    background: rgb(16, 44, 87);
-    color: white;
+    background: rgb(157, 196, 255);
+    color: rgb(0, 0, 0);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     margin-top: 20px;
     margin-left: 25%;
@@ -191,20 +200,114 @@
     padding-left:10px ;
     padding-bottom: 20px;
 }
-.Project1_main .box .Seminar .content_seminar .small{
+/* End of the decoration small boxes*/
+
+
+
+.Project1_main .box .Seminar .content_seminar .small{   /*The small paragraph that wants to be indented.*/
     margin-left: 30px;
     font-weight:400;
 }
+
+/*class to change background of every main box*/
 .se1{
     background: rgb(223, 204, 251);
 }
 .se2{
     background-color: pink;
 }
+.se3{
+    background-color: white;
+}
+
+.se4{
+    background-color:rgb(252, 187, 146) ;
+}
+.Project1_main .presentation{
+    background-color: rgb(188, 188, 188);
+    color:rgb(0, 0, 0)
+}
+
 .Project1_main .box .Seminar .content_seminar .fa-circle{
     font-size: 10px;
     margin-right: 20px;
 }
 .Project1_main .profile .fa-circle-info{
     cursor: pointer;
+}
+
+/*Final Product edit*/
+
+.content_seminar .final_production{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+/*handle the presentation*/
+.content_seminar .Present{
+    margin-top: 10%;
+    width: 50%;
+    
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+.content_seminar .Present img{
+    width: 60%;
+    cursor: pointer;
+    border-radius: 50%;
+    object-fit: contain;
+    transition: all 0.3s ease-in-out;
+}
+.content_seminar .Present img:hover{
+    transform: scale(1.1);
+    border-radius: 0%;
+}
+
+/* handle with Infographic*/
+.content_seminar .Infog{
+    margin-top: 10%;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+.content_seminar .Infog img{
+    width: 50%;
+    object-fit: contain;
+    transition: all 0.3s ease-in-out;
+}
+.content_seminar .Infog img:hover{
+    transform: scale(1.1);
+}
+/*Three class to handle pdf*/
+.Project1_body .pdf_project{
+    position: fixed;
+    top:0;
+    height: 100vh;
+    z-index: 10;
+}
+
+.btn_toggle_pdf {
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37px;
+    font-size: 22px;
+    background-color: unset;
+    color: #f2f2f2;
+    border: none;
+    position: fixed;
+    z-index: 11;
+    top:12px;
+    right:140px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.btn_toggle_pdf:hover{
+    background-color: rgba(128, 128, 128, 0.29);
 }

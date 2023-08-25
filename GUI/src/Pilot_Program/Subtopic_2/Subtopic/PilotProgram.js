@@ -30,7 +30,27 @@ const BiologyImg=[
     "./img/Biology/picture1.png",
     "./img/Biology/picture2.png",
 ];
+export const SetupSubtopic2 = () => {
+    useEffect(() => {
+        const PilotPr = document.querySelector(".Business_program ");
+        const Btnsub2 = document.querySelectorAll(".subtopicProject .btn");
+        const Img_subtopic= document.querySelector(".Business_program .gallery_subtopic2 img")
+        Btnsub2.forEach((btn, index) => {
+            if (index === 0||index === 1 || index === 2) {
+              btn.addEventListener("click", () => {
+                setTimeout(() => {
+                  PilotPr.style.display = "flex";
+                }, 100);
+                setTimeout(() => {
+                  Img_subtopic.style.transform = "scale(1)";
+                }, 150);
+              });
+            }
+          });
+    }, []);
 
+
+};
 const PilotProgram = ({ currentImageType }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [currentImageArray, setCurrentImageArray] = useState(BusinessImg);

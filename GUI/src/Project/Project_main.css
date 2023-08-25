@@ -10,7 +10,9 @@
 }.ProjectMain_body h1{
     text-align: center;
 }
-.ProjectMain{
+
+
+.ProjectMain{ /*the main container of projects*/
     width: 100%;
     display: grid;
     margin-top: 100px;
@@ -19,7 +21,7 @@
     margin-bottom: 50px;
 }
 
-.ProjectMain_body .ProjectMain .box_project{
+.ProjectMain_body .ProjectMain .box_project{    /*Boxes of project*/
     width: 280px;
     height:390px;
     border-radius: 5%;
@@ -29,7 +31,8 @@
     margin: 20px;
 }
 
-.ProjectMain_body .ProjectMain .box_project .box_img{
+/*parts of box project*/
+.ProjectMain_body .ProjectMain .box_project .box_img{ 
     width: 100%;
     height:50%;
     margin-bottom: 10px;
@@ -73,6 +76,9 @@
     font-weight:  bold;
     margin-left: 5px;
 }
+/* end*/
+
+/* The details button and the animation of button*/
 .ProjectMain_body .ProjectMain .box_project .btn_project{
     margin-top: 20px;
     position: relative;
@@ -106,33 +112,5 @@
     background: linear-gradient(#5BA8A0,#CBE5AE);
     color:black;
 }
-.ProjectMain_body .pdf_project{
-    position: fixed;
-    top:0;
-    height: 100vh;
-    z-index: 10;
-}
-
-.btn_toggle_pdf {
-    height: 37px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 37px;
-    font-size: 22px;
-    background-color: unset;
-    color: #f2f2f2;
-    border: none;
-    position: fixed;
-    z-index: 11;
-    top:12px;
-    right:140px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.btn_toggle_pdf:hover{
-    background-color: rgba(128, 128, 128, 0.29);
-}
 
 
-  

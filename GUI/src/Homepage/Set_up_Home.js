@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 function Run() {
   useEffect(() => {
-    const gallery = document.querySelector(".gallery");
+    const gallery = document.querySelector(".gallery_homepage");
     let currentIndex = 0;
     let next = document.querySelector(".next_btn");
     let pre = document.querySelector(".pre_btn");
