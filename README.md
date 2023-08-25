@@ -10,7 +10,7 @@ Welcome to the YouThexchange Project! This repository contains the source code f
 
 ## Introduction
 
-This project is a web application developed using React, a popular JavaScript library for building user interfaces and ExpressJS to build the backend for the web. The application is designed to briefly describe the purpose or goal of your project.
+This project is a web application developed using React, a popular JavaScript library for building user interfaces and ExpressJS to build the backend for the web. The application is designed to describe the purpose or goal of your project briefly.
 
 ## Getting Started
 
@@ -44,21 +44,21 @@ Alternatively, you can use the quick run script:
 
     ./quickRun.sh
 
-5. Open your web browser and visit http://localhost:3000 to view the application.
+3. Open your web browser and visit http://localhost:3000 to view the application.
 
 # Project Structure
-Our project consists of 2 main folders: API and GUI, where API is the folder for the backend code and API serving the Frontend. We use ReactJS (frontend) and ExpressJS (backend).
+Our project consists of 2 main folders: API and GUI, where API is the folder for the backend code and API serves the Frontend. We use ReactJS (frontend) and ExpressJS (backend).
 
 Here is a more detailed analysis of your project structure:
 
 **"API" Folder:**
 
-* Used for developing the backend of the application that using ExpressJS.
+* Used for developing the backend of the application that uses ExpressJS.
 * **data.txt** used for storing data.
-* **index.js** is the main function in API to code the search input.
+* **index.js** is the primary function in API to code the search input.
 
 **"GUI" Folder:**
 
-* Where the frontend of the application is developed using ReactJS.
+* Where the front end of the application is developed using ReactJS.
 * Can be organized into subfolders similar to the "API" folder to manage different parts of the user interface.
-* Each subfolder in "GUI" contains React source code, UI components, CSS files, images, and files related to the user interface of the application.
+* Each subfolder in "GUI" contains React source code, UI components, CSS files, images, and files related to the application's user interface.
