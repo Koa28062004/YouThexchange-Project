@@ -8,6 +8,7 @@ import Subtopic1 from "./Pilot_Program/Subtopic_1/Subtopic_1";
 import Subtopic2 from "./Pilot_Program/Subtopic_2/Subtopic_2";
 import ProjectMain from "./Project/Project_main";
 import Project1 from "./Project/Project1/Project1";
+import Project2 from "./Project/Project2/Project2";
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Pilot_Program/Project_2" element={<Subtopic2 />} />
         <Route path="/Project" element={<ProjectMain />} />
         <Route path="/Project/Project1" element={<Project1 />} />
+        <Route path="/Project/Project2" element={<Project2 />} />
     </Routes>
   </BrowserRouter>
   );
