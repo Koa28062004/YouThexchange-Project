@@ -7,7 +7,7 @@
     margin-bottom: 100px;
 }
 .Teammate_profile{
-    width: 60%;
+    width: 70%;
     background: linear-gradient(rgb(169, 169, 169),rgb(21, 55, 71));
     height:580px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -62,6 +62,7 @@
 }
 .Teammate_profile .profile .profile_main{
     width: 0;
+    margin-left: -5%;
     font-size: 1.2em;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -71,12 +72,16 @@
     transition: width 0.3s ease-in-out ,color 0.2s ease-in-out 0.3s;
     background-color: white;
 }
+.Teammate_profile .profile .profile_main p{
+    padding-left: 5%;
+}
 .Teammate_profile .profile .name_teammate{
     width: 100%;
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 1.2em;
+    margin-left: -5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -134,7 +139,7 @@
     padding-bottom: 10px;
 }
 .Project1_main .box .Seminar .content_seminar .link{
-    width: 70%;
+    width: auto;
     background: rgb(248, 248, 248);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     margin-top: 20px;
@@ -144,7 +149,9 @@
     border-radius: 20px ;
     padding-left:10px ;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
+.heh{width: 100%;}
 .link a{
     text-decoration: none;
 }
@@ -197,4 +204,7 @@
 .Project1_main .box .Seminar .content_seminar .fa-circle{
     font-size: 10px;
     margin-right: 20px;
+}
+.Project1_main .profile .fa-circle-info{
+    cursor: pointer;
 }
