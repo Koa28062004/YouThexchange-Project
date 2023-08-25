@@ -3,8 +3,8 @@ import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import Footer from "../../Footer/Footer";
 import Tool from "../../Tool/Tool";
 import "./Project1.css"
-import PilotProgram from "./SetupProject1/setupProject1";
-import SetupSubtopic2 from "./SetupProject1/set";
+import Project ,{SetupSubtopic2} from "./Setup_project1/setupProject1";
+
 
 const Project1=()=>{
     const [currentImageType, setCurrentImageType] = useState("Linh");
@@ -24,7 +24,7 @@ const Project1=()=>{
                         </div>
                         <div className="name_teammate">
                             Name:Rashi Mukherjee
-                            <i class="fa-solid fa-circle-info"></i>
+                            <i class="fa-solid fa-circle-info" onClick={() => setCurrentImageType("Rashi")}></i>
                         </div>
                         <div className="profile_main">
                              <p>Age: 17</p>
@@ -34,10 +34,10 @@ const Project1=()=>{
                     </div>
                     <div className="profile">
                         <div className="profile_img">
-                            <img src={ require ("./img/rashi.JPG")} alt=""></img>
+                            <img src={ require ("./img/Linh.JPG")} alt=""></img>
                         </div>
                         <div className="name_teammate">
-                            Name:Rashi Mukherjee
+                            Name:Trinh Ba Khanh Linh
                             <i class="fa-solid fa-circle-info"  onClick={() =>setCurrentImageType("Linh")}></i>
                         </div>
                         <div className="profile_main">
@@ -265,7 +265,7 @@ const Project1=()=>{
                                 (3) What are the short-term, long-term consequences were this problem to persist?
                             </div>
                             <br></br>
-                            <p><strong>Objectives: </strong>The primary objective (4) of this project is to reduce the on-hold times for 
+                            <div className="link + heh"><p><strong>Objectives: </strong>The primary objective (4) of this project is to reduce the on-hold times for 
                             customer service callers at Example company. The specific objectives include:</p>
                             <br></br>
                             <p className="small"> <i class="fa-solid fa-circle"></i> Analyzing the current customer service workflow and 
@@ -280,12 +280,38 @@ const Project1=()=>{
                             <p className="small"> <i className="fa-solid fa-circle"></i>Monitoring and evaluating the effectiveness of 
                             the implemented measures through key performance indicators (KPIs) such as average on-hold time, customer 
                             satisfaction ratings, and customer feedback</p>
+                            <br></br></div>
                             <br></br>
+                            <h4>Task 3: Empathy Mapping</h4>
+                            <br></br>
+                            <p className="small">
+                                1. Please identify 2-3 people directly consuming your solution (these are called your customers) 
+                                or are directly impacted by the benefits of your solution (these are called your beneficiaries). 
+                                <br></br>
+                                <p className="small">- Afterwards, you and your partner should fill the empathy map below for each 
+                                of your main stakeholders. We will use this simpler model. 
+                                </p>
+                            </p>
+                            <br></br>
+                            <div className="img">
+                                <img src={require ("./img/picture2.png")} alt="" ></img>
+                            </div>
+                            <p className="small">Paste the Empathy Maps right after the Relevance slide.</p>
+                            <br></br>
+                            <h4>Pre-seminar Preparation: Expectations for the next seminar </h4>
+                            <br></br>
+                            <p className="small">
+                                1. Next week, we will delve into a case study that has successfully utilize Design Thinking 
+                                in their work: Bringing clean toilets to Ghana! Below is a short report of their project, please have a read.
+                                <p className="small">a. The <a href="https://www.wsup.com/content/uploads/2017/08/PN008-ENGLISH-CleanTeam.pdf">Case Study</a></p>
+                            </p>
+                            <br></br>
+                            <p className="small">Be prepared to share your slides with the bigger team in our 3rd seminar! </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <PilotProgram currentImageType={currentImageType} />
+            <Project currentImageType={currentImageType} />
             <Footer />
             <SetupSubtopic2 />
         </div>
