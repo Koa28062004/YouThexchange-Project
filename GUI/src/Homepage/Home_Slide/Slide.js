@@ -11,7 +11,7 @@ const slideImages = [
 
 function Slide() {
   return (
-    <div className="gallery">
+    <div className="gallery_homepage">
       {slideImages.map((image, index) => (
         <div key={index} className="slide">
           <img src={image} alt={`Slide ${index}`} />

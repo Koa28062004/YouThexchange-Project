@@ -42,16 +42,12 @@ const programData = [
     name: "Project",
     details: [
       {
-        name: "Project 1",
-        link:"#"
-      }, 
-      {
-        name:"Project 2",
-        link:"#"
+        name:"Project",
+        link:"/Project"
       },
       {
-        name:"More...",
-        link:"/Project"
+        name:"Video Project",
+        link:"#"
       }
     ]
   },

@@ -60,7 +60,8 @@
     align-items: center;
     text-align: left;
 }
-.subtopicProject .container .box_subtopic{
+
+.subtopicProject .container .box_subtopic{     
     margin-top: 40px;
     width: 80%;
     height: 370px;
