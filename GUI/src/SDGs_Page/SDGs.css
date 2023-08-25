@@ -284,7 +284,8 @@ body {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 767px) {
+
+@media (max-width: 767px) { 
   .footer-col {
     width: 25%;
     margin-bottom: 30px;
