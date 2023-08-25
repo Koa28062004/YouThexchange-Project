@@ -18,9 +18,9 @@ To get started with this project, follow these steps:
 
 1. Clone the repository to your local machine:
 
-   ```bash
-   git clone https://github.com/Koa28062004/React-Web.git
-
+```bash
+git clone https://github.com/Koa28062004/React-Web.git
+```
 
 To run the project, follow one of these methods:
 
@@ -28,23 +28,22 @@ To run the project, follow one of these methods:
 
 1. Run the build script:
 
-    ```bash
-    ./build.sh
-    ```
+```bash
+./build.sh
+```
 
 2. Run the project:
 
-    ```bash
-    ./run.sh
-    ```
+```bash
+./run.sh
+```
 
 ### Method 2: Using the Quick Run Script
 
 Alternatively, you can use the quick run script:
 
-    ```bash
     ./quickRun.sh
-    ```
+
 5. Open your web browser and visit http://localhost:3000 to view the application.
 
 # Project Structure
