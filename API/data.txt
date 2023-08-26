@@ -1,6 +1,7 @@
 Homepage - /
 
 About us - /About_us
+Core Team - /About_us/Core_Team
 
 SDGs - /SDGs
 

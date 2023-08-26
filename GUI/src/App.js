@@ -9,6 +9,7 @@ import Subtopic2 from "./Pilot_Program/Subtopic_2/Subtopic_2";
 import ProjectMain from "./Project/Project_main";
 import Project1 from "./Project/Project1/Project1";
 import Project2 from "./Project/Project2/Project2";
+import CoreTeam from "./About_us_Page/Core_team";
 function App() {
   return (
     <BrowserRouter>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Project" element={<ProjectMain />} />
         <Route path="/Project/Project1" element={<Project1 />} />
         <Route path="/Project/Project2" element={<Project2 />} />
+        <Route path="/About_us/Core_Team" element={<CoreTeam />} />
     </Routes>
   </BrowserRouter>
   );
