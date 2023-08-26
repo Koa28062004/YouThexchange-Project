@@ -241,7 +241,7 @@ const Project1=()=>{
                                 profitability for companies. Customers are becoming increasingly aware of environmental and 
                                 social issues, and they often prefer brands that align with their values. By adopting sustainable business 
                                 practices, companies can build trust,
-</p>
+                                </p>
                             </div>
                         </div>
                     </div>
