@@ -3,6 +3,17 @@ import SetUpTool from "./Set_up_tool";
 import "./Tool.css"
 import { Link } from "react-router-dom";
 import Search from "./Search";
+
+const AboutusData= [
+  {
+    name:"About Us",
+    link:"/About_us"
+  },
+  {
+    name:"Core Team",
+    link:"/About_us/Core_Team"
+  }
+]
 const programData = [
   {
     name: "Members",
@@ -92,7 +103,11 @@ function DropdownContent({ title }) {
   if (title === "About Us")
     return(
       <div className="dropdown-content">
-        
+        {AboutusData.map((program, index) => (
+          <div key={index}>
+            <Link to={program.link}>{program.name}</Link>
+          </div>
+        ))}
       </div>
     );
   if (title === "Project Partners")
@@ -122,7 +137,7 @@ function Navigation() {
         <Dropdown title="Event" />
         <Dropdown title="Competition" />
         <Dropdown title="Program" />
-        <Link to="/About_us" className="dropdown">About Us</Link>
+        <Dropdown title="About Us" />
         <Dropdown title="Project Partners" />
       </div>
     </div>
