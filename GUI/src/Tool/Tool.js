@@ -15,23 +15,7 @@ const AboutusData= [
   }
 ]
 const programData = [
-  {
-    name: "Members",
-    details: [
-      {
-        name: "Member 1",
-        link:"#"
-      }, 
-      {
-        name:"Member 2",
-        link:"#"
-      },
-      {
-        name:"More...",
-        link:"#"
-      }
-    ],
-  },
+ 
   {
     name: "Pilot Program",
     details: [
@@ -76,9 +60,7 @@ function DropdownContent({ title }) {
   if (title === "Competition")
     return (
       <div className="dropdown-content">
-        <a href="https://www.youtube.com/" title="">
-          Youtube
-        </a>
+        Coming soon
       </div>
     );
   if (title === "Program")

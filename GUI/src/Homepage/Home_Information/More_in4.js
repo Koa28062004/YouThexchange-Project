@@ -24,9 +24,12 @@ const Contact = [
 ];
 
 function More() {
+  const handleregister=()=>{
+    alert("We are not currently recruiting members. Please check out our current projects.");
+  }
   return (
     <div className="more_inf">
-        <button className="btn_moreinf">How to register</button>
+        <button className="btn_moreinf" onClick={handleregister}>How to register</button>
         <button className="btn_moreinf">
             Projects
             <div className="Project">
