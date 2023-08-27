@@ -41,9 +41,8 @@
     margin-bottom: 10px;
   }
   .footer-col ul li a {
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #ffffff;
+    width: 100%;
+    font-size: 17px;
     text-decoration: none;
     font-weight: 300;
     color: #bbb;
@@ -51,7 +50,7 @@
     transition: all 0.3s ease;
   }
   .footer-col ul li a:hover {
-    color: #ffffff;
+    color: #e91e63;
     padding-left: 8px;
   }
   .footer-col .social-links a {
