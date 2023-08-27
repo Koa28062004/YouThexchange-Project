@@ -14,9 +14,9 @@
 
 .ProjectMain{ /*the main container of projects*/
     width: 100%;
-    display: grid;
+    display: flex;
     margin-top: 100px;
-    grid-template-columns: repeat(3,auto);
+flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 50px;
 }
