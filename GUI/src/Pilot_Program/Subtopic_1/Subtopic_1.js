@@ -7,19 +7,19 @@ import SetUpSubtopic1 from "./Set_up_subtopic1";
 import MenuPilotProgram from "../Menu";
 const header_content=[
     {
-        name:"1. Purpose of the Program",
+        name:"1. Our goal",
         id:"#1"
     },
     {
-        name:"2. Process of the Program",
+        name:"2. Process",
         id:"#2"
     },
     {
-        name:"3. Content of the Program",
+        name:"3. Our work",
         id:"#3"
     },
     {
-        name:"4. Product of the Program",
+        name:"4. Product",
         id:"#4"
     }
 ]

@@ -4,7 +4,7 @@ function SetUpSubtopic1() {
   useEffect(() => {
     const Roll = document.querySelector(".Roll");
     const Bar = document.querySelector(".Roll .bar"); // Fixed typo here: "documen" to "document"
-    let x = 0;
+    let x = 1;
     
     Bar.addEventListener("click", () => {
       if (x === 0) {

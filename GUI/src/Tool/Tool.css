@@ -9,7 +9,7 @@
     background:linear-gradient(  #654ea3, #c897ab);
   }
   .nav {
-    margin-left: 6%;
+    margin-left: 2%;
     position: relative;
     width: 70%;
     height: 100%;
@@ -17,7 +17,8 @@
     justify-content: space-between;
   }
   .nav .ull {
-    width: 70%;
+    width: 77%;
+    margin-left: 5%;
     display: flex;
     justify-content: space-between;
   }
@@ -27,8 +28,9 @@
   .dropdown {
     width: 20%;
     color: white;
-    font-weight:400;
-    font-size: 125%;
+
+    font-weight:500;
+    font-size: 1.3em;
     text-align: center;
     align-items: center;
     padding-top: 30px;
@@ -61,7 +63,7 @@
   .dropdown-content {
     position: absolute;
     background-color: rgb(239, 225, 209);
-    color: wheat;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     width: 200px;
     height: auto;
