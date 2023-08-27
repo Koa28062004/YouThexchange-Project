@@ -22,6 +22,10 @@
     justify-content: space-around;
     align-items: center;
     background-color: #e9e9e9;
+    transition: all 0.5s;
+}
+.CoreTeam_body .Profile_core:hover{
+    transform: scale(1.1);
 }
 .CoreTeam_body .Profile_core .infor-core{
     width: 50%;
@@ -67,4 +71,22 @@
     width: 70%;
     height: 100%;
     object-fit: cover;
+}
+.CoreTeam_body .header-core{
+    background-color: rgba(47, 60, 84, 0.788);
+    margin-left: 10%;
+    margin-top: 5%;
+    width:max-content;
+    padding: 50px;
+    transform: perspective(700px) rotateX(20deg) rotateY(-20deg);
+    transition: all 0.5s;
+}
+.CoreTeam_body .header-core:hover{
+    transform: perspective(700px) rotateX(20deg) rotateY(30deg);
+}
+.CoreTeam_body .header-core h1{
+    width:max-content;
+    color: aliceblue;
+    font-family:'Lobster', cursive ;
+    font-size: 3em;
 }

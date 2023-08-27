@@ -54,7 +54,9 @@ function CoreTeam(){
             <Tool></Tool>
             <SDGslogo></SDGslogo>
             <div className="CoreTeam_main">
-                <h1>Core Team</h1>
+                <div className="header-core">
+                    <h1>Core Team</h1>
+                </div>
                 {CoreTeamData.map((member,index) => (
                     <div key={index} className="Profile_core">
                     <div className="infor-core">

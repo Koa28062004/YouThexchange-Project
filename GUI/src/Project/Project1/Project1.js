@@ -10,7 +10,7 @@ const Teammate1Data=[
     {
         function:"Rashi",
         name:"Rashi Mukherjee",
-        img:"./img/rashi.JPG",
+        img:"./img/Rashi.JPG",
         age:currentYear-2006,
         Nationality: "Thailander",
         Education: "Senior (KIS International School, Thailand)"
@@ -51,7 +51,8 @@ const Project1=()=>{
             )}
             <Tool />
             <SDGslogo />
-            <h1>SUSTAINABILITY & BUSINESSES</h1>
+            <div className="header-project1"><h1>SUSTAINABILITY & BUSINESSES</h1></div>
+
             <div className="Project1_main">
                 
                 <div className="Teammate_profile">
