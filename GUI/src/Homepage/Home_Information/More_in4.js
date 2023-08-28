@@ -35,9 +35,9 @@ function More() {
             Projects
             <div className="Project">
             {Project.map((item) => (
-                <Link key={item.mess} href={item.link} className={item.classname}>
-                    <i className={item.idclass} ></i>
-                <span className="mess">{item.mess}</span>
+                <Link key={item.mess} to={item.link} className={item.classname}>
+                  <i className={item.idclass} ></i>
+                  <span className="mess">{item.mess}</span>
                 </Link>
             ))}
             </div>
