@@ -54,19 +54,18 @@ const Videos = [
 
 function ProjectVideos() {
   return (
-    <a>
       <div className="Videos">
         {Videos.map((item) => (
-          <div key = {item.id}>
+          <div key = {item.id} className="video-container">
             <img 
               src = {item.imageLink}
               alt = {item.title}
             />
+            <div className="time">{item.time}</div>
             <b>{item.title}</b>
           </div>
         ))}
       </div>
-    </a>
   );
 }
 
