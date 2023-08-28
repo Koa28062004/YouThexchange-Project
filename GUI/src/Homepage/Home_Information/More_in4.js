@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./More_in4.css";
 const Project = [
   { 
@@ -34,10 +35,10 @@ function More() {
             Projects
             <div className="Project">
             {Project.map((item) => (
-                <a key={item.mess} href={item.link} className={item.classname}>
+                <Link key={item.mess} href={item.link} className={item.classname}>
                     <i className={item.idclass} ></i>
                 <span className="mess">{item.mess}</span>
-                </a>
+                </Link>
             ))}
             </div>
         </button>
