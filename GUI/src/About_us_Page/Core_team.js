@@ -12,7 +12,7 @@ const CoreTeamData=[
         age:currentYear-2004,
         edu:"Biotechnology Undergraduate at the University of Science, Ho Chi Minh City, Vietnam",
         pos:"Director of Academics & Outreach, Vietnam",
-        bonus:"“The only time success comes before work is in the dictionary”",
+        bonus:"",
         mail:"ngphamanhthu.workspace@gmail.com",
         img:`./img/Anh_Thu.jpg`
     },

@@ -6,7 +6,9 @@ import Image3 from './imgs/Meow3.png';
 import Image4 from './imgs/Meow4.png';
 import Image5 from './imgs/Meow5.png';
 import Image6 from './imgs/Meow6.png';
-
+import Footer from "../Footer/Footer";
+import Tool from "../Tool/Tool";
+import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
 const Videos = [
   {
     id: "1",
@@ -54,6 +56,9 @@ const Videos = [
 
 function ProjectVideos() {
   return (
+    <div className="Videos_body">
+      <Tool />
+      <SDGslogo />
       <div className="Videos">
         {Videos.map((item) => (
           <div key = {item.id} className="video-container">
@@ -66,6 +71,8 @@ function ProjectVideos() {
           </div>
         ))}
       </div>
+      <Footer />
+    </div>
   );
 }
 
