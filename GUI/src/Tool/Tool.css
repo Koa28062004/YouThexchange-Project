@@ -28,7 +28,6 @@
   .dropdown {
     width: 20%;
     color: white;
-
     font-weight:500;
     font-size: 1.3em;
     text-align: center;
@@ -76,9 +75,16 @@
   
   .dropdown:hover .dropdown-content {
     display: flex;
-    margin-top: 28%;
+    top: 100%;
   }
-  
+  .dropdown-content p{
+    color: rgb(63, 46, 62);
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
   .dropdown-content a {
     text-decoration: none;
     color: rgb(63, 46, 62);

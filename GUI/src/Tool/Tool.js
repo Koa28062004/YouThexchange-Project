@@ -60,7 +60,7 @@ function DropdownContent({ title }) {
   if (title === "Competition")
     return (
       <div className="dropdown-content">
-        Coming soon
+       <p>Coming soon</p> 
       </div>
     );
   if (title === "Program")
