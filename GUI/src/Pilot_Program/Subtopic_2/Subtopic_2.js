@@ -12,7 +12,7 @@ const Pilot_ProgramData = [
         name: "Business",
         details: [
             {
-                name:"SUSTAINABILITY",
+                name:"SUSTAINABILITY & BUSINESSES",
                 img: "./Images/picture1.png",
                 link:"/Pilot_Program/Subtopic_2/Business"
             }
