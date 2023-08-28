@@ -1,6 +1,7 @@
 Homepage - /
 
 About us - /About_us
+Core Team - /About_us/Core_Team
 
 SDGs - /SDGs
 
@@ -9,3 +10,4 @@ Subtopic 2 (Product outcomes) - /Pilot_Program/Project_2
 
 Project - /Project
 Project 1 - /Project/Project1
+Project 2 - /Project/Project2

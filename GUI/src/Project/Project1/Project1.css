@@ -7,15 +7,24 @@
   margin-bottom: 100px;
 }
 
-/* Teammate information container*/
-.header_text {
-    text-align: center;
+.Project1_body .header-project1 {
+  margin-left: 10%;
+  margin-top: 50px;
+  background-color: rgb(66, 82, 68);
+  width: max-content;
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  transform: perspective(600px) rotateX(10deg) rotateY(20deg);
 }
+.Project1_body .header-project1 h1 {
+  font-family: "Philosopher", sans-serif;
+  color: rgb(255, 255, 255);
+}
+/* Teammate information container*/
 .Teammate_profile {
-  width: 70%;
-  /* background: linear-gradient(rgb(169, 169, 169), rgb(21, 55, 71)); */
-  background: rgba(255, 182, 193, 1);
-  height: 580px;
+  width: 75%;
+  background: linear-gradient(rgb(169, 169, 169), rgb(21, 55, 71));
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
   margin-left: 6%;
@@ -25,11 +34,13 @@
   border-radius: 20px;
 }
 .Teammate_profile h1 {
-    text-align: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 5%;
 }
 .Teammate_profile .profile .profile_img {
-  width: 60%;
-  height: 60%;
+  width: 70%;
+  height: 350px;
   margin-bottom: 2%;
 }
 .Teammate_profile .profile_img img {
@@ -42,7 +53,6 @@
   margin-top: 20px;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-around;
 }
 .Teammate_profile .profile {
@@ -50,19 +60,18 @@
   margin-top: 60px;
   position: relative;
   width: 35%;
-  height: 470px;
   transition: all 0.2s;
 }
 .Teammate_profile .profile:hover {
-  margin-top: 0;
+  margin-top: 40px;
 }
 .Teammate_profile .profile .profile_main {
   width: 0;
+  max-height: 200px;
   margin-left: -5%;
   font-size: 1.2em;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  height: 25%;
   color: white;
   overflow: hidden;
   transition: width 0.3s ease-in-out, color 0.2s ease-in-out 0.3s;
@@ -122,6 +131,9 @@
   margin-bottom: 40px;
   overflow: hidden;
 }
+.Seminar h2 {
+  text-align: center;
+}
 .Project1_main .box .Seminar .img img {
   width: 60%;
   object-fit: fill;
@@ -135,8 +147,8 @@
 .Project1_main .box .Seminar .content_seminar .header {
   font-size: 25px;
   margin-top: 50px;
-  width: 16%;
   margin-left: 43%;
+  width: 16%;
   background-color: rgb(255, 137, 137);
   border-radius: 10px;
   text-align: center;

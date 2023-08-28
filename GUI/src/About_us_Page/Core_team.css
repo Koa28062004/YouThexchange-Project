@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman';
+    box-sizing: border-box;
+}
+.CoreTeam_body{
+    background-color: antiquewhite;
+}
+.CoreTeam_body .Profile_core{
+    position: relative;
+    padding-top:30px;
+    padding-bottom: 30px;
+    width: 80%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+    margin-left: 6%;
+    margin-bottom: 100px;
+    border-radius:10px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e9e9e9;
+    transition: all 0.5s;
+}
+.CoreTeam_body .Profile_core:hover{
+    transform: scale(1.1);
+}
+.CoreTeam_body .Profile_core .infor-core{
+    width: 50%;
+    font-family:serif;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.CoreTeam_body .Profile_core .infor-core .Name {
+    font-size: 2.6em;
+    font-family: 'Lobster', cursive;
+}
+.CoreTeam_body .Profile_core .infor-core .Information{
+    margin-top: 50px;
+    background-color: #593535;
+    color:rgb(237, 237, 237);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    font-size: 1.3em;
+}
+.CoreTeam_body .Profile_core .infor-core .Mail{
+    margin-top: 40px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+.CoreTeam_body .Profile_core .infor-core .Mail:hover{
+    color:red;
+}
+.CoreTeam_body .Profile_core .img-core{
+    position: relative;
+    width: 35%;
+    padding-top: 35%;
+}
+.CoreTeam_body .Profile_core .img-core img{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+.CoreTeam_body .header-core{
+    background-color: rgba(47, 60, 84, 0.788);
+    margin-left: 10%;
+    margin-top: 5%;
+    width:max-content;
+    padding: 50px;
+    transform: perspective(700px) rotateX(20deg) rotateY(-20deg);
+    transition: all 0.5s;
+}
+.CoreTeam_body .header-core:hover{
+    transform: perspective(700px) rotateX(20deg) rotateY(30deg);
+}
+.CoreTeam_body .header-core h1{
+    width:max-content;
+    color: aliceblue;
+    font-family:'Lobster', cursive ;
+    font-size: 3em;
+}

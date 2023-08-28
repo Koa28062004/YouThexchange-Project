@@ -1,131 +1,131 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman";
 }
 
-.body_subtopic2{
-    width: 100%;
-    background-color:rgb(255, 230, 191);
+.body_subtopic2 {
+  width: 100%;
+  background-color: rgb(255, 230, 191);
 }
-.body_subtopic2 h1{
-    text-align: center;
+.body_subtopic2 h1 {
+  text-align: center;
 }
-.Main_subtopic2{
-    width: 100%;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.Main_subtopic2 {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.Main_subtopic2 .Subtopic2{
-    height: auto;
-    width: 70%;
+.Main_subtopic2 .Subtopic2 {
+  height: auto;
+  width: 70%;
 }
-.Subtopic2 .h2 h2{
-    position: relative;
-    margin-top: 100px;
+.Subtopic2 .h2 h2 {
+  position: relative;
+  margin-top: 100px;
 }
-.Subtopic2 h3{
-    margin-left: 2%;
+.Subtopic2 h3 {
+  margin-left: 2%;
 }
 .h2 h2::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: #7c73c9;
-    height: 5px;
-    box-sizing: border-box;
-    width: 200px;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #7c73c9;
+  height: 5px;
+  box-sizing: border-box;
+  width: 200px;
 }
-.subtopicProject{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    background:linear-gradient(rgb(255, 150, 150), rgb(240, 184, 110)) ;
-    border-radius: 10px;
-    padding: 20px;
+.subtopicProject {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: linear-gradient(rgb(255, 150, 150), rgb(240, 184, 110));
+  border-radius: 10px;
+  padding: 20px;
 }
 .subtopicProject .container {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
 }
 
-.subtopicProject .container .box_subtopic{     
-    margin-top: 40px;
-    width: 80%;
-    height: 370px;
-    display: flex;
-    border-radius: 10px;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(57, 57, 57);
-    border:1px solid black;
-    overflow: hidden;
-    transition: all 0.5s ease;
+.subtopicProject .container .box_subtopic {
+  margin-top: 40px;
+  width: 80%;
+  height: 400px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(57, 57, 57);
+  border: 1px solid black;
+  overflow: hidden;
+  transition: all 0.5s ease;
 }
-.body_subtopic2 .box_subtopic img{
-    margin-top: 10%;
-    width: 100%;
-    height: 200px;
-    object-fit: fill;
-    object-position: center;
-    transition: all 0.5s ease;
+.body_subtopic2 .box_subtopic img {
+  margin-top: 10%;
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+  object-position: center;
+  transition: all 0.5s ease;
 }
-.body_subtopic2 .box_subtopic:hover{
-    overflow: unset;
+.body_subtopic2 .box_subtopic:hover {
+  overflow: unset;
 }
-.body_subtopic2 .box_subtopic:hover img{
-    transform: scale(1.2);
-    margin-top: 0%;
-} 
+.body_subtopic2 .box_subtopic:hover img {
+  transform: scale(1.2);
+  margin-top: 0%;
+}
 
-.subtopicProject .btn{
-    margin-top: 10%;
-    position: relative;
-    width: 30%;
-    height:  15%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    display: none;
-    transition: all 0.5s;
-    color: black;
-    background: white;
-    padding: 12px 30px;
-    text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    cursor: pointer;
-    border-radius: 40px;
-    z-index: 1;
-    letter-spacing: 1px;
-    overflow: hidden;
-    transition: 0.5s;
-    border: 1px solid #fff;
+.subtopicProject .btn {
+  margin-top: 10%;
+  position: relative;
+  width: 30%;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  display: none;
+  transition: all 0.5s;
+  color: black;
+  background: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  border-radius: 40px;
+  z-index: 1;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: 0.5s;
+  border: 1px solid #fff;
 }
-.subtopicProject .btn:hover{
-    letter-spacing: 1px;
-    background: linear-gradient(rgb(255, 150, 150), rgb(240, 184, 110));
-    color:black;
+.subtopicProject .btn:hover {
+  letter-spacing: 1px;
+  background: linear-gradient(rgb(255, 150, 150), rgb(240, 184, 110));
+  color: black;
 }
-.subtopicProject span{
-    margin-top: 15%;
-    border-radius: 10px;
-    width: 90%;
-    text-align: center;
-    background-color: pink;
-    font-size: 1em;
+.subtopicProject span {
+  margin-top: 15%;
+  border-radius: 10px;
+  width: 90%;
+  text-align: center;
+  background-color: pink;
+  font-size: 1em;
 }
-.body_subtopic2 .box_subtopic:hover .btn{
-    display: flex;
+.body_subtopic2 .box_subtopic:hover .btn {
+  display: flex;
 }

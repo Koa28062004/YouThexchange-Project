@@ -5,12 +5,19 @@ Welcome to the YouThexchange Project! This repository contains the source code f
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Team Members](#team-members)
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 
 ## Introduction
 
 This project is a web application developed using React, a popular JavaScript library for building user interfaces and ExpressJS to build the backend for the web. The application is designed to describe the purpose or goal of your project briefly.
+
+## Team Members
+- Lương Nguyên Khoa (VNUHCM - University of Science)
+- Dương Quang Thắng (VNUHCM - University of Science)
+- Võ Thịnh Phát (VNUHCM - University of Science)
+- Lý Nguyên Khang (HCMUT - Ho Chi Minh City University of Technology)
 
 ## Getting Started
 

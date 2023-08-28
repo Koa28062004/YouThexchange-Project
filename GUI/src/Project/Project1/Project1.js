@@ -5,6 +5,27 @@ import Tool from "../../Tool/Tool";
 import "./Project1.css";
 import Project, { SetupSubtopic2 } from "./Setup_project1/setupProject1";
 
+const currentYear = new Date().getFullYear();
+const Teammate1Data = [
+  {
+    function: "Rashi",
+    name: "Rashi Mukherjee",
+    img: "./img/Rashi.JPG",
+    age: currentYear - 2006,
+    Nationality: "Thailander",
+    Education: "Senior (KIS International School, Thailand)",
+  },
+  {
+    function: "Linh",
+    name: "Trinh Ba Khanh Linh",
+    img: "./img/Linh.JPG",
+    age: currentYear - 2006,
+    Nationality: "Vietnamese",
+    Education:
+      "Senior (BVIS - British Vietnamese International School HCMC, Vietnam)",
+  },
+];
+
 const Project1 = () => {
   const [currentImageType, setCurrentImageType] = useState("Linh");
   const [showPDF, setShowPDF] = useState(false);
@@ -31,48 +52,33 @@ const Project1 = () => {
       )}
       <Tool />
       <SDGslogo />
-      <h1 className="header_text">SUSTAINABILITY & BUSINESSES</h1>
+      <div className="header-project1">
+        <h1>SUSTAINABILITY & BUSINESSES</h1>
+      </div>
+
       <div className="Project1_main">
         <div className="Teammate_profile">
           <h1>Teammate profile</h1>
           <div className="profiles">
-            <div className="profile">
-              <div className="profile_img">
-                <img src={require("./img/rashi.JPG")} alt=""></img>
+            {Teammate1Data.map((member, index) => (
+              <div className="profile" key={index}>
+                <div className="profile_img">
+                  <img src={require(`${member.img}`)} alt=""></img>
+                </div>
+                <div className="name_teammate">
+                  Name: {member.name}
+                  <i
+                    className="fa-solid fa-circle-info"
+                    onClick={() => setCurrentImageType(member.function)}
+                  ></i>
+                </div>
+                <div className="profile_main">
+                  <p>Age: {member.age}</p>
+                  <p>Nationality: {member.Nationality}</p>
+                  <p>Education: {member.Education}</p>
+                </div>
               </div>
-              <div className="name_teammate">
-                Name:Rashi Mukherjee
-                <i
-                  class="fa-solid fa-circle-info"
-                  onClick={() => setCurrentImageType("Rashi")}
-                ></i>
-              </div>
-              <div className="profile_main">
-                <p>Age: 17</p>
-                <p> Nationality: Thailander</p>
-                <p>Education: Senior (KIS International School, Thailand)</p>
-              </div>
-            </div>
-            <div className="profile">
-              <div className="profile_img">
-                <img src={require("./img/Linh.JPG")} alt=""></img>
-              </div>
-              <div className="name_teammate">
-                Name:Trinh Ba Khanh Linh
-                <i
-                  class="fa-solid fa-circle-info"
-                  onClick={() => setCurrentImageType("Linh")}
-                ></i>
-              </div>
-              <div className="profile_main">
-                <p>Age: 17</p>
-                <p> Nationality: Vietnamese</p>
-                <p>
-                  Education: Senior (BVIS - British Vietnamese International
-                  School HCMC, Vietnam)
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 

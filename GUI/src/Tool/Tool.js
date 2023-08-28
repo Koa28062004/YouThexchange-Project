@@ -1,60 +1,54 @@
 import React from "react";
 import SetUpTool from "./Set_up_tool";
-import "./Tool.css"
+import "./Tool.css";
 import { Link } from "react-router-dom";
 import Search from "./Search";
-const programData = [
+
+const AboutusData = [
   {
-    name: "Members",
-    details: [
-      {
-        name: "Member 1",
-        link:"#"
-      }, 
-      {
-        name:"Member 2",
-        link:"#"
-      },
-      {
-        name:"More...",
-        link:"#"
-      }
-    ],
+    name: "About Us",
+    link: "/About_us",
   },
+  {
+    name: "Core Team",
+    link: "/About_us/Core_Team",
+  },
+];
+const programData = [
   {
     name: "Pilot Program",
     details: [
       {
         name: "Project 1",
-        link:"/Pilot_Program/Project_1"
-      }, 
-      {
-        name:"Project 2",
-        link:"/Pilot_Program/Project_2"
+        link: "/Pilot_Program/Project_1",
       },
       {
-        name:"Project 3",
-        link:"#"
-      }
+        name: "Project 2",
+        link: "/Pilot_Program/Project_2",
+      },
+      {
+        name: "Project 3",
+        link: "#",
+      },
     ],
   },
   {
     name: "Project",
     details: [
       {
-        name:"Project",
-        link:"/Project"
+        name: "Project",
+        link: "/Project",
       },
       {
-        name:"Video Project",
-        link:"#"
-      }
-    ]
+        name: "Video Project",
+        link: "#",
+      },
+    ],
   },
 ];
 
 function DropdownContent({ title }) {
-  if (title === "Event")
+  if (title === "Event") {
     return (
       <div className="dropdown-content">
         <a href="https://www.youtube.com/" title="">
@@ -62,21 +56,19 @@ function DropdownContent({ title }) {
         </a>
       </div>
     );
-  if (title === "Competition")
-    return (
-      <div className="dropdown-content">
-        <a href="https://www.youtube.com/" title="">
-          Youtube
-        </a>
-      </div>
-    );
-  if (title === "Program")
+  }
+  if (title === "Competition") {
+    return <div className="dropdown-content">Coming soon</div>;
+  }
+  if (title === "Program") {
     return (
       <div className="dropdown-content">
         {programData.map((program, index) => (
           <div key={index}>
             <div className="i_dropdown">
-              <div className="i_dropdownname">{program.name} <i class="fa-solid fa-chevron-down"></i></div>
+              <div className="i_dropdownname">
+                {program.name} <i class="fa-solid fa-chevron-down"></i>
+              </div>
               <div className="i_dropdown-content">
                 {program.details.map((item, itemIndex) => (
                   <Link to={item.link} key={itemIndex} className="i_content">
@@ -89,13 +81,19 @@ function DropdownContent({ title }) {
         ))}
       </div>
     );
-  if (title === "About Us")
-    return(
+  }
+  if (title === "About Us") {
+    return (
       <div className="dropdown-content">
-        
+        {AboutusData.map((program, index) => (
+          <div key={index}>
+            <Link to={program.link}>{program.name}</Link>
+          </div>
+        ))}
       </div>
     );
-  if (title === "Project Partners")
+  }
+  if (title === "Project Partners") {
     return (
       <div className="dropdown-content">
         <a href="https://www.youtube.com/" title="">
@@ -103,6 +101,7 @@ function DropdownContent({ title }) {
         </a>
       </div>
     );
+  }
 }
 
 function Dropdown({ title }) {
@@ -117,19 +116,19 @@ function Dropdown({ title }) {
 function Navigation() {
   return (
     <div className="nav">
-      <Link to="/" className="logo"><img  alt="" src={require("../Homepage/Images/logo.png")} /></Link>
+      <Link to="/" className="logo">
+        <img alt="" src={require("../Homepage/Images/logo.png")} />
+      </Link>
       <div className="ull">
         <Dropdown title="Event" />
         <Dropdown title="Competition" />
         <Dropdown title="Program" />
-        <Link to="/About_us" className="dropdown">About Us</Link>
+        <Dropdown title="About Us" />
         <Dropdown title="Project Partners" />
       </div>
     </div>
   );
 }
-
-
 
 function Tool() {
   return (

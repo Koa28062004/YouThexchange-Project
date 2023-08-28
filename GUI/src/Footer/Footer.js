@@ -1,5 +1,5 @@
-import React from 'react';
-import "./Footer.css"
+import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -7,23 +7,24 @@ const Footer = () => {
       <div className="footer-main">
         <div className="row">
           <div className="imglogo">
-            <img src={require("../SDGs_Page/Pictures/SUGAR_Vietnamlogo.png")} alt="" />
-            <img src={require("../SDGs_Page/Pictures/Youth_exchangelogo.png")} alt="" />
+            <img
+              src={require("../SDGs_Page/Pictures/SUGAR_Vietnamlogo.png")}
+              alt=""
+            />
+            <img
+              src={require("../SDGs_Page/Pictures/Youth_exchangelogo.png")}
+              alt=""
+            />
+            <img src={require("../SDGs_Page/Pictures/Kis_logo.png")} alt="" />
           </div>
           <div className="footer-col">
-            <h4>GET HELP</h4>
+            <h4>Contact</h4>
             <ul>
               <li>
-                <a href="#">Contact</a>
-              </li>
-              <li>
-                <a href="#">Copyright</a>
-              </li>
-              <li>
-                <a href="#">Fraud Alert</a>
-              </li>
-              <li>
-                <a href="#">Privacy Notice</a>
+                <a href="mailto:youthexchangeprojectvn@gmail.com">
+                  <i class="fa-solid fa-at"></i> Gmail:<br></br>{" "}
+                  youthexchangeprojectvn@gmail.com
+                </a>
               </li>
             </ul>
           </div>
