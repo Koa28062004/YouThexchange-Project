@@ -4,7 +4,7 @@ const Project = [
   { 
     mess: "Videos",
     classname: "videos",
-    link: "#",
+    link: "/ProjectVideos",
     idclass:"fa-regular fa-circle-play"
   }
 ]
