@@ -56,21 +56,11 @@ function DropdownContent({ title }) {
         </a>
       </div>
     );
-<<<<<<< HEAD
   }
   if (title === "Competition") {
     return <div className="dropdown-content">Coming soon</div>;
   }
   if (title === "Program") {
-=======
-  if (title === "Competition")
-    return (
-      <div className="dropdown-content">
-       <p>Coming soon</p> 
-      </div>
-    );
-  if (title === "Program")
->>>>>>> 578b464e915f508d11bae2bdb6ebff95c1aaf4a7
     return (
       <div className="dropdown-content">
         {programData.map((program, index) => (

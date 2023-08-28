@@ -2,27 +2,27 @@ import React, { useState } from "react";
 import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import Footer from "../../Footer/Footer";
 import Tool from "../../Tool/Tool";
-import "./Project2.css";
+import "./Project4.css";
 
 const currentYear = new Date().getFullYear();
 const Teammate2Data = [
   {
-    name: "Minh",
+    name: "Janya",
     img: "./Img/rashi.JPG",
     age: currentYear - 2006,
-    Nationality: "Thailander",
+    Nationality: "Indian",
     Education: "Senior (KIS International School, Thailand)",
   },
   {
-    name: "Minh",
+    name: "Tran Kim Chau",
     img: "./Img/rashi.JPG",
     age: currentYear - 2006,
-    Nationality: "Thailander",
-    Education: "Senior (KIS International School, Thailand)",
+    Nationality: "Vietnam",
+    Education: "Senior (BVIS - British Vietnamese International School HCMC, Vietnam)",
   },
 ];
 
-const Project2 = () => {
+const Project4 = () => {
   const [currentImageType, setCurrentImageType] = useState("Linh");
   const [showPDF, setShowPDF] = useState(false);
   const [TypeContent, setTypeContent] = useState(`./Infographic - SHEIN.pdf`);
@@ -36,7 +36,7 @@ const Project2 = () => {
     setShowPDF(!showPDF);
   };
   return (
-    <div className="Project2_body">
+    <div className="Project4_body">
       {showPDF && (
         <iframe
           className="pdf_project"
@@ -48,7 +48,7 @@ const Project2 = () => {
       )}
       <Tool />
       <SDGslogo />
-      <div className="Project2_main">
+      <div className="Project4_main">
         <div className="Teammate_profile">
           <h1>Teammate profile</h1>
           <div className="profiles">
@@ -80,4 +80,4 @@ const Project2 = () => {
   );
 };
 
-export default Project2;
+export default Project4;

@@ -24,14 +24,9 @@ function App() {
         <Route path="/Project/Project1" element={<Project1 />} />
         <Route path="/Project/Project2" element={<Project2 />} />
         <Route path="/About_us/Core_Team" element={<CoreTeam />} />
-<<<<<<< HEAD
-      </Routes>
-    </BrowserRouter>
-=======
         <Route path = "/ProjectVideos" element = {<ProjectVideos />} />
     </Routes>
   </BrowserRouter>
->>>>>>> 578b464e915f508d11bae2bdb6ebff95c1aaf4a7
   );
 }
 export default App;

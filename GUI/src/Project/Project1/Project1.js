@@ -12,7 +12,7 @@ const Teammate1Data = [
     name: "Rashi Mukherjee",
     img: "./img/Rashi.JPG",
     age: currentYear - 2006,
-    Nationality: "Thailander",
+    Nationality: "Thailand",
     Education: "Senior (KIS International School, Thailand)",
   },
   {
@@ -20,7 +20,7 @@ const Teammate1Data = [
     name: "Trinh Ba Khanh Linh",
     img: "./img/Linh.JPG",
     age: currentYear - 2006,
-    Nationality: "Vietnamese",
+    Nationality: "Vietnam",
     Education:
       "Senior (BVIS - British Vietnamese International School HCMC, Vietnam)",
   },
