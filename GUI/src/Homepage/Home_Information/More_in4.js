@@ -5,10 +5,10 @@ const Project = [
   {
     mess: "Videos",
     classname: "videos",
-    link: "#",
-    idclass: "fa-regular fa-circle-play",
-  },
-];
+    link: "/ProjectVideos",
+    idclass:"fa-regular fa-circle-play"
+  }
+]
 const Contact = [
   {
     mess: "Facebook",
@@ -32,31 +32,29 @@ function More() {
   };
   return (
     <div className="more_inf">
-      <button className="btn_moreinf" onClick={handleregister}>
-        How to register
-      </button>
-      <button className="btn_moreinf">
-        Projects
-        <div className="Project">
-          {Project.map((item) => (
-            <Link key={item.mess} href={item.link} className={item.classname}>
-              <i className={item.idclass}></i>
-              <span className="mess">{item.mess}</span>
-            </Link>
-          ))}
-        </div>
-      </button>
-      <button className="btn_moreinf">
-        Contact
-        <div className="contact">
-          {Contact.map((brand) => (
-            <a key={brand.mess} href={brand.link} className={brand.classname}>
-              <i className={brand.idclass}></i>
-              <span className="mess">{brand.mess}</span>
-            </a>
-          ))}
-        </div>
-      </button>
+        <button className="btn_moreinf" onClick={handleregister}>How to register</button>
+        <button className="btn_moreinf">
+            Projects
+            <div className="Project">
+            {Project.map((item) => (
+                <Link key={item.mess} to={item.link} className={item.classname}>
+                  <i className={item.idclass} ></i>
+                  <span className="mess">{item.mess}</span>
+                </Link>
+            ))}
+            </div>
+        </button>
+        <button className="btn_moreinf">
+            Contact
+            <div className="contact">
+            {Contact.map((brand) => (
+                <a key={brand.mess} href={brand.link} className={brand.classname}>
+                    <i className={brand.idclass} ></i>
+                <span className="mess">{brand.mess}</span>
+                </a>
+            ))}
+            </div>
+        </button>
     </div>
   );
 }
