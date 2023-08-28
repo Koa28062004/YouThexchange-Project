@@ -1,0 +1,39 @@
+.Videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    /* grid-template-rows: auto 1fr; Set the height of the first row to auto and the second row to 1fr (equal height) */
+    gap: 3px; /* Adjust this value as needed for horizontal gap */
+}
+
+.Videos > div {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Videos img {
+    width: 90%; /* Set the width to 100% */
+    height: 60%; /* Set the height to 100% */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .Videos {
+        grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
+    }
+}
+
+/* Media Query for even smaller screens */
+@media screen and (max-width: 480px) {
+    .Videos {
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    }
+}
+
+.Videos b {
+    font-size: 25px;
+    margin-top: 10px;
+}
