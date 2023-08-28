@@ -5,6 +5,7 @@ Welcome to the YouThexchange Project! This repository contains the source code f
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Team Members](#team-members)
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 
