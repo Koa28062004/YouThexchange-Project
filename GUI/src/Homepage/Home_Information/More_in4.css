@@ -11,7 +11,7 @@
   .btn_moreinf {
     width: 20%;
     height: auto;
-    font-size: 30px;
+    font-size: 1.9em;
     border-radius: 10px;
     background-color: rgb(124, 157, 150);
   }
@@ -59,6 +59,7 @@
 }
 
 .Project a .mess{
+  width: 100%;
   position: absolute;
   opacity: 0;
   transition: all 0.5s;
