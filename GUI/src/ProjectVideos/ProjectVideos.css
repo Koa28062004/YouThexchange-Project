@@ -2,11 +2,15 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
     /* grid-template-rows: auto 1fr; Set the height of the first row to auto and the second row to 1fr (equal height) */
-    gap: 3px;
+    gap: 0px;
     /* Adjust this value as needed for horizontal gap */
+    justify-items: center; /* Horizontally center the grid */
+    align-items: center; /* Vertically center the grid */
 }
 
 .Videos>div {
+    width: 90%;
+    height: 90%;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -17,6 +21,9 @@
 .video-container {
     position: relative;
     margin: 10px;
+    border: 1px solid #ccc; /* Add a slight border */
+    border-radius: 4px; /* Add rounded corners */
+    overflow: hidden; /* Ensure border doesn't expand due to content */
 }
 
 .Videos>p {
@@ -28,8 +35,8 @@
 
 .time {
     position: absolute;
-    top: 44%;
-    right: 8%;
+    top: 62%;
+    right: 5%;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 4px 8px;
@@ -37,9 +44,9 @@
 }
 
 .Videos img {
-    width: 90%;
+    width: 100%;
     /* Set the width to 100% */
-    height: 50%;
+    height: 70%;
     /* Set the height to 100% */
     object-fit: cover;
     /* Maintain aspect ratio and cover the container */
@@ -61,5 +68,5 @@
 
 .Videos b {
     font-size: 25px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
