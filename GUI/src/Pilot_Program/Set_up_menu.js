@@ -7,12 +7,12 @@ function SetUpMenu() {
     const Right = document.querySelector(".Menu_PilotProgram .header .fa-arrow-right");
     const Left= document.querySelector(".Menu_PilotProgram .header .fa-arrow-left");
     Left.addEventListener("click",()=> {
-        Menu.style.marginLeft="85%";
+        Menu.style.right="0";
         Left.style.display="none";
         Header.style.marginRight="-20%";
     })
     Right.addEventListener("click", () => {
-        Menu.style.marginLeft="100%";
+        Menu.style.right="unset";
         Left.style.display="flex";
         Header.style.marginRight="17%";
     });
