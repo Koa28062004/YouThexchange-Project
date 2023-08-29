@@ -1,9 +1,10 @@
 .Menu_PilotProgram{
     height: 30%;
-    width: 15%;
+    width: 250px;
     display: flex;
     align-items: center;
     position: fixed;
+    z-index: 10;
     flex-direction: column;
     background-color: white;
     margin-left: 100%;
@@ -46,9 +47,10 @@
     padding-left: 10px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .Menu_PilotProgram .header .fa-arrow-right{
-    margin-left: 10%;
+    margin-left: 5%;
     transition: all 0.5s;
     height: 100%;
     width: 40px;
