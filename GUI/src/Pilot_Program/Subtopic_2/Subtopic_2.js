@@ -2,7 +2,7 @@ import React ,{useState} from "react";
 import Tool,{Tool_mobile} from "../../Tool/Tool";
 import Footer from "../../Footer/Footer";
 import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
-import PilotProgram ,{SetupSubtopic2} from "./Subtopic/PilotProgram";
+import PilotProgram, {SetupSubtopic2} from "./Subtopic/PilotProgram";
 import MenuPilotProgram from "../Menu";
 import "./Subtopic_2.css"
 
@@ -67,7 +67,6 @@ const Subtopic2 = () => {
                                         <span>Name: {box.name}</span>
                                         <button key={boxIndex} className="btn" onClick={() => setCurrentImageType(project.name)}>Details</button>
                                     </div>
-                                   
                                 ))}
                             </div>
                         ))}

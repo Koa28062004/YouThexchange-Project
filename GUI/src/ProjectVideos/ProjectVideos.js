@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import './ProjectVideos.css';
 import Footer from "../Footer/Footer";
-import Tool,{Tool_mobile} from "../Tool/Tool";
+import Tool, { Tool_mobile } from "../Tool/Tool";
 import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
+import ProjectVideosSetUp, {SetupVideos} from "./setupVideos/setupVideos";
 
-const Videos = [
+export const Videos = [
   {
     id: "1",
     title: "Meow1",
@@ -44,6 +45,7 @@ const Videos = [
 ];
 
 function ProjectVideos() {
+  const [currentVideo, setCurrentVideo] = useState("1");
   return (
     <div className="Videos_body">
       <Tool />
@@ -59,10 +61,13 @@ function ProjectVideos() {
               className="driveLink"
             ></iframe>
             <div className="title">{item.title}</div> {/* Display the title below the video */}
+            <button key={item.id} className="btn" onClick={() => setCurrentVideo(item.id)}>Zoom in</button>
           </div>
         ))}
       </div>
+      <ProjectVideosSetUp currentID={currentVideo} />
       <Footer />
+      <SetupVideos />
     </div>
   );
 }
