@@ -3,7 +3,7 @@ import './ProjectVideos.css';
 import Footer from "../Footer/Footer";
 import Tool, { Tool_mobile } from "../Tool/Tool";
 import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
-import ProjectVideosSetUp, {SetupVideos} from "./setupVideos/setupVideos";
+import ProjectVideosSetUp, { SetupVideos } from "./setupVideos/setupVideos";
 
 export const Videos = [
   {
@@ -61,7 +61,9 @@ function ProjectVideos() {
               className="driveLink"
             ></iframe>
             <div className="title">{item.title}</div> {/* Display the title below the video */}
-            <button key={item.id} className="btn" onClick={() => setCurrentVideo(item.id)}>Zoom in</button>
+            <div className="btn-container">
+              <button key={item.id} className="btnn" onClick={() => setCurrentVideo(item.id)}>Zoom in</button>
+            </div>
           </div>
         ))}
       </div>

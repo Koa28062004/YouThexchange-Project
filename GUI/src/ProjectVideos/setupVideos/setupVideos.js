@@ -11,7 +11,7 @@ const currentVideosArray = [
 export const SetupVideos = () => {   /* Nơi để chỉnh cho video xuất hiện , m tự chỉnh lại className để nó chạy*/
   useEffect(() => {
     const PilotPr = document.querySelector(".Business_program ");
-    const Btnsub2 = document.querySelectorAll(".Videos .btn");
+    const Btnsub2 = document.querySelectorAll(".Videos .btnn");
     const Img_subtopic = document.querySelector(".Business_program .gallery_subtopic2 iframe")
     Btnsub2.forEach((btn, index) => {
       if (index === 0 || index === 1 || index === 2) {
@@ -47,7 +47,7 @@ const ProjectVideosSetUp = ({ currentID }) => {
     Img_subtopic.style.transform = "scale(0)";
     setTimeout(() => {
       PilotPr.style.display = "none";
-    }, 0);
+    }, 20);
     setCurrentVideosIndex(0);
   };
 
