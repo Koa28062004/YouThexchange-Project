@@ -29,7 +29,7 @@ const programData = [
       },
       {
         name:"Project 3",
-        link:"/Pilot_Program/Project_3"
+        link:"/Project_3"
       }
     ],
   },
@@ -151,7 +151,7 @@ export function Tool_mobile() {
               <Dropdown title="About Us" />
               <Dropdown title="Project Partners" />
               <Link to="/SDGs"><Dropdown title="SDGs"></Dropdown></Link>
-              </div>
+      </div>
     </div>
   )
 }

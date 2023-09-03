@@ -4,7 +4,7 @@ import Footer from "../Footer/Footer";
 import Tool, { Tool_mobile } from "../Tool/Tool";
 import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
 import ProjectVideosSetUp, { SetupVideos } from "./setupVideos/setupVideos";
-
+import { Search_mobile } from "../Tool/Search";
 export const Videos = [
   {
     id: "1",
@@ -50,6 +50,7 @@ function ProjectVideos() {
     <div className="Videos_body">
       <Tool />
       <Tool_mobile />
+      <Search_mobile />
       <SDGslogo />
       <div className="header">
         <h2>PROJECT VIDEOS</h2>

@@ -52,7 +52,7 @@
     height: 100%;
 }
 
-.Business_program .gallery_subtopic2 img{   /*chỗ chứa videos*/
+.Business_program .gallery_subtopic2 .driveLink{   /*chỗ chứa videos*/
     height: 100%;
     width: 100%;   
     transform: scale(0.2);
