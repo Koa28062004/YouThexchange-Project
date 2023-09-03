@@ -9,48 +9,50 @@ import Image6 from './imgs/Meow6.png';
 import Footer from "../Footer/Footer";
 import Tool from "../Tool/Tool";
 import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
+import ReactPlayer from 'react-player';
+
 const Videos = [
   {
     id: "1",
     imageLink: Image1,
-    time: "24:07",
     title: "Meow1",
-    className: "M"
+    className: "M",
+    source: "https://drive.google.com/file/d/1JOZBkMwOllSNg7ameXnAj1dlagusMeux/preview"
   },
   {
     id: "2",
     imageLink: Image2,
-    time: "24:07",
     title: "Meow2",
-    className: "M"
+    className: "M",
+    source: "https://drive.google.com/file/d/1O1JeMbe5lWVs1H7b8IeW2K1GAYcmsY5i/preview"
   },
   {
     id: "3",
     imageLink: Image3,
-    time: "24:07",
     title: "Meow3",
-    className: "M"
+    className: "M",
+    source: "https://drive.google.com/drive/u/0/my-drive"
   },
   {
     id: "4",
     imageLink: Image4,
-    time: "24:07",
     title: "Meow4",
-    className: "M"
+    className: "M",
+    source: "https://drive.google.com/drive/u/0/my-drive"
   },
   {
     id: "5",
     imageLink: Image5,
-    time: "24:07",
     title: "Meow5",
-    className: "M"
-  }
-  ,{
+    className: "M",
+    source: "https://drive.google.com/drive/u/0/my-drive"
+  },
+  {
     id: "6",
     imageLink: Image6,
-    time: "24:07",
     title: "Meow6",
-    className: "M"
+    className: "M",
+    source: "https://drive.google.com/drive/u/0/my-drive"
   }
 ];
 
@@ -61,13 +63,14 @@ function ProjectVideos() {
       <SDGslogo />
       <div className="Videos">
         {Videos.map((item) => (
-          <div key = {item.id} className="video-container">
-            <img 
-              src = {item.imageLink}
-              alt = {item.title}
-            />
-            <div className="time">{item.time}</div>
-            <b>{item.title}</b>
+          <div key={item.id} className="video-container">
+            <iframe
+              src={item.source}
+              allow="autoplay"
+              title={`Video - ${item.title}`}
+              className="driveLink"
+            ></iframe>
+            <div className="title">{item.title}</div> {/* Display the title below the video */}
           </div>
         ))}
       </div>
