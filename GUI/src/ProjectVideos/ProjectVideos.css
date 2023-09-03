@@ -22,14 +22,13 @@
 
 .Videos_body .header {
     width: 100%;
-    height: 14vh;
+    height: 12vh;
     color: #FFBD59;
     justify-content: center;
     align-items: center;
     display: flex;
     font-size: 4vh;
     font-family: "Rowdies";
-    font-weight: bold;
 }
 .Videos_body .header h2{
     font-size: 4vh;
@@ -61,6 +60,7 @@
 
 .Videos .btn-container {
     width: 100%;
+    height: 20%;
     display: flex;
     padding-top: 5%;
     justify-content: center;
@@ -70,7 +70,7 @@
 
 .btn-container .btnn {
     width: 30%;
-    height: 250%;
+    height: 100%;
     display: flex;
     justify-content: center;
     /* Center the button horizontally */
@@ -84,7 +84,7 @@
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.5s;
-    font-weight: bold;
+    border: 1px solid black;
     /* Push the button to the bottom of the container */
 }
 
@@ -95,7 +95,7 @@
 
 .Videos .driveLink {
     width: 100%;
-    height: 70%;
+    height: 60%;
     /* Adjust the video height as needed */
     object-fit: cover;
     border: none;
@@ -103,10 +103,9 @@
 
 /* Display the title below the video */
 .video-container .title {
-    font-size: 3.75vh;
-    margin-top: 1.5vh;
-    color: white;
-    font-weight: bold;
+    height: 10%;
+    font-size: 3vh;
+    margin-top: 2vh;
 }
 
 /* Media Query for smaller screens */
