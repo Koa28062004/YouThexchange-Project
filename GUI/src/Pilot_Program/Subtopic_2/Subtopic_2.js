@@ -76,7 +76,7 @@ const Subtopic2 = () => {
             </div>
             <PilotProgram currentImageType={currentImageType} /> 
             <Footer />
-           <SetupSubtopic2 />
+            <SetupSubtopic2 />
         </div>
     );
 };
