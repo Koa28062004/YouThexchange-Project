@@ -30,7 +30,10 @@
     font-size: 4vh;
     font-family: "Rowdies";
 }
-
+.Videos_body .header h2{
+    font-size: 4vh;
+    font-family: "Rowdies";
+}
 .meow {
     /* background-color: #EEE5C2; */
     width: 100%;

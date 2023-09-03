@@ -14,6 +14,7 @@
   z-index: 2;
   cursor: pointer;
   transition: all 0.5s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .SDGS_logo:hover{
   transform: scale(1.2);

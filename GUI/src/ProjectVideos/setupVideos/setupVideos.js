@@ -47,8 +47,7 @@ const ProjectVideosSetUp = ({ currentID }) => {
     Img_subtopic.style.transform = "scale(0)";
     setTimeout(() => {
       PilotPr.style.display = "none";
-    }, 20);
-    setCurrentVideosIndex(0);
+    }, 200);
   };
 
   const handleNextClick = () => {
