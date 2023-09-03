@@ -2,12 +2,12 @@ import { useEffect } from "react";
 
 function SetUpTool() {
   useEffect(() => {
-    const i_dropdown = document.querySelectorAll(".i_dropdown");
+    const i_dropdown = document.querySelectorAll(".tool .i_dropdown");
     i_dropdown.forEach((i_dropdown) => {
       let x = 0;
 
       const i_dropdown_content = i_dropdown.querySelector(
-        ".i_dropdown-content"
+        ".tool .i_dropdown-content"
       );
 
       i_dropdown.addEventListener("click", () => {
@@ -41,6 +41,30 @@ function SetUpTool() {
       y=0;
       }
     })
+
+
+    const i_dropdown_mobie = document.querySelectorAll(".tool_mobi .i_dropdown");
+    i_dropdown_mobie.forEach((i_dropdown) => {
+      let x = 0;
+
+      const i_dropdown_content = i_dropdown.querySelector(
+        ".tool_mobi .i_dropdown-content"
+      );
+
+      i_dropdown.addEventListener("click", () => {
+        if (x === 0) {
+          i_dropdown.style.background = "rgb(0, 0, 0)";
+          i_dropdown.style.color = "rgb(255,255, 255)";
+          i_dropdown_content.style.display = "block";
+          x++;
+        } else {
+          i_dropdown.style.color = "rgb(0, 0, 0)";
+          i_dropdown.style.background = "rgb(255, 255, 255)";
+          i_dropdown_content.style.display = "none";
+          x = 0;
+        }
+      });
+    });
   }, []);
 }
 
