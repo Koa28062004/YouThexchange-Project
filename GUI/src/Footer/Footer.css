@@ -79,3 +79,18 @@ ul {
   width: 50%;
   height: 150px;
 }
+
+@media (max-width: 767px) { 
+  .footer-col {
+    width: 25%;
+    margin-bottom: 30px;
+  }
+  .imglogo{
+    width: 60%;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
