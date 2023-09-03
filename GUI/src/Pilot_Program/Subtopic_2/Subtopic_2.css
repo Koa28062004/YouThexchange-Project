@@ -45,12 +45,10 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-    /* grid-template-rows: auto 1fr; Set the height of the first row to auto and the second row to 1fr (equal height) */
     grid-auto-rows: 1fr;
     gap: 0px;
-    /* Adjust this value as needed for horizontal gap */
-    justify-items: center; /* Horizontally center the grid */
-    align-items: center; /* Vertically center the grid */
+    justify-items: center;
+    align-items: center;
     background:linear-gradient(rgb(255, 150, 150), rgb(240, 184, 110)) ;
     border-radius: 10px;
     padding: 20px;

@@ -14,7 +14,7 @@ const CoreTeamData=[
         pos:"Director of Academics & Outreach, Vietnam",
         bonus:"",
         mail:"ngphamanhthu.workspace@gmail.com",
-        img:`./img/Anh_Thu.jpg`
+        img:`Anh_Thu.jpg`
     },
     {
         Name:"Rashi Mukherjee",
@@ -24,7 +24,7 @@ const CoreTeamData=[
         pos:" Director of Logistics",
         bonus:"",
         mail:"rashimukherjee2005@gmail.com",
-        img:`./img/Rashi.JPG`
+        img:`Rashi.JPG`
     },
     {
         Name:"Freya Tran",
@@ -34,7 +34,7 @@ const CoreTeamData=[
         pos:" Director of External Relations, Australia",
         bonus:"",
         mail:"freyatran2004@gmail.com",
-        img:`./img/Ngan.JPG`
+        img:`Ngan.JPG`
     },
     {
         Name:"Van Anh",
@@ -44,7 +44,7 @@ const CoreTeamData=[
         pos:"  Executive Director ",
         mail:"lilynguyenvananh@gmail.com",
         bonus:"",
-        img:`./img/Van_Anh.png`
+        img:`Van_Anh.png`
     }
 ]
 
@@ -72,7 +72,7 @@ function CoreTeam(){
 
                     </div>
                     <div className="img-core">
-                        <img src={require (`${member.img}`)} alt=""/>
+                        <img src={require (`./img/${member.img}`)} alt=""/>
                     </div>
                 </div>
                 ))}
