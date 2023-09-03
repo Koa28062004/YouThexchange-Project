@@ -68,7 +68,6 @@ const Subtopic2 = () => {
                                         <span>Name: {box.name}</span>
                                         <button key={boxIndex} className="btn" onClick={() => setCurrentImageType(project.name)}>Details</button>
                                     </div>
-                                   
                                 ))}
                             </div>
                         ))}
