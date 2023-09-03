@@ -1,5 +1,5 @@
 import React ,{useState} from "react";
-import Tool from "../../Tool/Tool";
+import Tool,{Tool_mobile} from "../../Tool/Tool";
 import Footer from "../../Footer/Footer";
 import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import PilotProgram ,{SetupSubtopic2} from "./Subtopic/PilotProgram";
@@ -46,6 +46,7 @@ const Subtopic2 = () => {
         <div className="body_subtopic2">
             
             <Tool />
+            <Tool_mobile />
             <SDGslogo />
             <MenuPilotProgram />
             <div className="Main_subtopic2">

@@ -138,4 +138,22 @@ function Tool() {
   );
 }
 
+
+export function Tool_mobile() {
+  return(
+    <div className="tool_mobi">
+      <div className="bar"><i class="fa-solid fa-bars"></i></div>
+                <div className="contain">
+              
+              <Dropdown title="Event" />
+              <Dropdown title="Competition" />
+              <Dropdown title="Program" />
+              <Dropdown title="About Us" />
+              <Dropdown title="Project Partners" />
+        
+              </div>
+    </div>
+  )
+}
+
 export default Tool;

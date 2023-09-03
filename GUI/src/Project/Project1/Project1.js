@@ -1,7 +1,7 @@
 import React ,{useState}from "react";
 import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import Footer from "../../Footer/Footer";
-import Tool from "../../Tool/Tool";
+import Tool ,{Tool_mobile}from "../../Tool/Tool";
 import "./Project1.css"
 import Project ,{SetupSubtopic2} from "./Setup_project1/setupProject1";
 
@@ -50,6 +50,7 @@ const Project1=()=>{
                 />
             )}
             <Tool />
+            <Tool_mobile />
             <SDGslogo />
             <div className="header-project1"><h1>SUSTAINABILITY & BUSINESSES</h1></div>
 

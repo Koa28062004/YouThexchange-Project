@@ -1,7 +1,7 @@
 import React ,{useState}from "react";
 import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import Footer from "../../Footer/Footer";
-import Tool from "../../Tool/Tool";
+import Tool,{Tool_mobile} from "../../Tool/Tool";
 const currentYear = new Date().getFullYear();
 const Teammate2Data=[
     {
@@ -44,6 +44,7 @@ const Project2=()=>{
                 />
             )}
             <Tool />
+            <Tool_mobile />
             <SDGslogo />
             <div className="Project1_main">
                 

@@ -191,3 +191,66 @@
     background-color: rgb(109, 58, 99);
     color: aliceblue;
   }
+
+
+
+
+
+
+  .tool_mobi{
+    width: 70%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    z-index: 10;
+    margin-left: -70%;
+    transition: all 0.5s;
+    display: none;
+  }
+
+  .tool_mobi .bar{
+    width:115%;
+    margin-top: 5%;
+    font-size: 25px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    text-align: right;
+    cursor: pointer;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    transition: all 0.5s;
+}
+
+.tool_mobi .contain{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tool_mobi .contain .dropdown{
+  color:black;
+  width: 100%;
+  position: relative;
+  font-size: 1.5em;
+}
+.tool_mobi .contain .dropdown:hover{
+  background-color: unset;
+}
+.tool_mobi .contain .dropdown-content{
+  position: relative;
+}
+@media screen and (max-width: 780px) {
+  .tool {
+     display: none;
+  }
+  .tool_mobi{
+    display: unset;
+  }
+}
+
+
+
