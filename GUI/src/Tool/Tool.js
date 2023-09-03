@@ -11,7 +11,7 @@ const AboutusData= [
   },
   {
     name:"Core Team",
-    link:"/About_us/Core_Team"
+    link:"/Core_Team"
   }
 ]
 const programData = [
@@ -21,11 +21,11 @@ const programData = [
     details: [
       {
         name: "Project 1",
-        link:"/Pilot_Program/Project_1"
+        link:"/Project_1"
       }, 
       {
         name:"Project 2",
-        link:"/Pilot_Program/Project_2"
+        link:"/Project_2"
       },
       {
         name:"Project 3",
