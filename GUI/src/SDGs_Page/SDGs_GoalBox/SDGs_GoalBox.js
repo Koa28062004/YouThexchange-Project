@@ -1,6 +1,6 @@
 import React from "react";
 
-const GoalBox = ({ goalNumber, goalDescription, targets, events, publications, actions }) => {
+const GoalBox = ({ goalNumber, goalDescription, targets, events, publications, actions, link }) => {
   return (
     <div className="box">
       <div className="imgBox">
@@ -35,7 +35,7 @@ const GoalBox = ({ goalNumber, goalDescription, targets, events, publications, a
             <span className="small-text">Actions</span>
           </h3>
         </div>
-        <a href="#" className="btn">
+        <a href={link} className="moreinfo-btn">
           <button>More info</button>
         </a>
       </div>

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import "./setupProject1.css";
+import "./setupProject2.css";
 
 export const SetupSubtopic2 = () => {
   useEffect(() => {
     const PilotPr = document.querySelector(".Author_img ");
     const Btnsub2 = document.querySelectorAll(".name_teammate .fa-circle-info");
     const Img_subtopic = document.querySelector(
-      ".Author_img .gallery_project1 img"
+      ".Author_img .gallery_project2 img"
     );
     Btnsub2.forEach((btn, index) => {
       if (index === 0 || index === 1 || index === 2) {
@@ -39,7 +39,7 @@ const Project = ({ currentImageType }) => {
   const handleCloseClick = () => {
     const PilotPr = document.querySelector(".Author_img ");
     const Img_subtopic = document.querySelector(
-      ".Author_img .gallery_project1 img"
+      ".Author_img .gallery_project2 img"
     );
     Img_subtopic.style.transform = "scale(0.2)";
     setTimeout(() => {
@@ -52,8 +52,8 @@ const Project = ({ currentImageType }) => {
       <div className="close_btn">
         <i className="fa-solid fa-xmark" onClick={handleCloseClick}></i>
       </div>
-      <div className="gallery_project1">
-        <div className="slides_project1">
+      <div className="gallery_project2">
+        <div className="slides_project2">
           <img src={require(`../img/${currentImageArray}`)} alt="" />
         </div>
       </div>

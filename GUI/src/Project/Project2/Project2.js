@@ -11,12 +11,12 @@ const Teammate2Data = [
     name: "Minh",
     img: "./Img/Minh.png",
     age: currentYear - 2006,
-    Nationality: "Thailander",
+    Nationality: "Vietnam",
     Education: "Senior (KIS International School, Thailand)",
   },
   {
-    name: "Minh",
-    img: "./Img/Minh.png",
+    name: "In",
+    img: "./Img/In.png",
     age: currentYear - 2006,
     Nationality: "Thailander",
     Education: "Senior (KIS International School, Thailand)",
@@ -86,7 +86,8 @@ const Project2 = () => {
               <br></br>
               <h4>Task 1: Create a Presentation </h4>
               <p className="small">
-                Like we mentioned in seminar 1, this program will culminate in a{" "}
+                <i class="fa-solid fa-circle"></i> Like we mentioned in seminar
+                1, this program will culminate in a{" "}
                 <strong>presentation</strong> done by both project partners.
                 This includes a complete understanding, breath and depth, of the
                 problem and an outlined analysis of the proposed solution.
@@ -103,11 +104,11 @@ const Project2 = () => {
               </p>
               <br></br>
               <h4>Task 2: Problem Statement </h4>
-              <br></br>
               <p className="small">
-                For each slide, persuasively convey the{" "}
+                <i class="fa-solid fa-circle"></i> For each slide, persuasively
+                convey the{" "}
                 <strong>
-                  Problem, Background, Relevance, and Solution Objectives
+                  Problem, Background, Relevance, and Solution Objectives{"  "}
                 </strong>
                 of your project. This helps the audience develop a logical
                 understanding of your problem. (There should be{" "}
@@ -115,9 +116,10 @@ const Project2 = () => {
               </p>
               <br></br>
               <p className="small">
-                A problem statement is a short and concise outline if your
-                problem. It includes the (1) Problem (2) Background (3)
-                Relevance and (4) the solution objectives. Take this example:
+                <i class="fa-solid fa-circle"></i> A problem statement is a
+                short and concise outline if your problem. It includes the (1)
+                Problem (2) Background (3) Relevance and (4) the solution
+                objectives. Take this example:
               </p>
               <br></br>
               <div className="overview">
@@ -141,6 +143,7 @@ const Project2 = () => {
                 <p className="small">
                   (1) How was this problem approached in the past?
                   <br></br>
+                  <br></br>
                   (2) What are the reactions from people impacted by this
                   problem?
                 </p>
@@ -155,6 +158,7 @@ const Project2 = () => {
                 impact on its competitive position in the market. Addressing
                 this problem is of utmost importance to improve customer
                 experience and maintain a positive brand image.
+                <br></br>
                 <br></br>
                 (3) What are the short-term, long-term consequences were this
                 problem to persist?
@@ -208,9 +212,9 @@ const Project2 = () => {
                 beneficiaries).
                 <br></br>
                 <p className="small">
-                  - Afterwards, you and your partner should fill the empathy map
-                  below for each of your main stakeholders. We will use this
-                  simpler model.
+                  <i class="fa-solid fa-circle"></i> Afterwards, you and your
+                  partner should fill the empathy map below for each of your
+                  main stakeholders. We will use this simpler model.
                 </p>
               </p>
               <br></br>
@@ -218,7 +222,8 @@ const Project2 = () => {
                 <img src={require("./Img/Empathy_map.png")} alt=""></img>
               </div>
               <p className="small">
-                Paste the Empathy Maps right after the Relevance slide.
+                <i class="fa-solid fa-circle"></i> Paste the Empathy Maps right
+                after the Relevance slide.
               </p>
               <br></br>
               <h4>
@@ -229,9 +234,9 @@ const Project2 = () => {
                 1. Next week, we will delve into a case study that has
                 successfully utilize Design Thinking in their work: Bringing
                 clean toilets to Ghana! Below is a short report of their
-                project, please have a read.
+                project, please have a read. <br></br>
                 <p className="small">
-                  a. The{" "}
+                  <i class="fa-solid fa-circle"></i>
                   <a href="https://www.wsup.com/content/uploads/2017/08/PN008-ENGLISH-CleanTeam.pdf">
                     The Case Study
                   </a>
@@ -251,7 +256,7 @@ const Project2 = () => {
             <h2>Seminar 3: Stakeholder Analysis</h2>
             <br></br>
             <div className="content_seminar">
-              <h4>Post-seminar collaboration</h4>
+              <h4>Post-seminar collaboration</h4> <br></br>
               <h4>Task 1: Crisis and Vision Orientation </h4>
               <br></br>
               <p className="small">
@@ -260,23 +265,26 @@ const Project2 = () => {
                 requires different approaches to appeal to your audience.
                 <br></br>
                 <p className="small">
-                  - For example, the lack of infrastructure for sanitation is a
-                  crisis in Ghana. It's common knowledge that new bathrooms must
-                  be created to serve the citizens - this addresses the crisis.
-                  However, creating toilets that stores waste in your house to
-                  be picked up may raise skepticisms from your customers, making
-                  this facet of your product vision-oriented.
+                  <i class="fa-solid fa-circle"></i> For example, the lack of
+                  infrastructure for sanitation is a crisis in Ghana. It's
+                  common knowledge that new bathrooms must be created to serve
+                  the citizens - this addresses the crisis. However, creating
+                  toilets that stores waste in your house to be picked up may
+                  raise skepticisms from your customers, making this facet of
+                  your product vision-oriented.
                   <br></br>
                   <p className="small">
-                    + For points made in the crisis-oriented box, write a{" "}
+                    <i class="fa-solid fa-circle"></i> For points made in the
+                    crisis-oriented box, write a{" "}
                     <strong>
                       <u>justification</u>
                     </strong>{" "}
                     for why your consumers will readily adopt such aspect of
                     your solution. Estimate the extent of effectiveness of said
                     aspect.
-                    <br></br>+ For points made in the vision-oriented box,
-                    outline{" "}
+                    <br></br>
+                    <i class="fa-solid fa-circle"></i> For points made in the
+                    vision-oriented box, outline{" "}
                     <strong>
                       <u>potential skepticism</u>
                     </strong>{" "}
@@ -294,10 +302,11 @@ const Project2 = () => {
               <h4>Task 2: Stakeholder Analysis</h4>
               <br></br>
               <p className="small">
-                For sake of simplification, lets create 3 general personas for
-                the ideal people using/impacted by your solution. For each box,
-                list down the specific profile of your audience and answer the
-                questions below.{" "}
+                <i class="fa-solid fa-circle"></i> For sake of simplification,
+                lets create 3 general personas for the ideal people
+                using/impacted by your solution. For each box, list down the
+                specific profile of your audience and answer the questions
+                below.{" "}
               </p>
               <div className="img">
                 <img src={require("./Img/picture4.png")} alt=""></img>
@@ -307,8 +316,8 @@ const Project2 = () => {
               <h4>Task 3: Continue your presentation </h4>
               <br></br>
               <p classname="small">
-                Work with your partner to complete unfinished portions of your
-                presentation.
+                <i class="fa-solid fa-circle"></i> Work with your partner to
+                complete unfinished portions of your presentation.
               </p>
               <br></br>
               <h4>
@@ -333,7 +342,6 @@ const Project2 = () => {
             <br></br>
             <div className="content_seminar">
               <h4>Brainstorming / ideas</h4>
-              <br></br>
               <p className="small">
                 Counselling psychology / cognitive psychology related. <br></br>
                 <p className="small">
@@ -341,21 +349,20 @@ const Project2 = () => {
                   <i class="fa-solid fa-circle"></i> Understanding how people
                   think.
                 </p>
-                <br></br> SDG goal : #5 gender equality.
+                SDG goal : #5 gender equality.
               </p>
               <br></br>
-
               <h4>Problem:</h4>
-              <br></br>
               <p className="small">
                 Gender inequality <br></br>
                 <p className="small">
                   {" "}
                   <i class="fa-solid fa-circle"></i> How can we use psychology (
                   insert specific later) to persuade society to be more mindful
-                  of inequality between genders in society?
+                  of inequality between genders in society? <br></br>
                   <i class="fa-solid fa-circle"></i> Many people still think
-                  that it is not a problem (they underestimate the issue).
+                  that it is not a problem (they underestimate the issue).{" "}
+                  <br></br>
                   <i class="fa-solid fa-circle"></i> Specifically in southeast
                   asia.
                 </p>
@@ -363,7 +370,6 @@ const Project2 = () => {
               <br></br>
 
               <h4>Potential solution(s)</h4>
-              <br></br>
               <p className="small">
                 Raise awareness (support with psychology → reverse psychology){" "}
                 <br></br>
@@ -377,8 +383,7 @@ const Project2 = () => {
               <br></br>
 
               <div className="overview">
-                Link to the presentation:
-                <br></br>
+                <strong>Link to the presentation:</strong>
                 <a href="https://docs.google.com/presentation/d/1z5zyEdO56YK4mQTKr65waH5JsTI_6kKB-aw2t13L0jQ/edit?usp=sharing">
                   https://docs.google.com/presentation/d/1z5zyEdO56YK4mQTKr65waH5JsTI_6kKB-aw2t13L0jQ/edit?usp=sharing
                 </a>
@@ -388,19 +393,21 @@ const Project2 = () => {
                 <strong>Finalise statement:</strong>
               </h4>
               <p className="small">
-                Gender inequality is an issue that is experienced by many people
-                in various countries. It is an issue that many still overlook or
-                consider as unimportant. This mainly affects women and the
-                opportunities given to them.
+                <i class="fa-solid fa-circle"></i> Gender inequality is an issue
+                that is experienced by many people in various countries. It is
+                an issue that many still overlook or consider as unimportant.
+                This mainly affects women and the opportunities given to them.
               </p>
 
               <div className="link + heh">
-                Research/background info
+                <strong>Research/background info</strong>
+                <br></br>
                 <p>
                   <strong>Sources</strong> <br></br>
                   <a href="https://www.asiapacific.ca/asia-watch/struggle-gender-equality-southeast-asia">
                     The Struggle for Gender Equality in Southeast Asia
                   </a>
+                  <br></br>
                   <br></br>
                   <strong>Summary/bullet points</strong> <br></br>
                   <p className="small">
@@ -432,13 +439,13 @@ const Project2 = () => {
                     <br></br>
                   </p>
                 </p>
-                <br></br>
                 <p>
                   <strong>Sources</strong> <br></br>
                   <a href="https://asia.nikkei.com/Opinion/Equality-efforts-alone-will-not-close-Southeast-Asia-s-gender-gap">
                     Equality efforts alone will not close Southeast Asia's
                     gender gap
                   </a>
+                  <br></br>
                   <br></br>
                   <strong>Summary/bullet points</strong> <br></br>
                   <p className="small">
@@ -487,6 +494,7 @@ const Project2 = () => {
                     Southeast Asia: Gender parity is not gender equality | Lowy
                     Institute.
                   </a>
+                  <br></br>
                   <br></br>
                   <strong>Summary/bullet points</strong> <br></br>
                   <p className="small">
@@ -547,6 +555,7 @@ const Project2 = () => {
                     Why Are not We Making More Progress Towards Gender Equity?
                   </a>
                   <br></br>
+                  <br></br>
                   <strong>Summary/bullet points</strong> <br></br>
                   <p className="small">
                     {" "}
@@ -589,11 +598,13 @@ const Project2 = () => {
                     over time. <br></br>
                   </p>
                 </p>
+                <br></br>
                 <p>
                   <strong>Sources</strong> <br></br>
                   <a href="https://investinginwomen.asia/posts/gender-equality-work-south-east-asias-hurdle/">
                     Gender equality at work: South East Asia’s other hurdle
                   </a>
+                  <br></br>
                   <br></br>
                   <strong>Summary/bullet points</strong> <br></br>
                   <p className="small">
@@ -643,11 +654,13 @@ const Project2 = () => {
                     </p>
                   </p>
                 </p>
+                <br></br>
                 <p>
                   <strong>Sources</strong> <br></br>
                   <a href="https://www.simplypsychology.org/social-roles.html#:~:text=Social%20norms%20are%20the%20unwritten,order%20and%20predictability%20in%20society">
                     Social Roles and Social Norms.
                   </a>
+                  <br></br>
                   <br></br>
                   <strong>Summary/bullet points</strong> <br></br>
                   <p className="small">
@@ -670,11 +683,13 @@ const Project2 = () => {
                     </p>
                   </p>
                 </p>
+                <br></br>
                 <p>
                   <strong>Sources</strong> <br></br>
                   <a href="https://www.npr.org/2012/07/12/156664337/stereotype-threat-why-women-quit-science-jobs">
                     How Stereotypes Can Drive Women To Quit Science : NPR
                   </a>
+                  <br></br>
                   <br></br>
                   <strong>Summary/bullet points</strong> <br></br>
                   <p className="small">
@@ -736,12 +751,14 @@ const Project2 = () => {
                     </p>
                   </p>
                 </p>
+                <br></br>
                 <p>
                   <strong>Sources</strong> <br></br>
                   <a href="https://www.risely.me/gender-inequality-in-the-workplace/">
                     3 Examples of Gender Inequality In The Workplace: Causes,
                     Effects And Solutions - Risely
                   </a>
+                  <br></br>
                   <br></br>
                   <strong>Summary/bullet points</strong> <br></br>
                   <p className="small">
@@ -780,6 +797,7 @@ const Project2 = () => {
                     </p>
                   </p>
                 </p>
+                <br></br>
                 <p>
                   <strong>Sources</strong> <br></br>
                   <a href="https://www.epi.org/publication/womens-work-and-the-gender-pay-gap-how-discrimination-societal-norms-and-other-forces-affect-womens-occupational-choices-and-their-pay/">
@@ -787,6 +805,7 @@ const Project2 = () => {
                     societal norms, and other forces affect women’s occupational
                     choices—and their pay
                   </a>
+                  <br></br>
                   <br></br>
                   <strong>Summary/bullet points</strong> <br></br>
                   <p className="small">
@@ -840,20 +859,21 @@ const Project2 = () => {
                   </p>
                 </p>
               </div>
-
+              <br></br>
               <h4>
                 <strong>Background:</strong>
               </h4>
               <p className="small">
-                Gender inequality is an issue that is seen everywhere, whether
-                that be implicitly or explicitly. It is mostly evident in the
-                workplace, where women are typically offered lower salaries and
-                a more traditional job. This may be due to the culture and
-                stereotypes placed upon women. However, recently, many
-                countries( including in Southeast Asia) have been working
-                towards reducing the gap between genders. Such as increasing
-                diversity, law enforcement, and such. However, it is still not
-                enough to bridge the gap between genders.
+                <i class="fa-solid fa-circle"></i> Gender inequality is an issue
+                that is seen everywhere, whether that be implicitly or
+                explicitly. It is mostly evident in the workplace, where women
+                are typically offered lower salaries and a more traditional job.
+                This may be due to the culture and stereotypes placed upon
+                women. However, recently, many countries( including in Southeast
+                Asia) have been working towards reducing the gap between
+                genders. Such as increasing diversity, law enforcement, and
+                such. However, it is still not enough to bridge the gap between
+                genders.
               </p>
               <br></br>
 
@@ -861,15 +881,17 @@ const Project2 = () => {
                 <strong>Relevance:</strong>
               </h4>
               <p className="small">
-                Recognizing and understanding the importance of equality between
-                genders are important.
+                <i class="fa-solid fa-circle"></i> Recognizing and understanding
+                the importance of equality between genders are important.
               </p>
               <br></br>
 
               <h4>
                 <strong>Solution objectives: </strong>
               </h4>
-              <p className="small">Understanding WHY?</p>
+              <p className="small">
+                <i class="fa-solid fa-circle"></i> Understanding WHY?
+              </p>
               <br></br>
 
               <h4>
@@ -925,26 +947,41 @@ const Project2 = () => {
                 <strong>Child labor.</strong>
               </h4>
               <p className="small">
-                There are currently 152 million children engaged in child labor
-                around the world. [3] Child labor makes it difficult for
-                children to attend school or limits their attendance, putting
-                them at risk of falling behind their peers. Boys and girls are
-                affected differently by child labor and parents’ decisions are
-                often influenced by wider social norms about the different roles
-                that they should play in the home and in society. Girls are much
-                more likely to shoulder the responsibility for household chores
-                while boys are more likely to engage in harmful work such as
-                construction. Girls are usually pulled out of school earlier
-                than boys and are more likely to face sexual exploitation and
-                slavery.
+                <i class="fa-solid fa-circle"></i> There are currently 152
+                million children engaged in child labor around the world. [3]
+                Child labor makes it difficult for children to attend school or
+                limits their attendance, putting them at risk of falling behind
+                their peers. Boys and girls are affected differently by child
+                labor and parents’ decisions are often influenced by wider
+                social norms about the different roles that they should play in
+                the home and in society. Girls are much more likely to shoulder
+                the responsibility for household chores while boys are more
+                likely to engage in harmful work such as construction. Girls are
+                usually pulled out of school earlier than boys and are more
+                likely to face sexual exploitation and slavery.
               </p>
             </div>
           </div>
         </div>
 
-        <br></br>
-        <Footer />
+        <div className=" box + presentation">
+          <div className="Seminar">
+            <div className="content_seminar">
+              <h2>Final Product</h2>
+              <div className="final_production">
+                <div className="Present">
+                  <h4>Presentation</h4>
+                  <br></br>
+                  <a href="https://docs.google.com/presentation/d/1BrhDywUaRLechxFLz0rpQnRcINyicnaoaBUVaRsKeT4/edit#slide=id.p">
+                    <img src={require("./Img/final.png")} alt=""></img>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -9,6 +9,8 @@ import Subtopic2 from "./Pilot_Program/Subtopic_2/Subtopic_2";
 import ProjectMain from "./Project/Project_main";
 import Project1 from "./Project/Project1/Project1";
 import Project2 from "./Project/Project2/Project2";
+import Project3 from "./Project/Project3/Project3";
+import Project4 from "./Project/Project4/Project4";
 import CoreTeam from "./About_us_Page/Core_team";
 import ProjectVideos from "./ProjectVideos/ProjectVideos";
 import Subtopic3 from "./Pilot_Program/Subtopic_3/Subtopic_3";
@@ -22,14 +24,17 @@ function App() {
         <Route path="/About_us" element={<AboutUs />} />
         <Route path="/Project_1" element={<Subtopic1 />} />
         <Route path="/Project_2" element={<Subtopic2 />} />
-        <Route path = "/Project_3" element = {<Subtopic3 />} />
+        <Route path="/Project_3" element={<Subtopic3 />} />
         <Route path="/Project" element={<ProjectMain />} />
         <Route path="/Project1" element={<Project1 />} />
         <Route path="/Project2" element={<Project2 />} />
+        <Route path="/Project3" element={<Project3 />} />
+        <Route path="/Project4" element={<Project4 />} />
         <Route path="/Core_Team" element={<CoreTeam />} />
-        <Route path = "/ProjectVideos" element = {<ProjectVideos />} />
-    </Routes>
-  </BrowserRouter>
+        <Route path="/ProjectVideos" element={<ProjectVideos />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
+
 export default App;
