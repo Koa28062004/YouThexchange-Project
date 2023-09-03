@@ -144,13 +144,13 @@ export function Tool_mobile() {
     <div className="tool_mobi">
       <div className="bar"><i class="fa-solid fa-bars"></i></div>
                 <div className="contain">
-              
+              <Link to="/"><Dropdown title="Home"></Dropdown></Link>
               <Dropdown title="Event" />
               <Dropdown title="Competition" />
               <Dropdown title="Program" />
               <Dropdown title="About Us" />
               <Dropdown title="Project Partners" />
-        
+              <Link to="/SDGs"><Dropdown title="SDGs"></Dropdown></Link>
               </div>
     </div>
   )

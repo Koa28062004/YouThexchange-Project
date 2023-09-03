@@ -2,42 +2,41 @@ import React ,{useState} from "react";
 import Tool,{Tool_mobile} from "../../Tool/Tool";
 import Footer from "../../Footer/Footer";
 import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
-import PilotProgram, {SetupSubtopic2} from "./Subtopic/PilotProgram";
+import PilotProgram, { SetupSubtopic2 } from "./Subtopic/PilotProgram";
 import MenuPilotProgram from "../Menu";
-import "./Subtopic_2.css"
-
+import "./Subtopic_2.css";
 
 const Pilot_ProgramData = [
-    {
-        name: "Business",
-        details: [
-            {
-                name:"SUSTAINABILITY & BUSINESSES",
-                img: "./Images/picture1.png",
-                link:"/Pilot_Program/Subtopic_2/Business"
-            }
-        ]
-    },
-    {
-        name: "Psychology",
-        details: [
-            {   
-                name:"Gender inequality",
-                img: "./Images/picture2.png",
-                link:"https://docs.google.com/presentation/d/1BrhDywUaRLechxFLz0rpQnRcINyicnaoaBUVaRsKeT4/edit?usp=drive_link"
-            }
-        ]
-    },
-    {
-        name: "Biology",
-        details: [
-            {
-                name:"Genetic Engineering",
-                img: "./Images/picture3.png",
-                link:"https://drive.google.com/file/d/1fjA37Kbx1FXYT1mdjwPRt1WadOtx6pQY/view?usp=drive_link"
-            }
-        ]
-    },
+  {
+    name: "Business",
+    details: [
+      {
+        name: "SUSTAINABILITY & BUSINESSES",
+        img: "./Images/picture1.png",
+        link: "/Pilot_Program/Subtopic_2/Business",
+      },
+    ],
+  },
+  {
+    name: "Psychology",
+    details: [
+      {
+        name: "Gender inequality",
+        img: "./Images/picture2.png",
+        link: "https://docs.google.com/presentation/d/1BrhDywUaRLechxFLz0rpQnRcINyicnaoaBUVaRsKeT4/edit?usp=drive_link",
+      },
+    ],
+  },
+  {
+    name: "Biology",
+    details: [
+      {
+        name: "Genetic Engineering",
+        img: "./Images/picture3.png",
+        link: "https://drive.google.com/file/d/1fjA37Kbx1FXYT1mdjwPRt1WadOtx6pQY/view?usp=drive_link",
+      },
+    ],
+  },
 ];
 
 const Subtopic2 = () => {
@@ -80,7 +79,5 @@ const Subtopic2 = () => {
         </div>
     );
 };
-
-
 
 export default Subtopic2;

@@ -1,6 +1,7 @@
  .more_inf {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     width: 60%;
     align-items: center;
     justify-content: space-around;
@@ -9,7 +10,7 @@
     border-radius: 10px;
   }
   .btn_moreinf {
-    width: 20%;
+    width: max-content;
     height: auto;
     font-size: 1.9em;
     border-radius: 10px;
@@ -119,4 +120,20 @@
 .contact .F:hover{
   background-color:rgb(48, 48, 237);
   transform: translateX(-60px);
+}
+
+
+
+@media screen and (max-width: 700px) {
+ 
+  .btn_moreinf {
+    margin-top: 5%;
+    margin-left: 2%;
+    width: max-content;
+    height: auto;
+    font-size: 1.5em;
+    border-radius: 10px;
+    background-color: rgb(124, 157, 150);
+  }
+
 }

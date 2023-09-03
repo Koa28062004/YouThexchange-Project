@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./More_in4.css";
 const Project = [
-  { 
+  {
     mess: "Videos",
     classname: "videos",
     link: "/ProjectVideos",
@@ -12,22 +12,24 @@ const Project = [
 const Contact = [
   {
     mess: "Facebook",
-    classname:"F",
+    classname: "F",
     link: "https://www.facebook.com/profile.php?id=100094353529762&mibextid=LQQJ4d",
-    idclass: "fa-brands fa-facebook"
+    idclass: "fa-brands fa-facebook",
   },
   {
     mess: "Instagram",
-    classname:"I",
+    classname: "I",
     link: "https://www.instagram.com/youthexchange.project/",
-    idclass: "fa-brands fa-instagram"
-  }
+    idclass: "fa-brands fa-instagram",
+  },
 ];
 
 function More() {
-  const handleregister=()=>{
-    alert("We are not currently recruiting members. Please check out our current projects.");
-  }
+  const handleregister = () => {
+    alert(
+      "We are not currently recruiting members. Please check out our current projects."
+    );
+  };
   return (
     <div className="more_inf">
         <button className="btn_moreinf" onClick={handleregister}>How to register</button>

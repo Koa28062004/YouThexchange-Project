@@ -62,68 +62,40 @@
   
   /*The gallery of the slide*/
   .gallery_homepage {
-    height: 400px;
+    height: 100%;
     display: flex;
     z-index: 1;
     position: absolute;
     transition: transform 0.5s ease-in-out;
   }
   .gallery_homepage img {
-    width: 600px;
+    width: 100%;
     height: 100%;
     object-fit: fill;
     object-position: center;
   }
   .gallery_homepage .slide {
-    width: 600px;
+    width: 100%;
     height: 100%;
     z-index: 1;
     transition: opacity 1s;
   }
-  .main_homepage .main .exchange {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  .main_homepage .main .exchange .pre {
-    width: 10%;
-    display: flex;
-    align-items: center;
-    z-index: 2;
-  }
-  .main_homepage .main .exchange .next {
-    width: 10%;
-    display: flex;
-    align-items: center;
-    z-index: 2;
-  }
-  .main_homepage .main .exchange .next .next_btn {
-    opacity: 0;
-    font-size: 20px;
-    margin: auto;
-    color: #654bf5;
-    background-color: rgba(240, 248, 255, 0.461);
-    width: 25px;
-  }
-  .main_homepage .main .exchange .next:hover {
-    background-color: rgba(128, 128, 128, 0.283);
-  }
-  .main_homepage .main .exchange .next:hover .next_btn {
-    opacity: 1;
-  }
-  .main_homepage .main .exchange .pre .pre_btn {
-    opacity: 0;
-    font-size: 20px;
-    margin: auto;
-    color: #654bf5;
-    background-color: rgba(240, 248, 255, 0.461);
-    width: 25px;
-  }
-  .main_homepage .main .exchange .pre:hover {
-    background-color: rgba(128, 128, 128, 0.283);
-  }
-  .pre:hover .pre_btn {
-    opacity: 1;
+  
+
+
+  @media screen and (max-width: 700px) {
+    .gallery_homepage {
+      width: 100%;
+      display: flex;
+      z-index: 1;
+      position: absolute;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .main_homepage .main {
+      width: 60%;
+      height: 30%;
+    }
   }
   
  
