@@ -5,6 +5,7 @@ import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import PilotProgram, { SetupSubtopic2 } from "./Subtopic/PilotProgram";
 import MenuPilotProgram from "../Menu";
 import "./Subtopic_2.css";
+import { Search_mobile } from "../../Tool/Search";
 
 const Pilot_ProgramData = [
   {
@@ -46,6 +47,7 @@ const Subtopic2 = () => {
             
             <Tool />
             <Tool_mobile />
+            <Search_mobile />
             <SDGslogo />
             <MenuPilotProgram />
             <div className="Main_subtopic2">
@@ -66,7 +68,6 @@ const Subtopic2 = () => {
                                         <span>Name: {box.name}</span>
                                         <button key={boxIndex} className="btn" onClick={() => setCurrentImageType(project.name)}>Details</button>
                                     </div>
-                                   
                                 ))}
                             </div>
                         ))}

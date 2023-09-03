@@ -4,7 +4,7 @@ import Footer from "../../Footer/Footer";
 import Tool ,{Tool_mobile}from "../../Tool/Tool";
 import "./Project1.css"
 import Project ,{SetupSubtopic2} from "./Setup_project1/setupProject1";
-
+import { Search_mobile } from "../../Tool/Search";
 const currentYear = new Date().getFullYear();
 const Teammate1Data=[
     {
@@ -51,6 +51,7 @@ const Project1=()=>{
             )}
             <Tool />
             <Tool_mobile />
+            <Search_mobile />
             <SDGslogo />
             <div className="header-project1"><h1>SUSTAINABILITY & BUSINESSES</h1></div>
 

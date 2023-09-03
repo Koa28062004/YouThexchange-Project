@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import Footer from "../../Footer/Footer";
-import Tool from "../../Tool/Tool";
+import Tool,{Tool_mobile} from "../../Tool/Tool";
 import "./Project3.css";
+import { Search_mobile } from "../../Tool/Search";
 
 const currentYear = new Date().getFullYear();
 const Teammate2Data = [
@@ -47,6 +48,8 @@ const Project3 = () => {
         />
       )}
       <Tool />
+      <Tool_mobile />
+      <Search_mobile />
       <SDGslogo />
       <div className="Project3_main">
         <div className="Teammate_profile">

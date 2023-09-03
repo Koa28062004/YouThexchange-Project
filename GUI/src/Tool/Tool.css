@@ -196,6 +196,14 @@
 
 
 /* Tool for Mobile*/
+
+.search_mobi{
+  margin-left: 10%;
+  width: 90%;
+  height: 40px;
+  display: none;
+}
+
 .tool_mobi{
   width: 70%;
   height: 100vh;
@@ -211,7 +219,7 @@
 
 .tool_mobi .bar{
   width:115%;
-  margin-top: 5%;
+  margin-top: 40px;
   font-size: 25px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -266,11 +274,30 @@ color: black;
 width: 100%;
 background-color: unset;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 820px) {
 .tool {
    display: none;
+}
+.search_mobi{
+  display: flex;
 }
 .tool_mobi{
   display: unset;
 }
 }
+@media screen and (max-width: 400px) {
+  .tool {
+     display: none;
+  }
+  .search_mobi{
+    display: flex;
+  }
+  .tool_mobi{
+    display: unset;
+  }
+  .tool_mobi .contain .i_dropdown{
+    width: 100%;
+    background-color: unset;
+    font-size: 0.9em;
+    }
+  }

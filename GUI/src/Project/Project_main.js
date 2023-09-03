@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
 import "./Project_main.css";
 import { Link } from "react-router-dom";
+import { Search_mobile } from "../Tool/Search";
 
 const ProjectData=[
     {
@@ -44,6 +45,7 @@ const ProjectMain=() =>{
             
             <Tool />
             <Tool_mobile />
+            <Search_mobile />
             <SDGslogo />
             <h1>Project</h1>
             <div className="ProjectMain">

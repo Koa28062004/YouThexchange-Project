@@ -2,10 +2,16 @@ import React, { useState, useEffect } from "react";
 import "./setupVideos.css";
 
 const currentVideosArray = [
-  // Meow1
-  "https://drive.google.com/file/d/1JOZBkMwOllSNg7ameXnAj1dlagusMeux/preview",
-  // Meow2
-  "https://drive.google.com/file/d/1O1JeMbe5lWVs1H7b8IeW2K1GAYcmsY5i/preview",
+  // Meeting 1
+  "https://drive.google.com/file/d/1sN-XPPQ44--DFJGY949Ua06R8Izbln2H/preview",
+  // Meeting 2
+  "https://drive.google.com/file/d/1uw56krHZ0uVB3u07mX6mX0vI4E98VS1J/preview",
+  // Meeting 3
+  "https://drive.google.com/file/d/1_o3t_xDpebyNy9uYZcPnY2BKtS0AtK1h/preview",
+  // Meeting 4
+  "https://drive.google.com/file/d/1ElmLlOoN17pg_t-CgcVz31rOHGHUhfXY/preview",
+  // Meeting 5
+  "https://drive.google.com/file/d/1k1Lk0W6lVZBUMB5LGge5_k0Mv-1Bs6fJ/preview",
 ];
 
 export const SetupVideos = () => {   /* Nơi để chỉnh cho video xuất hiện , m tự chỉnh lại className để nó chạy*/
@@ -14,7 +20,7 @@ export const SetupVideos = () => {   /* Nơi để chỉnh cho video xuất hi�
     const Btnsub2 = document.querySelectorAll(".Videos .btnn");
     const Img_subtopic = document.querySelector(".Business_program .gallery_subtopic2 iframe")
     Btnsub2.forEach((btn, index) => {
-      if (index === 0 || index === 1 || index === 2) {
+      if (index === 0 || index === 1 || index === 2 || index === 3 || index === 4) {
         btn.addEventListener("click", () => {
           setTimeout(() => {
             PilotPr.style.display = "flex";
@@ -38,6 +44,10 @@ const ProjectVideosSetUp = ({ currentID }) => {
       setCurrentVideosIndex(1);
     } else if (currentID === "3") {
       setCurrentVideosIndex(2);
+    } else if (currentID === "4") {
+      setCurrentVideosIndex(3);
+    } else if (currentID === "5") {
+      setCurrentVideosIndex(4);
     }
   }, [currentID]);
 
