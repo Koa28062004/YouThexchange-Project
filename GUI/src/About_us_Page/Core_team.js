@@ -3,6 +3,7 @@ import Tool,{Tool_mobile} from "../Tool/Tool";
 import "./Core_team.css"
 import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
 import Footer from "../Footer/Footer";
+import { Search_mobile } from "../Tool/Search";
 
 const  currentYear =new Date().getFullYear() ;
 const CoreTeamData=[
@@ -53,6 +54,7 @@ function CoreTeam(){
         <div className="CoreTeam_body">
             <Tool></Tool>
             <Tool_mobile />
+            <Search_mobile />
             <SDGslogo></SDGslogo>
             <div className="CoreTeam_main">
                 <div className="header-core">

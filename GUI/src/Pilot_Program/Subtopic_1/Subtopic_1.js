@@ -5,6 +5,7 @@ import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import "./Subtopic_1.css";
 import SetUpSubtopic1 from "./Set_up_subtopic1";
 import MenuPilotProgram from "../Menu";
+import { Search_mobile } from "../../Tool/Search";
 const header_content=[
     {
         name:"1. Our goal",
@@ -28,6 +29,7 @@ const Subtopic1=()=>{
         <div className="body_subtopic1">
             <Tool />
             <Tool_mobile />
+            <Search_mobile />
             <SDGslogo />
             <MenuPilotProgram />
             <div className="Roll">

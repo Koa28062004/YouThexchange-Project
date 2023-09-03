@@ -3,6 +3,7 @@ import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import Footer from "../../Footer/Footer";
 import Tool,{Tool_mobile} from "../../Tool/Tool";
 import "./Project2.css";
+import { Search_mobile } from "../../Tool/Search";
 
 const currentYear = new Date().getFullYear();
 const Teammate2Data = [
@@ -48,6 +49,7 @@ const Project2 = () => {
       )}
       <Tool />
       <Tool_mobile />
+      <Search_mobile />
       <SDGslogo />
       <div className="Project2_main">
         <div className="Teammate_profile">

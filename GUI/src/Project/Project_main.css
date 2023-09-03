@@ -136,3 +136,9 @@
   background: linear-gradient(#5ba8a0, #cbe5ae);
   color: black;
 }
+
+@media screen and (max-width: 280px) {
+  .ProjectMain_body .ProjectMain .box_project{
+    width: 80%;
+  }
+}
