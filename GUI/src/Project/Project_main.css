@@ -12,25 +12,47 @@
   text-align: center;
 }
 
-.ProjectMain {
-  /*the main container of projects*/
-  width: 100%;
-  display: flex;
-  margin-top: 100px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 50px;
+
+.ProjectMain{ /*the main container of projects*/
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    /* grid-template-rows: auto 1fr; Set the height of the first row to auto and the second row to 1fr (equal height) */
+    grid-auto-rows: 1fr;
+    gap: 0px;
+    /* Adjust this value as needed for horizontal gap */
+    justify-items: center; /* Horizontally center the grid */
+    align-items: center; /* Vertically center the grid */
+    margin-top: 100px;
+    justify-content: space-around;
+    margin-bottom: 50px;
 }
 
-.ProjectMain_body .ProjectMain .box_project {
-  /*Boxes of project*/
-  width: 280px;
-  height: 390px;
-  border-radius: 5%;
-  overflow: hidden;
-  background-color: rgb(243, 243, 243);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  margin: 20px;
+@media screen and (max-width: 1300px) {
+    .ProjectMain {
+        grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+    }
+}
+
+/* Media Query for even smaller screens */
+@media screen and (max-width: 900px) {
+    .ProjectMain {
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    }
+}
+@media screen and (max-width: 500px) {
+    .ProjectMain {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+}
+.ProjectMain_body .ProjectMain .box_project{    /*Boxes of project*/
+    width: 280px;
+    height:390px;
+    border-radius: 5%;
+    overflow: hidden;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
 }
 
 /*parts of box project*/
