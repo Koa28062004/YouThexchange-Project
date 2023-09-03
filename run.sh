@@ -1,2 +1,2 @@
-cd API;
-npm run dev;
+cd GUI;
+npm run start;
