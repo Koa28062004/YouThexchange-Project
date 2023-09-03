@@ -1,36 +1,9 @@
 import React,{useState,useEffect}from "react";
-import "./PilotProgram.css"
 
- const BusinessImg=[
-    "./img/Business/picture1.png",
-    "./img/Business/picture2.png",
-    "./img/Business/picture3.png",
-    "./img/Business/picture4.png",
-    "./img/Business/picture5.png",
-    "./img/Business/picture6.png",
-    "./img/Business/picture7.png",
-    "./img/Business/picture8.png",
-    "./img/Business/picture9.png",
-    "./img/Business/picture10.png",
-    "./img/Business/picture11.png",
-    "./img/Business/picture12.png",
-];
-const PsychologyImg=[
-    "./img/Psychology/picture1.png",
-    "./img/Psychology/picture2.png",
-    "./img/Psychology/picture3.png",
-    "./img/Psychology/picture4.png",
-    "./img/Psychology/picture5.png",
-    "./img/Psychology/picture6.png",
-    "./img/Psychology/picture7.png",
-    "./img/Psychology/picture8.png",
-    "./img/Psychology/picture9.png",
-];
-const BiologyImg=[
-    "./img/Biology/picture1.png",
-    "./img/Biology/picture2.png",
-];
-export const SetupSubtopic2 = () => {
+
+
+
+export const SetupSubtopic2 = () => {   /* Nơi để chỉnh cho video xuất hiện , m tự chỉnh lại className để nó chạy*/ 
     useEffect(() => {
         const PilotPr = document.querySelector(".Business_program ");
         const Btnsub2 = document.querySelectorAll(".subtopicProject .btn");
@@ -52,11 +25,11 @@ export const SetupSubtopic2 = () => {
 
 };
 
-const PilotProgram = ({ currentImageType }) => {
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const [currentImageArray, setCurrentImageArray] = useState(BusinessImg);
+const Videos_setup = ({ currentImageType }) => {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0); 
+    const [currentImageArray, setCurrentImageArray] = useState(/* Name video */);  /* Video want to display*/
   
-    useEffect(() => {
+    useEffect(() => {/* Place to change video display */
       if (currentImageType === "Business") {
         setCurrentImageArray(BusinessImg);
       } else if (currentImageType === "Psychology") {
@@ -66,7 +39,7 @@ const PilotProgram = ({ currentImageType }) => {
       }
     }, [currentImageType]);
   
-    const handleCloseClick = () => {
+    const handleCloseClick = () => {  /*handle close button */
         const PilotPr = document.querySelector(".Business_program ");
         const Img_subtopic= document.querySelector(".Business_program .gallery_subtopic2 img")
         Img_subtopic.style.transform = "scale(0.2)";
@@ -95,8 +68,7 @@ const PilotProgram = ({ currentImageType }) => {
             </div>
             <div className="gallery_subtopic2">
                 <i className="fa-solid fa-chevron-left" onClick={handlePreviousClick}></i>
-                <div className="slides_subtopic2">
-                    <img src={require(`${currentImageArray[currentImageIndex]}`)} alt="" />
+                <div className="slides_subtopic2" /*Place to set video */>                                
                 </div>
                 <i className="fa-solid fa-chevron-right" onClick={handleNextClick}></i>
             </div>
@@ -104,6 +76,3 @@ const PilotProgram = ({ currentImageType }) => {
         </div>
     );
 };
-
-
-export default PilotProgram;

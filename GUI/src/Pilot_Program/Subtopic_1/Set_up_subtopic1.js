@@ -3,7 +3,7 @@ import { useEffect } from "react";
 function SetUpSubtopic1() {
   useEffect(() => {
     const Roll = document.querySelector(".Roll");
-    const Bar = document.querySelector(".Roll .bar"); // Fixed typo here: "documen" to "document"
+    const Bar = document.querySelector(".Roll .bar"); 
     let x = 1;
     
     Bar.addEventListener("click", () => {
