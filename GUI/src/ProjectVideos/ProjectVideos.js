@@ -3,7 +3,6 @@ import './ProjectVideos.css';
 import Footer from "../Footer/Footer";
 import Tool from "../Tool/Tool";
 import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
-import ReactPlayer from 'react-player';
 
 const Videos = [
   {
