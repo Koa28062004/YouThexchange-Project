@@ -1,5 +1,5 @@
 import React from "react";
-import Tool from "../Tool/Tool";
+import Tool,{Tool_mobile} from "../Tool/Tool";
 import "./Core_team.css"
 import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
 import Footer from "../Footer/Footer";
@@ -14,7 +14,7 @@ const CoreTeamData=[
         pos:"Director of Academics & Outreach, Vietnam",
         bonus:"",
         mail:"ngphamanhthu.workspace@gmail.com",
-        img:`./img/Anh_Thu.jpg`
+        img:`Anh_Thu.jpg`
     },
     {
         Name:"Rashi Mukherjee",
@@ -24,7 +24,7 @@ const CoreTeamData=[
         pos:" Director of Logistics",
         bonus:"",
         mail:"rashimukherjee2005@gmail.com",
-        img:`./img/Rashi.JPG`
+        img:`Rashi.JPG`
     },
     {
         Name:"Freya Tran",
@@ -34,7 +34,7 @@ const CoreTeamData=[
         pos:" Director of External Relations, Australia",
         bonus:"",
         mail:"freyatran2004@gmail.com",
-        img:`./img/Ngan.JPG`
+        img:`Ngan.JPG`
     },
     {
         Name:"Van Anh",
@@ -44,7 +44,7 @@ const CoreTeamData=[
         pos:"  Executive Director ",
         mail:"lilynguyenvananh@gmail.com",
         bonus:"",
-        img:`./img/Van_Anh.png`
+        img:`Van_Anh.png`
     }
 ]
 
@@ -52,6 +52,7 @@ function CoreTeam(){
     return(
         <div className="CoreTeam_body">
             <Tool></Tool>
+            <Tool_mobile />
             <SDGslogo></SDGslogo>
             <div className="CoreTeam_main">
                 <div className="header-core">
@@ -72,7 +73,7 @@ function CoreTeam(){
 
                     </div>
                     <div className="img-core">
-                        <img src={require (`${member.img}`)} alt=""/>
+                        <img src={require (`./img/${member.img}`)} alt=""/>
                     </div>
                 </div>
                 ))}

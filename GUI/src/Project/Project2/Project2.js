@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import Footer from "../../Footer/Footer";
-import Tool from "../../Tool/Tool";
+import Tool,{Tool_mobile} from "../../Tool/Tool";
 import "./Project2.css";
 
 const currentYear = new Date().getFullYear();
@@ -47,6 +47,7 @@ const Project2 = () => {
         />
       )}
       <Tool />
+      <Tool_mobile />
       <SDGslogo />
       <div className="Project2_main">
         <div className="Teammate_profile">
@@ -428,9 +429,8 @@ const Project2 = () => {
                 <br></br>
                 <p>
                   <strong>Sources</strong> <br></br>
-                  <a href="https://asia.nikkei.com/Opinion/Equality-efforts-alone-will-not-close-Southeast-Asia-s-gender-gap">
-                    Equality efforts alone will not close Southeast Asia's
-                    gender gap
+                  <a href="#">
+                    Southeast Asia: Gender parity is not gender equality | Lowy
                   </a>
                   <br></br>
                   <strong>Summary/bullet points</strong> <br></br>

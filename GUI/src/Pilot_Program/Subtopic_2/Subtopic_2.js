@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Tool from "../../Tool/Tool";
+import React ,{useState} from "react";
+import Tool,{Tool_mobile} from "../../Tool/Tool";
 import Footer from "../../Footer/Footer";
 import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import PilotProgram, { SetupSubtopic2 } from "./Subtopic/PilotProgram";
@@ -40,48 +40,45 @@ const Pilot_ProgramData = [
 ];
 
 const Subtopic2 = () => {
-  const [currentImageType, setCurrentImageType] = useState("Business");
-  return (
-    <div className="body_subtopic2">
-      <Tool />
-      <SDGslogo />
-      <MenuPilotProgram />
-      <div className="Main_subtopic2">
-        <div className="Subtopic2">
-          <div className="h2">
-            <h2>Product outcomes</h2>
-          </div>
-          <br />
-          <h3>Subtopic of subtopic</h3>
-          <div className="Menu_subtopicProject">
-            <div className="subtopicProject">
-              {Pilot_ProgramData.map((project, index) => (
-                <div key={index} className="container">
-                  <h4>{project.name}</h4>
-                  {project.details.map((box, boxIndex) => (
-                    <div className="box_subtopic" key={boxIndex}>
-                      <img src={require(`${box.img}`)} alt="" />
-                      <span>Name: {box.name}</span>
-                      <button
-                        key={boxIndex}
-                        className="btn"
-                        onClick={() => setCurrentImageType(project.name)}
-                      >
-                        Details
-                      </button>
+    const [currentImageType, setCurrentImageType] = useState("Business");
+    return (
+        <div className="body_subtopic2">
+            
+            <Tool />
+            <Tool_mobile />
+            <SDGslogo />
+            <MenuPilotProgram />
+            <div className="Main_subtopic2">
+                <div className="Subtopic2">
+                    <div className="h2">
+                        <h2>Product outcomes</h2>
                     </div>
-                  ))}
+                    <br />
+                    <h3>Subtopic of subtopic</h3>
+                    <div className="Menu_subtopicProject">
+                    <div  className="subtopicProject">
+                        {Pilot_ProgramData.map((project, index) => (
+                            <div key={index} className="container">
+                                <h4>{project.name}</h4>
+                                {project.details.map((box, boxIndex) => (
+                                    <div className="box_subtopic" key={boxIndex}>
+                                        <img src={require(`${box.img}`)} alt="" />
+                                        <span>Name: {box.name}</span>
+                                        <button key={boxIndex} className="btn" onClick={() => setCurrentImageType(project.name)}>Details</button>
+                                    </div>
+                                   
+                                ))}
+                            </div>
+                        ))}
+                    </div>
+                    </div>
                 </div>
-              ))}
             </div>
-          </div>
+            <PilotProgram currentImageType={currentImageType} /> 
+            <Footer />
+            <SetupSubtopic2 />
         </div>
-      </div>
-      <PilotProgram currentImageType={currentImageType} />
-      <Footer />
-      <SetupSubtopic2 />
-    </div>
-  );
+    );
 };
 
 export default Subtopic2;

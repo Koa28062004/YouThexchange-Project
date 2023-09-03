@@ -1,57 +1,51 @@
 import React from "react";
-import Tool from "../../Tool/Tool";
+import Tool,{Tool_mobile} from "../../Tool/Tool";
 import Footer from "../../Footer/Footer";
 import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import "./Subtopic_1.css";
 import SetUpSubtopic1 from "./Set_up_subtopic1";
 import MenuPilotProgram from "../Menu";
-const header_content = [
-  {
-    name: "1. Our goal",
-    id: "#1",
-  },
-  {
-    name: "2. Process",
-    id: "#2",
-  },
-  {
-    name: "3. Our work",
-    id: "#3",
-  },
-  {
-    name: "4. Product",
-    id: "#4",
-  },
-];
-const Subtopic1 = () => {
-  return (
-    <div className="body_subtopic1">
-      <Tool />
-      <SDGslogo />
-      <MenuPilotProgram />
-      <div className="Roll">
-        <div className="bar">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-        <div className="contain">
-          {header_content.map((header) => (
-            <a key={header.name} href={header.id}>
-              <i className="fa-solid fa-circle"></i>
-              {header.name}
-            </a>
-          ))}
-        </div>
-      </div>
-      <div className="subtopic_1">
-        <div className="header_subtopic_1">
-          <img src={require("../../Homepage/Images/logo.png")} alt=""></img>
-          <h2>Pilot Program: An Overview</h2>
-        </div>
-        <div className="main_subtopic_1">
-          <h4 id="1">
-            <strong>Purpose of the Program</strong>
-          </h4>
-          <img src={require("../Images/picture_1.png")} alt=""></img>
+const header_content=[
+    {
+        name:"1. Our goal",
+        id:"#1"
+    },
+    {
+        name:"2. Process",
+        id:"#2"
+    },
+    {
+        name:"3. Our work",
+        id:"#3"
+    },
+    {
+        name:"4. Product",
+        id:"#4"
+    }
+]
+const Subtopic1=()=>{
+    return(
+        <div className="body_subtopic1">
+            <Tool />
+            <Tool_mobile />
+            <SDGslogo />
+            <MenuPilotProgram />
+            <div className="Roll">
+                <div className="bar"><i class="fa-solid fa-bars"></i></div>
+                <div className="contain">
+                {header_content.map((header) => (
+                        <a key={header.name} href={header.id}><i className="fa-solid fa-circle"></i>{header.name}</a>
+                    ))}
+                </div>
+            </div>
+            <div className="subtopic_1">
+                <div className="header_subtopic_1">
+                    <img src={ require ("../../Homepage/Images/logo.png")} alt=""></img>
+                    <h2>Pilot Program: An Overview</h2>
+                </div>
+                <div className="main_subtopic_1">
+                    <h4 id="1"><strong>Purpose of the Program</strong></h4>
+                    <img src={ require ("../Images/picture_1.png")} alt=""></img>
 
           <p>
             Our Pilot Program focuses on the{" "}
