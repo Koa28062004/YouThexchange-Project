@@ -18,12 +18,12 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/SDGs" element={<Main />} />
         <Route path="/About_us" element={<AboutUs />} />
-        <Route path="/Pilot_Program/Project_1" element={<Subtopic1 />} />
-        <Route path="/Pilot_Program/Project_2" element={<Subtopic2 />} />
+        <Route path="/Project_1" element={<Subtopic1 />} />
+        <Route path="/Project_2" element={<Subtopic2 />} />
         <Route path="/Project" element={<ProjectMain />} />
-        <Route path="/Project/Project1" element={<Project1 />} />
-        <Route path="/Project/Project2" element={<Project2 />} />
-        <Route path="/About_us/Core_Team" element={<CoreTeam />} />
+        <Route path="/Project1" element={<Project1 />} />
+        <Route path="/Project2" element={<Project2 />} />
+        <Route path="/Core_Team" element={<CoreTeam />} />
         <Route path = "/ProjectVideos" element = {<ProjectVideos />} />
     </Routes>
   </BrowserRouter>

@@ -55,7 +55,7 @@ const ProjectMain=() =>{
                                 <div className="box_author">
                                     <p>Author: <span className="Name_Author">{project.author}</span></p>
                                 </div>
-                                <Link to="/Project/Project1" className="btn_project">Details</Link>
+                                <Link to="/Project1" className="btn_project">Details</Link>
                             </div>
                         </div>
                     );
