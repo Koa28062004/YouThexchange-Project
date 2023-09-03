@@ -29,7 +29,7 @@ const programData = [
       },
       {
         name:"Project 3",
-        link:"#"
+        link:"/Pilot_Program/Project_3"
       }
     ],
   },
