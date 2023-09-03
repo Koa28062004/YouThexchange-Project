@@ -1,7 +1,7 @@
 import React from "react";
 import './ProjectVideos.css';
 import Footer from "../Footer/Footer";
-import Tool from "../Tool/Tool";
+import Tool,{Tool_mobile} from "../Tool/Tool";
 import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
 import ReactPlayer from 'react-player';
 
@@ -48,6 +48,7 @@ function ProjectVideos() {
   return (
     <div className="Videos_body">
       <Tool />
+      <Tool_mobile />
       <SDGslogo />
       <div className="Videos">
         {Videos.map((item) => (

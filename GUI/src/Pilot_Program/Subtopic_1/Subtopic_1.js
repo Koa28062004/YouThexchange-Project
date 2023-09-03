@@ -1,5 +1,5 @@
 import React from "react";
-import Tool from "../../Tool/Tool";
+import Tool,{Tool_mobile} from "../../Tool/Tool";
 import Footer from "../../Footer/Footer";
 import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import "./Subtopic_1.css"
@@ -27,6 +27,7 @@ const Subtopic1=()=>{
     return(
         <div className="body_subtopic1">
             <Tool />
+            <Tool_mobile />
             <SDGslogo />
             <MenuPilotProgram />
             <div className="Roll">

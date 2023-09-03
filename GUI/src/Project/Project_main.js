@@ -1,5 +1,5 @@
 import React from "react";
-import Tool from "../Tool/Tool";
+import Tool,{Tool_mobile} from "../Tool/Tool";
 import Footer from "../Footer/Footer";
 import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
 import "./Project_main.css";
@@ -39,6 +39,7 @@ const ProjectMain=() =>{
         <div className="ProjectMain_body">
             
             <Tool />
+            <Tool_mobile />
             <SDGslogo />
             <h1>Project</h1>
             <div className="ProjectMain">

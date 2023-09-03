@@ -24,6 +24,23 @@ function SetUpTool() {
         }
       });
     });
+
+
+    let y=0;
+    const bar = document.querySelector(".tool_mobi .bar");
+    const tool_mobi = document.querySelector(".tool_mobi");
+    bar.addEventListener("click",() =>{
+      if(y===0){
+        tool_mobi.style.marginLeft=0;
+        bar.style.width="105%";
+        y++;
+      }
+      else{
+        tool_mobi.style.marginLeft="-70%";
+      bar.style.width="115%";
+      y=0;
+      }
+    })
   }, []);
 }
 

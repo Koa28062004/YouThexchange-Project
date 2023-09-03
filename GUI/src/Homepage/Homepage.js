@@ -1,5 +1,5 @@
 import "./Homepage.css";
-import Tool from "../Tool/Tool";
+import Tool,{Tool_mobile} from "../Tool/Tool";
 import Footer from "../Footer/Footer";
 import Slide from "./Home_Slide/Slide";
 import Run from "./Set_up_Home";
@@ -10,6 +10,7 @@ function Homepage() {
   return (
     <div className="body_homepage">
       <Tool />
+      <Tool_mobile />
       <SDGslogo></SDGslogo>
       <div className="main_homepage">
         <div className="main">
