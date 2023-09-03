@@ -3,11 +3,13 @@ import Tool,{Tool_mobile} from "../Tool/Tool";
 import "./About_us.css"
 import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
 import Footer from "../Footer/Footer";
+import { Search_mobile } from "../Tool/Search";
 function AboutUs(){
     return(
         <div className="body_About">
             <Tool></Tool>
             <Tool_mobile />
+            <Search_mobile />
             <SDGslogo></SDGslogo>
             <div className="About_us">
                 <div className="About_us_main">
