@@ -1,5 +1,5 @@
 import React from "react";
-import Tool from "../Tool/Tool";
+import Tool,{Tool_mobile} from "../Tool/Tool";
 import "./Core_team.css"
 import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
 import Footer from "../Footer/Footer";
@@ -52,6 +52,7 @@ function CoreTeam(){
     return(
         <div className="CoreTeam_body">
             <Tool></Tool>
+            <Tool_mobile />
             <SDGslogo></SDGslogo>
             <div className="CoreTeam_main">
                 <div className="header-core">

@@ -1,5 +1,5 @@
 import React from "react";
-import Tool from "../Tool/Tool";
+import Tool,{Tool_mobile} from "../Tool/Tool";
 import "./About_us.css"
 import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
 import Footer from "../Footer/Footer";
@@ -7,6 +7,7 @@ function AboutUs(){
     return(
         <div className="body_About">
             <Tool></Tool>
+            <Tool_mobile />
             <SDGslogo></SDGslogo>
             <div className="About_us">
                 <div className="About_us_main">
