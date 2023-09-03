@@ -601,6 +601,7 @@ const Project1 = () => {
             </div>
           </div>
         </div>
+        
         <div className="box + se4">
           <div className="Seminar">
             <h2>Seminar 4: Case study</h2>
