@@ -1,0 +1,331 @@
+.Project1_body {
+    width: 100%;
+    background-color: wheat;
+  }
+  .Project1_main {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .Project1_body .header-project1 {
+    margin-left: 10%;
+    margin-top: 50px;
+    background-color: rgb(66, 82, 68);
+    width: max-content;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    transform: perspective(600px) rotateX(10deg) rotateY(20deg);
+  }
+  .Project1_body .header-project1 h1 {
+    font-family: "Philosopher", sans-serif;
+    color: rgb(255, 255, 255);
+  }
+  /* Teammate information container*/
+  .Teammate_profile {
+    width: 75%;
+    background: linear-gradient(rgb(169, 169, 169), rgb(21, 55, 71));
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-left: 6%;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+  }
+  .Teammate_profile h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5%;
+  }
+  .Teammate_profile .profile .profile_img {
+    width: 70%;
+    height: 350px;
+    margin-bottom: 2%;
+  }
+  .Teammate_profile .profile_img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .Teammate_profile .profiles {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .Teammate_profile .profile {
+    /*Profile of teammate*/
+    margin-top: 60px;
+    position: relative;
+    width: 35%;
+    transition: all 0.2s;
+  }
+  .Teammate_profile .profile:hover {
+    margin-top: 40px;
+  }
+  .Teammate_profile .profile .profile_main {
+    width: 0;
+    max-height: 200px;
+    margin-left: -5%;
+    font-size: 1.2em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out, color 0.2s ease-in-out 0.3s;
+    background-color: white;
+  }
+  .Teammate_profile .profile .profile_main p {
+    padding-left: 10%;
+  }
+  .Teammate_profile .profile .name_teammate {
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    margin-left: -5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    transition: width 0.3s;
+  }
+  .Teammate_profile .profile:hover .name_teammate {
+    width: 100%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .Teammate_profile .profile:hover .profile_main {
+    width: 100%;
+    color: black;
+  }
+  .Teammate_profile .profile .profile_main p {
+    margin-bottom: 10px;
+  }
+  /* The box contain every part of project*/
+  .Project1_main .box {
+    width: 80%;
+    height: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 5px;
+  }
+  
+  .Project1_main .box .Seminar .img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+  .Seminar h2 {
+    text-align: center;
+  }
+  .Project1_main .box .Seminar .img img {
+    width: 60%;
+    object-fit: fill;
+  }
+  .Project1_main .box .Seminar .content_seminar {
+    /*The main content of Senimar*/
+    width: 90%;
+    margin-left: 5%;
+    font-size: 22px;
+  }
+  .Project1_main .box .Seminar .content_seminar .header {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 43%;
+    width: 16%;
+    background-color: rgb(255, 137, 137);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Begin of the decoration small boxes*/
+  .Project1_main .box .Seminar .content_seminar .overview {
+    width: 70%;
+    background: rgb(255, 243, 218);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .Project1_main .box .Seminar .content_seminar .link {
+    width: auto;
+    background: rgb(248, 248, 248);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .link a {
+    text-decoration: none;
+  }
+  .Project1_main .box .Seminar .content_seminar .overview h4 {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .Project1_main .box .Seminar .content_seminar .about h4 {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .Project1_main .box .Seminar .content_seminar .background {
+    width: 70%;
+    background: rgb(21, 111, 83);
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+  .Project1_main .box .Seminar .content_seminar .about {
+    width: 70%;
+    background: rgb(157, 196, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+  /* End of the decoration small boxes*/
+  
+  .Project1_main .box .Seminar .content_seminar .small {
+    /*The small paragraph that wants to be indented.*/
+    margin-left: 30px;
+    font-weight: 400;
+  }
+  
+  /*class to change background of every main box*/
+  .se1 {
+    background: rgb(223, 204, 251);
+  }
+  .se2 {
+    background-color: pink;
+  }
+  .se3 {
+    background-color: white;
+  }
+  
+  .se4 {
+    background-color: rgb(252, 187, 146);
+  }
+  .Project1_main .presentation {
+    background-color: rgb(188, 188, 188);
+    color: rgb(0, 0, 0);
+  }
+  
+  .Project1_main .box .Seminar .content_seminar .fa-circle {
+    font-size: 10px;
+    margin-right: 20px;
+  }
+  .Project1_main .profile .fa-circle-info {
+    cursor: pointer;
+  }
+  
+  /*Final Product edit*/
+  
+  .content_seminar .final_production {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  /*handle the presentation*/
+  .content_seminar .Present {
+    margin-top: 10%;
+    width: 50%;
+  
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+  .content_seminar .Present img {
+    width: 60%;
+    cursor: pointer;
+    border-radius: 50%;
+    object-fit: contain;
+    transition: all 0.3s ease-in-out;
+  }
+  .content_seminar .Present img:hover {
+    transform: scale(1.1);
+    border-radius: 0%;
+  }
+  
+  /* handle with Infographic*/
+  .content_seminar .Infog {
+    margin-top: 10%;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+  .content_seminar .Infog img {
+    width: 50%;
+    object-fit: contain;
+    transition: all 0.3s ease-in-out;
+  }
+  .content_seminar .Infog img:hover {
+    transform: scale(1.1);
+  }
+  /*Three class to handle pdf*/
+  .Project1_body .pdf_project {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    z-index: 10;
+  }
+  
+  .btn_toggle_pdf {
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37px;
+    font-size: 22px;
+    background-color: unset;
+    color: #f2f2f2;
+    border: none;
+    position: fixed;
+    z-index: 11;
+    top: 12px;
+    right: 140px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .btn_toggle_pdf:hover {
+    background-color: rgba(128, 128, 128, 0.29);
+  }
+  

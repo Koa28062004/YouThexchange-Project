@@ -1,14 +1,15 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.ProjectMain_body{
-    width: 100%;
-    background: linear-gradient( 45deg,#94B0B7,#C2C8C5);
-}.ProjectMain_body h1{
-    text-align: center;
+.ProjectMain_body {
+  width: 100%;
+  background: linear-gradient(45deg, #94b0b7, #c2c8c5);
+}
+.ProjectMain_body h1 {
+  text-align: center;
 }
 
 
@@ -55,85 +56,83 @@
 }
 
 /*parts of box project*/
-.ProjectMain_body .ProjectMain .box_project .box_img{ 
-    width: 100%;
-    height:50%;
-    margin-bottom: 10px;
+.ProjectMain_body .ProjectMain .box_project .box_img {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 10px;
 }
 
-.ProjectMain_body .ProjectMain .box_project .box_img img{
-    object-fit: fill;
-    object-position: center;
-    width: 100%;
-    height:100%;
+.ProjectMain_body .ProjectMain .box_project .box_img img {
+  object-fit: fill;
+  object-position: center;
+  width: 100%;
+  height: 100%;
 }
-.ProjectMain_body .ProjectMain .box_project .Name_Project{
-    font-weight: bold;
-    font-size: 16px;
-    text-align: center;
-    color:rgb(3, 104, 3);
-    margin-bottom: 5px;
+.ProjectMain_body .ProjectMain .box_project .Name_Project {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  color: rgb(3, 104, 3);
+  margin-bottom: 5px;
 }
-.ProjectMain .box_project .box_main{
-    margin-top: 30px;
-    transition: all 0.5s ease-in;
-    margin-left: 10px;
+.ProjectMain .box_project .box_main {
+  margin-top: 30px;
+  transition: all 0.5s ease-in;
+  margin-left: 10px;
 }
-.ProjectMain .box_project:hover .box_main{
-    margin-top: 10px;
+.ProjectMain .box_project:hover .box_main {
+  margin-top: 10px;
 }
-.ProjectMain .box_project p{
-    font-size: 18px;
+.ProjectMain .box_project p {
+  font-size: 18px;
 }
-.ProjectMain_body .ProjectMain .box_project .box_author{
-    margin-top: 20px;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: all 0.5s;
+.ProjectMain_body .ProjectMain .box_project .box_author {
+  margin-top: 20px;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.5s;
 }
-.ProjectMain_body .ProjectMain .box_project:hover .box_author{
-    transform: translateY(0px);
-    opacity: 1;
+.ProjectMain_body .ProjectMain .box_project:hover .box_author {
+  transform: translateY(0px);
+  opacity: 1;
 }
-.ProjectMain_body .ProjectMain .box_project .Name_Author{
-    font-weight:  bold;
-    margin-left: 5px;
+.ProjectMain_body .ProjectMain .box_project .Name_Author {
+  font-weight: bold;
+  margin-left: 5px;
 }
 /* end*/
 
 /* The details button and the animation of button*/
-.ProjectMain_body .ProjectMain .box_project .btn_project{
-    margin-top: 20px;
-    position: relative;
-    width: 30%;
-    height:  15%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    display: none;
-    transition: all 0.5s;
-    color: rgb(255, 255, 255);
-    background: rgb(0, 0, 0);
-    padding: 12px 30px;
-    text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    cursor: pointer;
-    border-radius: 40px;
-    z-index: 1;
-    letter-spacing: 1px;
-    overflow: hidden;
-    transition: 0.5s;
-    border: 1px solid #fff;
+.ProjectMain_body .ProjectMain .box_project .btn_project {
+  margin-top: 20px;
+  position: relative;
+  width: 30%;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  display: none;
+  transition: all 0.5s;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+  padding: 12px 30px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  border-radius: 40px;
+  z-index: 1;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: 0.5s;
+  border: 1px solid #fff;
 }
-.ProjectMain_body .ProjectMain .box_project:hover .btn_project{
-    display: flex;
-    margin-left: 35%;
+.ProjectMain_body .ProjectMain .box_project:hover .btn_project {
+  display: flex;
+  margin-left: 35%;
 }
-.ProjectMain_body .ProjectMain .box_project:hover .btn_project:hover{
-    letter-spacing: 1px;
-    font-weight: bold;
-    background: linear-gradient(#5BA8A0,#CBE5AE);
-    color:black;
+.ProjectMain_body .ProjectMain .box_project:hover .btn_project:hover {
+  letter-spacing: 1px;
+  font-weight: bold;
+  background: linear-gradient(#5ba8a0, #cbe5ae);
+  color: black;
 }
-
-
