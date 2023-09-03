@@ -274,3 +274,16 @@ background-color: unset;
   display: unset;
 }
 }
+@media screen and (max-width: 400px) {
+  .tool {
+     display: none;
+  }
+  .tool_mobi{
+    display: unset;
+  }
+  .tool_mobi .contain .i_dropdown{
+    width: 100%;
+    background-color: unset;
+    font-size: 0.9em;
+    }
+  }
