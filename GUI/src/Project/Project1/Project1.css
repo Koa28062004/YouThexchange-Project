@@ -328,3 +328,10 @@
 .btn_toggle_pdf:hover {
   background-color: rgba(128, 128, 128, 0.29);
 }
+
+
+@media (max-width: 380px) {
+  .Teammate_profile {
+    width: 100%;
+  }
+}

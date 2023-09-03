@@ -47,4 +47,10 @@
     transition: all 0.4s;
 }
 
-
+@media (max-width: 767px) {
+    .Author_img .gallery_project1 .slides_project1{
+        width: 80%;
+        height: 90%;
+        margin-top: -5%;
+    }
+}

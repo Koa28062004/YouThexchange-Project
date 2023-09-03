@@ -10,24 +10,28 @@ const ProjectData=[
         Project:"1",
         name:"SUSTAINABILITY & BUSINESSES",
         img:"./Img/picture1.png",
+        link: "/Project1",
         author:"Rashi and Linh"
     },
     {
         Project:"2",
         name:"GENDER INEQUALITY",
         img:"./Img/picture2.png",
+        link: "/Project2",
         author:"In and Minh"
     },
     {
         Project:"3",
         name:"WATER FILTRATION SYSTEM MODEL",
         img:"./Img/picture3.png",
+        link: "/Project1",
         author:"Nancy and Padma"
     },
     {
         Project:"4",
         name:"GENETIC ENGINEERING",
         img:"./Img/picture4.png",
+        link: "/Project1",
         author:"Kacy and Janya"
     }
    
@@ -56,7 +60,7 @@ const ProjectMain=() =>{
                                 <div className="box_author">
                                     <p>Author: <span className="Name_Author">{project.author}</span></p>
                                 </div>
-                                <Link to="/Project1" className="btn_project">Details</Link>
+                                <Link to={project.link} className="btn_project">Details</Link>
                             </div>
                         </div>
                     );
