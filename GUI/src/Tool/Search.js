@@ -6,9 +6,11 @@ function Search() {
     const [searchInput, setSearchInput] = useState("");
     const handleSearchInputChange = (event) => {
       setSearchInput(event.target.value);
-      if(event.target.value==="") 
+      if (event.target.value==="") {
         setShowProducts(false);
-      else setShowProducts(true);
+      } else {
+        setShowProducts(true);
+      }
     };
     const handleSearchInputBlur = () => {
       setTimeout(()=>{setShowProducts(false);},300)
@@ -37,4 +39,4 @@ function Search() {
     );
   }
 
-  export default Search;
+export default Search;

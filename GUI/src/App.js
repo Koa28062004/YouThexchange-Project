@@ -1,8 +1,8 @@
 import React from "react";
-import { BrowserRouter , Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Homepage from "./Homepage/Homepage";
-import Main from "./SDGs_Page/SDGs_Main"
+import Main from "./SDGs_Page/SDGs_Main";
 import AboutUs from "./About_us_Page/About_us";
 import Subtopic1 from "./Pilot_Program/Subtopic_1/Subtopic_1";
 import Subtopic2 from "./Pilot_Program/Subtopic_2/Subtopic_2";
@@ -16,7 +16,7 @@ import Subtopic3 from "./Pilot_Program/Subtopic_3/Subtopic_3";
 function App() {
   return (
     <BrowserRouter>
-    <Routes>
+      <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/SDGs" element={<Main />} />
         <Route path="/About_us" element={<AboutUs />} />
