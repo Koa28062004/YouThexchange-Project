@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header_SDGs">
       <div className="header-content">
         <div className="header-logo-title">
           <a href="https://en.wikipedia.org/wiki/Sustainable_Development_Goals">

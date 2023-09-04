@@ -2,7 +2,9 @@ import React from "react";
 import Header from "./SDGs_Header/SDGs_Header";
 import GoalBox from "./SDGs_GoalBox/SDGs_GoalBox";
 import Footer from "../Footer/Footer";
+import { Search_mobile } from "../Tool/Search";
 import SpecialBox from "./SDGs_SpecialBox/SDGs_SpecialBox";
+import Tool, { Tool_mobile } from "../Tool/Tool";
 import "./SDGs.css";
 
 const Main = () => {
@@ -165,6 +167,9 @@ const Main = () => {
 
   return (
     <div>
+      <Tool />
+      <Search_mobile />
+      <Tool_mobile />
       <Header />
       <div className="container">
         {goals.map((goal) => (

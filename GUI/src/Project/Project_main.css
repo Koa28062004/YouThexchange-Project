@@ -4,51 +4,60 @@
   box-sizing: border-box;
 }
 
-.header_projectmain {
+
+
+
+
+ .Pro {
+  color: #ffce46;
+  width: 40%;
+  font-size: 6vh;
+  margin-top: 7%;
+  margin-bottom: 2%;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* To stack the h2 elements vertically */
-  margin: 4vh;
 }
 
-
-
-.Pro {
-  color: #fcf2d7;
-  width: 40%;
-  font-size: 6vh;
-  margin: 2vh;
-  margin-left: 30%;
-  font-weight: bold;
-  text-align: center;
+.header_projectmain{
+  background-color: black;
 }
-
 .ProjectMain_body {
   width: 100%;
-  background:linear-gradient(#75708c,#fbf1d6);
+ 
 }
 .ProjectMain_body h1 {
   text-align: center;
 }
 
-
+.Project_Main_content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .ProjectMain{ /*the main container of projects*/
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
-    /* grid-template-rows: auto 1fr; Set the height of the first row to auto and the second row to 1fr (equal height) */
-    grid-auto-rows: 1fr;
-    gap: 0px;
-    /* Adjust this value as needed for horizontal gap */
+    width: 90%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
     justify-items: center; /* Horizontally center the grid */
     align-items: center; /* Vertically center the grid */
     margin-top: 100px;
-    justify-content: space-around;
     margin-bottom: 50px;
+     background:rgb(152, 145, 212);
 }
 
-
+.Main_Project{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  grid-auto-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  border-radius: 10px;
+  padding-bottom: 50px;
+}
 .ProjectMain_body .ProjectMain .box_project{    /*Boxes of project*/
     width: 280px;
     height:470px;
@@ -57,7 +66,7 @@
     overflow: hidden;
     background-color: rgb(243, 243, 243);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    margin: 20px;
+    margin-top: 20px;
 }
 
 
@@ -75,7 +84,8 @@
   height: 100%;
 }
 .ProjectMain_body .ProjectMain .box_project .Name_Project {
-  font-weight: bold;
+  font-weight: 700;
+  background-color: rgb(255, 79, 108);
   font-size: 1em;
   text-align: center;
   color: rgb(3, 104, 3);
@@ -83,8 +93,11 @@
 }
 .ProjectMain .box_project .box_main {
   margin-top: 30px;
+  font-size: 1.2em;
   transition: all 0.5s ease-in;
-  margin-left: 10px;
+}
+.ProjectMain .box_project .box_main p{
+  padding-left: 20px;
 }
 .ProjectMain .box_project:hover .box_main {
   margin-top: 10px;
@@ -141,19 +154,24 @@
   font-weight: bold;
   background: linear-gradient(#5ba8a0, #cbe5ae);
   color: black;
-}@media screen and (max-width: 1300px) {
+}
+
+@media screen and (max-width: 1300px) {
   .ProjectMain {
-      grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+      width: 90%;
+  }
+  .Main_Project {
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
   }
 }
 
 /* Media Query for even smaller screens */
 @media screen and (max-width: 950px) {
-  .ProjectMain {
-      grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-  }
   .Pro {
     font-size: 9vw;
+  }
+  .ProjectMain .box_project .box_main {
+    margin-top: 10px;
   }
   .ProjectMain_body .ProjectMain .box_project .btn_project {
     display: flex;
@@ -162,6 +180,14 @@
     font-weight: bold;
     background: linear-gradient(#5ba8a0, #cbe5ae);
     color: black;
+  }
+  .ProjectMain_body .ProjectMain .box_project .box_author {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  .Main_Project {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    width: 95%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -172,12 +198,14 @@
 }
 @media screen and (max-width: 500px) {
   .ProjectMain {
-      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      width: 100%;
   }
 }
 @media screen and (max-width: 290px) {
   .ProjectMain_body .ProjectMain .box_project{
-    width: 80%;
+    width: 90%;
+    font-size: 4vw;
     height: 66vh;
   }
+  
 }
