@@ -228,17 +228,16 @@
 }
 
 /*class to change background of every main box*/
-.se1 {
+.Project2_main .se1 {
   background: rgb(223, 204, 251);
 }
-.se2 {
+.Project2_main .se2 {
   background-color: pink;
 }
-.se3 {
+.Project2_main .se3 {
   background-color: white;
 }
-
-.se4 {
+.Project2_main .se4 {
   background-color: rgb(252, 187, 146);
 }
 .Project2_main .presentation {
