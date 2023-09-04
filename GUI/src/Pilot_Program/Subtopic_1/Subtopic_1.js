@@ -42,7 +42,6 @@ const Subtopic1 = () => {
       </div>
       <div className="subtopic_1">
         <div className="header_subtopic_1">
-          <img src={require("../../Homepage/Images/logo.png")} alt=""></img>
           <h2 className="pilotProgram">PILOT PROGRAM</h2>
           <h2 className="anOverview">AN OVERVIEW</h2>
         </div>
@@ -134,9 +133,9 @@ const Subtopic1 = () => {
                       <ul>
                         <li>
                           <i class="fa-solid fa-circle"></i>Anh Thu:{" "}
-                          {/* <a href="mailto:thunguyen091104@gmail.com">
+                          <a href="mailto:thunguyen091104@gmail.com">
                             thunguyen091104@gmail.com
-                          </a> */}
+                          </a>
                         </li>
                       </ul>
                     </li>
