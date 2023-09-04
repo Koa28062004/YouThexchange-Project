@@ -112,8 +112,13 @@
     font-weight: bold;
 }
 
+.btnn a {
+    text-decoration: none;
+    color:#FF914D;
+}
+
 /* Media Query for smaller screens */
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 820px) {
     .Videos {
         grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     }

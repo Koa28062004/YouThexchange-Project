@@ -12,21 +12,22 @@
   margin: 4vh;
 }
 
-.header_projectmain h2 {
-  font-size: 6.5vh;
-}
+
 
 .Pro {
-  color: #FFBD59;
+  color: #9bca1a;
+  background-color: white;
+  width: 40%;
   font-size: 6vh;
   margin: 2vh;
+  margin-left: 30%;
   font-weight: bold;
   text-align: center;
 }
 
 .ProjectMain_body {
   width: 100%;
-  background: linear-gradient(45deg, #94b0b7, #c2c8c5);
+  background:#75708c;
 }
 .ProjectMain_body h1 {
   text-align: center;
@@ -58,6 +59,9 @@
 @media screen and (max-width: 950px) {
     .ProjectMain {
         grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    }
+    .Pro {
+      font-size: 8vw;
     }
 }
 @media screen and (max-width: 500px) {

@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './ProjectVideos.css';
 import Footer from "../Footer/Footer";
 import Tool, { Tool_mobile } from "../Tool/Tool";
 import SDGslogo from "../SDGs_Page/SDGs_Setup/SDGs_logo";
 import ProjectVideosSetUp, { SetupVideos } from "./setupVideos/setupVideos";
 import { Search_mobile } from "../Tool/Search";
+
 export const Videos = [
   {
     id: "1",
@@ -46,6 +47,20 @@ export const Videos = [
 
 function ProjectVideos() {
   const [currentVideo, setCurrentVideo] = useState("1");
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 820);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 820);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="Videos_body">
       <Tool />
@@ -64,17 +79,25 @@ function ProjectVideos() {
               title={`Video - ${item.title}`}
               className="driveLink"
             ></iframe>
-            <div className="title">{item.title}</div> {/* Display the title below the video */}
+            <div className="title">{item.title}</div>
             <div className="btn-container">
-              <button key={item.id} className="btnn" onClick={() => setCurrentVideo(item.id)}>Zoom in</button>
+              {isMobile ? (
+                <button key={item.id} className="btnn">
+                  <a href={item.source} target="_blank"  rel="noopener noreferrer">Zoom in</a>
+                </button>
+              ) : (
+                <button key={item.id} className="btnn" onClick={() => setCurrentVideo(item.id)}>
+                  Zoom in
+                </button>
+              )}
             </div>
           </div>
         ))}
       </div>
-      <div className = "meow"></div>
-      <ProjectVideosSetUp currentID={currentVideo} />
+      <div className="meow"></div>
+      {!isMobile && <ProjectVideosSetUp currentID={currentVideo} />}
+      {!isMobile && <SetupVideos />}
       <Footer />
-      <SetupVideos />
     </div>
   );
 }

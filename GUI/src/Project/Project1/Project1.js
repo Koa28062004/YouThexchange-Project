@@ -56,12 +56,12 @@ const Project1 = () => {
       <Search_mobile />
       <SDGslogo />
       <div className="header-project1">
-        <h1>SUSTAINABILITY & BUSINESSES</h1>
+        <h1><strong>SUSTAINABILITY & BUSINESSES</strong></h1>
       </div>
 
       <div className="Project1_main">
         <div className="Teammate_profile">
-          <h1>Teammate profile</h1>
+          <h1>Teammate Profile</h1>
           <div className="profiles">
             {Teammate1Data.map((member, index) => (
               <div className="profile" key={index}>
@@ -99,7 +99,7 @@ const Project1 = () => {
                   towards addressing the problem.{" "}
                 </strong>
               </p>
-              <div className="header">Fast Fashion</div>
+              <div className="header"><strong>Fast Fashion</strong></div>
               <div className="overview">
                 <h4>Overview</h4>
                 <p>
@@ -372,7 +372,7 @@ const Project1 = () => {
               <br></br>
               <p>
                 Please link your presentation{" "}
-                <a href="https://www.canva.com/design/DAFnBw0OzhA/-LEcFFWvRKo4FcpPXPYYnA/view?utm_content=DAFnBw0OzhA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
+                <a className="here" href="https://www.canva.com/design/DAFnBw0OzhA/-LEcFFWvRKo4FcpPXPYYnA/view?utm_content=DAFnBw0OzhA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
                   here
                 </a>{" "}
                 with open access. We suggest you use Canva as it is a
@@ -399,13 +399,13 @@ const Project1 = () => {
               </p>
               <br></br>
               <div className="overview">
-                <strong>Problem:</strong> The average customer service on-hold
+                <strong>Problem</strong> The average customer service on-hold
                 time for Example company exceeds five minutes during both its
                 busy and slow seasons. The company is currently understaffed and
                 customer service representatives are overwhelmed.
               </div>
               <div className="background">
-                <strong>Background:</strong> Example company is facing a
+                <strong>Background</strong> Example company is facing a
                 significant challenge in managing their customer service on-hold
                 times. In the past (1), the company had been known for its
                 efficient and timely customer service, but due to a combination
@@ -424,7 +424,7 @@ const Project1 = () => {
                 </p>
               </div>
               <div className="link">
-                <strong>Relevance:</strong> Reducing the on-hold times for
+                <strong>Relevance</strong> Reducing the on-hold times for
                 customer service callers is crucial for Example company.
                 Prolonged waiting times have a detrimental effect on customer
                 satisfaction and loyalty, leading to potential customer churn
@@ -486,7 +486,7 @@ const Project1 = () => {
                 beneficiaries).
                 <br></br>
                 <p className="small">
-                  - Afterwards, you and your partner should fill the empathy map
+                  <i class="fa-solid fa-circle"></i>  Afterwards, you and your partner should fill the empathy map
                   below for each of your main stakeholders. We will use this
                   simpler model.
                 </p>
@@ -510,7 +510,7 @@ const Project1 = () => {
                 project, please have a read.
                 <p className="small">
                   a. The{" "}
-                  <a href="https://www.wsup.com/content/uploads/2017/08/PN008-ENGLISH-CleanTeam.pdf">
+                  <a className="here" href="https://www.wsup.com/content/uploads/2017/08/PN008-ENGLISH-CleanTeam.pdf">
                     Case Study
                   </a>
                 </p>
@@ -538,7 +538,7 @@ const Project1 = () => {
                 requires different approaches to appeal to your audience.
                 <br></br>
                 <p className="small">
-                  - For example, the lack of infrastructure for sanitation is a
+                  <i class="fa-solid fa-circle"></i> For example, the lack of infrastructure for sanitation is a
                   crisis in Ghana. It's common knowledge that new bathrooms must
                   be created to serve the citizens - this addresses the crisis.
                   However, creating toilets that stores waste in your house to
@@ -546,14 +546,15 @@ const Project1 = () => {
                   this facet of your product vision-oriented.
                   <br></br>
                   <p className="small">
-                    + For points made in the crisis-oriented box, write a{" "}
+                    <i class="fa-solid fa-circle"></i>  For points made in the crisis-oriented box, write a{" "}
                     <strong>
                       <u>justification</u>
                     </strong>{" "}
                     for why your consumers will readily adopt such aspect of
                     your solution. Estimate the extent of effectiveness of said
                     aspect.
-                    <br></br>+ For points made in the vision-oriented box,
+                    <br></br>
+                    <i class="fa-solid fa-circle"></i> For points made in the vision-oriented box,
                     outline{" "}
                     <strong>
                       <u>potential skepticism</u>
@@ -612,7 +613,7 @@ const Project1 = () => {
               <h4>Delta Air Lines</h4>
               <br></br>
               <p className="small">
-                <a href="https://esg.deltaww.com/en/manage_international">
+                <a className="here" href="https://esg.deltaww.com/en/manage_international">
                   Delta Air Lines.
                 </a>{" "}
                 The company has implemented a program called Delta's Green IT
@@ -625,13 +626,11 @@ const Project1 = () => {
               </p>
               <br></br>
               <div className="overview">
-                Sources:
-                <br></br>
-                <br></br>
-                <a href="https://www.delta.com/us/en/about-delta/sustainability">
+                <h4>Sources:</h4>
+                <a className="here" href="https://www.delta.com/us/en/about-delta/sustainability">
                   https://www.delta.com/us/en/about-delta/sustainability
                 </a>
-                <a href="https://esg.deltaww.com/en/manage_international">
+                <a className="here" href="https://esg.deltaww.com/en/manage_international">
                   https://esg.deltaww.com/en/manage_international
                 </a>
               </div>
@@ -656,21 +655,19 @@ const Project1 = () => {
                 <br></br>
                 <p className="small">
                   1.{" "}
-                  <a href="https://www.stern.nyu.edu/sites/default/files/assets/documents/EILEEN%20FISHER%20Case.pdf">
+                  <a className="here" href="https://www.stern.nyu.edu/sites/default/files/assets/documents/EILEEN%20FISHER%20Case.pdf">
                     NYU The Business Case for Sustainable Apparel at EILEEN
                     FISHER report
                   </a>
                   <br></br>
-                  <br></br>
                   2.{" "}
-                  <a href="https://www.vogue.com/article/eileen-fisher-amy-hall-sustainabiity-horizon-2030">
+                  <a className="here" href="https://www.vogue.com/article/eileen-fisher-amy-hall-sustainabiity-horizon-2030">
                     {" "}
                     https://www.vogue.com/article/eileen-fisher-amy-hall-sustainabiity-horizon-2030
                   </a>
                   <br></br>
-                  <br></br>
                   3.{" "}
-                  <a href="https://www.researchgate.net/publication/360609368_Sustainable_fast_fashion_-_case_study_of_HM">
+                  <a className="here" href="https://www.researchgate.net/publication/360609368_Sustainable_fast_fashion_-_case_study_of_HM">
                     {" "}
                     https://www.researchgate.net/publication/360609368_Sustainable_fast_fashion_-_case_study_of_HM
                   </a>
@@ -688,7 +685,7 @@ const Project1 = () => {
                 </p>
               </div>
               <div className="link">
-                <h4>Background:</h4>
+                <h4>Background</h4>
                 <p className="small">
                   H&M recognized the environmental impact of textile waste and
                   the importance of diverting garments from landfills. In
@@ -697,8 +694,7 @@ const Project1 = () => {
                   into new textiles.
                 </p>
                 <br></br>
-                <br></br>
-                <h4>Solution: Garment Collecting Initiative:</h4>
+                <h4>Solution: Garment Collecting Initiative</h4>
                 <p className="small">
                   The Garment Collecting initiative encourages customers to
                   bring unwanted clothing, regardless of brand or condition, to
@@ -710,7 +706,7 @@ const Project1 = () => {
                 </p>
               </div>
               <div className="link">
-                <h4>Benefits and Impact:</h4>
+                <h4>Benefits and Impact</h4>
                 <br></br>
                 <p className="small">
                   1. Reduction of Textile Waste: The Garment Collecting
@@ -740,7 +736,7 @@ const Project1 = () => {
                 </p>
               </div>
               <div className="about">
-                <h4>Lessons Learned:</h4>
+                <h4>Lessons Learned</h4>
                 <br></br>
                 <p className="small">
                   H&M's Garment Collecting initiative demonstrates the potential
