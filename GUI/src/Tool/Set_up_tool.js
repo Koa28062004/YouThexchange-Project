@@ -26,6 +26,23 @@ function SetUpTool() {
     });
 
 
+    const Search_mobile = document.querySelector(".search_mobi .ser");
+    const input_mobile = document.querySelector(".search_mobi .input");
+    
+    
+    document.addEventListener("click", (event) => {
+      const clickedElement = event.target;
+      if (clickedElement !== Search_mobile && clickedElement !== input_mobile) {
+        input_mobile.style.display = "none";
+        Search_mobile.style.marginLeft="70%"
+      }
+      else{input_mobile.style.display = "flex";
+      Search_mobile.style.marginLeft="0%"}
+    });
+    
+    
+
+
     let y=0;
     const bar = document.querySelector(".tool_mobi .bar");
     const tool_mobi = document.querySelector(".tool_mobi");
