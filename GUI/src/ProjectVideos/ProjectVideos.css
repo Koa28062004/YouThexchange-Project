@@ -44,7 +44,7 @@
 
 .Videos .video-container {
     width: 65%;
-    height: 90%;
+    height: 85%;
     border-radius: 3vh;
 }
 
@@ -113,9 +113,14 @@
 }
 
 /* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
     .Videos {
         grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    }
+    .Videos .video-container {
+        width: 47%;
+        height: 90%;
+        border-radius: 3vh;
     }
 }
 
@@ -123,5 +128,10 @@
 @media screen and (max-width: 480px) {
     .Videos {
         grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+    }
+    .Videos .video-container {
+        width: 70%;
+        height: 80%;
+        border-radius: 3vh;
     }
 }
