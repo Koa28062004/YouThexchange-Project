@@ -207,7 +207,7 @@
 .tool_mobi{
   width: 70%;
   height: 100vh;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 172, 95, 0.758);
   position: fixed;
   bottom: 0;
   top: 0;
@@ -221,9 +221,9 @@
   width:115%;
   margin-top: 40px;
   font-size: 25px;
+  background-color: rgba(255, 172, 95, 0.758);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: rgb(255, 255, 255);
   text-align: right;
   cursor: pointer;
   padding-right: 5%;
@@ -257,6 +257,7 @@ padding: 5%;
 
 .tool_mobi .contain .i_dropdownname{
 width: 100%;
+padding: 10%;
 }
 .tool_mobi .contain .dropdown-content a,.tool_mobi .contain .dropdown-content p{
 width: 100%;
@@ -265,6 +266,7 @@ justify-content: center;
 
 .tool_mobi .contain .i_content{
 background-color: whitesmoke;
+padding: 10%;
 width: 100%;
 }
 .tool_mobi .contain .i_content:hover{

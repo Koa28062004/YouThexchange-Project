@@ -24,10 +24,10 @@ export const SetupVideos = () => {   /* Nơi để chỉnh cho video xuất hi�
         btn.addEventListener("click", () => {
           setTimeout(() => {
             PilotPr.style.display = "flex";
-          }, 100);
+          }, 200);
           setTimeout(() => {
             Img_subtopic.style.transform = "scale(1)";
-          }, 150);
+          }, 250);
         });
       }
     });
@@ -53,12 +53,11 @@ const ProjectVideosSetUp = ({ currentID }) => {
 
   const handleCloseClick = () => {  /*handle close button */
     const PilotPr = document.querySelector(".Business_program ");
-    const Img_subtopic = document.querySelector(".Business_program .gallery_subtopic2 iframe");
+    const Img_subtopic = document.querySelector(".Business_program .gallery_subtopic2 .driveLink");
     Img_subtopic.style.transform = "scale(0)";
     setTimeout(() => {
       PilotPr.style.display = "none";
-    }, 20);
-    setCurrentVideosIndex(0);
+    }, 200);
   };
 
   const handleNextClick = () => {

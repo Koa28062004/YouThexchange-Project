@@ -5,13 +5,14 @@
     gap: 20px;
     justify-items: center;
     align-items: center;
+    /* background-color: #EEE5C2; */
 }
 
 .Videos>div {
     margin-top: 100px;
     margin-bottom: 100px;
     width: 75%;
-    height: 100%;
+    height: 70%;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -19,24 +20,47 @@
     align-items: center;
 }
 
+.Videos_body .header {
+    width: 100%;
+    height: 12vh;
+    color: #FFBD59;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 4vh;
+    font-family: "Rowdies";
+}
+.Videos_body .header h2{
+    font-size: 5.5vh;
+    font-family: "Rowdies";
+}
+.meow {
+    /* background-color: #EEE5C2; */
+    width: 100%;
+    height: 7vh;
+}
+
+.Videos .video-container {
+    width: 65%;
+    height: 90%;
+    border-radius: 3vh;
+}
+
 .video-container {
     position: relative;
-    /* margin: 20px; */
-    border: 1px solid #ccc;
-    border-radius: 4px;
     overflow: hidden;
-    width: 100%;
-    height: 100%;
     text-decoration: none;
     display: flex;
     align-items: center;
-     flex-direction: column; 
+    flex-direction: column;
+    background-image: linear-gradient(to right, #FFDE59, #FF914D);
     /* justify-content: center; */
     /* Make the video container taller */
 }
 
 .Videos .btn-container {
     width: 100%;
+    height: 20%;
     display: flex;
     padding-top: 5%;
     justify-content: center;
@@ -45,15 +69,18 @@
 }
 
 .btn-container .btnn {
-    width: 30%;
-    height: 250%;
+    width: 40%;
+    height: 100%;
     display: flex;
     justify-content: center;
     /* Center the button horizontally */
     align-items: center;
     /* Center the button vertically */
     border-radius: 30px;
-    background: orange;
+    background: white;
+    font-size: 2vh;
+    font-weight: bold;
+    color: #FF914D;
     margin-top: auto;
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -61,18 +88,26 @@
     /* Push the button to the bottom of the container */
 }
 
+.btn-container .btnn:hover {
+    background-color: #C1FF72;
+    color: black;
+}
+
 .Videos .driveLink {
     width: 100%;
-    height: 70%;
+    height: 60%;
     /* Adjust the video height as needed */
     object-fit: cover;
+    border: none;
 }
 
 /* Display the title below the video */
-.title {
-    font-size: 20px;
-    margin-top: 40px;
-    margin-bottom: 0px;
+.video-container .title {
+    height: 10%;
+    font-size: 3.5vh;
+    margin-top: 2vh;
+    color: white;
+    font-weight: bold;
 }
 
 /* Media Query for smaller screens */

@@ -52,6 +52,9 @@ function ProjectVideos() {
       <Tool_mobile />
       <Search_mobile />
       <SDGslogo />
+      <div className="header">
+        <h2>PROJECT VIDEOS</h2>
+      </div>
       <div className="Videos">
         {Videos.map((item) => (
           <div key={item.id} className="video-container">
@@ -68,6 +71,7 @@ function ProjectVideos() {
           </div>
         ))}
       </div>
+      <div className = "meow"></div>
       <ProjectVideosSetUp currentID={currentVideo} />
       <Footer />
       <SetupVideos />

@@ -1,12 +1,43 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Times New Roman';
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* To stack the h2 elements vertically */
+}
+
+.aboutUs {
+    color: #FF914D;
+    font-size: 6vh;
+    margin: 2vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+.projectBased {
+    font-size: 6vh;
+    background-color: #FF914D;
+    color: white;
+    padding: 1.5vh;
+    font-weight: bold;
+    margin-bottom: 1.5vh;
+    text-align: center;
+    max-width: max-content;
+}
+
+.About_us p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 .body_About{
-    background-color: rgb(250, 240, 215);
+    background-color: white;
     width: 100%;
 }
 .body_About h1{
@@ -20,7 +51,7 @@
 }
 .About_us_main{
     width: 80%;
-    border: 5px solid orangered;
+    /* border: 5px solid orangered; */
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;

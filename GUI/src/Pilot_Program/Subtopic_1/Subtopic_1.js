@@ -1,54 +1,53 @@
 import React from "react";
-import Tool,{Tool_mobile} from "../../Tool/Tool";
+import Tool, { Tool_mobile } from "../../Tool/Tool";
 import Footer from "../../Footer/Footer";
 import SDGslogo from "../../SDGs_Page/SDGs_Setup/SDGs_logo";
 import "./Subtopic_1.css";
 import SetUpSubtopic1 from "./Set_up_subtopic1";
 import MenuPilotProgram from "../Menu";
 import { Search_mobile } from "../../Tool/Search";
-const header_content=[
-    {
-        name:"1. Our goal",
-        id:"#1"
-    },
-    {
-        name:"2. Process",
-        id:"#2"
-    },
-    {
-        name:"3. Our work",
-        id:"#3"
-    },
-    {
-        name:"4. Product",
-        id:"#4"
-    }
-]
-const Subtopic1=()=>{
-    return(
-        <div className="body_subtopic1">
-            <Tool />
-            <Tool_mobile />
-            <Search_mobile />
-            <SDGslogo />
-            <MenuPilotProgram />
-            <div className="Roll">
-                <div className="bar"><i class="fa-solid fa-bars"></i></div>
-                <div className="contain">
-                {header_content.map((header) => (
-                        <a key={header.name} href={header.id}><i className="fa-solid fa-circle"></i>{header.name}</a>
-                    ))}
-                </div>
-            </div>
-            <div className="subtopic_1">
-                <div className="header_subtopic_1">
-                    <img src={ require ("../../Homepage/Images/logo.png")} alt=""></img>
-                    <h2>Pilot Program: An Overview</h2>
-                </div>
-                <div className="main_subtopic_1">
-                    <h4 id="1"><strong>Purpose of the Program</strong></h4>
-                    <img src={ require ("../Images/picture_1.png")} alt=""></img>
-
+const header_content = [
+  {
+    name: "1. Our goal",
+    id: "#1"
+  },
+  {
+    name: "2. Process",
+    id: "#2"
+  },
+  {
+    name: "3. Our work",
+    id: "#3"
+  },
+  {
+    name: "4. Product",
+    id: "#4"
+  }
+]  
+const Subtopic1 = () => {
+  return (
+    <div className="body_subtopic1">
+      <Tool />
+      <Tool_mobile />
+      <Search_mobile />
+      <SDGslogo />
+      <MenuPilotProgram />
+      <div className="Roll">
+        <div className="bar"><i class="fa-solid fa-bars"></i></div>
+        <div className="contain">
+          {header_content.map((header) => (
+            <a key={header.name} href={header.id}><i className="fa-solid fa-circle"></i>{header.name}</a>
+          ))}
+        </div>
+      </div>
+      <div className="subtopic_1">
+        <div className="header_subtopic_1">
+          <h2 className="pilotProgram">PILOT PROGRAM</h2>
+          <h2 className="anOverview">AN OVERVIEW</h2>
+        </div>
+        <div className="main_subtopic_1">
+          <img src={require("../Images/picture_1.png")} alt=""></img>
+          <h4 id="1"><strong>Purpose of the Program</strong></h4>
           <p>
             Our Pilot Program focuses on the{" "}
             <strong>“Facilitate cross-culture projects”</strong> aspect of the
@@ -141,13 +140,13 @@ const Subtopic1=()=>{
                       </ul>
                     </li>
                     <li>
-                      <i class="fa-solid fa-square"></i>Content/academic-related
+                      <i class="fa-solid fa-square"></i>Content academic-related
                       problems:
                       <ul>
                         <li>
                           <i class="fa-solid fa-circle"></i>Van Anh:{" "}
                           <a href="mailto:lilynguyenvananh@gmail.com">
-                            thunguyen091104@gmail.com
+                            lilynguyenvananh@gmail.com
                           </a>
                         </li>
                       </ul>
@@ -165,6 +164,7 @@ const Subtopic1=()=>{
           </h4>
           <ul className="content_3">
             <li>
+              <i className="fa-solid fa-circle"></i>
               <strong>Seminar 1:</strong> In this seminar, we will acquaint
               ourselves with each other, the pilot program, and the organization
               itself. Expectations and goals of this pilot program will be set
@@ -172,6 +172,7 @@ const Subtopic1=()=>{
               partner and jump into sharing and cultivating your multiple ideas.
             </li>
             <li>
+              <i className="fa-solid fa-circle"></i>
               <strong>Seminar 2:</strong> In the second seminar, we will discuss
               a fascinating mindset that helps us adopt a “human-oriented”
               approach to solving social issues - Design Thinking. Together, we
@@ -179,6 +180,7 @@ const Subtopic1=()=>{
               our project in order to uncover assumptions and biases.
             </li>
             <li>
+              <i className="fa-solid fa-circle"></i>
               <strong>Seminar 3:</strong> In this third seminar, we will learn
               about the nature of our problem - crisis or vision oriented. By
               being able to differentiate the nature of our problems and
@@ -187,6 +189,7 @@ const Subtopic1=()=>{
               teaches us how to identify the different levels of stakeholders.
             </li>
             <li>
+              <i className="fa-solid fa-circle"></i>
               <strong>Seminar 4:</strong> This seminar is all about empathy. How
               do we empathize with the stakeholders of our problem? To do that,
               we must collect precise and deliberate data in order to gain
@@ -197,6 +200,7 @@ const Subtopic1=()=>{
               triangulation).
             </li>
             <li>
+              <i className="fa-solid fa-circle"></i>
               <strong>Seminar 5:</strong> Now, we discuss the relevance of our
               problem. How do we differentiate between a symptom and a root
               cause? We will be introduced to models that push us to find the
@@ -204,6 +208,7 @@ const Subtopic1=()=>{
               evaluate the ability of our solution to gain traction.
             </li>
             <li>
+              <i className="fa-solid fa-circle"></i>
               <strong>Seminar 6:</strong> This seminar is about communicating
               the urgency of our problem and the attractiveness of our proposed
               solution. We will understand how to energize our listeners to
@@ -212,9 +217,11 @@ const Subtopic1=()=>{
               end in mind.”
             </li>
             <li>
+              <i className="fa-solid fa-circle"></i>
               <strong>Seminar 7:</strong> Presentations!
             </li>
             <li>
+              <i className="fa-solid fa-circle"></i>
               <strong>Seminar 8:</strong> Project partners will meet with the
               executive team to feedback and reflect on the program. We will
               guide you on where you want to project to go next, competition?

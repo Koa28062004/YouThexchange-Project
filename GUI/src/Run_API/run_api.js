@@ -28,7 +28,7 @@ function Products(props) {
     useEffect(() => {
         async function fetchListProducts() {
             try {
-                const urlRequest = `http://localhost:8000/api/${props.searchInput}`
+                const urlRequest = `https://apiyouthexchange.onrender.com/api/${props.searchInput}`
                 const respond = await fetch(urlRequest)
                 const respondData = await respond.json()
 

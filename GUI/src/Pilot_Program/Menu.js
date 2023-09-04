@@ -11,13 +11,13 @@ const MenuPilotProgram= () =>{
                 Menu Pilot Program
                 <i class="fa-solid fa-arrow-right"></i></div>
             <ul>
-                <li><Link to="/Pilot_Program/Project_1"><i className="fa-solid fa-circle"></i> Who are we
+                <li><Link to="/Project_1"><i className="fa-solid fa-circle"></i> Who are we
                 </Link>
                 </li>
-                <li><Link to="/Pilot_Program/Project_2"><i className="fa-solid fa-circle"></i> Product outcomes
+                <li><Link to="/Project_2"><i className="fa-solid fa-circle"></i> Product outcomes
                 </Link>
                 </li>
-                <li><Link to="/Pilot_Program/Project_1"><i className="fa-solid fa-circle"></i> Meeting Recording
+                <li><Link to="/Project_1"><i className="fa-solid fa-circle"></i> Meeting Recording
                 </Link>
                 </li>
             </ul>
