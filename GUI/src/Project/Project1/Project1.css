@@ -1,6 +1,6 @@
 .Project1_body {
   width: 100%;
-  background-color: wheat;
+  background-color: #ff914d;
 }
 .Project1_main {
   margin-top: 100px;
@@ -18,7 +18,7 @@
   transform: perspective(600px) rotateX(10deg) rotateY(20deg);
 }
 .Project1_body .header-project1 h1 {
-  font-family: "Philosopher", sans-serif;
+  font-family: "Montsarrat", sans-serif;
   color: rgb(255, 255, 255);
 }
 /* Teammate information container*/
@@ -327,4 +327,11 @@
 }
 .btn_toggle_pdf:hover {
   background-color: rgba(128, 128, 128, 0.29);
+}
+
+
+@media (max-width: 380px) {
+  .Teammate_profile {
+    width: 100%;
+  }
 }
