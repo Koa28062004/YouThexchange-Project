@@ -32,7 +32,7 @@ function AboutUs() {
                         <br></br>
                         <h4><strong>2. Our Past Projects</strong> </h4>
                         <br></br>
-                        <p><strong>“Pilot Program”</strong></p>
+                        <p><strong className="subsubsection">“Pilot Program”</strong></p>
                         <br></br>
                         <p>Number of participants: 8 high school students from Vietnam and Thailand
                             Length of program: 21/06/2023 → 21/07/2023
@@ -59,7 +59,7 @@ function AboutUs() {
                             </li>
                         </ul>
                         <br></br>
-                        <p><strong>Example of project: </strong><a href="https://drive.google.com/file/d/1Cz-8X2Q96YzSyqmH5mw8RtbU1n9dr0qD/view?usp=sharing">
+                        <p><strong className="subsubsection">Example of project: </strong><a href="https://drive.google.com/file/d/1Cz-8X2Q96YzSyqmH5mw8RtbU1n9dr0qD/view?usp=sharing">
                             On the topic of Sustainability in fashion</a></p>
                         <br></br>
                         <p>In this project the project partners began their research by conducting a stakeholder analysis, identifying key
@@ -74,7 +74,7 @@ function AboutUs() {
                         </p>
                         <br></br>
                         <br></br>
-                        <p><strong>Current Project: <em>August of 2023 Program Overview - “Be a Connector”</em></strong></p>
+                        <p><strong className="subsubsection">Current Project: <em>August of 2023 Program Overview - “Be a Connector”</em></strong></p>
                         <br></br>
                         <p>*Read more in <a href="https://docs.google.com/document/d/1s9Hw7BorCQVtXgDB-ms7Nus4wWZ7wAGpUBOKjMW9dEo/edit?usp=sharing">participant description </a></p>
                         <br></br>
@@ -86,7 +86,7 @@ function AboutUs() {
                             empower students to contribute to a more sustainable and inclusive world.
                         </p>
                         <br></br>
-                        <p><strong>Aim:</strong> With guidance from advisors and working in project groups, students will select a topic based on provided options.
+                        <p><strong className="subsubsection">Aim:</strong> With guidance from advisors and working in project groups, students will select a topic based on provided options.
                             They will then embark on a campaign to deepen their understanding of the chosen problem. Drawing from their insights,
                             they will create innovative solutions that address the root causes and complexities of the issue at hand
                         </p>
@@ -113,7 +113,8 @@ function AboutUs() {
                             <a className="social" href="https://www.facebook.com/profile.php?id=100094353529762&mibextid=LQQJ4d">: YouThexchange Project </a>
                         </p>
                         <br></br>
-                        <p><i class="fa-solid fa-at" ></i>  Gmail: youthexchangeprojectvn@gmail.com
+                        <p><i class="fa-solid fa-at" ></i>  Gmail:
+                            <a className="social" href="https://www.facebook.com/profile.php?id=100094353529762&mibextid=LQQJ4d"> youthexchangeprojectvn@gmail.com</a>
                         </p>
                     </div>
                 </div>

@@ -10,6 +10,39 @@
     justify-content: center;
     align-items: center;
     flex-direction: column; /* To stack the h2 elements vertically */
+    margin: 4vh;
+}
+
+.content_about_us .subsubsection {
+    font-size: 2.75vh;
+}
+
+.content_about_us strong {
+    color:#FF914D;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3.75vh;
+}
+
+.content_about_us p {
+    line-height: 1.75;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.75vh;
+    word-break: break-all;
+}
+
+.content_about_us a {
+    line-height: 1.75;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.75vh;
+    word-break: break-all;
+}
+
+.content_about_us li {
+    line-height: 1.75;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.75vh;
+    word-break: break-all;
 }
 
 .aboutUs {
@@ -111,4 +144,23 @@
 .About_us .social{
     text-decoration: none;
     color:rgb(255, 47, 10)
+}
+
+@media screen and (max-width: 820px) {
+    .content_about_us p {
+        line-height: normal;
+        word-break: break-all;
+    }
+    .content_about_us a {
+        line-height: normal;
+        line-break: break-all;
+    }
+    .content_about_us li {
+        line-height: normal;
+        word-break: break-all;
+    }
+    .content_about_us .social {
+        line-height: normal;
+        word-break: break-all;
+    }
 }
