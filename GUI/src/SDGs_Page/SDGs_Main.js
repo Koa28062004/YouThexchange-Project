@@ -14,6 +14,7 @@ const Main = () => {
       events: "83",
       publications: "48",
       actions: "1363",
+      // link: "/Project2",
     },
     {
       goalNumber: "2",
@@ -23,6 +24,7 @@ const Main = () => {
       events: "70",
       publications: "16",
       actions: "1308",
+      // link: "/Project2",
     },
     {
       goalNumber: "3",
@@ -31,6 +33,7 @@ const Main = () => {
       events: "32",
       publications: "46",
       actions: "1227",
+      // link: "/Project3",
     },
     {
         goalNumber: "4",
@@ -39,6 +42,7 @@ const Main = () => {
         events: "37",
         publications: "37",
         actions: "1715",
+        // link: "/Project4",
     },
     {
         goalNumber: "5",
@@ -47,6 +51,7 @@ const Main = () => {
         events: "58",
         publications: "45",
         actions: "1552",
+        link: "/Project2",
     },
     {
         goalNumber: "6",
@@ -55,6 +60,7 @@ const Main = () => {
         events: "269",
         publications: "35",
         actions: "1757",
+        // link: "/Project6",
     },
     {
         goalNumber: "7",
@@ -63,6 +69,7 @@ const Main = () => {
         events: "58",
         publications: "4",
         actions: "990",
+        // link: "/Project7",
     },
     {
         goalNumber: "8",
@@ -71,6 +78,7 @@ const Main = () => {
         events: "77",
         publications: "47",
         actions: "1807",
+        // link: "/Project8",
     },
     {
         goalNumber: "9",
@@ -79,6 +87,7 @@ const Main = () => {
         events: "82",
         publications: "16",
         actions: "976",
+        link: "/Project4",
     },
     {
         goalNumber: "10",
@@ -87,6 +96,7 @@ const Main = () => {
         events: "60",
         publications: "13",
         actions: "925",
+        // link: "/Project10",
     },
     {
         goalNumber: "11",
@@ -95,6 +105,7 @@ const Main = () => {
         events: "84",
         publications: "19",
         actions: "1177",
+        link: "/Project3",
     },
     {
         goalNumber: "12",
@@ -103,6 +114,7 @@ const Main = () => {
         events: "27",
         publications: "15",
         actions: "1514",
+        link: "/Project1",
     },
     {
         goalNumber: "13",
@@ -111,6 +123,7 @@ const Main = () => {
         events: "37",
         publications: "35",
         actions: "2025",
+        // link: "/Project13",
     },
     {
         goalNumber: "14",
@@ -119,6 +132,7 @@ const Main = () => {
         events: "76",
         publications: "40",
         actions: "2802",
+        // link: "/Project14",
     },
     {
         goalNumber: "15",
@@ -127,6 +141,7 @@ const Main = () => {
         events: "30",
         publications: "33",
         actions: "1249",
+        // link: "/Project15",
     },
     {
         goalNumber: "16",
@@ -135,6 +150,7 @@ const Main = () => {
         events: "28",
         publications: "13",
         actions: "991",
+        // link: "/Project16",
     },
     {
         goalNumber: "17",
@@ -143,6 +159,7 @@ const Main = () => {
         events: "208",
         publications: "73",
         actions: "2085",
+        // link: "/Project17",
     },
   ];
 
@@ -159,6 +176,7 @@ const Main = () => {
             events={goal.events}
             publications={goal.publications}
             actions={goal.actions}
+            link={goal.link}
           />
         ))}
         <SpecialBox />
@@ -169,4 +187,3 @@ const Main = () => {
 };
 
 export default Main;
-

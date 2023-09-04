@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montsarrat", sans-serif;
   background-color: #fff;
 }
 
@@ -190,7 +190,7 @@ body {
 }
 .box .content p {
   opacity: 0;
-  line-height: 1.2rem;
+  line-height: 1.75rem;
   color: #fff;
 }
 .box:hover .content p {
@@ -217,7 +217,7 @@ body {
   color: #fff;
   padding-bottom: 20px;
 }
-.btn {
+.moreinfo-btn {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -226,7 +226,7 @@ body {
   text-align: center;
   color: #fff;
 }
-.btn button {
+.moreinfo-btn button {
   color: #fff;
   background: rgba(0, 0, 0, 0);
   display: inline-block;
@@ -242,7 +242,7 @@ body {
   transition: 0.5s;
   border: 1px solid #fff;
 }
-.btn:hover button {
+.moreinfo-btn:hover button {
   letter-spacing: 2px;
 }
 .spec button {
