@@ -4,9 +4,29 @@
   box-sizing: border-box;
 }
 
+.header_projectmain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* To stack the h2 elements vertically */
+  margin: 4vh;
+}
+
+
+
+.Pro {
+  color: #fcf2d7;
+  width: 40%;
+  font-size: 6vh;
+  margin: 2vh;
+  margin-left: 30%;
+  font-weight: bold;
+  text-align: center;
+}
+
 .ProjectMain_body {
   width: 100%;
-  background: linear-gradient(45deg, #94b0b7, #c2c8c5);
+  background:linear-gradient(#75708c,#fbf1d6);
 }
 .ProjectMain_body h1 {
   text-align: center;
@@ -28,32 +48,18 @@
     margin-bottom: 50px;
 }
 
-@media screen and (max-width: 1300px) {
-    .ProjectMain {
-        grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-    }
-}
 
-/* Media Query for even smaller screens */
-@media screen and (max-width: 900px) {
-    .ProjectMain {
-        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-    }
-}
-@media screen and (max-width: 500px) {
-    .ProjectMain {
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    }
-}
 .ProjectMain_body .ProjectMain .box_project{    /*Boxes of project*/
     width: 280px;
-    height:390px;
+    height:470px;
+    padding-bottom: 10%;
     border-radius: 5%;
     overflow: hidden;
     background-color: rgb(243, 243, 243);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     margin: 20px;
 }
+
 
 /*parts of box project*/
 .ProjectMain_body .ProjectMain .box_project .box_img {
@@ -70,7 +76,7 @@
 }
 .ProjectMain_body .ProjectMain .box_project .Name_Project {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1em;
   text-align: center;
   color: rgb(3, 104, 3);
   margin-bottom: 5px;
@@ -84,7 +90,7 @@
   margin-top: 10px;
 }
 .ProjectMain .box_project p {
-  font-size: 18px;
+  font-size: 1em;
 }
 .ProjectMain_body .ProjectMain .box_project .box_author {
   margin-top: 20px;
@@ -135,10 +141,43 @@
   font-weight: bold;
   background: linear-gradient(#5ba8a0, #cbe5ae);
   color: black;
+}@media screen and (max-width: 1300px) {
+  .ProjectMain {
+      grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  }
 }
 
-@media screen and (max-width: 280px) {
+/* Media Query for even smaller screens */
+@media screen and (max-width: 950px) {
+  .ProjectMain {
+      grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  }
+  .Pro {
+    font-size: 9vw;
+  }
+  .ProjectMain_body .ProjectMain .box_project .btn_project {
+    display: flex;
+    margin-left: 35%;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background: linear-gradient(#5ba8a0, #cbe5ae);
+    color: black;
+  }
+}
+@media screen and (max-width: 600px) {
+.ProjectMain_body .ProjectMain .box_project{
+  width: 80%;
+  height: 60vh;
+}
+}
+@media screen and (max-width: 500px) {
+  .ProjectMain {
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}
+@media screen and (max-width: 290px) {
   .ProjectMain_body .ProjectMain .box_project{
     width: 80%;
+    height: 66vh;
   }
 }

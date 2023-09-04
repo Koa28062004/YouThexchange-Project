@@ -40,10 +40,6 @@ const programData = [
         name:"Project",
         link:"/Project"
       },
-      {
-        name:"Video Project",
-        link:"#"
-      }
     ]
   },
 ];

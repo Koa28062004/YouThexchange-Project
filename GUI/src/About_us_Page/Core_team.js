@@ -46,6 +46,16 @@ const CoreTeamData = [
         mail: "lilynguyenvananh@gmail.com",
         bonus: "",
         img: `Van_Anh.png`
+    },
+    {
+        Name:" Bao Anh ",
+        name:" Bao Anh Le",
+        age: currentYear - 2006,
+        edu: "Senior (Nguyen Thi Minh Khai high school, Vietnam)",
+        pos: " Director of Communications ",
+        mail:"baooanhle.014@gmail.com",
+        bonus:"",
+        img: "BaoAnh.jpg"
     }
 ]
 

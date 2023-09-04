@@ -34,7 +34,7 @@ function SetUpTool() {
       const clickedElement = event.target;
       if (clickedElement !== Search_mobile && clickedElement !== input_mobile) {
         input_mobile.style.display = "none";
-        Search_mobile.style.marginLeft="70%"
+        Search_mobile.style.marginLeft="75%"
       }
       else{input_mobile.style.display = "flex";
       Search_mobile.style.marginLeft="0%"}

@@ -44,7 +44,9 @@ const ProjectMain = () => {
       <Tool_mobile />
       <Search_mobile />
       <SDGslogo />
-      <h1>Project</h1>
+      <div className=".header_projectmain">
+                <h2 className="Pro">Project</h2>
+            </div>
       <div className="ProjectMain">
         {ProjectData.map((project, index) => {
           return (
