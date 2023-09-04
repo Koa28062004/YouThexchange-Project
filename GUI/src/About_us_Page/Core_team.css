@@ -4,19 +4,25 @@
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
-.CoreTeam_body{
+
+.CoreTeam_body {
     background-color: white;
 }
-.CoreTeam_body .Profile_core{
+
+.img-core-mobile {
+    display: none;
+}
+
+.CoreTeam_body .Profile_core {
     position: relative;
-    padding-top:30px;
+    padding-top: 30px;
     padding-bottom: 30px;
     width: 80%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     margin-top: 100px;
     margin-left: 6%;
     margin-bottom: 100px;
-    border-radius:10px ;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -26,7 +32,7 @@
 }
 
 .infor-core .subInformation {
-    color:#FF914D;
+    color: #FF914D;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.15em;
     display: inline-block;
@@ -34,22 +40,25 @@
     line-height: 1.75;
 }
 
-.CoreTeam_body .Profile_core:hover{
+.CoreTeam_body .Profile_core:hover {
     transform: scale(1.1);
 }
-.CoreTeam_body .Profile_core .infor-core{
+
+.CoreTeam_body .Profile_core .infor-core {
     width: 50%;
-    font-family:serif;
+    font-family: serif;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 .CoreTeam_body .Profile_core .infor-core .Name {
     font-size: 3em;
     font-family: 'Lobster', cursive;
 }
-.CoreTeam_body .Profile_core .infor-core .Information{
+
+.CoreTeam_body .Profile_core .infor-core .Information {
     margin-top: 1em;
     /* background-color: #593535; */
     color: black;
@@ -60,22 +69,26 @@
     border-radius: 10px;
     font-size: 1.4em;
 }
-.CoreTeam_body .Profile_core .infor-core .Mail{
+
+.CoreTeam_body .Profile_core .infor-core .Mail {
     margin-top: 40px;
     text-decoration: none;
     color: black;
     font-size: 1.3em;
     word-break: break-all;
 }
-.CoreTeam_body .Profile_core .infor-core .Mail:hover{
-    color:red;
+
+.CoreTeam_body .Profile_core .infor-core .Mail:hover {
+    color: red;
 }
-.CoreTeam_body .Profile_core .img-core{
+
+.CoreTeam_body .Profile_core .img-core {
     position: relative;
     width: 35%;
     padding-top: 35%;
 }
-.CoreTeam_body .Profile_core .img-core img{
+
+.CoreTeam_body .Profile_core .img-core img {
     position: absolute;
     top: 0;
     left: 20%;
@@ -83,21 +96,75 @@
     height: 100%;
     object-fit: cover;
 }
-.CoreTeam_body .header-core{
+
+.CoreTeam_body .header-core {
     background-color: #FF914D;
     margin-left: 10%;
     margin-top: 5%;
-    width:max-content;
+    width: max-content;
     padding: 50px;
     transform: perspective(700px) rotateX(20deg) rotateY(-20deg);
     transition: all 0.5s;
 }
-.CoreTeam_body .header-core:hover{
+
+.CoreTeam_body .header-core:hover {
     transform: perspective(700px) rotateX(20deg) rotateY(30deg);
 }
-.CoreTeam_body .header-core h1{
-    width:max-content;
+
+.CoreTeam_body .header-core h1 {
+    width: max-content;
     color: aliceblue;
-    font-family:'Lobster', cursive ;
+    font-family: 'Lobster', cursive;
     font-size: 3.5em;
+}
+
+@media screen and (max-width: 820px) {
+    .infor-core .subInformation {
+        line-height: normal;
+    }
+
+    .img-core-mobile {
+        display: flex;
+    }
+
+    .img-core-mobile img {
+        width: 100%;
+        /* Set the width to 100% for the image */
+        height: auto;
+        /* Let the height adjust proportionally */
+        object-fit: contain;
+        /* Adjust how the image fits within the container */
+        border-radius: 50%; /* Make the image circular */
+    }
+
+    .CoreTeam_body .Profile_core {
+        flex-direction: column;
+        /* Change the flex direction to column for smaller screens */
+    }
+
+    .CoreTeam_body .Profile_core .infor-core-mobile {
+        width: 100%;
+        /* Set the width to 100% for the information div */
+        padding-left: 0;
+        text-align: center;
+        /* Center align the information */
+    }
+
+    .CoreTeam_body .Profile_core .img-core-mobile {
+        width: 100%;
+        /* Set the width to 100% for the image div */
+        padding-top: 0;
+    }
+
+    .CoreTeam_body .Profile_core .img-core-mobile img {
+        width: 100%;
+        /* Set the width to 100% for the image */
+        height: auto;
+        /* Let the height adjust proportionally */
+        object-fit: contain;
+        /* Adjust how the image fits within the container */
+    }
+    .img-core {
+        display: none;
+    }
 }
