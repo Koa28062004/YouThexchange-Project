@@ -23,7 +23,7 @@ const header_content = [
     name: "4. Product",
     id: "#4"
   }
-]
+]  
 const Subtopic1 = () => {
   return (
     <div className="body_subtopic1">

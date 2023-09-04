@@ -22,10 +22,6 @@
   transform: translateX(0%);
 }
 
-.header_subtopic_1 img {
-    display: none;
-}
-
 .Roll .bar {
   width: 100%;
   font-size: 25px;
@@ -52,6 +48,7 @@
   font-size: 8px;
   margin-right: 4%;
 }
+
 .body_subtopic1 .fa-square {
   font-size: 8px;
   margin-right: 4%;
@@ -119,7 +116,7 @@
   margin-top: 50px;
   width: 70%;
   font-size: 22px;
-  border: 5px solid rgb(97, 2, 2);
+  /* border: 5px solid rgb(97, 2, 2); */
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 30px;
