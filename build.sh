@@ -1,5 +1,2 @@
-cd api;
-npm install;
-cd ..;
-cd gui;
+cd GUI;
 npm install --save gh-pages
