@@ -38,7 +38,7 @@ const Videos = [
     }
 ];
 
-function ProjectVideos() {
+function Subtopic3() {
     const [currentVideo, setCurrentVideo] = useState("1");
     return (
         <div className="Videos_body">
@@ -72,4 +72,4 @@ function ProjectVideos() {
     );
 }
 
-export default ProjectVideos;
+export default Subtopic3;

@@ -35,7 +35,7 @@
 }
 
 .Menu_PilotProgram .header .fa-arrow-left {
-    margin-right: 10%;
+    margin-right: 20%;
     height: 100%;
     width: 40px;
     display: flex;
@@ -45,7 +45,7 @@
 .Menu_PilotProgram .header{
     background-color:#FFDAC1;
     width: 120%;
-    margin-left: -5%;
+    margin-left: 5%;
     height: 15%;
     color: rgb(0, 0, 0);
     font-size: 2.7vh;
@@ -58,7 +58,7 @@
 
 .Menu_PilotProgram .header .fa-arrow-right {
     margin-left: 0;
-    margin-right: 15%;
+    margin-right: 18%;
     transition: all 0.5s;
     height: 100%;
     width: 5vh;

@@ -64,10 +64,15 @@ function CoreTeam(){
                     <div key={index} className="Profile_core">
                     <div className="infor-core">
                         <div className="Name">{member.Name}</div>
-                        <div className="Information">Name: {member.name}<br></br><br></br>
-                        Age: {member.age} <br></br><br></br>
-                        Education: {member.edu}<br></br><br></br>
-                        Position in the core team: {member.pos}<br></br><br></br>
+                        <div className="Information">
+                        <h4 className = "subInformation">Name:</h4>{" "}
+                        {member.name}<br></br><br></br>
+                        <h4 className = "subInformation">Age:</h4>{" "}
+                        {member.age} <br></br><br></br>
+                        <h4 className = "subInformation">Education:</h4>{" "}
+                        {member.edu}<br></br><br></br>
+                        <h4 className = "subInformation">Position in the core team:</h4>{" "}
+                        {member.pos}<br></br><br></br>
                         {member.bonus} </div>
                         <a href={`mailto:${member.mail}`} className="Mail">
                         <i class="fa-solid fa-envelope"></i> : {member.mail}
