@@ -41,9 +41,9 @@
 .dropdown:hover {
   border-left: 1px solid white;
   border-right: 1px solid white;
-  color: #ff914d;
+  color: #000000;
   letter-spacing: 1px;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 .tool .dropdown::before{
   content: "";
@@ -83,6 +83,7 @@
   display: flex;
   align-items: center;
   height: 40px;
+  font-family: 'Comfortaa', cursive;
 }
 .dropdown-content a {
   text-decoration: none;
@@ -92,6 +93,7 @@
   display: flex;
   align-items: center;
   height: 40px;
+  font-family: 'Comfortaa', cursive;
 }
 
 .dropdown-content a:hover {
@@ -258,6 +260,7 @@ font-size: 2.8vh;
 padding-left: 5%;
 padding-bottom: 5%;
 padding-top: 5%;
+font-family: 'Comfortaa', cursive;
 }
 
 .tool_mobi .contain .dropdown:hover{
