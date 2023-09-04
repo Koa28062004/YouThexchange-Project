@@ -76,21 +76,28 @@ ul {
   /* margin-right: 5%; */
 }
 .imglogo img {
-  width: 50%;
-  height: 150px;
+  width: 35%;
+  height: 100%;
+  object-fit: fill;
 }
 
 @media (max-width: 767px) { 
   .footer-col {
-    width: 25%;
-    margin-bottom: 30px;
+    width: 100%;
+    margin-top: 30px;
   }
   .imglogo{
     width: 60%;
+    height: 100px;
   }
 }
-@media (max-width: 574px) {
+@media (max-width: 915px) {
   .footer-col {
     width: 100%;
+    margin-top: 30px;
+  }
+  .imglogo{
+    width: 60%;
+    height: 150px;
   }
 }

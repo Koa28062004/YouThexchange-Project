@@ -20,7 +20,7 @@
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 915px) {
   .SDGS_logo{
     display: none;
   }

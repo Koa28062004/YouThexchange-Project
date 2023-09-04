@@ -39,12 +39,12 @@
 }
 .Menu_PilotProgram .header{
     background-color:#FFDAC1;
-    width: 120%;
+    width: 116%;
     height: 15%;
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 2.7vh;
     margin-right: 17%;
-    padding-left: 10px;
+    padding-left: 1%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -54,7 +54,7 @@
     transition: all 0.5s;
     height: 100%;
     width: 5vh;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     border: 1px solid black;

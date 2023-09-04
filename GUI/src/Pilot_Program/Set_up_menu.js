@@ -9,12 +9,14 @@ function SetUpMenu() {
     Left.addEventListener("click",()=> {
         Menu.style.right="0";
         Left.style.display="none";
-        Header.style.marginRight="-20%";
+        Header.style.marginRight="-15%";
+        Right.style.display="flex";
     })
     Right.addEventListener("click", () => {
         Menu.style.right="unset";
         Left.style.display="flex";
         Header.style.marginRight="17%";
+        Right.style.display="none";
     });
   }, []); 
 }
