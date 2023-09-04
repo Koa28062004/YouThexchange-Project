@@ -29,10 +29,12 @@
     display: flex;
     font-size: 4vh;
     font-family: "Rowdies";
+    margin-left: 0;
 }
 .Videos_body .header h2{
     font-size: 5.5vh;
     font-family: "Rowdies";
+    text-align: center;
 }
 .meow {
     /* background-color: #EEE5C2; */
