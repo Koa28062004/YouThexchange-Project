@@ -32,7 +32,7 @@
     }
     100% {
       opacity: 1;
-      left: 130%;
+      left: 110%;
     }
   }
   .btn_moreinf .Project{
@@ -74,11 +74,11 @@
   position: absolute;
   opacity: 0;
   transition: all 0.5s;
-  font-size: 2vw;
+  font-size: 1.75vw;
 }
 .Project .videos:hover{
   background-color: greenyellow;
-  transform: translateX(-130%);
+  transform: translateX(-170%);
 }
 .videos:hover .mess{
   opacity: 1;
@@ -121,7 +121,7 @@
   width: 100%;
   position: absolute;
   opacity: 0;
-  font-size: 2vw;
+  font-size: 1.75vw;
   transition: all 0.5s;
 }
 
@@ -131,11 +131,11 @@
 }
 .contact .I:hover{
   background-color: #f62682;
-  transform: translateX(-160%);
+  transform: translateX(-170%);
 }
 .contact .F:hover{
   background-color:rgb(48, 48, 237);
-  transform: translateX(-160%);
+  transform: translateX(-170%);
 }
 
 
