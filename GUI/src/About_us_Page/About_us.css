@@ -13,6 +13,10 @@
     margin: 4vh;
 }
 
+.header h2 {
+    font-size: 6.5vh;
+}
+
 .content_about_us .subsubsection {
     font-size: 2.75vh;
 }
@@ -46,7 +50,7 @@
 }
 
 .aboutUs {
-    color: #FF914D;
+    color: #FFBD59;
     font-size: 6vh;
     margin: 2vh;
     font-weight: bold;
@@ -55,7 +59,7 @@
 
 .projectBased {
     font-size: 6vh;
-    background-color: #FF914D;
+    background-color: #FFBD59;
     color: white;
     padding: 1.5vh;
     font-weight: bold;
