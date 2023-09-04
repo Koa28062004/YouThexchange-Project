@@ -229,7 +229,7 @@
 
 /*class to change background of every main box*/
 .se1 {
-  background: rgb(223, 204, 251);
+  background-color: rgb(255, 255, 255);
 }
 .se2 {
   background-color: pink;
