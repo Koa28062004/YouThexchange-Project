@@ -10,14 +10,20 @@ app.use(cors());
 const data = [
     {"search": "Homepage", "link": "/"},
     {"search": "About us", "link": "/About_us"},
-    {"search": "Core Team", "link": "/About_us/Core_Team"},
+    {"search": "Core Team", "link": "/Core_Team"},
     {"search": "SDGs", "link": "/SDGs"},
-    {"search": "Subtopic 1 (An Overview)", "link": "/Pilot_Program/Project_1"},
-    {"search": "Subtopic 2 (Product outcomes)", "link": "/Pilot_Program/Project_2"},
+    {"search": "Subtopic 1 (An Overview)", "link": "/Project_1"},
+    {"search": "Subtopic 2 (Product outcomes)", "link": "/Project_2"},
+    {"search": "Subtopic 2 (Meeting Records)", "link": "/Project_3"},
     {"search": "Project", "link": "/Project"},
     {"search": "Project 1", "link": "/Project1"},
-    {"search": "Project 2", "link": "/Project2"}
-];
+    {"search": "Project 2", "link": "/Project2"},
+    {"search": "Project 3", "link": "/Project3"},
+    {"search": "Project 4", "link": "/Project4"},
+    {"search": "Project Videos", "link": "/ProjectVideos"}
+
+]    
+
 
 app.get('/api/:search', function (req, res) {
     const search = req.params.search.toLowerCase();
