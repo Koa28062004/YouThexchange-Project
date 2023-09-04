@@ -6,7 +6,7 @@
   align-items: center;
   padding: 0px 0px;
   justify-content: space-between;
-  background:linear-gradient(  #654ea3, #c897ab);
+  background-color:#ffffff;
 }
 .nav {
   margin-left: 2%;
@@ -27,7 +27,8 @@
 /*To handle with multi - level dropdown menu*/
 .dropdown {
   width: 20%;
-  color: white;
+  color: black;
+  font-family: 'Comfortaa', cursive;
   font-weight:500;
   font-size: 1.3em;
   text-align: center;
@@ -39,12 +40,11 @@
   transition: all 0.5s;
 }
 .dropdown:hover {
-  background-color: rgba(0, 0, 0, 0.486);
   border-left: 1px solid white;
   border-right: 1px solid white;
-  color: greenyellow;
+  color: #ff914d;
   letter-spacing: 1px;
-  
+  background-color: black;
 }
 .tool .dropdown::before{
   content: "";
@@ -180,7 +180,7 @@
 
 .ser {
   margin: 0;
-  background: linear-gradient(45deg,#5BA8A0,#CBE5AE);
+  background: linear-gradient(135deg,#ffde59,#ff914d);
   font-size: 15px;
   width: 20%;
   height: 100%;
@@ -207,7 +207,7 @@
 .tool_mobi{
   width: 70%;
   height: 100vh;
-  background-color: rgba(255, 172, 95, 0.758);
+  background-color: #6db6deea;
   position: fixed;
   bottom: 0;
   top: 0;
@@ -220,8 +220,8 @@
 .tool_mobi .bar{
   width:115%;
   margin-top: 40px;
-  font-size: 25px;
-  background-color: rgba(255, 172, 95, 0.758);
+  font-size: 3vh;
+  background-color: rgba(255, 255, 255, 0.79);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   text-align: right;
@@ -230,6 +230,7 @@
   padding-top: 3%;
   padding-bottom: 3%;
   transition: all 0.5s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .tool_mobi .contain{
@@ -239,20 +240,26 @@ flex-direction: column;
 }
 
 .tool_mobi .contain .dropdown{
-color:black;
+color:rgb(0, 0, 0);
+font-weight: 500;
 width: 100%;
 position: relative;
-font-size: 1.5em;
+text-align: left;
+font-size: 2.8vh;
+padding-left: 5%;
+padding-bottom: 5%;
+padding-top: 5%;
 }
 
 .tool_mobi .contain .dropdown:hover{
 background-color: whitesmoke;
+color: black;
 }
 .tool_mobi .contain .dropdown-content{
 position: relative;
 width: 100%;
+margin-top: 5%;
 background-color: whitesmoke;
-padding: 5%;
 }
 
 .tool_mobi .contain .i_dropdownname{
@@ -261,12 +268,11 @@ padding: 10%;
 }
 .tool_mobi .contain .dropdown-content a,.tool_mobi .contain .dropdown-content p{
 width: 100%;
-justify-content: center;
 }
 
 .tool_mobi .contain .i_content{
 background-color: whitesmoke;
-padding: 10%;
+padding: 12%;
 width: 100%;
 }
 .tool_mobi .contain .i_content:hover{
@@ -276,7 +282,7 @@ color: black;
 width: 100%;
 background-color: unset;
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 915px) {
 .tool {
    display: none;
 }
