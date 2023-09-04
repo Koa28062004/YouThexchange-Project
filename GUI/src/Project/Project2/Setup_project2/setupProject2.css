@@ -27,20 +27,20 @@
   color: rgb(255, 79, 79);
 }
 
-.Author_img .gallery_project1 {
+.Author_img .gallery_project2 {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-around;
 }
 
-.Author_img .gallery_project1 .slides_project1 {
+.Author_img .gallery_project2 .slides_project2 {
   width: 40%;
   height: 90%;
   margin-top: -5%;
 }
 
-.Author_img .gallery_project1 img {
+.Author_img .gallery_project2 img {
   height: 100%;
   width: 100%;
   transform: scale(0.2);
@@ -48,7 +48,7 @@
 }
 
 @media (max-width: 767px) {
-  .Author_img .gallery_project1 .slides_project1 {
+  .Author_img .gallery_project2 .slides_project2 {
     width: 80%;
     height: 90%;
     margin-top: -5%;
