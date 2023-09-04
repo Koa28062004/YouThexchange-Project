@@ -337,7 +337,6 @@ const Project4 = () => {
             </div>
           </div>
         </div>
-
         <div className=" box + presentation">
           <div className="Seminar">
             <div className="content_seminar">
@@ -346,11 +345,9 @@ const Project4 = () => {
                 <div className="Present">
                   <h4>Presentation</h4>
                   <br></br>
-                  <img
-                    src={require("./Img/final.png")}
-                    alt=""
-                    onClick={() => togglePDF("Presentation")}
-                  ></img>
+                  <a href="https://drive.google.com/file/d/1fjA37Kbx1FXYT1mdjwPRt1WadOtx6pQY/view?usp=sharing">
+                    <img src={require("./Img/final.png")} alt=""></img>
+                  </a>
                 </div>
               </div>
             </div>

@@ -507,7 +507,6 @@ const Project3 = () => {
             </div>
           </div>
         </div>
-
         <div className=" box + presentation">
           <div className="Seminar">
             <div className="content_seminar">
@@ -516,7 +515,7 @@ const Project3 = () => {
                 <div className="Present">
                   <h4>Presentation</h4>
                   <br></br>
-                  <a href="https://drive.google.com/file/d/1fjA37Kbx1FXYT1mdjwPRt1WadOtx6pQY/view?usp=sharing">
+                  <a href="https://drive.google.com/file/d/1fjA37Kbx1FXYT1mdjwPRt1WadOtx6pQY/view">
                     <img src={require("./Img/final.png")} alt=""></img>
                   </a>
                 </div>

@@ -1,6 +1,6 @@
 .Project3_body {
   width: 100%;
-  background-color: wheat;
+  background-color: #ff914d;
 }
 .Project3_main {
   margin-top: 100px;
@@ -18,7 +18,7 @@
   transform: perspective(600px) rotateX(10deg) rotateY(20deg);
 }
 .Project3_body .header-project3 h1 {
-  font-family: "Philosopher", sans-serif;
+  font-family: "Montsarrat", sans-serif;
   color: rgb(255, 255, 255);
 }
 /* Teammate information container*/
