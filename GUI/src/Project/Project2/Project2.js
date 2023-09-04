@@ -12,13 +12,13 @@ const Teammate2Data = [
     img: "./Img/Minh.png",
     age: currentYear - 2006,
     Nationality: "Vietnam",
-    Education: "Senior (KIS International School, Thailand)",
+    Education: "Empty",
   },
   {
     name: "In",
     img: "./Img/In.png",
     age: currentYear - 2006,
-    Nationality: "Thailander",
+    Nationality: "Thailand",
     Education: "Senior (KIS International School, Thailand)",
   },
 ];
@@ -377,7 +377,7 @@ const Project2 = () => {
 
               <div className="overview">
                 <strong>Link to the presentation:</strong>
-                <a href="https://docs.google.com/presentation/d/1z5zyEdO56YK4mQTKr65waH5JsTI_6kKB-aw2t13L0jQ/edit?usp=sharing">
+                <a className="here" href="https://docs.google.com/presentation/d/1z5zyEdO56YK4mQTKr65waH5JsTI_6kKB-aw2t13L0jQ/edit?usp=sharing">
                   https://docs.google.com/presentation/d/1z5zyEdO56YK4mQTKr65waH5JsTI_6kKB-aw2t13L0jQ/edit?usp=sharing
                 </a>
               </div>

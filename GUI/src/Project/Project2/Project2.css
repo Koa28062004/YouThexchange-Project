@@ -300,10 +300,11 @@ body {
 .content_seminar .Present {
   margin-top: 10%;
   width: 50%;
-
+  display: flex;
   flex-direction: column;
   align-items: center;
-  display: flex;
+  justify-content: center;
+  text-align: center; 
 }
 .content_seminar .Present img {
   width: 60%;
