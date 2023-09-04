@@ -53,7 +53,7 @@ const Project2 = () => {
       <SDGslogo />
       <div className="Project2_main">
         <div className="Teammate_profile">
-          <h1>Teammate profile</h1>
+          <h1>Teammate Profile</h1>
           <div className="profiles">
             {Teammate2Data.map((member, index) => (
               <div className="profile" key={index}>
@@ -86,8 +86,7 @@ const Project2 = () => {
               <br></br>
               <h4>Task 1: Create a Presentation </h4>
               <p className="small">
-                <i class="fa-solid fa-circle"></i> Like we mentioned in seminar
-                1, this program will culminate in a{" "}
+                Like we mentioned in seminar 1, this program will culminate in a{" "}
                 <strong>presentation</strong> done by both project partners.
                 This includes a complete understanding, breath and depth, of the
                 problem and an outlined analysis of the proposed solution.
@@ -95,7 +94,7 @@ const Project2 = () => {
               <br></br>
               <p>
                 Please link your presentation{" "}
-                <a href="https://www.canva.com/design/DAFnBw0OzhA/-LEcFFWvRKo4FcpPXPYYnA/view?utm_content=DAFnBw0OzhA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
+                <a className="here" href="https://www.canva.com/design/DAFnBw0OzhA/-LEcFFWvRKo4FcpPXPYYnA/view?utm_content=DAFnBw0OzhA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
                   here
                 </a>{" "}
                 with open access. We suggest you use Canva as it is a
@@ -104,11 +103,11 @@ const Project2 = () => {
               </p>
               <br></br>
               <h4>Task 2: Problem Statement </h4>
+              <br></br>
               <p className="small">
-                <i class="fa-solid fa-circle"></i> For each slide, persuasively
-                convey the{" "}
+                For each slide, persuasively convey the{" "}
                 <strong>
-                  Problem, Background, Relevance, and Solution Objectives{"  "}
+                  Problem, Background, Relevance, and Solution Objectives
                 </strong>
                 of your project. This helps the audience develop a logical
                 understanding of your problem. (There should be{" "}
@@ -116,20 +115,19 @@ const Project2 = () => {
               </p>
               <br></br>
               <p className="small">
-                <i class="fa-solid fa-circle"></i> A problem statement is a
-                short and concise outline if your problem. It includes the (1)
-                Problem (2) Background (3) Relevance and (4) the solution
-                objectives. Take this example:
+                A problem statement is a short and concise outline if your
+                problem. It includes the (1) Problem (2) Background (3)
+                Relevance and (4) the solution objectives. Take this example:
               </p>
               <br></br>
               <div className="overview">
-                <strong>Problem:</strong> The average customer service on-hold
+                <strong>Problem</strong> The average customer service on-hold
                 time for Example company exceeds five minutes during both its
                 busy and slow seasons. The company is currently understaffed and
                 customer service representatives are overwhelmed.
               </div>
               <div className="background">
-                <strong>Background:</strong> Example company is facing a
+                <strong>Background</strong> Example company is facing a
                 significant challenge in managing their customer service on-hold
                 times. In the past (1), the company had been known for its
                 efficient and timely customer service, but due to a combination
@@ -143,13 +141,12 @@ const Project2 = () => {
                 <p className="small">
                   (1) How was this problem approached in the past?
                   <br></br>
-                  <br></br>
                   (2) What are the reactions from people impacted by this
                   problem?
                 </p>
               </div>
               <div className="link">
-                <strong>Relevance:</strong> Reducing the on-hold times for
+                <strong>Relevance</strong> Reducing the on-hold times for
                 customer service callers is crucial for Example company.
                 Prolonged waiting times have a detrimental effect on customer
                 satisfaction and loyalty, leading to potential customer churn
@@ -158,7 +155,6 @@ const Project2 = () => {
                 impact on its competitive position in the market. Addressing
                 this problem is of utmost importance to improve customer
                 experience and maintain a positive brand image.
-                <br></br>
                 <br></br>
                 (3) What are the short-term, long-term consequences were this
                 problem to persist?
@@ -187,14 +183,14 @@ const Project2 = () => {
                 <br></br>
                 <p className="small">
                   {" "}
-                  <i className="fa-solid fa-circle"></i>Developing strategies
+                  <i className="fa-solid fa-circle"></i> Developing strategies
                   and implementing measures to optimize the customer service
                   workflow and reduce on-hold times.
                 </p>
                 <br></br>
                 <p className="small">
                   {" "}
-                  <i className="fa-solid fa-circle"></i>Monitoring and
+                  <i className="fa-solid fa-circle"></i> Monitoring and
                   evaluating the effectiveness of the implemented measures
                   through key performance indicators (KPIs) such as average
                   on-hold time, customer satisfaction ratings, and customer
@@ -211,10 +207,11 @@ const Project2 = () => {
                 the benefits of your solution (these are called your
                 beneficiaries).
                 <br></br>
+                <br></br>
                 <p className="small">
-                  <i class="fa-solid fa-circle"></i> Afterwards, you and your
-                  partner should fill the empathy map below for each of your
-                  main stakeholders. We will use this simpler model.
+                  <i class="fa-solid fa-circle"></i>  Afterwards, you and your partner should fill the empathy map
+                  below for each of your main stakeholders. We will use this
+                  simpler model.
                 </p>
               </p>
               <br></br>
@@ -222,8 +219,7 @@ const Project2 = () => {
                 <img src={require("./Img/Empathy_map.png")} alt=""></img>
               </div>
               <p className="small">
-                <i class="fa-solid fa-circle"></i> Paste the Empathy Maps right
-                after the Relevance slide.
+                Paste the Empathy Maps right after the Relevance slide.
               </p>
               <br></br>
               <h4>
@@ -234,11 +230,11 @@ const Project2 = () => {
                 1. Next week, we will delve into a case study that has
                 successfully utilize Design Thinking in their work: Bringing
                 clean toilets to Ghana! Below is a short report of their
-                project, please have a read. <br></br>
+                project, please have a read.
                 <p className="small">
-                  <i class="fa-solid fa-circle"></i>
-                  <a href="https://www.wsup.com/content/uploads/2017/08/PN008-ENGLISH-CleanTeam.pdf">
-                    The Case Study
+                  a. The{" "}
+                  <a className="here" href="https://www.wsup.com/content/uploads/2017/08/PN008-ENGLISH-CleanTeam.pdf">
+                    Case Study
                   </a>
                 </p>
               </p>
@@ -256,7 +252,7 @@ const Project2 = () => {
             <h2>Seminar 3: Stakeholder Analysis</h2>
             <br></br>
             <div className="content_seminar">
-              <h4>Post-seminar collaboration</h4> <br></br>
+              <h4>Post-seminar collaboration</h4>
               <h4>Task 1: Crisis and Vision Orientation </h4>
               <br></br>
               <p className="small">
@@ -265,17 +261,15 @@ const Project2 = () => {
                 requires different approaches to appeal to your audience.
                 <br></br>
                 <p className="small">
-                  <i class="fa-solid fa-circle"></i> For example, the lack of
-                  infrastructure for sanitation is a crisis in Ghana. It's
-                  common knowledge that new bathrooms must be created to serve
-                  the citizens - this addresses the crisis. However, creating
-                  toilets that stores waste in your house to be picked up may
-                  raise skepticisms from your customers, making this facet of
-                  your product vision-oriented.
+                  <i class="fa-solid fa-circle"></i> For example, the lack of infrastructure for sanitation is a
+                  crisis in Ghana. It's common knowledge that new bathrooms must
+                  be created to serve the citizens - this addresses the crisis.
+                  However, creating toilets that stores waste in your house to
+                  be picked up may raise skepticisms from your customers, making
+                  this facet of your product vision-oriented.
                   <br></br>
                   <p className="small">
-                    <i class="fa-solid fa-circle"></i> For points made in the
-                    crisis-oriented box, write a{" "}
+                    <i class="fa-solid fa-circle"></i>  For points made in the crisis-oriented box, write a{" "}
                     <strong>
                       <u>justification</u>
                     </strong>{" "}
@@ -283,8 +277,8 @@ const Project2 = () => {
                     your solution. Estimate the extent of effectiveness of said
                     aspect.
                     <br></br>
-                    <i class="fa-solid fa-circle"></i> For points made in the
-                    vision-oriented box, outline{" "}
+                    <i class="fa-solid fa-circle"></i> For points made in the vision-oriented box,
+                    outline{" "}
                     <strong>
                       <u>potential skepticism</u>
                     </strong>{" "}
@@ -302,11 +296,10 @@ const Project2 = () => {
               <h4>Task 2: Stakeholder Analysis</h4>
               <br></br>
               <p className="small">
-                <i class="fa-solid fa-circle"></i> For sake of simplification,
-                lets create 3 general personas for the ideal people
-                using/impacted by your solution. For each box, list down the
-                specific profile of your audience and answer the questions
-                below.{" "}
+                For sake of simplification, lets create 3 general personas for
+                the ideal people using/impacted by your solution. For each box,
+                list down the specific profile of your audience and answer the
+                questions below.{" "}
               </p>
               <div className="img">
                 <img src={require("./Img/picture4.png")} alt=""></img>
@@ -316,8 +309,8 @@ const Project2 = () => {
               <h4>Task 3: Continue your presentation </h4>
               <br></br>
               <p classname="small">
-                <i class="fa-solid fa-circle"></i> Work with your partner to
-                complete unfinished portions of your presentation.
+                <i className="fa-solid fa-circle"></i> Work with your partner to complete unfinished portions of your
+                presentation.
               </p>
               <br></br>
               <h4>
