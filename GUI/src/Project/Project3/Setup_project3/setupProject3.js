@@ -23,8 +23,8 @@ export const SetupSubtopic2 = () => {
   }, []);
 };
 const Project = ({ currentImageType }) => {
-  const Linh = "Linh.png";
-  const Rashi = "Rashi.png";
+  const Linh = "#";
+  const Rashi = "#";
   const [currentImageArray, setCurrentImageArray] = useState(Linh);
 
   /*The teammate image will change when there has been a change in the currentImageType */
@@ -54,7 +54,7 @@ const Project = ({ currentImageType }) => {
       </div>
       <div className="gallery_project3">
         <div className="slides_project3">
-          <img src={require(`../img/${currentImageArray}`)} alt="" />
+          <img src={require(`../Img/${currentImageArray}`)} alt="" />
         </div>
       </div>
     </div>

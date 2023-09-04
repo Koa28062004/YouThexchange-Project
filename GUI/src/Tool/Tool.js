@@ -48,9 +48,7 @@ function DropdownContent({ title }) {
   if (title === "Event")
     return (
       <div className="dropdown-content">
-        <a href="https://www.youtube.com/" title="">
-          Youtube
-        </a>
+         <p>Coming soon</p> 
       </div>
     );
   if (title === "Competition")
@@ -91,9 +89,6 @@ function DropdownContent({ title }) {
   if (title === "Project Partners")
     return (
       <div className="dropdown-content">
-        <a href="https://www.youtube.com/" title="">
-          Youtube
-        </a>
       </div>
     );
 }

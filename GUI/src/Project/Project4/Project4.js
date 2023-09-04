@@ -66,7 +66,7 @@ const Project4 = () => {
                   Name: {member.name}
                   <i
                     className="fa-solid fa-circle-info"
-                    onClick={() => setCurrentImageType("Rashi")}
+                    onClick={() => setCurrentImageType(member.name)}
                   ></i>
                 </div>
                 <div className="profile_main">

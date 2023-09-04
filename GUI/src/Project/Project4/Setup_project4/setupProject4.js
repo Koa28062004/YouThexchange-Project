@@ -23,16 +23,16 @@ export const SetupSubtopic2 = () => {
   }, []);
 };
 const Project = ({ currentImageType }) => {
-  const Linh = "janya_w.png";
-  const Rashi = "kacy_w.png";
-  const [currentImageArray, setCurrentImageArray] = useState(Linh);
+  const Janya = "janya_w.png";
+  const Kacy = "kacy_w.png";
+  const [currentImageArray, setCurrentImageArray] = useState(Janya);
 
   /*The teammate image will change when there has been a change in the currentImageType */
   useEffect(() => {
-    if (currentImageType === "Linh") {
-      setCurrentImageArray(Linh);
-    } else if (currentImageType === "Rashi") {
-      setCurrentImageArray(Rashi);
+    if (currentImageType === "Janya") {
+      setCurrentImageArray(Janya);
+    } else if (currentImageType === "Kacy") {
+      setCurrentImageArray(Kacy);
     }
   }, [currentImageType]);
 
