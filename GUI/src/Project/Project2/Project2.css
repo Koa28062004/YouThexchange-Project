@@ -1,12 +1,12 @@
 .Project2_body {
   width: 100%;
-  background-color: #ff914d;
+  background-color: #f2f2f2;
 }
 .Project2_main {
   margin-top: 100px;
   margin-bottom: 100px;
 }
-a {
+.Project2_body a {
   word-break: break-all;
 }
 body {
@@ -27,7 +27,7 @@ body {
   color: #FF914D;
 }
 /* Teammate information container*/
-.Teammate_profile {
+.Project2_main .Teammate_profile {
   width: 75%;
   background: linear-gradient(rgb(169, 169, 169), #75708c);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -38,7 +38,8 @@ body {
   flex-direction: column;
   border-radius: 20px;
 }
-.Teammate_profile h1 {
+.Project2_main .Teammate_profile h1 {
+  color: #FF914D;
   text-align: center;
   margin-top: 20px;
   margin-left: 5%;
@@ -150,13 +151,15 @@ body {
   font-size: 22px;
 }
 .Project2_main .box .Seminar .content_seminar .header {
+  color: #FF914D;
   font-size: 25px;
   margin-top: 50px;
   margin-left: 43%;
   width: 16%;
-  background-color: rgb(255, 137, 137);
-  border-radius: 10px;
+  background-color: #75708c;
+  border-radius: 20px;
   text-align: center;
+  padding: 1%;
 }
 
 /* Begin of the decoration small boxes*/
@@ -187,18 +190,22 @@ body {
 }
 .link a {
   text-decoration: none;
+  color: rgb(255, 47, 10);
+}
+.Project2_main .box .Seminar .content_seminar h4 {
+  color: #FF914D;
 }
 .Project2_main .box .Seminar .content_seminar .overview h4 {
-  margin-top: 10px;
-  margin-left: 10px;
+  text-align: center;
+  color: #FF914D;
 }
 .Project2_main .box .Seminar .content_seminar .about h4 {
-  margin-top: 10px;
-  margin-left: 10px;
+  color: #FF914D;
+  text-align: center;
 }
 .Project2_main .box .Seminar .content_seminar .background {
   width: 70%;
-  background: rgb(21, 111, 83);
+  background: rgb(35, 163, 122);
   color: white;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
@@ -232,21 +239,44 @@ body {
   font-weight: 400;
 }
 
+.Project2_main .box .Seminar .content_seminar .small {
+  /*The small paragraph that wants to be indented.*/
+  margin-left: 30px;
+  font-weight: 400;
+}
+.Project2_main .box .Seminar .content_seminar .small strong {
+  color: #FF914D;
+}
+.Project2_main .box .Seminar .content_seminar .link strong {
+  color: #FF914D;
+}
+.Project2_main .box .Seminar .content_seminar .overview strong {
+  text-align: center;
+  color: #FF914D;
+}
+.Project2_main .box .Seminar .content_seminar .background strong {
+  text-align: center;
+  color: #FF914D;
+}
+.Project2_main .box .Seminar .content_seminar .here {
+  color: rgb(255, 47, 10);
+}
+
 /*class to change background of every main box*/
 .Project2_main .se1 {
-  background: rgb(223, 204, 251);
+  background-color: #FCF2D7;
 }
 .Project2_main .se2 {
-  background-color: pink;
+  background-color: #FCF2D7;
 }
 .Project2_main .se3 {
-  background-color: white;
+  background-color: #FCF2D7;
 }
 .Project2_main .se4 {
-  background-color: rgb(252, 187, 146);
+  background-color: #FCF2D7;
 }
 .Project2_main .presentation {
-  background-color: rgb(188, 188, 188);
+  background-color: #8daf92;
   color: rgb(0, 0, 0);
 }
 
@@ -264,4 +294,88 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+/*handle the presentation*/
+.content_seminar .Present {
+  margin-top: 10%;
+  width: 50%;
+
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+.content_seminar .Present img {
+  width: 60%;
+  cursor: pointer;
+  border-radius: 50%;
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+}
+.content_seminar .Present img:hover {
+  transform: scale(1.1);
+  border-radius: 0%;
+}
+
+/* handle with Infographic*/
+.content_seminar .Infog {
+  margin-top: 10%;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+.content_seminar .Infog img {
+  width: 50%;
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+}
+.content_seminar .Infog img:hover {
+  transform: scale(1.1);
+}
+/*Three class to handle pdf*/
+.Project2_body .pdf_project {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  z-index: 10;
+}
+
+.btn_toggle_pdf {
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  font-size: 22px;
+  background-color: unset;
+  color: #f2f2f2;
+  border: none;
+  position: fixed;
+  z-index: 11;
+  top: 12px;
+  right: 140px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn_toggle_pdf:hover {
+  background-color: rgba(128, 128, 128, 0.29);
+}
+
+@media (max-width: 375px) {
+  .Teammate_profile {
+    width: 100%;
+  }
+  .Project2_main .box .Seminar .content_seminar .header {
+    padding-left: 7%;
+    padding-right: 7%;
+    font-size: 20px;
+  }
+}
+@media (max-width: 820px) {
+  .Project2_main .box .Seminar .content_seminar .header {
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 20px;
+  }
 }

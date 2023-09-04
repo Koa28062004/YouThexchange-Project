@@ -53,7 +53,7 @@ const Project2 = () => {
       <SDGslogo />
       <div className="Project2_main">
         <div className="Teammate_profile">
-          <h1>Teammate profile</h1>
+          <h1>Teammate Profile</h1>
           <div className="profiles">
             {Teammate2Data.map((member, index) => (
               <div className="profile" key={index}>
