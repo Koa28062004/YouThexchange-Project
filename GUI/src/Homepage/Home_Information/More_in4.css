@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 60%;
+    height: max-content;
     align-items: center;
     justify-content: space-around;
     margin: auto;
@@ -10,13 +11,15 @@
     border-radius: 10px;
   }
   .btn_moreinf {
-    padding-top:1%;
-    padding-bottom: 1%;
+    position: relative;
+    margin-top: 15%;
+    padding:10px;
+    color: white;
     width: 20%;
     height: auto;
-    font-size: 1.9em;
-    border-radius: 10px;
-    background-color: rgb(124, 157, 150);
+    font-size: 2vw;
+    border-radius:10vh;
+    background-color: #f14931;
   }
   .btn_moreinf:hover {
     background-image: linear-gradient(pink, rgb(161, 204, 209));
@@ -24,11 +27,11 @@
   @keyframes hover-effect {
     0% {
       opacity: 1;
-      left:0;
+      left: 0%;
     }
     100% {
       opacity: 1;
-      left:50px 
+      left: 130%;
     }
   }
   .btn_moreinf .Project{
@@ -39,7 +42,7 @@
     text-align: center;
     align-items: center;
     flex-direction: column;
-    width:200px;
+    width:120%;
     height: auto;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px ;
@@ -49,6 +52,10 @@
 }
 
 .Project a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   margin-top: 10px;
   margin-bottom: 5px;
   color:white;
@@ -69,34 +76,40 @@
 }
 .Project .videos:hover{
   background-color: greenyellow;
-  transform: translateX(-60px);
+  transform: translateX(-130%);
 }
 .videos:hover .mess{
   opacity: 1;
   animation: hover-effect 0.3s forwards;
 }
 .btn_moreinf .contact{
-    background-color: #24262b;
-    display: none;
-    position: absolute;
-    align-items: center;
-    flex-direction: column;
-    width:200px;
-    height: auto;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px ;
+  background-color: #24262b;
+  display: none;
+  color:white;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width:120%;
+  height: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px ;
 }
 .btn_moreinf:hover .contact{
   display: flex;
 }
 
 .contact a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   margin-top: 10px;
   margin-bottom: 5px;
   color:white;
   height: 40px;
   width: 40px;
-  padding-top: 3px;
+  padding-top:3px ;
   background-color: rgba(183, 183, 183, 0.2);
   border-radius: 50px;
   transition: all 0.5s ease;
@@ -104,11 +117,10 @@
 }
 
 .contact a .mess {
+  width: 100%;
   position: absolute;
   opacity: 0;
-  height: 100%;
-  color: whitesmoke;
-  transition: all 0.5s ;
+  transition: all 0.5s;
 }
 
 .contact a:hover .mess {
@@ -117,25 +129,22 @@
 }
 .contact .I:hover{
   background-color: #f62682;
-  transform: translateX(-60px);
+  transform: translateX(-160%);
 }
 .contact .F:hover{
   background-color:rgb(48, 48, 237);
-  transform: translateX(-60px);
+  transform: translateX(-160%);
 }
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
  
   .btn_moreinf {
-    margin-top: 5%;
-    margin-left: 2%;
     width: max-content;
-    height: auto;
-    font-size: 1.5em;
-    border-radius: 10px;
-    background-color: rgb(124, 157, 150);
+    font-size: 2vh;
   }
-
+  .mess{
+    opacity: 1;
+  }
 }
