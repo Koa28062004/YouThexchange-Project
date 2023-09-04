@@ -44,10 +44,13 @@ const ProjectMain = () => {
       <Tool_mobile />
       <Search_mobile />
       <SDGslogo />
-      <div className=".header_projectmain">
-                <h2 className="Pro">Project</h2>
-            </div>
+     
+     
+      <div className="Project_Main_content">
       <div className="ProjectMain">
+      <h2 className="Pro">Project</h2>
+      <div className="Main_Project">
+      
         {ProjectData.map((project, index) => {
           return (
             <div className="box_project" key={index}>
@@ -70,6 +73,8 @@ const ProjectMain = () => {
             </div>
           );
         })}
+      </div>
+      </div>
       </div>
       <Footer />
     </div>
