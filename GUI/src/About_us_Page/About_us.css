@@ -104,7 +104,7 @@
     align-items: center;
 }
 .head_about_us img{
-    height:200px;
+    height:70%;
     width:50%;
 }
 .Tag{
@@ -167,5 +167,9 @@
     .content_about_us .social {
         line-height: normal;
         word-break: break-all;
+    }
+    .head_about_us img{
+        height:90%;
+        width:90%;
     }
 }
