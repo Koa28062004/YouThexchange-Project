@@ -107,7 +107,7 @@ function AboutUs() {
                         <br></br>
                         <h4><strong>5. Contact Information</strong></h4>
                         <br></br>
-                        <p><stong>Sign up form for Program: </stong><a href="https://forms.gle/71x7BjKgA3eXN1oB6">from</a> (deadline 15/8)</p>
+                        <p><strong className="subsubsection">Sign up form for Program: </strong><a href="https://forms.gle/71x7BjKgA3eXN1oB6">from</a> (deadline 15/8)</p>
                         <br></br>
                         <p><i class="fa-brands fa-facebook" ></i>  Facebook
                             <a className="social" href="https://www.facebook.com/profile.php?id=100094353529762&mibextid=LQQJ4d">: YouThexchange Project </a>

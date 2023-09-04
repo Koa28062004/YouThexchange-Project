@@ -13,6 +13,10 @@
     margin: 4vh;
 }
 
+.header h2 {
+    font-size: 6.5vh;
+}
+
 .content_about_us .subsubsection {
     font-size: 2.75vh;
 }
@@ -36,6 +40,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 2.75vh;
     word-break: break-all;
+    color: rgb(255, 47, 10);
 }
 
 .content_about_us li {
@@ -46,7 +51,7 @@
 }
 
 .aboutUs {
-    color: #FF914D;
+    color: #FFBD59;
     font-size: 6vh;
     margin: 2vh;
     font-weight: bold;
@@ -55,7 +60,7 @@
 
 .projectBased {
     font-size: 6vh;
-    background-color: #FF914D;
+    background-color: #FFBD59;
     color: white;
     padding: 1.5vh;
     font-weight: bold;
