@@ -6,25 +6,30 @@
   margin-top: 100px;
   margin-bottom: 100px;
 }
+a {
+  word-break: break-all;
+}
+body {
+  line-height: 1.75rem;
+}
 
 .Project2_body .header-project2 {
-  margin-left: 10%;
+  font-size: 1.5rem;
+  margin-left: 22%;
   margin-top: 50px;
-  background-color: rgb(66, 82, 68);
   width: max-content;
   padding: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
-  transform: perspective(600px) rotateX(10deg) rotateY(20deg);
 }
 .Project2_body .header-project2 h1 {
   font-family: "Montsarrat", sans-serif;
-  color: rgb(255, 255, 255);
+  color: #FF914D;
 }
 /* Teammate information container*/
 .Teammate_profile {
   width: 75%;
-  background: linear-gradient(rgb(169, 169, 169), rgb(21, 55, 71));
+  background: linear-gradient(rgb(169, 169, 169), #75708c);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
   margin-left: 6%;

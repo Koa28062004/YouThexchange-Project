@@ -6,7 +6,7 @@
   margin-top: 100px;
   margin-bottom: 100px;
 }
-a {
+.Project1_body a {
   word-break: break-all;
 }
 body {
@@ -258,8 +258,8 @@ body {
 }
 
 /*class to change background of every main box*/
-.se1 {
-  background: rgb(223, 204, 251);
+.Project1_main .se1 {
+  background-color: #FCF2D7;
 }
 .Project1_main .se2 {
   background-color: #FCF2D7;
