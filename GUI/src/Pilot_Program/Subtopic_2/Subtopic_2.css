@@ -109,10 +109,23 @@
     text-align: center; /* Center the button text horizontally */
     padding: 1vh;
   }
-  .subtopicProject .btn {
-    margin: 0 auto; /* Center the button horizontally */
-    display: block; /* Make the button a block-level element */
+  
+  .body_subtopic2 .box_subtopic .btn{
+    margin-left: 5%;
+    opacity: 1;
+    width: 90%;
+    height: 90%;
   }
+}
+@media screen and (max-width: 480px) {
+  .Main_subtopic2 .Subtopic2{
+  width: 90%;
+ }
+}
+@media screen and (max-width: 281px) {
+  .Main_subtopic2 .Subtopic2{
+  width: 100%;
+ }
 }
 .subtopicProject .container {
   width: 270px;
@@ -125,7 +138,6 @@
 
 .subtopicProject .container .box_subtopic{  
   margin-top: 40px;
-  width: 270px;
   height:400px;
   padding-bottom: 40px;
   display: flex;
