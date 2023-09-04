@@ -14,17 +14,17 @@ body {
 }
 
 .Project1_body .header-project1 {
-  font-size: 1.5rem;
-  margin-left: 22%;
   margin-top: 50px;
-  width: max-content;
-  padding: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .Project1_body .header-project1 h1 {
   font-family: "Montsarrat", sans-serif;
   color: #FF914D;
+  font-size: 4vh;
+  text-align: center;
 }
 /* Teammate information container*/
 .Project1_main .Teammate_profile {
