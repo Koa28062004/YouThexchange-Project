@@ -12,16 +12,16 @@ const Teammate2Data = [
     name: "Kacy",
     img: "./Img/Padma.png",
     age: currentYear - 2006,
-    Nationality: "Indian",
-    Education: "Senior (KIS International School, Thailand)",
+    Nationality: "Vietnam",
+    Education: "Empty",
   },
   {
     name: "Janya",
     img: "./Img/Janya.png",
     age: currentYear - 2006,
-    Nationality: "Vietnam",
+    Nationality: "India",
     Education:
-      "Senior (BVIS - British Vietnamese International School HCMC, Vietnam)",
+      "Senior (KIS International School, Thailand)",
   },
 ];
 
@@ -97,7 +97,7 @@ const Project4 = () => {
               <br></br>
               <p>
                 Please link your presentation{" "}
-                <a href="https://www.canva.com/design/DAFnBw0OzhA/-LEcFFWvRKo4FcpPXPYYnA/view?utm_content=DAFnBw0OzhA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
+                <a className="here" href="https://www.canva.com/design/DAFnBw0OzhA/-LEcFFWvRKo4FcpPXPYYnA/view?utm_content=DAFnBw0OzhA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
                   here
                 </a>{" "}
                 with open access. We suggest you use Canva as it is a
@@ -239,7 +239,7 @@ const Project4 = () => {
                 project, please have a read. <br></br>
                 <p className="small">
                   <i class="fa-solid fa-circle"></i>
-                  <a href="https://www.wsup.com/content/uploads/2017/08/PN008-ENGLISH-CleanTeam.pdf">
+                  <a className="here" href="https://www.wsup.com/content/uploads/2017/08/PN008-ENGLISH-CleanTeam.pdf">
                     The Case Study
                   </a>
                 </p>

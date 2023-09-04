@@ -119,7 +119,7 @@ const Project3 = () => {
                   project?{" "}
                   <p className="small">
                     <i class="fa-solid fa-circle"></i>{" "}
-                    <a href="https://nevonprojects.com/rc-solar-lake-pool-cleaner-drone/">
+                    <a className="here" href="https://nevonprojects.com/rc-solar-lake-pool-cleaner-drone/">
                       {" "}
                       RC Solar Lake Pool Cleaner Drone | Nevon Projects
                     </a>{" "}
@@ -127,7 +127,7 @@ const Project3 = () => {
                     installing it around our local area in Thailand or
                     Vietnam?). <br></br>
                     <i class="fa-solid fa-circle"></i>{" "}
-                    <a href="https://nevonprojects.com/wind-solar-power-laptop-mobile-charging-station/">
+                    <a className="here" href="https://nevonprojects.com/wind-solar-power-laptop-mobile-charging-station/">
                       {" "}
                       Wind & Solar Power Laptop Mobile Charging Station | Nevon
                       Projects
@@ -267,7 +267,7 @@ const Project3 = () => {
               <br></br>
               <p>
                 Please link your presentation{" "}
-                <a href="https://www.canva.com/design/DAFnBw0OzhA/-LEcFFWvRKo4FcpPXPYYnA/view?utm_content=DAFnBw0OzhA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
+                <a className="here" href="https://www.canva.com/design/DAFnBw0OzhA/-LEcFFWvRKo4FcpPXPYYnA/view?utm_content=DAFnBw0OzhA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
                   here
                 </a>{" "}
                 with open access. We suggest you use Canva as it is a
@@ -409,7 +409,7 @@ const Project3 = () => {
                 project, please have a read. <br></br>
                 <p className="small">
                   <i class="fa-solid fa-circle"></i>
-                  <a href="https://www.wsup.com/content/uploads/2017/08/PN008-ENGLISH-CleanTeam.pdf">
+                  <a className="here" href="https://www.wsup.com/content/uploads/2017/08/PN008-ENGLISH-CleanTeam.pdf">
                     The Case Study
                   </a>
                 </p>
