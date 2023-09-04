@@ -329,9 +329,11 @@ const Project1 = () => {
                   10% of global carbon emissions, more than international
                   flights and maritime shipping combined.
                   <br></br>
+                  <br></br>
                   2. Patagonia, known for its commitment to sustainability,
                   donated its entire $10 million tax cut in 2017 to
                   environmental causes.
+                  <br></br>
                   <br></br>
                   3. Shein has faced criticism for its lack of transparency
                   regarding its supply chain and the environmental and social
@@ -461,14 +463,14 @@ const Project1 = () => {
                 <br></br>
                 <p className="small">
                   {" "}
-                  <i className="fa-solid fa-circle"></i>Developing strategies
+                  <i className="fa-solid fa-circle"></i> Developing strategies
                   and implementing measures to optimize the customer service
                   workflow and reduce on-hold times.
                 </p>
                 <br></br>
                 <p className="small">
                   {" "}
-                  <i className="fa-solid fa-circle"></i>Monitoring and
+                  <i className="fa-solid fa-circle"></i> Monitoring and
                   evaluating the effectiveness of the implemented measures
                   through key performance indicators (KPIs) such as average
                   on-hold time, customer satisfaction ratings, and customer
@@ -484,6 +486,7 @@ const Project1 = () => {
                 (these are called your customers) or are directly impacted by
                 the benefits of your solution (these are called your
                 beneficiaries).
+                <br></br>
                 <br></br>
                 <p className="small">
                   <i class="fa-solid fa-circle"></i>  Afterwards, you and your partner should fill the empathy map
@@ -586,7 +589,7 @@ const Project1 = () => {
               <h4>Task 3: Continue your presentation </h4>
               <br></br>
               <p classname="small">
-                Work with your partner to complete unfinished portions of your
+                <i className="fa-solid fa-circle"></i> Work with your partner to complete unfinished portions of your
                 presentation.
               </p>
               <br></br>
