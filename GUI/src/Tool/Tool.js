@@ -152,6 +152,7 @@ export function Tool_mobile() {
               <Dropdown title="Project Partners" />
               <Link to="/SDGs"><Dropdown title="SDGs"></Dropdown></Link>
       </div>
+      <SetUpTool />
     </div>
   )
 }

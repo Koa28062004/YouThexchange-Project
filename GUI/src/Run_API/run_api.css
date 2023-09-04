@@ -6,7 +6,7 @@
 .container_search{
     width: 80%;
     position: absolute;
-    top:3.3em;
+    top:100%;
     left: -0%;
     background-color: white;
     color:black;
@@ -39,3 +39,10 @@
     color:red;
     font-weight: bold;
 }
+@media screen and (max-width: 915px) {
+    .container_search{
+        width: 70%;
+        top:70px;
+        left: 10%;
+    }
+    }
