@@ -2,11 +2,10 @@
   width: 100%;
   height: 90px;
   display: flex;
-  margin: auto;
   align-items: center;
   padding: 0px 0px;
   justify-content: space-between;
-  background-color:#ffffff;
+  background-color:#8daf92;
 }
 .nav {
   margin-left: 2%;
@@ -27,10 +26,10 @@
 /*To handle with multi - level dropdown menu*/
 .dropdown {
   width: 20%;
-  color: black;
+  color: white;
   font-family: 'Comfortaa', cursive;
   font-weight:500;
-  font-size: 2.5vh;
+  font-size: 1.3vw;
   text-align: center;
   align-items: center;
   padding-top: 30px;
@@ -171,24 +170,21 @@
 .input {
   width: 80%;
   height: 100%;
-  border-right-style: none;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 35px;
   text-align: center;
   font-size: 15px;
 }
 
 .ser {
   margin: 0;
-  background: linear-gradient(135deg,#ffde59,#ff914d);
-  font-size: 15px;
+  background: white;
+  font-size: 1em;
   width: 20%;
   height: 100%;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 50%;
 }
 .ser:active{
-  background-color: rgb(109, 58, 99);
+  background-color: pink;
   color: aliceblue;
 }
 
@@ -198,12 +194,12 @@
 /* Tool for Mobile*/
 
 .search_mobi{
-  margin-left: 10%;
+
   padding-top: 20px ;
-  width: 90%;
+  width: 100%;
   height: 70px;
   display: none;
-
+  background-color: #8daf92;
 }
 
 .search_mobi .ser{
@@ -215,7 +211,7 @@
   display: none;
   z-index: 20;
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 .tool_mobi{
   width: 70%;

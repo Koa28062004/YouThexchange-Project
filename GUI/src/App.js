@@ -22,6 +22,7 @@ function App() {
         <Route path="/About_us" element={<AboutUs />} />
         <Route path="/Project_1" element={<Subtopic1 />} />
         <Route path="/Project_2" element={<Subtopic2 />} />
+        <Route path="/Project_3" element={<Subtopic3 />} />
         <Route path="/Project" element={<ProjectMain />} />
         <Route path="/Project1" element={<Project1 />} />
         <Route path="/Project2" element={<Project2 />} />

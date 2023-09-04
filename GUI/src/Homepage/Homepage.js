@@ -14,7 +14,7 @@ function Homepage() {
       <SDGslogo></SDGslogo>
       <div className="main_homepage">
         <div className="main">
-          <Slide />
+        
         </div>
         <More />
       </div>

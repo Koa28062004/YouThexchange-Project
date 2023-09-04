@@ -10,7 +10,7 @@
     left: -0%;
     background-color: white;
     color:black;
-    z-index: 11;
+    z-index: 200;
 }
 .container_search .products{
     width: 100%;
