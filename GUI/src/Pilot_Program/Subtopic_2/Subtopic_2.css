@@ -2,12 +2,45 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Times New Roman';
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Subtopic2 .header-sub2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* To stack the h2 elements vertically */
+    margin: 4vh;
+}
+
+.header-sub2 .productOutcome {
+    color: #75708c;
+    font-size: 6vh;
+    margin: 2vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container h4 {
+    color: white;
+    font-size: 4vh;
+    margin-top: 2vh;
+}
+
+.header-sub2 .subtopicOfsubtopic {
+    font-size: 6vh;
+    background-color: #75708c;
+    color: white;
+    padding: 1.5vh;
+    font-weight: bold;
+    margin-bottom: 1.5vh;
+    text-align: center;
+    max-width: max-content;
 }
 
 .body_subtopic2{
   width: 100%;
-  background-color:rgb(255, 230, 191);
+  background-color: white;
 }
 .body_subtopic2 h1{
   text-align: center;
@@ -49,12 +82,18 @@
     gap: 0px;
     justify-items: center;
     align-items: center;
-    background:linear-gradient(rgb(255, 150, 150), rgb(240, 184, 110)) ;
+    background:linear-gradient(to right, #FFBD59, #FF914D) ;
     border-radius: 10px;
     padding: 20px;
     padding-bottom: 50px;
     margin-bottom: 100px;
 }
+
+.box_subtopic a {
+    text-decoration: none;
+    color: black;
+}
+
 @media screen and (max-width: 1300px) {
   .subtopicProject {
       grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
@@ -62,9 +101,17 @@
 }
 
 /* Media Query for even smaller screens */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 880px) {
   .subtopicProject {
       grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .subtopicProject .container {
+    text-align: center; /* Center the button text horizontally */
+    padding: 1vh;
+  }
+  .subtopicProject .btn {
+    margin: 0 auto; /* Center the button horizontally */
+    display: block; /* Make the button a block-level element */
   }
 }
 .subtopicProject .container {
@@ -132,7 +179,7 @@
 }
 .subtopicProject .btn:hover{
   letter-spacing: 1px;
-  background: linear-gradient(rgb(255, 150, 150), rgb(240, 184, 110));
+  background: linear-gradient(to left, #FFBD59, #FF914D);
   color:black;
 }
 .subtopicProject span{
@@ -140,8 +187,11 @@
   border-radius: 10px;
   width: 90%;
   text-align: center;
-  background-color: pink;
+  background-color: #8daf92;
   font-size: 1em;
+  padding: 0.75vh;
+  font-weight: 500;
+  color: white;
 }
 .body_subtopic2 .box_subtopic:hover .btn{
   opacity: 1;
