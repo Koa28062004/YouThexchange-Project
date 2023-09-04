@@ -29,7 +29,7 @@
   color: white;
   font-family: 'Comfortaa', cursive;
   font-weight:500;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   text-align: center;
   align-items: center;
   padding-top: 30px;
@@ -179,17 +179,12 @@
 
 .ser {
   margin: 0;
-  background: white;
+  background: linear-gradient(135deg,#ffde59,#ff914d);
   font-size: 1em;
   width: 20%;
   height: 100%;
   border-radius: 50%;
 }
-.ser:active{
-  background-color: pink;
-  color: aliceblue;
-}
-
 
 
 
@@ -256,7 +251,7 @@ font-weight: 500;
 width: 100%;
 position: relative;
 text-align: left;
-font-size: 2.8vh;
+font-size: 2.5vh;
 padding-left: 5%;
 padding-bottom: 5%;
 padding-top: 5%;
