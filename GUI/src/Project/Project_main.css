@@ -18,7 +18,7 @@
   color: #fcf2d7;
   width: 40%;
   font-size: 6vh;
-  margin: 2vh;
+  margin-top: 7%;
   margin-left: 30%;
   font-weight: bold;
   text-align: center;
@@ -75,7 +75,8 @@
   height: 100%;
 }
 .ProjectMain_body .ProjectMain .box_project .Name_Project {
-  font-weight: bold;
+  font-weight: 700;
+  background-color: rgb(255, 79, 108);
   font-size: 1em;
   text-align: center;
   color: rgb(3, 104, 3);
@@ -83,8 +84,11 @@
 }
 .ProjectMain .box_project .box_main {
   margin-top: 30px;
+  font-size: 1.2em;
   transition: all 0.5s ease-in;
-  margin-left: 10px;
+}
+.ProjectMain .box_project .box_main p{
+  padding-left: 20px;
 }
 .ProjectMain .box_project:hover .box_main {
   margin-top: 10px;
@@ -163,6 +167,10 @@
     background: linear-gradient(#5ba8a0, #cbe5ae);
     color: black;
   }
+  .ProjectMain_body .ProjectMain .box_project .box_author {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 600px) {
 .ProjectMain_body .ProjectMain .box_project{
@@ -180,4 +188,5 @@
     width: 80%;
     height: 66vh;
   }
+  
 }

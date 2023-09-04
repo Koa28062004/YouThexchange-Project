@@ -56,7 +56,6 @@ const ProjectMain = () => {
               </div>
               <div className="box_main">
                 <p>Project {project.Project}:</p>
-                <br></br>
                 <p className="Name_Project">{project.name}</p>
                 <div className="box_author">
                   <p>
