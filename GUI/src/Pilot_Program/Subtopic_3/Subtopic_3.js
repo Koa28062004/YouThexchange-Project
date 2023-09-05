@@ -9,40 +9,34 @@ import { Search_mobile } from "../../Tool/Search";
 export const Videos = [
   {
     id: "1",
-    title: "Meow1",
+    title: "MEETING 1",
     className: "M",
-    source: "https://drive.google.com/file/d/1JOZBkMwOllSNg7ameXnAj1dlagusMeux/preview"
-  },
-  {
+    source: "https://drive.google.com/file/d/1sN-XPPQ44--DFJGY949Ua06R8Izbln2H/preview",
+},
+{
     id: "2",
-    title: "Meow2",
+    title: "MEETING 2",
     className: "M",
-    source: "https://drive.google.com/file/d/1O1JeMbe5lWVs1H7b8IeW2K1GAYcmsY5i/preview"
-  },
-  {
+    source: "https://drive.google.com/file/d/1uw56krHZ0uVB3u07mX6mX0vI4E98VS1J/preview"
+},
+{
     id: "3",
-    title: "Meow3",
+    title: "MEETING 3",
     className: "M",
-    source: "https://drive.google.com/drive/u/0/my-drive"
-  },
-  {
+    source: "https://drive.google.com/file/d/1_o3t_xDpebyNy9uYZcPnY2BKtS0AtK1h/preview"
+},
+{
     id: "4",
-    title: "Meow4",
+    title: "MEETING 4",
     className: "M",
-    source: "https://drive.google.com/drive/u/0/my-drive"
-  },
-  {
+    source: "https://drive.google.com/file/d/1ElmLlOoN17pg_t-CgcVz31rOHGHUhfXY/preview"
+},
+{
     id: "5",
-    title: "Meow5",
+    title: "MEETING 5",
     className: "M",
-    source: "https://drive.google.com/drive/u/0/my-drive"
-  },
-  {
-    id: "6",
-    title: "Meow6",
-    className: "M",
-    source: "https://drive.google.com/drive/u/0/my-drive"
-  }
+    source: "https://drive.google.com/file/d/1k1Lk0W6lVZBUMB5LGge5_k0Mv-1Bs6fJ/preview"
+}
 ];
 
 function ProjectVideos() {

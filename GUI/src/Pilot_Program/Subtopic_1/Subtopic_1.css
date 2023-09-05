@@ -104,7 +104,7 @@
   font-size: 7vh;
   background-color: #FFBD59;
   color: white;
-  padding: 1.5vh;
+  padding: 1vh;
 }
 
 .header_subtopic_1 {
@@ -112,6 +112,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header_subtopic_1 img {
