@@ -42,8 +42,8 @@
   margin-top: 20px;
   margin-left: 5%;
 }
-.Teammate_profile .profile .profile_img {
-  width: 70%;
+.Project4_body .Teammate_profile .profile .profile_img {
+  width: 90%;
   height: 350px;
   margin-bottom: 2%;
 }
@@ -53,25 +53,33 @@
   height: 100%;
   border-radius: 10px;
 }
-.Teammate_profile .profiles {
+.Project4_body .Teammate_profile .profiles {
   margin-top: 20px;
   width: 100%;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  justify-content: center;
 }
-.Teammate_profile .profile {
+@media screen and (max-width: 1300px) {
+  
+  .Project4_body .Teammate_profile .profiles  {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}
+.Project4_body .Teammate_profile .profile {
   /*Profile of teammate*/
+  padding-left: 10%;
   margin-top: 60px;
   position: relative;
-  width: 35%;
+  width: 90%;
   transition: all 0.2s;
 }
 .Teammate_profile .profile:hover {
   margin-top: 40px;
 }
-.Teammate_profile .profile .profile_main {
+.Project4_body .Teammate_profile .profile .profile_main {
   width: 0;
-  max-height: 200px;
+  max-height: max-content;
   margin-left: -5%;
   font-size: 1.2em;
   border-bottom-left-radius: 10px;
