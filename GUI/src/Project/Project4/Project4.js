@@ -39,7 +39,7 @@ const Project4 = () => {
     setShowPDF(!showPDF);
   };
   return (
-    <div className="Projec4_body">
+    <div className="Project4_body">
       {showPDF && (
         <iframe
           className="pdf_project"

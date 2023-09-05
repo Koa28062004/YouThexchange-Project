@@ -102,7 +102,7 @@
     margin-left: 10%;
     margin-top: 5%;
     width: max-content;
-    padding: 50px;
+    padding: 4vh;
     transform: perspective(700px) rotateX(20deg) rotateY(-20deg);
     transition: all 0.5s;
 }

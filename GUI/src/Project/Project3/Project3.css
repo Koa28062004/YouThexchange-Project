@@ -43,12 +43,13 @@
   margin-left: 5%;
 }
 .Project3_body .Teammate_profile .profile .profile_img {
-  width: 90%;
-  height: 350px;
+  width: 30vh;
+  height: 45vh;
   margin-bottom: 2%;
 }
 .Teammate_profile .profile_img img {
   object-fit: cover;
+  object-position: center;
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -58,20 +59,24 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-  justify-content: center;
 }
 @media screen and (max-width: 1300px) {
   
   .Project3_body .Teammate_profile .profiles  {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
+  .Project3_body .Teammate_profile .profile .profile_img {
+    width: 90%;
+    height: 40vh;
+    margin-bottom: 2%;
+  }
 }
-.Teammate_profile .profile {
+.Project3_body .Teammate_profile .profile {
   /*Profile of teammate*/
   padding-left: 10%;
   margin-top: 60px;
   position: relative;
-  width: 35%;
+  width: 90%;
   transition: all 0.2s;
 }
 .Teammate_profile .profile:hover {
