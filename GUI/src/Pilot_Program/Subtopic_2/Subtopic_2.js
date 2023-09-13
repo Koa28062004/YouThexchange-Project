@@ -67,7 +67,6 @@ const Subtopic2 = () => {
                 <div className="Subtopic2">
                     <div className="header-sub2">
                         <h2 className="productOutcome">Product outcomes</h2>
-                        <h2 className="subtopicOfsubtopic">Subtopic of subtopic</h2>
                     </div>
                     <div className="Menu_subtopicProject">
                         <div className="subtopicProject">
@@ -104,10 +103,10 @@ const Subtopic2 = () => {
             {isMobile ? null : (
                 <>
                     <PilotProgram currentImageType={currentImageType} />
-                    <Footer />
                     <SetupSubtopic2 />
                 </>
             )}
+            <Footer />
         </div>
     );
 };

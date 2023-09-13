@@ -20,15 +20,15 @@ const programData = [
     name: "Pilot Program",
     details: [
       {
-        name: "Project 1",
+        name: "Overview",
         link:"/Project_1"
       }, 
       {
-        name:"Project 2",
+        name:"Product",
         link:"/Project_2"
       },
       {
-        name:"Project 3",
+        name:"Meetings",
         link:"/Project_3"
       }
     ],

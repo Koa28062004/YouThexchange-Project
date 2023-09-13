@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const GoalBox = ({ goalNumber, goalDescription, targets, events, publications, actions, link }) => {
   return (
     <div className="box">
@@ -35,9 +35,9 @@ const GoalBox = ({ goalNumber, goalDescription, targets, events, publications, a
             <span className="small-text">Actions</span>
           </h3>
         </div>
-        <a href={link} className="moreinfo-btn">
+        <Link to={link} className="moreinfo-btn">
           <button>More info</button>
-        </a>
+        </Link>
       </div>
     </div>
   );

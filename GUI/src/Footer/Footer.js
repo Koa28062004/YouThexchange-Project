@@ -5,6 +5,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-main">
+        <h2>Accredited by</h2>
         <div className="row">
           <div className="imglogo">
             <img
