@@ -70,6 +70,3 @@ Here is a more detailed analysis of your project structure:
 * Where the front end of the application is developed using ReactJS.
 * Can be organized into subfolders similar to the "API" folder to manage different parts of the user interface.
 * Each subfolder in "GUI" contains React source code, UI components, CSS files, images, and files related to the application's user interface.
-
-
-Please add "this is the link of the web <link>(https://youthexchange-web.netlify.app/)" in Introduction section
